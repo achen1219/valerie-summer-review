@@ -6,12 +6,12 @@
 // falls back to localStorage-only (same-device) progress, so nothing breaks
 // while you're setting this up.
 const FIREBASE_CONFIG = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME",
+  apiKey: "AIzaSyAFTv3EPXLleBzFudpAxywJUyRTsgEzVIU",
+  authDomain: "valerie-summer-review.firebaseapp.com",
+  projectId: "valerie-summer-review",
+  storageBucket: "valerie-summer-review.firebasestorage.app",
+  messagingSenderId: "152919350685",
+  appId: "1:152919350685:web:406b7d2e80a8e5bddfe374",
 };
 
 // A hard-to-guess document path so random visitors who somehow find your
