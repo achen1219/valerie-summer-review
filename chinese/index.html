@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valerie's Summer Chinese Review</title>
+<style>
+  :root{
+    --red:#c0392b; --red-dark:#922b21; --green:#3aa655; --gray:#9aa5b1;
+    --bg:#fbf6f0; --card:#ffffff; --text:#3a2c25; --accent:#f0a93c;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Microsoft JhengHei','Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);}
+  header{background:var(--red-dark);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+  header h1{margin:0;font-size:19px;}
+  header a.back{color:#fff;text-decoration:none;font-size:13px;background:rgba(255,255,255,.15);padding:5px 10px;border-radius:6px;}
+  .layout{display:flex;min-height:calc(100vh - 58px);}
+  nav{width:220px;background:#f3e6db;padding:12px;overflow-y:auto;flex-shrink:0;}
+  .week-btn{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;border:none;background:#fff;border-radius:6px;padding:10px;margin:5px 0;cursor:pointer;font-size:13px;color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.08);}
+  .week-btn.active{outline:2px solid var(--red);}
+  .week-btn .badge{font-size:11px;border-radius:10px;padding:1px 7px;color:#fff;background:var(--gray);}
+  .week-btn.done .badge{background:var(--green);}
+  main{flex:1;padding:22px;max-width:840px;}
+  .card{background:var(--card);border-radius:10px;padding:20px 24px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+  .card h2{margin-top:0;color:var(--red-dark);}
+  .tabs{display:flex;gap:8px;margin-bottom:16px;}
+  .tab-btn{flex:1;padding:10px;border:none;border-radius:8px;background:#f3e6db;cursor:pointer;font-size:14px;font-weight:600;color:var(--text);}
+  .tab-btn.active{background:var(--red);color:#fff;}
+  .section-label{display:inline-block;background:var(--red);color:#fff;font-size:12px;padding:2px 10px;border-radius:10px;margin-bottom:10px;}
+  embed.ppt-viewer{width:100%;height:560px;border:1px solid #ddd;border-radius:8px;}
+  video{width:100%;border-radius:8px;background:#000;}
+  .resource-row{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;}
+  .resource-row a{font-size:13px;color:var(--red-dark);text-decoration:none;background:#f3e6db;padding:6px 12px;border-radius:6px;}
+  .resource-row a:hover{background:#e8d4c2;}
+  .prob{margin:14px 0;padding-bottom:14px;border-bottom:1px solid #eee;}
+  .prob:last-child{border-bottom:none;}
+  .prob p{margin:0 0 10px;font-weight:600;}
+  .opt-row{display:flex;align-items:flex-start;gap:8px;margin:6px 0;padding:6px 8px;border-radius:6px;cursor:pointer;}
+  .opt-row:hover{background:#f7f0e8;}
+  .opt-row input{margin-top:3px;}
+  .opt-row.correct{background:#eaf6ea;}
+  .opt-row.wrong{background:#fbeaea;}
+  button{background:var(--red);color:#fff;border:none;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:13px;}
+  button:hover{background:var(--red-dark);}
+  button:disabled{opacity:.5;cursor:default;}
+  .hint{font-size:12px;color:#888;margin-top:4px;display:none;}
+  .scorebox{margin-top:14px;padding:14px;border-radius:8px;background:#eaf6ea;font-size:15px;}
+  .progress-bar{width:100%;background:#e6dccf;border-radius:6px;height:10px;overflow:hidden;margin-top:6px;}
+  .progress-bar > div{height:100%;background:var(--green);}
+  .placeholder{font-size:13px;color:#999;padding:20px;text-align:center;background:#f7f0e8;border-radius:8px;}
+  .nav-footer{font-size:11px;color:#8a7a6c;padding:10px 6px;}
+  @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:14px;}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Valerie's Summer Chinese Review</h1>
+  <a class="back" href="../index.html">← All Subjects</a>
+</header>
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+
+<script src="data.js"></script>
+<script>
+const STORE_KEY = "valerieSummerChineseReview";
+function loadProgress(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; } }
+function saveProgress(p){ localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+let progress = loadProgress();
+
+let currentWeek = 1;
+let currentTab = "vocab"; // "vocab" or "idiom"
+
+function progressKey(week, tab){ return week + "_" + tab; }
+
+function renderNav(){
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  CHINESE_WEEKS.forEach(w=>{
+    const vocabDone = progress[progressKey(w.id,"vocab")]?.completed;
+    const idiomDone = progress[progressKey(w.id,"idiom")]?.completed;
+    const bothDone = vocabDone && idiomDone;
+    const btn = document.createElement("button");
+    btn.className = "week-btn" + (bothDone ? " done" : "") + (w.id===currentWeek ? " active" : "");
+    const badgeText = bothDone ? "✓" : (vocabDone||idiomDone ? "½" : "-");
+    btn.innerHTML = `<span>${w.label}</span><span class="badge">${badgeText}</span>`;
+    btn.onclick = ()=>{ currentWeek = w.id; render(); };
+    nav.appendChild(btn);
+  });
+  const footer = document.createElement("div");
+  footer.className = "nav-footer";
+  footer.textContent = "進度只會儲存在這台裝置上。";
+  nav.appendChild(footer);
+}
+
+function norm(s){ return String(s); }
+
+function render(){
+  renderNav();
+  const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
+  const main = document.getElementById("main");
+
+  const section = week[currentTab]; // {quiz, hasVideo}
+  const sectionName = currentTab === "vocab" ? "生字語詞" : "成語";
+  const pptFile = currentTab === "vocab" ? "vocab.pdf" : "idiom.pdf";
+  const videoFile = currentTab === "vocab" ? "vocab.mp4" : "idiom.mp4";
+  const assetBase = `assets/week${week.id}/`;
+  const recKey = progressKey(week.id, currentTab);
+  const rec = progress[recKey] || {};
+
+  main.innerHTML = `
+    <div class="card">
+      <span class="section-label">${week.label}</span>
+      <h2>${sectionName}複習</h2>
+      <div class="tabs">
+        <button class="tab-btn ${currentTab==='vocab'?'active':''}" onclick="switchTab('vocab')">生字語詞</button>
+        <button class="tab-btn ${currentTab==='idiom'?'active':''}" onclick="switchTab('idiom')">成語</button>
+      </div>
+      <div class="resource-row">
+        <a href="${assetBase}${pptFile}" target="_blank">📑 開啟簡報 PDF</a>
+      </div>
+      <embed class="ppt-viewer" src="${assetBase}${pptFile}" type="application/pdf">
+    </div>
+
+    <div class="card">
+      <span class="section-label">複習影片</span>
+      ${section.hasVideo
+        ? `<video controls src="${assetBase}${videoFile}"></video>`
+        : `<div class="placeholder">影片製作中，請稍後再來看看 🎬</div>`}
+    </div>
+
+    <div class="card" id="quizCard">
+      <span class="section-label">測驗（${section.quiz.length} 題）</span>
+      <div id="quizBody"></div>
+      <button id="submitBtn" onclick="submitQuiz()" ${rec.completed?"disabled":""}>${rec.completed?"已完成測驗":"提交測驗"}</button>
+      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec.score) : ""}</div>
+    </div>
+  `;
+  renderQuiz(section.quiz, rec);
+}
+
+function switchTab(tab){ currentTab = tab; render(); }
+
+function renderQuiz(quiz, rec){
+  const body = document.getElementById("quizBody");
+  body.innerHTML = quiz.map((item,i)=>{
+    const chosen = rec.answers ? rec.answers[i] : undefined;
+    const optsHtml = item.options.map((opt,j)=>{
+      let cls = "opt-row";
+      if(rec.completed){
+        if(j === item.correct) cls += " correct";
+        else if(j === chosen && chosen !== item.correct) cls += " wrong";
+      }
+      const checked = chosen === j ? "checked" : "";
+      return `<label class="${cls}">
+        <input type="radio" name="q${i}" value="${j}" ${checked} ${rec.completed?"disabled":""}>
+        <span>${opt}</span>
+      </label>`;
+    }).join("");
+    return `<div class="prob">
+      <p>${i+1}. ${item.q}</p>
+      ${optsHtml}
+      ${item.hint ? `<div class="hint" id="hint${i}" style="${rec.completed?'':'display:none'}">💡 ${item.hint}</div>` : ""}
+    </div>`;
+  }).join("");
+}
+
+function scoreBoxHtml(score){
+  return `<div class="scorebox">分數：<b>${score}%</b>
+    <div class="progress-bar"><div style="width:${score}%"></div></div></div>`;
+}
+
+function submitQuiz(){
+  const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
+  const section = week[currentTab];
+  const quiz = section.quiz;
+  let correctCount = 0;
+  const answers = quiz.map((item,i)=>{
+    const checked = document.querySelector(`input[name="q${i}"]:checked`);
+    const val = checked ? parseInt(checked.value) : -1;
+    if(val === item.correct) correctCount++;
+    return val;
+  });
+  const score = Math.round((correctCount/quiz.length)*100);
+  progress[progressKey(week.id,currentTab)] = { completed:true, score, answers, date:new Date().toISOString() };
+  saveProgress(progress);
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

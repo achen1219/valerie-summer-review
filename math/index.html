@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valerie's Summer Math Review</title>
+<style>
+  :root{
+    --blue:#2f6fb0; --blue-dark:#1f4d80; --green:#3aa655; --gray:#9aa5b1;
+    --bg:#f4f7fb; --card:#ffffff; --text:#243447; --accent:#f0a93c;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);}
+  header{background:var(--blue-dark);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+  header h1{margin:0;font-size:20px;}
+  header a.back{color:#fff;text-decoration:none;font-size:13px;background:rgba(255,255,255,.15);padding:5px 10px;border-radius:6px;}
+  .stats{display:flex;gap:18px;font-size:14px;}
+  .stats b{font-size:18px;display:block;}
+  .layout{display:flex;min-height:calc(100vh - 64px);}
+  nav{width:240px;background:#e9eef5;padding:12px;overflow-y:auto;flex-shrink:0;}
+  .week-block{margin-bottom:10px;}
+  .week-title{font-weight:600;font-size:13px;color:var(--blue-dark);padding:6px 4px;}
+  .day-btn{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;border:none;background:#fff;border-radius:6px;padding:8px 10px;margin:4px 0;cursor:pointer;font-size:13px;color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.08);}
+  .day-btn.active{outline:2px solid var(--blue);}
+  .day-btn .badge{font-size:11px;border-radius:10px;padding:1px 7px;color:#fff;background:var(--gray);}
+  .day-btn.done .badge{background:var(--green);}
+  main{flex:1;padding:24px;max-width:780px;}
+  .card{background:var(--card);border-radius:10px;padding:20px 24px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+  .card h2{margin-top:0;color:var(--blue-dark);}
+  .section-label{display:inline-block;background:var(--blue);color:#fff;font-size:12px;padding:2px 10px;border-radius:10px;margin-bottom:10px;}
+  .prob{margin:14px 0;padding-bottom:12px;border-bottom:1px solid #eee;}
+  .prob:last-child{border-bottom:none;}
+  .prob p{margin:0 0 8px;}
+  .answer-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .answer-row input[type=text]{padding:6px 8px;border:1px solid #ccc;border-radius:6px;width:140px;}
+  button{background:var(--blue);color:#fff;border:none;border-radius:6px;padding:7px 14px;cursor:pointer;font-size:13px;}
+  button:hover{background:var(--blue-dark);}
+  button.secondary{background:#fff;color:var(--blue);border:1px solid var(--blue);}
+  .reveal{margin-top:6px;font-size:13px;color:#555;display:none;}
+  .test-result{margin-top:6px;font-size:13px;font-weight:600;}
+  .ok{color:var(--green);}
+  .bad{color:#c0392b;}
+  .scorebox{margin-top:14px;padding:14px;border-radius:8px;background:#eef6ee;font-size:15px;}
+  .progress-bar{width:100%;background:#dfe6ee;border-radius:6px;height:10px;overflow:hidden;margin-top:6px;}
+  .progress-bar > div{height:100%;background:var(--green);}
+  .intro{font-size:14px;line-height:1.5;}
+  .nav-footer{font-size:11px;color:#7a8493;padding:10px 6px;}
+  @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:16px;}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Valerie's Summer Math Review</h1>
+  <a class="back" href="../index.html">← All Subjects</a>
+  <div class="stats">
+    <div><b id="statDone">0/30</b>days done</div>
+    <div><b id="statAvg">--</b>avg score</div>
+    <div><b id="statStreak">0</b>day streak</div>
+  </div>
+</header>
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+
+<script>
+// ---------- CURRICULUM DATA ----------
+const CURRICULUM = [
+{week:1,day:1,title:"Natural, Whole &amp; Integer Numbers. Consecutive Numbers",
+ concept:"<b>Natural numbers</b>: 1, 2, 3, ... &nbsp; <b>Whole numbers</b>: 0, 1, 2, 3, ... &nbsp; <b>Integers</b>: ...,-2,-1,0,1,2,...<br>Consecutive integers differ by 1 (n, n+1, n+2). Consecutive even/odd numbers differ by 2.",
+ practice:[
+  {q:"List the next three consecutive integers after 17.",a:["18,19,20"]},
+  {q:"Find three consecutive even numbers that sum to 36.",a:["10,12,14"]},
+  {q:"Is -3, -2, -1, 0 a list of consecutive integers? (yes/no)",a:["yes"]}],
+ test:[
+  {q:"What is the smallest natural number?",a:["1"]},
+  {q:"What is the smallest whole number?",a:["0"]},
+  {q:"Find three consecutive odd numbers whose sum is 51. Give the middle one.",a:["17"]},
+  {q:"True or False: every integer is a whole number.",a:["false"]},
+  {q:"Find the next consecutive even number after 24.",a:["26"]}]},
+
+{week:1,day:2,title:"Sum of Three Consecutive Numbers. Order of Operations",
+ concept:"Sum of 3 consecutive integers = 3 × (middle number).<br><b>Order of operations</b>: Parentheses → Exponents → Multiply/Divide (left to right) → Add/Subtract (left to right).",
+ practice:[
+  {q:"The sum of three consecutive integers is 90. Find the middle number.",a:["30"]},
+  {q:"Evaluate: 6 + 4 × (5 − 2)²",a:["42"]},
+  {q:"Evaluate: (8 − 3) × 2³ − 4",a:["36"]}],
+ test:[
+  {q:"Evaluate: 12 + 3 × 4",a:["24"]},
+  {q:"Evaluate: (12 + 3) × 4",a:["60"]},
+  {q:"The sum of three consecutive integers is 144. Find the smallest.",a:["47"]},
+  {q:"Evaluate: 2 + 3² × 2",a:["20"]},
+  {q:"Evaluate: 20 − (4 + 2) ÷ 3",a:["18"]}]},
+
+{week:1,day:3,title:"Sum of Three or More Consecutive Numbers",
+ concept:"For consecutive integers, Sum = (number of terms) × (average of first and last). Use this to find unknown terms when you know the sum.",
+ practice:[
+  {q:"Find the sum of 5 consecutive integers starting at 10.",a:["60"]},
+  {q:"The sum of four consecutive integers is 70. Find the smallest one.",a:["16"]},
+  {q:"Find six consecutive integers whose sum is 87. Give the smallest.",a:["12"]}],
+ test:[
+  {q:"Find the sum of 7 consecutive integers starting at 5.",a:["56"]},
+  {q:"The sum of 5 consecutive integers is 100. Find the middle number.",a:["20"]},
+  {q:"The sum of four consecutive integers is 90. Find the largest.",a:["24"]},
+  {q:"The sum of three consecutive integers is 333. Find the smallest.",a:["110"]},
+  {q:"Find the sum of the integers from 1 to 10.",a:["55"]}]},
+
+{week:1,day:4,title:"Triangular Numbers",
+ concept:"Triangular numbers count dots arranged in a triangle: 1, 3, 6, 10, 15, ... The formula is T(n) = n(n+1)/2.",
+ practice:[
+  {q:"Find T(6).",a:["21"]},
+  {q:"Find T(10).",a:["55"]},
+  {q:"Which triangular number equals 45? (give n)",a:["9"]}],
+ test:[
+  {q:"Find T(7).",a:["28"]},
+  {q:"Find T(12).",a:["78"]},
+  {q:"Find n if T(n) = 66.",a:["11"]},
+  {q:"Find the sum of the first 4 triangular numbers (1+3+6+10).",a:["20"]},
+  {q:"Find T(20).",a:["210"]}]},
+
+{week:1,day:5,title:"Arithmetic Sequences &amp; Series",
+ concept:"An arithmetic sequence has a constant difference d between terms: a(n) = a(1) + (n−1)d.<br>Sum of n terms: S = n × (first + last) / 2.",
+ practice:[
+  {q:"Find the 10th term of 3, 7, 11, 15, ...",a:["39"]},
+  {q:"Find the sum of the first 10 terms of 3, 7, 11, 15, ...",a:["210"]},
+  {q:"a(1)=5, a(20)=100. Find d.",a:["5"]}],
+ test:[
+  {q:"Find the 15th term of 2, 5, 8, 11, ...",a:["44"]},
+  {q:"Find the sum of the first 15 terms of 2, 5, 8, 11, ...",a:["345"]},
+  {q:"a(1)=100, d=-5. Find the 8th term.",a:["65"]},
+  {q:"Find the sum of the first 50 positive integers.",a:["1275"]},
+  {q:"a(1)=4, d=6. Find the 12th term.",a:["70"]}]},
+
+{week:2,day:1,title:"Divisibility Rules (2, 4, 5, 8)",
+ concept:"Div by 2: last digit even. Div by 4: last two digits divisible by 4. Div by 5: ends in 0 or 5. Div by 8: last three digits divisible by 8.",
+ practice:[
+  {q:"Is 4312 divisible by 4? (yes/no)",a:["yes"]},
+  {q:"Is 7152 divisible by 8? (yes/no)",a:["yes"]},
+  {q:"Find the smallest digit x so that 12x is divisible by 4.",a:["0"]}],
+ test:[
+  {q:"Is 9834 divisible by 2? (yes/no)",a:["yes"]},
+  {q:"Is 1234 divisible by 4? (yes/no)",a:["no"]},
+  {q:"Is 24000 divisible by 8? (yes/no)",a:["yes"]},
+  {q:"Find the smallest digit d (0-9) making 73d divisible by 5.",a:["0"]},
+  {q:"Is 6128 divisible by 8? (yes/no)",a:["yes"]}]},
+
+{week:2,day:2,title:"Divisibility Rules (3, 9, 11)",
+ concept:"Div by 3: digit sum divisible by 3. Div by 9: digit sum divisible by 9. Div by 11: alternating digit sum divisible by 11.",
+ practice:[
+  {q:"Is 4563 divisible by 3? (yes/no)",a:["yes"]},
+  {q:"Is 4563 divisible by 9? (yes/no)",a:["yes"]},
+  {q:"Is 2728 divisible by 11? (yes/no)",a:["yes"]}],
+ test:[
+  {q:"Is 7281 divisible by 3? (yes/no)",a:["yes"]},
+  {q:"Is 7281 divisible by 9? (yes/no)",a:["yes"]},
+  {q:"Is 9081 divisible by 11? (yes/no)",a:["no"]},
+  {q:"Find the smallest digit x making 23x divisible by 9.",a:["4"]},
+  {q:"Is 1331 divisible by 11? (yes/no)",a:["yes"]}]},
+
+{week:2,day:3,title:"Binary Number System",
+ concept:"Binary (base 2) uses only digits 0 and 1. Place values are powers of 2: ...,16,8,4,2,1.",
+ practice:[
+  {q:"Convert 13 to binary.",a:["1101"]},
+  {q:"Convert 1011 (binary) to decimal.",a:["11"]},
+  {q:"Convert 25 to binary.",a:["11001"]}],
+ test:[
+  {q:"Convert 6 to binary.",a:["110"]},
+  {q:"Convert 1111 (binary) to decimal.",a:["15"]},
+  {q:"Convert 37 to binary.",a:["100101"]},
+  {q:"Convert 101010 (binary) to decimal.",a:["42"]},
+  {q:"Convert 50 to binary.",a:["110010"]}]},
+
+{week:2,day:4,title:"Operations in Base 2",
+ concept:"Add/subtract/multiply in binary just like decimal, but carry/borrow at 2 instead of 10.",
+ practice:[
+  {q:"101 + 110 (binary) = ?",a:["1011"]},
+  {q:"1111 + 1 (binary) = ?",a:["10000"]},
+  {q:"110 − 11 (binary) = ?",a:["11"]}],
+ test:[
+  {q:"1010 + 101 (binary) = ?",a:["1111"]},
+  {q:"111 + 111 (binary) = ?",a:["1110"]},
+  {q:"1001 − 11 (binary) = ?",a:["110"]},
+  {q:"11 × 11 (binary) = ?",a:["1001"]},
+  {q:"100000 − 1 (binary) = ?",a:["11111"]}]},
+
+{week:2,day:5,title:"Mixed Review: Number Theory &amp; Number Systems",
+ concept:"Today mixes triangular numbers, divisibility, binary, and sequences from this week and last.",
+ practice:[
+  {q:"Find T(8).",a:["36"]},
+  {q:"Is 5544 divisible by 11? (yes/no)",a:["yes"]},
+  {q:"Convert 19 to binary.",a:["10011"]}],
+ test:[
+  {q:"Find the sum of 6 consecutive integers starting at 7.",a:["57"]},
+  {q:"Is 1233 divisible by 3? (yes/no)",a:["yes"]},
+  {q:"Convert 28 to binary.",a:["11100"]},
+  {q:"Find the 9th term of 5, 9, 13, 17, ...",a:["37"]},
+  {q:"Is 4096 divisible by 8? (yes/no)",a:["yes"]}]},
+
+{week:3,day:1,title:"Finding Part of a Whole &amp; Whole by Its Part",
+ concept:"Part = fraction × whole. Whole = part ÷ fraction.",
+ practice:[
+  {q:"Find 3/5 of 40.",a:["24"]},
+  {q:"3/4 of a number is 27. Find the number.",a:["36"]},
+  {q:"2/7 of a number is 18. Find the number.",a:["63"]}],
+ test:[
+  {q:"Find 5/8 of 64.",a:["40"]},
+  {q:"2/3 of a number is 50. Find the number.",a:["75"]},
+  {q:"Find 7/10 of 90.",a:["63"]},
+  {q:"5/6 of a number is 45. Find the number.",a:["54"]},
+  {q:"Find 3/8 of 96.",a:["36"]}]},
+
+{week:3,day:2,title:"Signed Numbers &amp; Absolute Value",
+ concept:"Absolute value |a| is the distance from 0, always ≥ 0. The opposite of a is −a.",
+ practice:[
+  {q:"|−7| = ?",a:["7"]},
+  {q:"−|−5| = ?",a:["-5"]},
+  {q:"|3 − 9| = ?",a:["6"]}],
+ test:[
+  {q:"|−12| = ?",a:["12"]},
+  {q:"−(−8) = ?",a:["8"]},
+  {q:"|5 − 13| = ?",a:["8"]},
+  {q:"|−4| + |−6| = ?",a:["10"]},
+  {q:"−|7 − 2| = ?",a:["-5"]}]},
+
+{week:3,day:3,title:"Decimals",
+ concept:"Line up decimal points to add/subtract. Convert fractions to decimals by dividing.",
+ practice:[
+  {q:"3.45 + 2.7 = ?",a:["6.15"]},
+  {q:"0.6 × 0.5 = ?",a:["0.3","0.30"]},
+  {q:"Convert 7/8 to a decimal.",a:["0.875"]}],
+ test:[
+  {q:"5.2 − 1.75 = ?",a:["3.45"]},
+  {q:"0.25 × 16 = ?",a:["4"]},
+  {q:"Convert 3/4 to a decimal.",a:["0.75"]},
+  {q:"1.2 × 1.2 = ?",a:["1.44"]},
+  {q:"Convert 0.625 to a fraction in lowest terms.",a:["5/8"]}]},
+
+{week:3,day:4,title:"Meaning of Percent &amp; Conversions",
+ concept:"Percent means 'per hundred'. %→decimal: divide by 100. decimal→%: multiply by 100. fraction→%: multiply by 100.",
+ practice:[
+  {q:"Convert 45% to a decimal.",a:["0.45"]},
+  {q:"Convert 0.6 to a percent.",a:["60","60%"]},
+  {q:"Convert 3/5 to a percent.",a:["60","60%"]}],
+ test:[
+  {q:"Convert 8% to a decimal.",a:["0.08"]},
+  {q:"Convert 1.25 to a percent.",a:["125","125%"]},
+  {q:"Convert 7/20 to a percent.",a:["35","35%"]},
+  {q:"Convert 12% to a fraction in lowest terms.",a:["3/25"]},
+  {q:"Convert 0.05 to a percent.",a:["5","5%"]}]},
+
+{week:3,day:5,title:"Percent of a Number &amp; Repeating Decimals",
+ concept:"Percent of a number = percent (as decimal) × number. Some fractions give repeating decimals, like 1/3 = 0.333...",
+ practice:[
+  {q:"Find 20% of 150.",a:["30"]},
+  {q:"Convert 1/3 to a repeating decimal (e.g. 0.333...).",a:["0.333...","0.333","0.33333"]},
+  {q:"30 is what percent of 120?",a:["25","25%"]}],
+ test:[
+  {q:"Find 15% of 200.",a:["30"]},
+  {q:"Convert 2/9 to a repeating decimal.",a:["0.222...","0.222","0.22222"]},
+  {q:"45 is what percent of 90?",a:["50","50%"]},
+  {q:"Find 75% of 80.",a:["60"]},
+  {q:"18 is what percent of 24?",a:["75","75%"]}]},
+
+{week:4,day:1,title:"Expressions, Equations &amp; Word Problems",
+ concept:"Translate words into equations, then solve for x using inverse operations.",
+ practice:[
+  {q:"Solve: 3x + 5 = 20",a:["5"]},
+  {q:"A number plus 7 is 22. Find the number.",a:["15"]},
+  {q:"Twice a number minus 4 is 16. Find the number.",a:["10"]}],
+ test:[
+  {q:"Solve: 5x − 3 = 27",a:["6"]},
+  {q:"Three times a number is 18 more than the number. Find it.",a:["9"]},
+  {q:"Solve: 2(x + 3) = 16",a:["5"]},
+  {q:"A number minus 9 equals 14. Find the number.",a:["23"]},
+  {q:"Solve: 4x + 7 = 31",a:["6"]}]},
+
+{week:4,day:2,title:"Number &amp; Coin Problems",
+ concept:"Set up equations using value = count × worth for each type of coin/number, then combine.",
+ practice:[
+  {q:"A jar has nickels and dimes, 20 coins worth $1.70 total. How many dimes?",a:["14"]},
+  {q:"Two numbers sum to 50; one is 4 times the other. Find the smaller.",a:["10"]},
+  {q:"15 coins (quarters &amp; dimes) total $2.55. How many quarters?",a:["7"]}],
+ test:[
+  {q:"Two numbers sum to 80; one is 3 times the other. Find the smaller.",a:["20"]},
+  {q:"10 coins (dimes &amp; quarters) total $1.60. How many dimes?",a:["6"]},
+  {q:"Two numbers differ by 12 and sum to 48. Find the larger.",a:["30"]},
+  {q:"12 coins (nickels &amp; dimes) total $1.00. How many dimes?",a:["8"]},
+  {q:"Two numbers sum to 65; one is 5 more than the other. Find the larger.",a:["35"]}]},
+
+{week:4,day:3,title:"Age Problems",
+ concept:"Represent ages with variables now, then add/subtract years for 'in n years' or 'n years ago' conditions.",
+ practice:[
+  {q:"Tom is 3× his son's age. In 10 years he'll be 2× as old. Find the son's age now.",a:["10"]},
+  {q:"Mary is 5 years older than John. In 5 years their ages sum to 45. Find John's age now.",a:["15"]},
+  {q:"A father is 4× his daughter's age. In 6 years he'll be 3× as old. Find her age now.",a:["12"]}],
+ test:[
+  {q:"A is twice as old as B. In 8 years A will be 1.5× as old as B. Find B's age now.",a:["8"]},
+  {q:"Sarah is 4 years older than Tim. In 6 years their ages sum to 40. Find Tim's age now.",a:["12"]},
+  {q:"A man is 5× his son's age. In 4 years he'll be 4× as old. Find the son's age now.",a:["12"]},
+  {q:"Two sisters' ages sum to 26; one is 4 years older. Find the younger one's age.",a:["11"]},
+  {q:"A mother is 3× her daughter's age. 5 years ago she was 4× as old. Find the daughter's age now.",a:["15"]}]},
+
+{week:4,day:4,title:"Digit Problems &amp; Work Word Problems",
+ concept:"Two-digit numbers: 10×(tens digit) + (units digit). Work problems: rate = 1/time; combined rate = sum of rates.",
+ practice:[
+  {q:"A 2-digit number has digit sum 11; reversing it gives a number 27 less. Find the number.",a:["74"]},
+  {q:"Pipe A fills a pool in 6h, Pipe B in 3h. Together, how many hours?",a:["2"]},
+  {q:"A worker paints a fence in 4h; with a helper, together it takes 2.4h. How long for the helper alone?",a:["6"]}],
+ test:[
+  {q:"A 2-digit number has digit sum 9; reversing it increases it by 9. Find the number.",a:["45"]},
+  {q:"A pipe fills a tank in 5h; a drain empties it in 10h. Both open, how many hours to fill?",a:["10"]},
+  {q:"Worker A does a job in 3h, worker B in 6h. Together, how many hours?",a:["2"]},
+  {q:"A 2-digit number has digit sum 7; the tens digit is one more than twice the units digit. Find the number.",a:["52"]},
+  {q:"A job takes 8h alone; with a partner it takes 3h together. How many hours for the partner alone?",a:["4.8"]}]},
+
+{week:4,day:5,title:"Mixed Word Problem Review",
+ concept:"Today combines equations, coins, ages, digits, and work problems from this week.",
+ practice:[
+  {q:"The sum of three consecutive integers is 159. Find the smallest.",a:["52"]},
+  {q:"40% of a number is 18. Find the number.",a:["45"]},
+  {q:"8 coins (dimes &amp; quarters) total $1.55. How many quarters?",a:["5"]}],
+ test:[
+  {q:"Solve: 6x − 5 = 37",a:["7"]},
+  {q:"Find 35% of 60.",a:["21"]},
+  {q:"A 2-digit number has digit sum 12; reversing it decreases it by 18. Find the number.",a:["75"]},
+  {q:"A is 4× B's age; in 6 years A will be 3× as old. Find B's age now.",a:["12"]},
+  {q:"A pipe fills a tank in 4h, another in 12h. Together, how many hours?",a:["3"]}]},
+
+{week:5,day:1,title:"Linear and Non-Linear Relationships",
+ concept:"A linear relationship has a constant rate of change (straight line, y = mx + b). Non-linear relationships don't.",
+ practice:[
+  {q:"x:1,2,3 → y:3,6,9. Linear or non-linear?",a:["linear"]},
+  {q:"x:1,2,3 → y:1,4,9. Linear or non-linear?",a:["non-linear","nonlinear"]},
+  {q:"x:0,1,2,3 → y:5,7,9,11. Find the rule (y = ?x + ?). Give the slope.",a:["2"]}],
+ test:[
+  {q:"x:1,2,3,4 → y:2,4,6,8. Find the slope.",a:["2"]},
+  {q:"Is y = x² + 1 linear or non-linear?",a:["non-linear","nonlinear"]},
+  {q:"x:0,1,2 → y:4,7,10. Find y when x = 5 (rule: y=3x+4).",a:["19"]},
+  {q:"A table has constant differences in y for equal steps in x. Linear or non-linear?",a:["linear"]},
+  {q:"x:1,2,3 → y:5,8,11. Find y when x = 10.",a:["32"]}]},
+
+{week:5,day:2,title:"More on Linear &amp; Non-Linear Relationships",
+ concept:"Slope between two points: m = (y2−y1)/(x2−x1). Use it to write the equation y = mx + b.",
+ practice:[
+  {q:"Find the slope between (1,3) and (4,12).",a:["3"]},
+  {q:"Line through (0,2) and (3,11): find the slope.",a:["3"]},
+  {q:"For y = 4x − 3, find y when x = 7.",a:["25"]}],
+ test:[
+  {q:"Find the slope through (2,5) and (6,17).",a:["3"]},
+  {q:"Line through (0,-1) and (2,7): find the slope.",a:["4"]},
+  {q:"For y = 2x², find y when x = 3.",a:["18"]},
+  {q:"For y = 5x + 1, find y when x = 5.",a:["26"]},
+  {q:"Find the slope through (1,1) and (5,1).",a:["0"]}]},
+
+{week:5,day:3,title:"Introduction to Functions",
+ concept:"A function is an input/output machine — each input gives exactly one output. Notation: f(x).",
+ practice:[
+  {q:"f(x) = 2x + 3. Find f(4).",a:["11"]},
+  {q:"f(x) = x² − 1. Find f(5).",a:["24"]},
+  {q:"A function doubles the input then adds 1. Find f(6).",a:["13"]}],
+ test:[
+  {q:"f(x) = 3x − 2. Find f(5).",a:["13"]},
+  {q:"f(x) = x² + 2. Find f(3).",a:["11"]},
+  {q:"f(x) = 5x. Find x when f(x) = 35.",a:["7"]},
+  {q:"g(x) = 2x − 7. Find g(10).",a:["13"]},
+  {q:"f(x) = x² − 4. Find f(0).",a:["-4"]}]},
+
+{week:5,day:4,title:"Lines and Regions / Intro Geometry",
+ concept:"Points, lines, segments, and rays. A line divides a plane into 2 regions; more lines create more regions.",
+ practice:[
+  {q:"How many regions does 1 line divide a plane into?",a:["2"]},
+  {q:"How many regions do 2 intersecting lines create?",a:["4"]},
+  {q:"How many points determine a unique line?",a:["2"]}],
+ test:[
+  {q:"How many regions do 3 lines crossing at one common point create?",a:["6"]},
+  {q:"How many endpoints does a line segment have?",a:["2"]},
+  {q:"How many endpoints does a ray have?",a:["1"]},
+  {q:"How many regions can 2 parallel lines create?",a:["3"]},
+  {q:"How many distinct lines pass through two distinct points?",a:["1"]}]},
+
+{week:5,day:5,title:"Triangles. Plane Geometry Problems",
+ concept:"The angles of a triangle always sum to 180°.",
+ practice:[
+  {q:"Two angles of a triangle are 50° and 60°. Find the third.",a:["70"]},
+  {q:"An equilateral triangle: what is each angle?",a:["60"]},
+  {q:"A triangle's angles are in ratio 1:2:3. Find the largest angle.",a:["90"]}],
+ test:[
+  {q:"Two angles are 35° and 95°. Find the third.",a:["50"]},
+  {q:"An isosceles triangle has an apex angle of 40°. Find each base angle.",a:["70"]},
+  {q:"A right triangle has one angle of 35°. Find the other non-right angle.",a:["55"]},
+  {q:"A triangle's angles are in ratio 2:3:4. Find the smallest.",a:["40"]},
+  {q:"A triangle has all equal angles. Find each angle.",a:["60"]}]},
+
+{week:6,day:1,title:"Triangle Inequality",
+ concept:"The sum of any two sides of a triangle must be greater than the third side.",
+ practice:[
+  {q:"Can sides 3, 4, 8 form a triangle? (yes/no)",a:["no"]},
+  {q:"Can sides 5, 6, 10 form a triangle? (yes/no)",a:["yes"]},
+  {q:"Sides 7 and 10: what is the smallest whole-number third side?",a:["4"]}],
+ test:[
+  {q:"Can sides 2, 2, 5 form a triangle? (yes/no)",a:["no"]},
+  {q:"Can sides 9, 12, 15 form a triangle? (yes/no)",a:["yes"]},
+  {q:"Sides 4 and 9: what is the largest whole-number third side?",a:["12"]},
+  {q:"Can sides 6, 6, 12 form a triangle? (yes/no)",a:["no"]},
+  {q:"Sides 8 and 8: what is the largest whole-number third side?",a:["15"]}]},
+
+{week:6,day:2,title:"Angles",
+ concept:"Complementary angles sum to 90°. Supplementary angles sum to 180°. Vertical angles are equal.",
+ practice:[
+  {q:"Find the complement of 37°.",a:["53"]},
+  {q:"Find the supplement of 112°.",a:["68"]},
+  {q:"Two supplementary angles: one is 3× the other. Find the larger.",a:["135"]}],
+ test:[
+  {q:"Find the complement of 64°.",a:["26"]},
+  {q:"Find the supplement of 95°.",a:["85"]},
+  {q:"Two complementary angles: one is twice the other. Find the larger.",a:["60"]},
+  {q:"A vertical angle pair: one is 75°. Find the other.",a:["75"]},
+  {q:"Two supplementary angles differ by 40°. Find the larger.",a:["110"]}]},
+
+{week:6,day:3,title:"The Three Sides of a Triangle. Right Triangles",
+ concept:"A right triangle has one 90° angle; its two acute angles sum to 90°. The hypotenuse (opposite the right angle) is the longest side.",
+ practice:[
+  {q:"In a right triangle, the two acute angles sum to how many degrees?",a:["90"]},
+  {q:"One acute angle is 28°. Find the other.",a:["62"]},
+  {q:"Which side of a right triangle is the longest?",a:["hypotenuse"]}],
+ test:[
+  {q:"One acute angle of a right triangle is 51°. Find the other.",a:["39"]},
+  {q:"True or False: the hypotenuse is always the shortest side.",a:["false"]},
+  {q:"How many right angles can a triangle have?",a:["1"]},
+  {q:"The acute angles are in ratio 1:2. Find the smaller.",a:["30"]},
+  {q:"The acute angles are in ratio 1:5. Find the larger.",a:["75"]}]},
+
+{week:6,day:4,title:"Pythagorean Theorem",
+ concept:"For a right triangle: a² + b² = c², where c is the hypotenuse.",
+ practice:[
+  {q:"Legs 3 and 4: find the hypotenuse.",a:["5"]},
+  {q:"Legs 6 and 8: find the hypotenuse.",a:["10"]},
+  {q:"Hypotenuse 13, one leg 5: find the other leg.",a:["12"]}],
+ test:[
+  {q:"Legs 5 and 12: find the hypotenuse.",a:["13"]},
+  {q:"Legs 8 and 15: find the hypotenuse.",a:["17"]},
+  {q:"Hypotenuse 10, one leg 6: find the other leg.",a:["8"]},
+  {q:"Legs 9 and 12: find the hypotenuse.",a:["15"]},
+  {q:"Hypotenuse 25, one leg 7: find the other leg.",a:["24"]}]},
+
+{week:6,day:5,title:"Cumulative Final Review",
+ concept:"A mix of everything from the whole summer review — number theory, fractions/percent, equations, functions, and geometry.",
+ practice:[
+  {q:"The sum of three consecutive integers is 96. Find the smallest.",a:["31"]},
+  {q:"Find 30% of 250.",a:["75"]},
+  {q:"Legs 9 and 40: find the hypotenuse.",a:["41"]}],
+ test:[
+  {q:"Find T(9).",a:["45"]},
+  {q:"Is 6912 divisible by 9? (yes/no)",a:["yes"]},
+  {q:"Convert 22 to binary.",a:["10110"]},
+  {q:"Find 5/9 of 81.",a:["45"]},
+  {q:"Solve: 7x − 4 = 24",a:["4"]},
+  {q:"f(x) = 3x + 1. Find f(8).",a:["25"]},
+  {q:"Two angles of a triangle are 40° and 75°. Find the third.",a:["65"]},
+  {q:"Legs 7 and 24: find the hypotenuse.",a:["25"]}]},
+];
+
+// assign sequential ids and day-of-week labels (Mon-Fri)
+const DAY_NAMES = ["Mon","Tue","Wed","Thu","Fri"];
+CURRICULUM.forEach((d,i)=>{ d.id = i+1; d.dayName = DAY_NAMES[d.day-1]; });
+
+// ---------- STORAGE ----------
+const STORE_KEY = "valerieSummerMathReview";
+function loadProgress(){
+  try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveProgress(p){ localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+let progress = loadProgress();
+
+// ---------- HELPERS ----------
+function norm(s){
+  return String(s).trim().toLowerCase().replace(/\s+/g,"").replace(/%$/,"").replace(/°/g,"");
+}
+function isCorrect(given, accepted){
+  const g = norm(given);
+  return accepted.some(a => norm(a) === g);
+}
+
+// ---------- RENDER NAV ----------
+function renderNav(){
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  for(let w=1; w<=6; w++){
+    const block = document.createElement("div");
+    block.className = "week-block";
+    const title = document.createElement("div");
+    title.className = "week-title";
+    title.textContent = "Week " + w;
+    block.appendChild(title);
+    CURRICULUM.filter(d=>d.week===w).forEach(d=>{
+      const btn = document.createElement("button");
+      const rec = progress[d.id];
+      btn.className = "day-btn" + (rec && rec.completed ? " done" : "") + (d.id===currentId ? " active" : "");
+      btn.innerHTML = `<span>${d.dayName} · D${d.id}</span><span class="badge">${rec && rec.completed ? rec.score+"%" : "-"}</span>`;
+      btn.onclick = ()=>{ currentId = d.id; render(); };
+      block.appendChild(btn);
+    });
+    nav.appendChild(block);
+  }
+  const footer = document.createElement("div");
+  footer.className = "nav-footer";
+  footer.textContent = "Progress is saved on this device only.";
+  nav.appendChild(footer);
+}
+
+// ---------- RENDER STATS ----------
+function renderStats(){
+  const recs = Object.values(progress).filter(r=>r.completed);
+  document.getElementById("statDone").textContent = recs.length + "/30";
+  const avg = recs.length ? Math.round(recs.reduce((s,r)=>s+r.score,0)/recs.length) : null;
+  document.getElementById("statAvg").textContent = avg===null ? "--" : avg+"%";
+  // streak: consecutive completed days counting back from the highest completed id
+  let streak = 0;
+  let maxDone = Math.max(0, ...Object.keys(progress).filter(k=>progress[k].completed).map(Number));
+  for(let id=maxDone; id>=1; id--){
+    if(progress[id] && progress[id].completed) streak++; else break;
+  }
+  document.getElementById("statStreak").textContent = streak;
+}
+
+// ---------- RENDER MAIN ----------
+let currentId = (function(){
+  const firstUndone = CURRICULUM.find(d=>!(progress[d.id] && progress[d.id].completed));
+  return firstUndone ? firstUndone.id : 1;
+})();
+
+function render(){
+  renderNav();
+  renderStats();
+  const day = CURRICULUM.find(d=>d.id===currentId);
+  const main = document.getElementById("main");
+  const rec = progress[day.id] || {};
+
+  let practiceHtml = day.practice.map((p,i)=>`
+    <div class="prob">
+      <p><b>${i+1}.</b> ${p.q}</p>
+      <button class="secondary" onclick="toggleReveal(this)">Show Answer</button>
+      <div class="reveal">Answer: ${p.a[0]}</div>
+    </div>`).join("");
+
+  let testHtml = day.test.map((t,i)=>`
+    <div class="prob">
+      <p><b>${i+1}.</b> ${t.q}</p>
+      <div class="answer-row">
+        <input type="text" id="t_${day.id}_${i}" ${rec.completed?"disabled":""} value="${rec.answers ? (rec.answers[i]||"") : ""}">
+      </div>
+      <div class="test-result" id="r_${day.id}_${i}"></div>
+    </div>`).join("");
+
+  main.innerHTML = `
+    <div class="card">
+      <span class="section-label">Week ${day.week} · ${day.dayName} · Day ${day.id} of 30</span>
+      <h2>${day.title}</h2>
+      <div class="intro">${day.concept}</div>
+    </div>
+    <div class="card">
+      <span class="section-label">Practice (untimed, ~15 min)</span>
+      ${practiceHtml}
+    </div>
+    <div class="card">
+      <span class="section-label">Test (~10-15 min)</span>
+      ${testHtml}
+      <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Submit Test"}</button>
+      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec.score) : ""}</div>
+    </div>
+    <div class="card" style="display:flex;justify-content:space-between;">
+      <button class="secondary" onclick="goAdjacent(-1)" ${day.id<=1?"disabled":""}>&larr; Previous Day</button>
+      <button class="secondary" onclick="goAdjacent(1)" ${day.id>=30?"disabled":""}>Next Day &rarr;</button>
+    </div>
+  `;
+  if(rec.completed){
+    day.test.forEach((t,i)=>{
+      const el = document.getElementById(`r_${day.id}_${i}`);
+      const given = rec.answers[i] || "";
+      const ok = isCorrect(given, t.a);
+      el.innerHTML = ok ? `<span class="ok">✓ Correct</span>` : `<span class="bad">✗ Your answer: "${given}" — Correct: ${t.a[0]}</span>`;
+    });
+  }
+}
+
+function scoreBoxHtml(score){
+  return `<div class="scorebox">Score: <b>${score}%</b>
+    <div class="progress-bar"><div style="width:${score}%"></div></div></div>`;
+}
+
+function toggleReveal(btn){
+  const div = btn.nextElementSibling;
+  div.style.display = div.style.display === "block" ? "none" : "block";
+}
+
+function submitTest(dayId){
+  const day = CURRICULUM.find(d=>d.id===dayId);
+  let correctCount = 0;
+  const answers = day.test.map((t,i)=>{
+    const val = document.getElementById(`t_${dayId}_${i}`).value;
+    if(isCorrect(val, t.a)) correctCount++;
+    return val;
+  });
+  const score = Math.round((correctCount/day.test.length)*100);
+  progress[dayId] = { completed:true, score, answers, date:new Date().toISOString() };
+  saveProgress(progress);
+  render();
+}
+
+function goAdjacent(delta){
+  const newId = currentId + delta;
+  if(newId>=1 && newId<=30){ currentId = newId; render(); }
+}
+
+render();
+</script>
+</body>
+</html>

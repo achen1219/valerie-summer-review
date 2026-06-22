@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valerie's Summer Review</title>
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#f4f1ee;color:#2d2a26;display:flex;align-items:center;justify-content:center;min-height:100vh;}
+  .wrap{text-align:center;padding:20px;}
+  h1{font-size:26px;margin-bottom:8px;}
+  p{color:#766f68;margin-bottom:32px;}
+  .cards{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;}
+  a.card{display:block;width:220px;padding:28px 20px;border-radius:14px;text-decoration:none;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.12);transition:transform .15s;}
+  a.card:hover{transform:translateY(-4px);}
+  .math{background:linear-gradient(135deg,#2f6fb0,#1f4d80);}
+  .chinese{background:linear-gradient(135deg,#c0392b,#922b21);}
+  .card .emoji{font-size:38px;display:block;margin-bottom:10px;}
+  .card .title{font-size:18px;font-weight:700;}
+  .card .sub{font-size:12px;opacity:.85;margin-top:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🌞 Valerie's Summer Review</h1>
+  <p>Pick a subject to start reviewing</p>
+  <div class="cards">
+    <a class="card math" href="math/index.html">
+      <span class="emoji">📐</span>
+      <span class="title">Math</span>
+      <span class="sub">6-week curriculum · 30 days</span>
+    </a>
+    <a class="card chinese" href="chinese/index.html">
+      <span class="emoji">📚</span>
+      <span class="title">Chinese 國語</span>
+      <span class="sub">6 週生字／成語複習</span>
+    </a>
+  </div>
+</div>
+</body>
+</html>
