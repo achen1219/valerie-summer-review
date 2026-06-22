@@ -671,7 +671,777 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": false
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "漆黑",
+        "zhuyin": "ㄑㄧ ㄏㄟ",
+        "en": "pitch black, totally dark",
+        "example": "山洞裡漆黑一片，看不清方向。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "凌晨",
+        "zhuyin": "ㄌㄧㄥ ㄔㄣ",
+        "en": "before dawn, very early morning",
+        "example": "凌晨四點，街道很安靜。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "發抖",
+        "zhuyin": "ㄈㄚ ㄉㄡˇ",
+        "en": "to shiver/shake (cold or fear)",
+        "example": "小孩在冷風裡直發抖。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "幽暗",
+        "zhuyin": "ㄧㄡ ㄢˋ",
+        "en": "dim, faintly lit",
+        "example": "穿過幽暗的山路來到車站。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "緩緩",
+        "zhuyin": "ㄏㄨㄢˇ ㄏㄨㄢˇ",
+        "en": "slowly, gradually",
+        "example": "小火車緩緩爬升上山。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "擁擠",
+        "zhuyin": "ㄩㄥ ㄐㄧˇ",
+        "en": "crowded",
+        "example": "假日的車站總是十分擁擠。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "映照",
+        "zhuyin": "ㄧㄥˋ ㄓㄠˋ",
+        "en": "to shine/reflect light onto something",
+        "example": "陽光映照在湖面上，閃閃發亮。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "金光四射",
+        "zhuyin": "ㄐㄧㄣ ㄍㄨㄤ ㄙˋ ㄕㄜˋ",
+        "en": "golden light shooting out in all directions",
+        "example": "太陽跳出來，金光四射，十分壯觀。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "千堆雪",
+        "zhuyin": "ㄑㄧㄢ ㄉㄨㄟ ㄒㄩㄝˇ",
+        "en": "(metaphor) clouds like piles of snow",
+        "example": "白雲湧起，像千堆雪。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "美不勝收",
+        "zhuyin": "ㄇㄟˇ ㄅㄨˋ ㄕㄥˋ ㄕㄡ",
+        "en": "too beautiful to take it all in",
+        "example": "阿里山的日出美不勝收。"
+      },
+      {
+        "lesson": "第一課",
+        "char": "",
+        "term": "回味無窮",
+        "zhuyin": "ㄏㄨㄟˊ ㄨㄟˋ ㄨˊ ㄑㄩㄥˊ",
+        "en": "leaves a lasting, pleasant memory",
+        "example": "這次的旅行真是回味無窮。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "舒適",
+        "zhuyin": "ㄕㄨ ㄕˋ",
+        "en": "comfortable",
+        "example": "小木屋住起來十分舒適。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "獨處",
+        "zhuyin": "ㄉㄨˊ ㄔㄨˇ",
+        "en": "to be alone by oneself",
+        "example": "他喜歡一個人獨處看書。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "靈敏",
+        "zhuyin": "ㄌㄧㄥˊ ㄇㄧㄣˇ",
+        "en": "sharp, sensitive (senses)",
+        "example": "獵犬的嗅覺非常靈敏。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "旋律",
+        "zhuyin": "ㄒㄩㄢˊ ㄌㄩˋ",
+        "en": "melody, tune",
+        "example": "這首歌的旋律很優美。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "曾經",
+        "zhuyin": "ㄗㄥ ㄐㄧㄥ",
+        "en": "once, in the past",
+        "example": "我曾經去過阿里山看日出。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "伺機",
+        "zhuyin": "ㄙˋ ㄐㄧ",
+        "en": "to wait for the right moment",
+        "example": "獵人伺機而動，等待時機出手。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "氣勢",
+        "zhuyin": "ㄑㄧˋ ㄕˋ",
+        "en": "grand momentum, impressive force",
+        "example": "瀑布的氣勢非常驚人。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "絢爛",
+        "zhuyin": "ㄒㄩㄢˋ ㄌㄢˋ",
+        "en": "dazzling, brilliantly colorful",
+        "example": "夕陽把天空染得絢爛美麗。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "為伍",
+        "zhuyin": "ㄨㄟˊ ㄨˇ",
+        "en": "to keep company with, be partners with",
+        "example": "他喜歡與自然為伍。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "湖光山色",
+        "zhuyin": "ㄏㄨˊ ㄍㄨㄤ ㄕㄢ ㄙㄜˋ",
+        "en": "beautiful lake-and-mountain scenery",
+        "example": "日月潭的湖光山色，吸引許多遊客。"
+      },
+      {
+        "lesson": "第二課",
+        "char": "",
+        "term": "似曾相識",
+        "zhuyin": "ㄙˋ ㄗㄥ ㄒㄧㄤ ㄕˋ",
+        "en": "feels familiar, like you've seen it before",
+        "example": "這裡的景色讓我感覺似曾相識。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "炙熱",
+        "zhuyin": "ㄓˋ ㄖㄜˋ",
+        "en": "scorching hot",
+        "example": "夏天的陽光十分炙熱。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "撥弄",
+        "zhuyin": "ㄅㄛ ㄋㄨㄥˋ",
+        "en": "to gently touch/stir something",
+        "example": "風輕輕撥弄著湖面。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "盤旋",
+        "zhuyin": "ㄆㄢˊ ㄒㄩㄢˊ",
+        "en": "to circle/hover in the air",
+        "example": "老鷹在天空盤旋。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "佇足",
+        "zhuyin": "ㄓㄨˋ ㄗㄨˊ",
+        "en": "to stop and stand still",
+        "example": "遊客佇足欣賞美麗的風景。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "灑落",
+        "zhuyin": "ㄙㄚˇ ㄌㄨㄛˋ",
+        "en": "to scatter and fall down",
+        "example": "陽光灑落在大地上。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "掙扎",
+        "zhuyin": "ㄓㄥ ㄓㄚˊ",
+        "en": "to struggle (to get free)",
+        "example": "魚兒在網中掙扎。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "聆聽",
+        "zhuyin": "ㄌㄧㄥˊ ㄊㄧㄥ",
+        "en": "to listen attentively",
+        "example": "我們應該聆聽別人的意見。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "飢鷹餓虎",
+        "zhuyin": "ㄐㄧ ㄧㄥ ㄜˋ ㄏㄨˇ",
+        "en": "hungry like a starving hawk or tiger; very greedy",
+        "example": "他像飢鷹餓虎般搶奪食物。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "車水馬龍",
+        "zhuyin": "ㄐㄩ ㄕㄨㄟˇ ㄇㄚˇ ㄌㄨㄥˊ",
+        "en": "heavy traffic, bustling with people/vehicles",
+        "example": "假日市集車水馬龍，十分熱鬧。"
+      },
+      {
+        "lesson": "第三課",
+        "char": "",
+        "term": "露出馬腳",
+        "zhuyin": "ㄌㄨˋ ㄔㄨ ㄇㄚˇ ㄐㄧㄠˇ",
+        "en": "to reveal the truth/give oneself away",
+        "example": "歹徒最後終於露出馬腳。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "理想",
+        "zhuyin": "ㄌㄧˇ ㄒㄧㄤˇ",
+        "en": "ideal, dream/goal",
+        "example": "他懷著理想離開家鄉。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "傳教",
+        "zhuyin": "ㄔㄨㄢˊ ㄐㄧㄠˋ",
+        "en": "to preach/do missionary work",
+        "example": "馬偕來台灣傳教、行醫。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "漂洋過海",
+        "zhuyin": "ㄆㄧㄠ ㄧㄤˊ ㄍㄨㄛˋ ㄏㄞˇ",
+        "en": "to cross the ocean (long, hard journey)",
+        "example": "馬偕漂洋過海來到台灣。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "行醫",
+        "zhuyin": "ㄒㄧㄥˊ ㄧ",
+        "en": "to practice medicine",
+        "example": "馬偕在台灣行醫多年。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "創辦",
+        "zhuyin": "ㄔㄨㄤˋ ㄅㄢˋ",
+        "en": "to found/establish (a school etc.)",
+        "example": "馬偕創辦了學校。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "奉獻",
+        "zhuyin": "ㄈㄥˋ ㄒㄧㄢˋ",
+        "en": "to devote/dedicate oneself",
+        "example": "他把一生都奉獻給台灣。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "堅持",
+        "zhuyin": "ㄐㄧㄢ ㄔˊ",
+        "en": "to persist, insist",
+        "example": "他堅持完成自己的理想。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "冒險",
+        "zhuyin": "ㄇㄠˋ ㄒㄧㄢˇ",
+        "en": "to take a risk",
+        "example": "他冒險走遍北台灣行醫。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "永遠懷念",
+        "zhuyin": "ㄩㄥˇ ㄩㄢˇ ㄏㄨㄞˊ ㄋㄧㄢˋ",
+        "en": "to always remember someone with fondness",
+        "example": "人們永遠懷念馬偕的貢獻。"
+      },
+      {
+        "lesson": "第四課",
+        "char": "",
+        "term": "台灣的兒子",
+        "zhuyin": "ㄊㄞˊ ㄨㄢ ㄉㄜ ㄦˊ ㄗ˙",
+        "en": "(metaphor) someone deeply loved and seen as part of Taiwan",
+        "example": "馬偕被稱為台灣的兒子。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "重病",
+        "zhuyin": "ㄓㄨㄥˋ ㄅㄧㄥˋ",
+        "en": "a serious illness",
+        "example": "她小時候生了一場重病。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "命運",
+        "zhuyin": "ㄇㄧㄥˋ ㄩㄣˋ",
+        "en": "fate, destiny",
+        "example": "蘇利文老師改變了她的命運。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "漸漸",
+        "zhuyin": "ㄐㄧㄢˋ ㄐㄧㄢˋ",
+        "en": "gradually",
+        "example": "種子漸漸發芽、成長。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "溝通",
+        "zhuyin": "ㄍㄡ ㄊㄨㄥ",
+        "en": "to communicate",
+        "example": "她學會用手語溝通。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "觸摸",
+        "zhuyin": "ㄔㄨˋ ㄇㄛ",
+        "en": "to touch",
+        "example": "她用手觸摸別人的嘴脣學說話。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "克服",
+        "zhuyin": "ㄎㄜˋ ㄈㄨˊ",
+        "en": "to overcome (a difficulty)",
+        "example": "她克服失明與失聰的障礙。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "障礙",
+        "zhuyin": "ㄓㄤˋ ㄞˋ",
+        "en": "obstacle, disability",
+        "example": "他鼓勵身心障礙者勇敢生活。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "奉獻",
+        "zhuyin": "ㄈㄥˋ ㄒㄧㄢˋ",
+        "en": "to devote oneself",
+        "example": "她決心奉獻自己幫助別人。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "現身說法",
+        "zhuyin": "ㄒㄧㄢˋ ㄕㄣ ㄕㄨㄛ ㄈㄚˇ",
+        "en": "to share one's own experience to teach/inspire others",
+        "example": "她常常現身說法，鼓勵大家。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "鼓舞",
+        "zhuyin": "ㄍㄨˇ ㄨˇ",
+        "en": "to inspire, encourage",
+        "example": "她的故事鼓舞了許多人。"
+      },
+      {
+        "lesson": "第五課",
+        "char": "",
+        "term": "高齡",
+        "zhuyin": "ㄍㄠ ㄌㄧㄥˊ",
+        "en": "old age, advanced age",
+        "example": "她以八十八歲的高齡離開人世。"
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第一課",
+        "term": "規矩準繩",
+        "meaning": "做事要遵守的標準和規則",
+        "example": "我們在父母及老師的教養下學習各種規矩準繩。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "有備無患",
+        "meaning": "事先準備好，就不用怕出問題",
+        "example": "經歷上次的地震，我們學會平時儲備物品，有備無患。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "如膠似漆",
+        "meaning": "感情非常親密、要好",
+        "example": "阿姨和姨丈的感情如膠似漆，非常幸福。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "精神抖擻",
+        "meaning": "精神很好、很有活力的樣子",
+        "example": "經過長官的激勵，士兵們個個顯得精神抖擻。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "盛氣凌人",
+        "meaning": "態度傲慢，看不起別人",
+        "example": "雖然他是老闆的兒子，但不曾擺出盛氣凌人的樣子。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "尋幽訪勝",
+        "meaning": "去尋找清靜美麗的地方遊玩",
+        "example": "外公退休後，喜歡到山上尋幽訪勝。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "搖頭晃腦",
+        "meaning": "頭搖來搖去，自以為很厲害的樣子",
+        "example": "他一邊看書一邊聽音樂，不自覺搖頭晃腦。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "你推我擠",
+        "meaning": "形容人很多、很擁擠的樣子",
+        "example": "觀眾依序排隊離場，沒有發生你推我擠的狀況。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "調虎離山",
+        "meaning": "用計謀引誘對方離開原來的地方",
+        "example": "我們用調虎離山的方法把媽媽支開，準備慶生活動。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "循序漸進",
+        "meaning": "按照一定的步驟，一步一步慢慢來",
+        "example": "經由循序漸進的復健，叔叔的身體進步很多。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "南橘北枳",
+        "meaning": "環境不同，事物會跟著改變",
+        "example": "這對父母基於南橘北枳的考慮，決定搬到新環境。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "耀武揚威",
+        "meaning": "炫耀自己的力量，得意張揚的樣子",
+        "example": "古代富家子弟總是仗著有人撐腰就對別人耀武揚威。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "嘆為觀止",
+        "meaning": "讚美所看到的事物美到極點",
+        "example": "滿山遍野的金針花盛開，讓人嘆為觀止！"
+      },
+      {
+        "lesson": "第一課",
+        "term": "捨本逐末",
+        "meaning": "不重視重要的根本，只在意小細節",
+        "example": "如果只在包裝上下功夫，就顯得捨本逐末。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "層出不窮",
+        "meaning": "一直不斷出現，沒有停止過",
+        "example": "百貨公司的促銷活動層出不窮。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "適可而止",
+        "meaning": "事情做到剛好就該停止，不要過頭",
+        "example": "開玩笑要適可而止，才不會傷人感情。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "嬌生慣養",
+        "meaning": "從小被寵壞、什麼都依賴別人",
+        "example": "對孩子應該合理管教，不能讓他們嬌生慣養。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "獨當一面",
+        "meaning": "能獨自負責、扛起重要的任務",
+        "example": "經過多年磨練，他已經能夠獨當一面。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "達官貴人",
+        "meaning": "地位很高、很有權勢的人",
+        "example": "常有一些達官貴人進出那間餐廳。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "冥頑不靈",
+        "meaning": "非常固執，不聽別人的話",
+        "example": "他決定改掉冥頑不靈的個性，虛心接受別人的意見。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "敬謝不敏",
+        "meaning": "禮貌地拒絕，表示自己做不到或不想做",
+        "example": "對於你的好意，我實在敬謝不敏！"
+      },
+      {
+        "lesson": "第二課",
+        "term": "天旋地轉",
+        "meaning": "覺得頭很暈，眼前的東西好像在轉",
+        "example": "坐完雲霄飛車後，我覺得天旋地轉。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "千篇一律",
+        "meaning": "每次都一樣，毫無變化、很單調",
+        "example": "電影情節不宜千篇一律，才能吸引觀眾。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "似曾相識",
+        "meaning": "覺得好像見過，但又想不起來",
+        "example": "我對這裡的景物好像似曾相識。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "口誅筆伐",
+        "meaning": "用說話和寫文章來批評、譴責別人",
+        "example": "記者對不公平的事情進行口誅筆伐。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "湖光山色",
+        "meaning": "形容湖水和山景非常優美",
+        "example": "日月潭的湖光山色有如仙境。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "絢麗多姿",
+        "meaning": "色彩鮮豔、樣式豐富美麗",
+        "example": "耶誕節商場的櫥窗妝點得絢麗多姿。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "勢如破竹",
+        "meaning": "形勢一路順利，毫無阻礙",
+        "example": "這場球賽我隊一開始就勢如破竹。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "一言難盡",
+        "meaning": "事情太複雜，沒辦法用簡單幾句話講完",
+        "example": "這次旅行太好玩了，簡直一言難盡。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "飢鷹餓虎",
+        "meaning": "像餓壞的老鷹和老虎一樣貪心搶奪",
+        "example": "他竟然像飢鷹餓虎般四處掠奪財物。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "季布一諾",
+        "meaning": "說到一定做到，非常守信用",
+        "example": "你放心，只要做得到的事，他必然季布一諾。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "撥亂反正",
+        "meaning": "把混亂的局面整理好，恢復正常秩序",
+        "example": "出色的政治家能在動亂時撥亂反正。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "對牛彈琴",
+        "meaning": "對不懂的人講道理，白費力氣",
+        "example": "跟他講道理就好像對牛彈琴。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "扣人心弦",
+        "meaning": "讓人非常感動，印象深刻",
+        "example": "這部電影的劇情扣人心弦。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "杯盤狼藉",
+        "meaning": "東西吃完後桌上一團亂的樣子",
+        "example": "宴會結束，桌上杯盤狼藉。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "露出馬腳",
+        "meaning": "原本藏起來的祕密被發現了",
+        "example": "歹徒終於露出馬腳，被警方逮捕。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "車水馬龍",
+        "meaning": "車子和行人很多，非常熱鬧",
+        "example": "假日市集車水馬龍，熱鬧極了！"
+      },
+      {
+        "lesson": "第三課",
+        "term": "抱頭鼠竄",
+        "meaning": "嚇得抱著頭像老鼠一樣逃跑",
+        "example": "歹徒一見警車立刻抱頭鼠竄。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "矮人一截",
+        "meaning": "覺得自己比別人差一等",
+        "example": "他總覺得自己矮人一截，缺乏自信。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "白頭偕老",
+        "meaning": "夫妻相愛到老，一起變老",
+        "example": "婚禮上大家都祝福新人白頭偕老。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "奉公守法",
+        "meaning": "認真做好工作，並遵守法律規定",
+        "example": "他是一位奉公守法的公務員。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "借花獻佛",
+        "meaning": "拿別人送的東西，轉送給別人做人情",
+        "example": "朋友送的蛋糕，我就借花獻佛轉送給你。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "久病成醫",
+        "meaning": "因為長期生病，反而變得很懂相關知識",
+        "example": "我從小過敏，久病成醫，很了解症狀。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "作育英才",
+        "meaning": "用心培養優秀的人才",
+        "example": "這位老師一生作育英才。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "訓練有素",
+        "meaning": "經過嚴格訓練，表現很好",
+        "example": "這支隊伍訓練有素。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "兢兢業業",
+        "meaning": "做事非常小心、認真負責",
+        "example": "剛創業的叔叔凡事都兢兢業業。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "精衛填海",
+        "meaning": "形容意志堅定，不怕困難",
+        "example": "他憑著精衛填海的精神完成夢想。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "不可救藥",
+        "meaning": "情況糟到沒辦法挽救",
+        "example": "你這固執的脾氣簡直不可救藥！"
+      },
+      {
+        "lesson": "第四課",
+        "term": "抱薪救火",
+        "meaning": "用錯方法處理問題，反而讓情況更糟",
+        "example": "答應無理要求就像抱薪救火。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "懸崖勒馬",
+        "meaning": "在危險邊緣及時停下，回頭改正",
+        "example": "警方苦勸歹徒懸崖勒馬，趕快投降。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "觸目驚心",
+        "meaning": "看到可怕的景象而感到震驚害怕",
+        "example": "災後現場看來真是觸目驚心。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "名勝古蹟",
+        "meaning": "風景優美又有歷史價值的地方",
+        "example": "台灣有許多名勝古蹟值得保護。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "長命百歲",
+        "meaning": "祝福一個人健康長壽",
+        "example": "大家都祝福爺爺長命百歲。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "語無倫次",
+        "meaning": "說話顛三倒四，沒有條理",
+        "example": "看他慌張、語無倫次的樣子，想必發生大事。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "克勤克儉",
+        "meaning": "既勤勞又節省，過日子很實在",
+        "example": "黃奶奶一直克勤克儉地過日子。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "辯才無礙",
+        "meaning": "口才很好，能言善道",
+        "example": "他學識豐富，辯才無礙。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "付之一炬",
+        "meaning": "東西被一把火燒光了",
+        "example": "森林大火使珍貴林木付之一炬。"
+      }
+    ]
   },
   {
     "id": 2,
@@ -1345,7 +2115,657 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": true
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "攀登",
+        "zhuyin": "ㄆㄢ ㄉㄥ",
+        "en": "to climb",
+        "example": "他立志要攀登世界最高峰。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "豪小子",
+        "zhuyin": "ㄏㄠˊ ㄒㄧㄠˇ ㄗˇ",
+        "en": "nickname for star player (here: Jeremy Lin)",
+        "example": "林書豪因為精彩表現被稱為「豪小子」。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "堅持",
+        "zhuyin": "ㄐㄧㄢ ㄔˊ",
+        "en": "to persist / stick with it",
+        "example": "媽媽的堅持讓他打下良好基礎。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "基礎",
+        "zhuyin": "ㄐㄧ ㄔㄨˇ",
+        "en": "foundation, basics",
+        "example": "扎實的基礎是成功的第一步。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "專注",
+        "zhuyin": "ㄓㄨㄢ ㄓㄨˋ",
+        "en": "to focus, be attentive",
+        "example": "他專注的學習態度令人佩服。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "賞識",
+        "zhuyin": "ㄕㄤˇ ㄕˋ",
+        "en": "to recognize someone's talent",
+        "example": "教練很賞識他的球技。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "反敗為勝",
+        "zhuyin": "ㄈㄢˇ ㄅㄞˋ ㄨㄟˊ ㄕㄥˋ",
+        "en": "to turn defeat into victory",
+        "example": "最後一球讓球隊反敗為勝。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "起立鼓掌",
+        "zhuyin": "ㄑㄧˇ ㄌㄧˋ ㄍㄨˇ ㄓㄤˇ",
+        "en": "to stand up and applaud",
+        "example": "全場觀眾起立鼓掌。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "注目",
+        "zhuyin": "ㄓㄨˋ ㄇㄨˋ",
+        "en": "to draw attention",
+        "example": "他的表現受到全世界籃球迷的注目。"
+      },
+      {
+        "lesson": "第六課",
+        "char": "",
+        "term": "一波三折",
+        "zhuyin": "ㄧ ㄅㄛ ㄙㄢ ㄓㄜˊ",
+        "en": "full of twists and turns",
+        "example": "他的籃球路走得一波三折。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "攀登",
+        "zhuyin": "ㄆㄢ ㄉㄥ",
+        "en": "to climb (a mountain or challenge)",
+        "example": "她決心攀登世界知名的高峰。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "決心",
+        "zhuyin": "ㄐㄩㄝˊ ㄒㄧㄣ",
+        "en": "determination",
+        "example": "她下定決心一定要完成這次挑戰。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "陡峭",
+        "zhuyin": "ㄉㄡˇ ㄑㄧㄠˋ",
+        "en": "steep",
+        "example": "山路十分陡峭，不容易往上爬。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "極限",
+        "zhuyin": "ㄐㄧˊ ㄒㄧㄢˋ",
+        "en": "limit, the maximum",
+        "example": "她挑戰自己體能的極限。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "頂峰",
+        "zhuyin": "ㄉㄧㄥˇ ㄈㄥ",
+        "en": "summit, peak",
+        "example": "終於登上頂峰，感動不已。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "豁然開朗",
+        "zhuyin": "ㄏㄨㄛˋ ㄖㄢˊ ㄎㄞ ㄌㄤˇ",
+        "en": "suddenly everything becomes clear/open",
+        "example": "登頂後豁然開朗，心情無比舒暢。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "成就感",
+        "zhuyin": "ㄔㄥˊ ㄐㄧㄡˋ ㄍㄢˇ",
+        "en": "sense of accomplishment",
+        "example": "完成挑戰後充滿成就感。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "啟示",
+        "zhuyin": "ㄑㄧˇ ㄕˋ",
+        "en": "inspiration, lesson learned",
+        "example": "這次經驗給她很大的啟示。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "勇氣",
+        "zhuyin": "ㄩㄥˇ ㄑㄧˋ",
+        "en": "courage",
+        "example": "面對困難需要勇氣。"
+      },
+      {
+        "lesson": "第七課",
+        "char": "",
+        "term": "挑戰",
+        "zhuyin": "ㄊㄧㄠˇ ㄓㄢˋ",
+        "en": "to challenge",
+        "example": "她喜歡挑戰自己的極限。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "宣布",
+        "zhuyin": "ㄒㄩㄢ ㄅㄨˋ",
+        "en": "to announce",
+        "example": "老師宣布明天要校外教學。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "驚喜",
+        "zhuyin": "ㄐㄧㄥ ㄒㄧˇ",
+        "en": "pleasant surprise",
+        "example": "媽媽送我一份驚喜禮物。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "分工",
+        "zhuyin": "ㄈㄣ ㄍㄨㄥ",
+        "en": "to divide work, division of labor",
+        "example": "我們分工合作完成了大掃除。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "攪拌",
+        "zhuyin": "ㄐㄧㄠˇ ㄅㄢˋ",
+        "en": "to stir, mix",
+        "example": "把麵糊攪拌均勻再烘烤。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "不亦樂乎",
+        "zhuyin": "ㄅㄨˋ ㄧˋ ㄌㄜˋ ㄏㄨ",
+        "en": "extremely happy/busy",
+        "example": "孩子們玩得不亦樂乎。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "手忙腳亂",
+        "zhuyin": "ㄕㄡˇ ㄇㄤˊ ㄐㄧㄠˇ ㄌㄨㄢˋ",
+        "en": "to be in a hurried, flustered mess",
+        "example": "快遲到了，他手忙腳亂地穿衣服。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "香氣撲鼻",
+        "zhuyin": "ㄒㄧㄤ ㄑㄧˋ ㄆㄨ ㄅㄧˊ",
+        "en": "a fragrant smell hits your nose",
+        "example": "烤餅乾的香氣撲鼻而來。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "分享",
+        "zhuyin": "ㄈㄣ ㄒㄧㄤˇ",
+        "en": "to share",
+        "example": "他把點心分享給同學。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "成就感",
+        "zhuyin": "ㄔㄥˊ ㄐㄧㄡˋ ㄍㄢˇ",
+        "en": "sense of accomplishment",
+        "example": "看著成品，我有很大的成就感。"
+      },
+      {
+        "lesson": "第八課",
+        "char": "",
+        "term": "風情",
+        "zhuyin": "ㄈㄥ ㄑㄧㄥˊ",
+        "en": "local flavor/customs",
+        "example": "每個國家都有自己獨特的風情。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "嚮往",
+        "zhuyin": "ㄒㄧㄤˋ ㄨㄤˇ",
+        "en": "to long for, yearn for",
+        "example": "他從小就嚮往蒙古草原的生活。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "寬廣",
+        "zhuyin": "ㄎㄨㄢ ㄍㄨㄤˇ",
+        "en": "wide, broad",
+        "example": "草原十分寬廣，一望無際。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "民族風情",
+        "zhuyin": "ㄇㄧㄣˊ ㄗㄨˊ ㄈㄥ ㄑㄧㄥˊ",
+        "en": "ethnic culture and customs",
+        "example": "這趟旅行讓我認識了蒙古的民族風情。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "成群結隊",
+        "zhuyin": "ㄔㄥˊ ㄑㄩㄣˊ ㄐㄧㄝˊ ㄉㄨㄟˋ",
+        "en": "in groups, flocking together",
+        "example": "草原上牛羊成群結隊地吃草。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "一望無際",
+        "zhuyin": "ㄧ ㄨㄤˋ ㄨˊ ㄐㄧˋ",
+        "en": "stretching as far as the eye can see",
+        "example": "草原一望無際，看不到盡頭。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "熱情款待",
+        "zhuyin": "ㄖㄜˋ ㄑㄧㄥˊ ㄎㄨㄢˇ ㄉㄞˋ",
+        "en": "to warmly host/treat guests",
+        "example": "主人熱情款待我們這些遠方來的客人。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "飄香",
+        "zhuyin": "ㄆㄧㄠ ㄒㄧㄤ",
+        "en": "fragrance drifting in the air",
+        "example": "烤羊肉的香味飄香四溢。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "掌聲雷動",
+        "zhuyin": "ㄓㄤˇ ㄕㄥ ㄌㄟˊ ㄉㄨㄥˋ",
+        "en": "thunderous applause",
+        "example": "表演結束後掌聲雷動。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "瞬間",
+        "zhuyin": "ㄕㄨㄣˋ ㄐㄧㄢ",
+        "en": "an instant, a moment",
+        "example": "那瞬間的感動我永遠記得。"
+      },
+      {
+        "lesson": "第九課",
+        "char": "",
+        "term": "際（一望無際）",
+        "zhuyin": "ㄐㄧˋ",
+        "en": "boundary, edge",
+        "example": "草原一望無際，令人讚嘆。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "象徵",
+        "zhuyin": "ㄒㄧㄤˋ ㄓㄥ",
+        "en": "to symbolize",
+        "example": "梅花象徵堅強的精神。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "經濟",
+        "zhuyin": "ㄐㄧㄥ ㄐㄧˋ",
+        "en": "economy",
+        "example": "好的經濟能讓人民生活更安定。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "阻尼器",
+        "zhuyin": "ㄗㄨˇ ㄋㄧˊ ㄑㄧˋ",
+        "en": "damper (engineering device to reduce shaking)",
+        "example": "超高大樓一定要裝阻尼器。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "發亮",
+        "zhuyin": "ㄈㄚ ㄌㄧㄤˋ",
+        "en": "to shine, glow",
+        "example": "清晨的天空慢慢發亮。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "建築風格",
+        "zhuyin": "ㄐㄧㄢˋ ㄓㄨˊ ㄈㄥ ㄍㄜˊ",
+        "en": "architectural style",
+        "example": "這座教堂的建築風格十分華麗。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "電波塔",
+        "zhuyin": "ㄉㄧㄢˋ ㄅㄛ ㄊㄚˇ",
+        "en": "radio/broadcast tower",
+        "example": "東京晴空塔是重要的電波塔。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "橋樑",
+        "zhuyin": "ㄑㄧㄠˊ ㄌㄧㄤˊ",
+        "en": "bridge",
+        "example": "雙子塔由高空橋樑連接兩棟大樓。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "高人一等",
+        "zhuyin": "ㄍㄠ ㄖㄣˊ ㄧ ㄉㄥˇ",
+        "en": "to stand out above others",
+        "example": "他的成績總是高人一等。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "繁榮",
+        "zhuyin": "ㄈㄢˊ ㄖㄨㄥˊ",
+        "en": "prosperous, flourishing",
+        "example": "高樓為城市帶來繁榮與發展。"
+      },
+      {
+        "lesson": "第十課",
+        "char": "",
+        "term": "逐漸",
+        "zhuyin": "ㄓㄨˊ ㄐㄧㄢˋ",
+        "en": "gradually",
+        "example": "塔的形狀逐漸從三角變成圓形。"
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第六課",
+        "term": "以德報怨",
+        "meaning": "別人對不起你，你還是用好的態度對他，不計較、不報復。",
+        "example": "他被同學誤會，卻還是以德報怨，幫助對方。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "女中豪傑",
+        "meaning": "形容一位女生表現很特別、很厲害，像英雄一樣。",
+        "example": "花木蘭代父從軍，是千古傳誦的女中豪傑。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "怠忽職守",
+        "meaning": "工作不認真，該做的事情沒有好好完成。",
+        "example": "他因怠忽職守，所以被解僱了。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "輕描淡寫",
+        "meaning": "說一件重要或嚴重的事情時，故意說得很簡單、很輕鬆。",
+        "example": "他輕描淡寫的把車禍經過說了一遍。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "老成持重",
+        "meaning": "年紀雖然不大，但做事很穩重、很成熟，不會慌張。",
+        "example": "他一向老成持重，這件事交給他絕對沒問題。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "礎潤而雨",
+        "meaning": "比喻事情發生之前，常常會先出現一些徵兆。",
+        "example": "月暈而風，礎潤而雨，事情發生前必有徵兆。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "命中注定",
+        "meaning": "好像很早以前就已經決定好了，沒辦法改變的事。",
+        "example": "也許是他命中注定，所以最終仍逃不過這場災難。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "以毒攻毒",
+        "meaning": "用同樣厲害（或同樣麻煩）的方法，去對付一個難題。",
+        "example": "與其正面衝突，不如讓敵人互相內鬥，這是以毒攻毒的高招。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "畢恭畢敬",
+        "meaning": "對人非常恭敬、有禮貌，態度十分謹慎。",
+        "example": "他和長輩交談時，態度都畢恭畢敬。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "反敗為勝",
+        "meaning": "原本快要輸了，最後卻努力扭轉局面贏了。",
+        "example": "我隊在終場前一分鐘，投進關鍵的一球才反敗為勝。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "百折不撓",
+        "meaning": "遇到很多困難和挫折，仍然不放棄、不屈服。",
+        "example": "雖然屢遇挫折，但他百折不撓，最後終於成功。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "背信棄義",
+        "meaning": "說過的話不遵守、不講道義，對人不誠實。",
+        "example": "這種事可做不得，做了豈不成了背信棄義的人！"
+      },
+      {
+        "lesson": "第七課",
+        "term": "攀山越嶺",
+        "meaning": "形容爬過很多山、走過很遠的路，過程非常辛苦。",
+        "example": "經過了攀山越嶺，他們終於到達那座知名的古廟。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "粉墨登場",
+        "meaning": "原指化妝上臺演戲，也可以指開始扮演某個角色或登場。",
+        "example": "從劇團退休後，已經很少有機會看到他粉墨登場。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "峰迴路轉",
+        "meaning": "事情原本走入困境，忽然出現轉機、有了希望。",
+        "example": "本以為這件事沒有希望，突然間峰迴路轉，又有辦法解決了。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "蜂擁而至",
+        "meaning": "形容很多人像蜂群一樣，一起湧進來。",
+        "example": "聽到哨音，我們就蜂擁而至，在舞臺上站好。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "豁然開朗",
+        "meaning": "心情忽然變得開闊、舒暢；或突然明白了一個道理。",
+        "example": "等我們爬上山頂後，立刻豁然開朗起來。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "五洲四海",
+        "meaning": "泛指世界各個地方。",
+        "example": "喜歡旅遊的他，遊遍了五洲四海，見識很廣。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "義正詞嚴",
+        "meaning": "說話有道理、態度嚴正，理直氣壯。",
+        "example": "面對不實的謠言，我們應該義正詞嚴的加以反駁。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "驗明正身",
+        "meaning": "仔細核對、確認一個人的身分。",
+        "example": "監考人員一定要審慎核對考生的准考證，驗明正身。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "挑燈夜戰",
+        "meaning": "晚上點燈熬夜，努力做事或讀書。",
+        "example": "為了通過明天的考試，他決定今晚要挑燈夜戰。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "背水一戰",
+        "meaning": "形容沒有退路，必須拚盡全力一搏。",
+        "example": "下一場比賽不能再輸，我已經做好背水一戰的心理準備。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "標新立異",
+        "meaning": "故意創立新奇的說法或做法，表示和別人不一樣。",
+        "example": "許多青少年敢於突破框架，標新立異。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "火冒三丈",
+        "meaning": "形容一個人非常生氣。",
+        "example": "那個人插隊還不聽勸阻，真讓人火冒三丈。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "心心相印",
+        "meaning": "兩個人想法、感情很有默契，互相了解。",
+        "example": "這對情侶相識多年，早已心心相印。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "妄自菲薄",
+        "meaning": "看輕自己，不知道自己的價值，不夠自重。",
+        "example": "在這世界上，每個人都有優點，你不要妄自菲薄。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "拋磚引玉",
+        "meaning": "先說出自己粗淺的看法，目的是引出別人更好的意見。",
+        "example": "我的提議只是拋磚引玉，希望能引起大家更多的討論。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "金蟬脫殼",
+        "meaning": "比喻用計策、利用假象來脫身、逃離危險。",
+        "example": "魔術師早已金蟬脫殼，箱子打開時已經消失無蹤。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "既往不咎",
+        "meaning": "對過去做錯的事，不再追究、責怪。",
+        "example": "你不要說出當時的狀況了，還是老老實實的給予自新的機會。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "蒙在鼓裡",
+        "meaning": "完全不知道事情的真相，被瞞著。",
+        "example": "對於外界的事，他完全蒙在鼓裡，一無所知。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "茫無頭緒",
+        "meaning": "完全摸不著邊際，不知道要從哪裡開始。",
+        "example": "事情這麼複雜，讓他茫無頭緒，不知從何下手。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "全盤托出",
+        "meaning": "把所有的事情、想法都說出來，毫不隱瞞。",
+        "example": "在大家的勸說下，他終於全盤托出整件事的經過。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "興高采烈",
+        "meaning": "心情非常興奮、開心，情緒熱烈。",
+        "example": "大家知道阿姨懷孕了，個個興高采烈。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "一望無際",
+        "meaning": "一眼望去看不到邊界，形容非常寬廣、遼闊。",
+        "example": "登上山頂，眼前是一望無際的藍天白雲。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "英姿煥發",
+        "meaning": "形容人英俊有精神，神采奕奕的樣子。",
+        "example": "官兵個個英姿煥發，精神抖擻。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "旁徵博引",
+        "meaning": "說話或寫文章時，廣泛引用各種資料來支持自己的看法。",
+        "example": "他的論點旁徵博引，更能說服大家。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "融會貫通",
+        "meaning": "把各種不同的知識融合在一起，徹底了解、運用自如。",
+        "example": "讀書若能融會貫通，就能將所學靈活運用。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "大器晚成",
+        "meaning": "形容一個很有才能的人，成功的時間比較晚。",
+        "example": "他雖然不是早早成功，卻是大器晚成的典型。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "震耳欲聾",
+        "meaning": "聲音非常大，幾乎要把耳朵震破了。",
+        "example": "除夕夜的鞭炮聲此起彼落，震耳欲聾。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "聚沙成塔",
+        "meaning": "比喻一點一點的累積，最後也能積少成多、成就大事。",
+        "example": "讀書就像聚沙成塔，每天累積一點，將來收穫良多。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "汗牛充棟",
+        "meaning": "形容書籍非常多，多到牛都會出汗、屋子都堆滿了。",
+        "example": "國家圖書館的藏書汗牛充棟，是研究者找資料的寶庫。"
+      }
+    ]
   },
   {
     "id": 3,
@@ -2019,7 +3439,607 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": true
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "寶石藍",
+        "zhuyin": "ㄅㄠˇ ㄕˊ ㄌㄢˊ",
+        "en": "sapphire blue — a deep blue color like a gem",
+        "example": "窗外流動著寶石藍色的夜。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "牛乳",
+        "zhuyin": "ㄋㄧㄡˊ ㄖㄨˇ",
+        "en": "milk",
+        "example": "屋子裡流進來牛乳一樣的月光。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "指揮",
+        "zhuyin": "ㄓˇ ㄏㄨㄟ",
+        "en": "to conduct/direct",
+        "example": "請夜風指揮蟲兒們的樂隊來伴奏。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "奇異",
+        "zhuyin": "ㄑㄧˊ ㄧˋ",
+        "en": "strange, unusual",
+        "example": "這奇異的晚會就開了場。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "翻筋斗",
+        "zhuyin": "ㄈㄢ ㄐㄧㄣ ㄉㄡˇ",
+        "en": "to do a somersault",
+        "example": "龍眼先生們來翻筋斗。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "滑稽",
+        "zhuyin": "ㄏㄨㄚˊ ㄐㄧ",
+        "en": "funny, comical",
+        "example": "西瓜和甘蔗可真滑稽。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "怪模怪樣",
+        "zhuyin": "ㄍㄨㄞˋ ㄇㄛˊ ㄍㄨㄞˋ ㄧㄤˋ",
+        "en": "looking strange/odd",
+        "example": "怪模怪樣的演雙簧。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "雙簧",
+        "zhuyin": "ㄕㄨㄤ ㄏㄨㄤˊ",
+        "en": "a comic duo act (one speaks, one mimes)",
+        "example": "一隊胖來一隊瘦，怪模怪樣的演雙簧。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "鼓掌",
+        "zhuyin": "ㄍㄨˇ ㄓㄤˇ",
+        "en": "to applaud, clap hands",
+        "example": "不停的喊好，不停的鼓掌。"
+      },
+      {
+        "lesson": "第十一課",
+        "char": "",
+        "term": "沉睡",
+        "zhuyin": "ㄔㄣˊ ㄕㄨㄟˋ",
+        "en": "to sleep deeply",
+        "example": "他們唱醒了沉睡著的夜。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "憂心",
+        "zhuyin": "ㄧㄡ ㄒㄧㄣ",
+        "en": "to worry, be anxious",
+        "example": "哥哥憂心的說：「我不想這麼做。」"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "陷阱",
+        "zhuyin": "ㄒㄧㄢˋ ㄐㄧㄥˇ",
+        "en": "a trap/pitfall",
+        "example": "也有可能是陷阱。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "迷失",
+        "zhuyin": "ㄇㄧˊ ㄕ",
+        "en": "to get lost",
+        "example": "我們會迷失在森林裡。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "河寬水急",
+        "zhuyin": "ㄏㄜˊ ㄎㄨㄢ ㄕㄨㄟˇ ㄐㄧˊ",
+        "en": "a river that is wide and fast-flowing",
+        "example": "如果河寬水急，怎麼游過去呢？"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "損失",
+        "zhuyin": "ㄙㄨㄣˇ ㄕ",
+        "en": "loss",
+        "example": "試一試不會有什麼損失。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "占領",
+        "zhuyin": "ㄓㄢˋ ㄌㄧㄥˇ",
+        "en": "to occupy/capture (a place)",
+        "example": "城市被占領，弟弟只好到處流浪。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "流浪",
+        "zhuyin": "ㄌㄧㄡˊ ㄌㄤˋ",
+        "en": "to wander, be homeless",
+        "example": "弟弟只好到處流浪。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "貧窮",
+        "zhuyin": "ㄆㄧㄣˊ ㄑㄩㄥˊ",
+        "en": "poor, poverty",
+        "example": "沒有變得富有，也沒有變得貧窮。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "敘述",
+        "zhuyin": "ㄒㄩˋ ㄕㄨˋ",
+        "en": "to narrate, recount",
+        "example": "彼此敘述著分開後發生的事。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "平順",
+        "zhuyin": "ㄆㄧㄥˊ ㄕㄨㄣˋ",
+        "en": "smooth, going well",
+        "example": "日子才能過得這麼平順。"
+      },
+      {
+        "lesson": "第十二課",
+        "char": "",
+        "term": "後悔",
+        "zhuyin": "ㄏㄡˋ ㄏㄨㄟˇ",
+        "en": "to regret",
+        "example": "我一點兒都不後悔。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "澆水",
+        "zhuyin": "ㄐㄧㄠ ㄕㄨㄟˇ",
+        "en": "to water (plants)",
+        "example": "每天在棉花上澆點水。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "興奮",
+        "zhuyin": "ㄒㄧㄥ ㄈㄣˋ",
+        "en": "excited",
+        "example": "帶著興奮又好奇的心情。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "挑揀",
+        "zhuyin": "ㄊㄧㄠ ㄐㄧㄢˇ",
+        "en": "to pick and choose, select",
+        "example": "我立刻東挑西揀。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "毫無動靜",
+        "zhuyin": "ㄏㄠˊ ㄨˊ ㄉㄨㄥˋ ㄐㄧㄥˋ",
+        "en": "completely motionless, no sign of movement",
+        "example": "我記得它最初毫無動靜。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "彷彿",
+        "zhuyin": "ㄈㄤˇ ㄈㄨˊ",
+        "en": "as if, seems like",
+        "example": "彷彿棉花上的沉睡者。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "沉睡",
+        "zhuyin": "ㄔㄣˊ ㄕㄨㄟˋ",
+        "en": "to be deeply asleep",
+        "example": "棉花上的沉睡者。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "陰暗",
+        "zhuyin": "ㄧㄣ ㄢˋ",
+        "en": "dark, dim",
+        "example": "找了個陰暗的角落安放它。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "耐性",
+        "zhuyin": "ㄋㄞˋ ㄒㄧㄥˋ",
+        "en": "patience",
+        "example": "摘豆芽是一項磨練耐性的功課。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "磨練",
+        "zhuyin": "ㄇㄛˊ ㄌㄧㄢˋ",
+        "en": "to train, toughen through hardship",
+        "example": "摘豆芽是一項磨練耐性的功課。"
+      },
+      {
+        "lesson": "第十三課",
+        "char": "",
+        "term": "盎然",
+        "zhuyin": "ㄤˋ ㄖㄢˊ",
+        "en": "full of (life/vigor), abundant",
+        "example": "豆子盎然的生命力。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "強取",
+        "zhuyin": "ㄑㄧㄤˊ ㄑㄩˇ",
+        "en": "to seize by force",
+        "example": "秦王想強取和氏璧。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "門客",
+        "zhuyin": "ㄇㄣˊ ㄎㄜˋ",
+        "en": "a retainer/advisor kept by a noble",
+        "example": "向趙王介紹自己的門客藺相如。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "食言",
+        "zhuyin": "ㄕˊ ㄧㄢˊ",
+        "en": "to break one's promise",
+        "example": "假如秦國食言，他一定會將和氏璧送回趙國。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "破損",
+        "zhuyin": "ㄆㄛˋ ㄙㄨㄣˇ",
+        "en": "damaged, broken",
+        "example": "這塊和氏璧有點破損。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "強人所難",
+        "zhuyin": "ㄑㄧㄤˊ ㄖㄣˊ ㄙㄨㄛˇ ㄋㄢˊ",
+        "en": "to force someone to do something difficult",
+        "example": "您要是強人所難，我的腦袋就和和氏璧一起撞碎。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "隆重",
+        "zhuyin": "ㄌㄨㄥˊ ㄓㄨㄥˋ",
+        "en": "grand, ceremonious",
+        "example": "我們應該舉行隆重的交換典禮。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "化裝",
+        "zhuyin": "ㄏㄨㄚˋ ㄓㄨㄤ",
+        "en": "to disguise oneself",
+        "example": "藺相如叫手下化裝成平民。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "重禮守信",
+        "zhuyin": "ㄓㄨㄥˋ ㄌㄧˇ ㄕㄡˇ ㄒㄧㄣˋ",
+        "en": "to value etiquette and keep one's word",
+        "example": "趙國重禮守信，一定把和氏璧送到大王手上。"
+      },
+      {
+        "lesson": "第十四課",
+        "char": "",
+        "term": "言重",
+        "zhuyin": "ㄧㄢˊ ㄓㄨㄥˋ",
+        "en": "to speak too seriously/strongly",
+        "example": "先生言重了。"
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第十一課",
+        "term": "暮鼓晨鐘",
+        "meaning": "原本是指佛寺中早晚報時用的鐘鼓，後來比喻能讓人警醒、提醒人做對的事的話。",
+        "example": "老師的一番話如暮鼓晨鐘，讓我有所覺悟。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "天打雷劈",
+        "meaning": "比喻遭到雷擊般嚴重的懲罰，常用來罵人或詛咒人。",
+        "example": "戲劇中的角色為了搏取對方的信任，常會說：「如果說謊，就天打雷劈！」"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "雙管齊下",
+        "meaning": "比喻同時用兩種方法做同一件事。",
+        "example": "為了籌備這次的晚會活動，他忙得雙管齊下。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "才高八斗",
+        "meaning": "比喻人才學極高。",
+        "example": "機智問答時，他對所有問題都能應答如流，真是才高八斗！"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "筋疲力竭",
+        "meaning": "形容非常疲倦、力氣用盡。",
+        "example": "哥哥為了控制體重，一面節制飲食，一面加強運動，真是筋疲力竭。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "倒吃甘蔗",
+        "meaning": "甘蔗愈接近根部甜度愈高，比喻事情愈做到後面愈順利、愈有收穫。",
+        "example": "他這場大病把爺爺折磨得骨瘦如柴，不過後來漸漸好轉，倒吃甘蔗，令人欣慰。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "先斬後奏",
+        "meaning": "比喻不先請示，先把事情做了再報告上級。",
+        "example": "這場比賽他先斬後奏，沒先問教練就決定參加了。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "無稽之談",
+        "meaning": "沒有根據、無從查考的話。",
+        "example": "他說的那些話根本是無稽之談，我才不信！"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "鼓舌如簧",
+        "meaning": "形容人花言巧語、能說善道，像簧片發出的聲音一樣動聽。",
+        "example": "他鼓舌如簧，說得大家都心動不已。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "水乳交融",
+        "meaning": "比喻人與人之間感情融洽，像水和乳汁融合在一起。",
+        "example": "一位成功的作家，就是要在作品中和讀者產生水乳交融的情感。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "難兄難弟",
+        "meaning": "原指彼此都很優秀的兄弟，後多指共患難或處境相同的人。",
+        "example": "他們兩人都喜歡看恐怖片，才剛認識便難兄難弟，聊個不停。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "大塊文章",
+        "meaning": "「大塊」指天地、大自然；指大自然提供給人豐富又美麗的景物，後也指長篇大論的文章。",
+        "example": "今天的副刊有篇大塊文章，內容很不錯。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "杞人憂天",
+        "meaning": "比喻缺乏根據、不必要的過度憂慮。",
+        "example": "別自己嚇自己了，這只是杞人憂天而已。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "勸善規過",
+        "meaning": "勸人努力做善事，並改正過錯。",
+        "example": "好朋友之間應該互相勸善規過。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "陷入絕境",
+        "meaning": "落入沒有出路、十分危險困難的境地。",
+        "example": "這場大病把爺爺折磨得陷入絕境，幸好最後度過難關。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "一拍即合",
+        "meaning": "一打拍子就能配合節奏，比喻雙方一下子就很投緣、合得來。",
+        "example": "他們兩人一見面就一拍即合，成為好朋友。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "爭先恐後",
+        "meaning": "指競相爭先，唯恐落於他人之後。",
+        "example": "下課鐘聲一響，同學們爭先恐後的衝出教室。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "左鄰右舍",
+        "meaning": "附近的鄰居。",
+        "example": "多虧左鄰右舍的幫忙，他才能順利度過難關。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "占為己有",
+        "meaning": "將公共或他人的東西，據為自己所有。",
+        "example": "他把路邊的空地占為己有，當作私人停車場，這是不合法的行為。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "富麗堂皇",
+        "meaning": "形容建築物華麗、氣勢宏偉。",
+        "example": "這座博物館外觀富麗堂皇，吸引許多遊客拍照。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "一貧如洗",
+        "meaning": "形容非常貧窮，什麼財產都沒有，像被水洗過一樣。",
+        "example": "他原本一貧如洗，靠著努力工作才漸漸富有起來。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "平鋪直敘",
+        "meaning": "說話或寫文章沒有曲折雕飾，只按照次序平淡的敘述。",
+        "example": "這篇文章雖然只是平鋪直敘，讀起來卻讓人感動不已。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "著述等身",
+        "meaning": "形容人寫的作品堆疊起來和身高一樣高，指作品非常多。",
+        "example": "這位學者著述等身，是研究這個領域的權威。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "火上澆油",
+        "meaning": "在已經很糟的情況上又加進更糟的因素，使事情更嚴重、更惡化。",
+        "example": "他本來就在生氣了，你還說那種話，根本是火上澆油。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "奮不顧身",
+        "meaning": "奮勇向前，不顧自己的生死安危。",
+        "example": "消防員奮不顧身衝進火場救人。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "披沙揀金",
+        "meaning": "從大量事物中仔細挑選出最精華、最好的部分。",
+        "example": "編輯要披沙揀金，從上百篇投稿中選出最好的文章。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "光陰似箭",
+        "meaning": "形容時間過得極快，像飛箭一樣迅速消逝。",
+        "example": "光陰似箭，轉眼間暑假就要結束了。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "明察秋毫",
+        "meaning": "形容人觀察非常仔細，連極細微的地方都能看到。",
+        "example": "老師明察秋毫，一下子就看出誰在偷懶。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "養精蓄銳",
+        "meaning": "保養精神、積蓄力量，為接下來的挑戰做準備。",
+        "example": "比賽前一天要好好休息，養精蓄銳。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "耐人尋味",
+        "meaning": "意味深遠雋永，值得讓人反覆思考、體會。",
+        "example": "這篇文章的結局耐人尋味，值得細細品味。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "柴米油鹽",
+        "meaning": "泛指日常生活中的必需品，引申為平凡的日常生活瑣事。",
+        "example": "婚姻生活就是每天柴米油鹽，平淡卻真實。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "三番兩次",
+        "meaning": "一次又一次，形容次數很多、屢次發生。",
+        "example": "他三番兩次遲到，老師終於忍不住提醒他。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "生意盎然",
+        "meaning": "形容充滿生命力、生氣蓬勃的樣子。",
+        "example": "春天的花園裡，花草樹木生意盎然。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "磨杵成針",
+        "meaning": "比喻只要有恆心，努力去做，無論多困難的事都能成功。",
+        "example": "只要肯下功夫，磨杵成針，最後一定能學會這項技能。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "珠聯璧合",
+        "meaning": "日月與星辰排列整齊的天象，比喻美好的事物聚在一起、彼此相配。",
+        "example": "這場演唱會的歌手與樂團合作，可說是珠聯璧合。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "賓至如歸",
+        "meaning": "客人來到這裡就像回到自己家一樣親切、滿意。",
+        "example": "這家飯店服務親切，讓客人有賓至如歸的感覺。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "朝秦暮楚",
+        "meaning": "戰國時秦晉之好，後比喻人心反覆無常、沒有原則，一時依附這邊一時又依附那邊。",
+        "example": "做人不能朝秦暮楚，要堅持自己的立場。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "完璧歸趙",
+        "meaning": "比喻把原本屬於別人的東西，完好無缺的歸還給原主。",
+        "example": "我借來的書看完了，要記得完璧歸趙還給同學。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "弱不禁風",
+        "meaning": "形容人身體虛弱，連風吹都受不了。",
+        "example": "他生病很久了，看起來弱不禁風的樣子。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "四腳朝天",
+        "meaning": "形容人仰面摔倒在地的樣子。",
+        "example": "他踩到香蕉皮，摔了個四腳朝天。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "允文允武",
+        "meaning": "能文能武，稱讚一個人同時具備各方面的才能。",
+        "example": "這位將軍允文允武，深受人民敬重。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "明目張膽",
+        "meaning": "張大眼睛、壯大膽子，形容人公然、毫無顧忌的做壞事。",
+        "example": "歹徒竟敢明目張膽在街上搶劫。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "殺雞取卵",
+        "meaning": "比喻為了貪圖眼前的好處，而做出斷絕長遠利益的傻事。",
+        "example": "過度捕撈魚類資源，就像殺雞取卵，將來會無魚可捕。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "舉棋不定",
+        "meaning": "原指拿著棋子卻拿不定主意該下哪裡，比喻做事猶豫、無法決定。",
+        "example": "他面對兩個選擇舉棋不定，遲遲無法做決定。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "惱羞成怒",
+        "meaning": "因羞愧、難堪而轉變成生氣發怒。",
+        "example": "他被大家嘲笑後惱羞成怒，氣得說不出話來。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "招搖撞騙",
+        "meaning": "假借名義到處炫耀、誇大，藉此詐騙別人。",
+        "example": "這個騙子招搖撞騙，到處用假名片到處詐騙。"
+      }
+    ]
   },
   {
     "id": 4,
@@ -2693,7 +4713,1371 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": true
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第一課",
+        "char": "尚",
+        "term": "和尚",
+        "zhuyin": "ㄏㄜˊ ㄕㄤˋ",
+        "en": "Buddhist monk",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "尚",
+        "term": "尚未",
+        "zhuyin": "ㄕㄤˋ ㄨㄟˋ",
+        "en": "not yet",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "尚",
+        "term": "禮尚往來",
+        "zhuyin": "ㄌㄧˇ ㄕㄤˋ ㄨㄤˇ ㄌㄞˊ",
+        "en": "idiom: courtesy should be reciprocated",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "佛",
+        "term": "拜佛",
+        "zhuyin": "ㄅㄞˋ ㄈㄛˊ",
+        "en": "to worship Buddha",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "佛",
+        "term": "佛經",
+        "zhuyin": "ㄈㄛˊ ㄐㄧㄥ",
+        "en": "Buddhist scripture",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "遙",
+        "term": "遙遠",
+        "zhuyin": "ㄧㄠˊ ㄩㄢˇ",
+        "en": "far away",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "遙",
+        "term": "逍遙法外",
+        "zhuyin": "ㄒㄧㄠ ㄧㄠˊ ㄈㄚˇ ㄨㄞˋ",
+        "en": "idiom: to escape justice",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "量",
+        "term": "大量",
+        "zhuyin": "ㄉㄚˋ ㄌㄧㄤˋ",
+        "en": "a large amount",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "量",
+        "term": "數量",
+        "zhuyin": "ㄕㄨˋ ㄌㄧㄤˋ",
+        "en": "quantity",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "夠",
+        "term": "不夠",
+        "zhuyin": "ㄅㄨˋ ㄍㄡˋ",
+        "en": "not enough",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "夠",
+        "term": "足夠",
+        "zhuyin": "ㄗㄨˊ ㄍㄡˋ",
+        "en": "sufficient",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "缽",
+        "term": "缽",
+        "zhuyin": "ㄅㄛ",
+        "en": "monk's begging bowl",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "缽",
+        "term": "化緣",
+        "zhuyin": "ㄏㄨㄚˋ ㄩㄢˊ",
+        "en": "to beg for alms (monk)",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "緣",
+        "term": "化緣",
+        "zhuyin": "ㄏㄨㄚˋ ㄩㄢˊ",
+        "en": "to beg for alms",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "緣",
+        "term": "緣木求魚",
+        "zhuyin": "ㄩㄢˊ ㄇㄨˋ ㄑㄧㄡˊ ㄩˊ",
+        "en": "idiom: to use the wrong method",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "廟",
+        "term": "廟",
+        "zhuyin": "ㄇㄧㄠˋ",
+        "en": "temple",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "廟",
+        "term": "寺廟",
+        "zhuyin": "ㄙˋ ㄇㄧㄠˋ",
+        "en": "temple",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "宿",
+        "term": "借宿",
+        "zhuyin": "ㄐㄧㄝˋ ㄙㄨˋ",
+        "en": "to stay overnight (borrow lodging)",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "宿",
+        "term": "宿舍",
+        "zhuyin": "ㄙㄨˋ ㄕㄜˋ",
+        "en": "dormitory",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "霜",
+        "term": "風霜",
+        "zhuyin": "ㄈㄥ ㄕㄨㄤ",
+        "en": "wind and frost; hardships",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "霜",
+        "term": "雪上加霜",
+        "zhuyin": "ㄒㄩㄝˇ ㄕㄤˋ ㄐㄧㄚ ㄕㄨㄤ",
+        "en": "idiom: to make a bad situation worse",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "毅",
+        "term": "毅力",
+        "zhuyin": "ㄧˋ ㄌㄧˋ",
+        "en": "willpower, perseverance",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "毅",
+        "term": "堅毅",
+        "zhuyin": "ㄐㄧㄢ ㄧˋ",
+        "en": "firm and resolute",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "慚",
+        "term": "慚愧",
+        "zhuyin": "ㄘㄢˊ ㄎㄨㄟˋ",
+        "en": "ashamed",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "慚",
+        "term": "自慚形穢",
+        "zhuyin": "ㄗˋ ㄘㄢˊ ㄒㄧㄥˊ ㄏㄨㄟˋ",
+        "en": "idiom: to feel inferior to others",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "愧",
+        "term": "慚愧",
+        "zhuyin": "ㄘㄢˊ ㄎㄨㄟˋ",
+        "en": "ashamed",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "愧",
+        "term": "愧疚",
+        "zhuyin": "ㄎㄨㄟˋ ㄐㄧㄡˋ",
+        "en": "guilt, remorse",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "慮",
+        "term": "顧慮",
+        "zhuyin": "ㄍㄨˋ ㄌㄩˋ",
+        "en": "concern, worry",
+        "example": ""
+      },
+      {
+        "lesson": "第一課",
+        "char": "慮",
+        "term": "深謀遠慮",
+        "zhuyin": "ㄕㄣ ㄇㄡˊ ㄩㄢˇ ㄌㄩˋ",
+        "en": "idiom: to plan carefully and think far ahead",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "束",
+        "term": "花束",
+        "zhuyin": "ㄏㄨㄚ ㄕㄨˋ",
+        "en": "bouquet of flowers",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "束",
+        "term": "約束",
+        "zhuyin": "ㄩㄝ ㄕㄨˋ",
+        "en": "to restrain",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "束",
+        "term": "束手無策",
+        "zhuyin": "ㄕㄨˋ ㄕㄡˇ ㄨˊ ㄘㄜˋ",
+        "en": "idiom: at a loss what to do",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "潔",
+        "term": "潔白",
+        "zhuyin": "ㄐㄧㄝˊ ㄅㄞˊ",
+        "en": "pure white",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "潔",
+        "term": "潔身自好",
+        "zhuyin": "ㄐㄧㄝˊ ㄕㄣ ㄗˋ ㄏㄠˋ",
+        "en": "idiom: to keep oneself clean and upright",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "甚",
+        "term": "甚至",
+        "zhuyin": "ㄕㄣˋ ㄓˋ",
+        "en": "even, to the extent that",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "甚",
+        "term": "不求甚解",
+        "zhuyin": "ㄅㄨˋ ㄑㄧㄡˊ ㄕㄣˋ ㄐㄧㄝˇ",
+        "en": "idiom: not to dig deep into details",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "懶",
+        "term": "懶惰",
+        "zhuyin": "ㄌㄢˇ ㄉㄨㄛˋ",
+        "en": "lazy",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "懶",
+        "term": "好吃懶做",
+        "zhuyin": "ㄏㄠˋ ㄔ ㄌㄢˇ ㄗㄨㄛˋ",
+        "en": "idiom: to love eating but hate working",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "惰",
+        "term": "懶惰",
+        "zhuyin": "ㄌㄢˇ ㄉㄨㄛˋ",
+        "en": "lazy",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "惰",
+        "term": "惰性",
+        "zhuyin": "ㄉㄨㄛˋ ㄒㄧㄥˋ",
+        "en": "inertia, laziness",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "儀",
+        "term": "禮儀",
+        "zhuyin": "ㄌㄧˇ ㄧˊ",
+        "en": "etiquette",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "儀",
+        "term": "儀容",
+        "zhuyin": "ㄧˊ ㄖㄨㄥˊ",
+        "en": "appearance",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "儀",
+        "term": "儀態萬千",
+        "zhuyin": "ㄧˊ ㄊㄞˋ ㄨㄢˋ ㄑㄧㄢ",
+        "en": "idiom: graceful in countless ways",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "亂",
+        "term": "凌亂",
+        "zhuyin": "ㄌㄧㄥˊ ㄌㄨㄢˋ",
+        "en": "messy",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "亂",
+        "term": "心煩意亂",
+        "zhuyin": "ㄒㄧㄣ ㄈㄢˊ ㄧˋ ㄌㄨㄢˋ",
+        "en": "idiom: troubled and confused",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "梳",
+        "term": "梳理",
+        "zhuyin": "ㄕㄨ ㄌㄧˇ",
+        "en": "to comb, to organize",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "梳",
+        "term": "梳子",
+        "zhuyin": "ㄕㄨ ㄗ˙",
+        "en": "comb",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "髒",
+        "term": "髒亂",
+        "zhuyin": "ㄗㄤ ㄌㄨㄢˋ",
+        "en": "dirty and messy",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "髒",
+        "term": "弄髒",
+        "zhuyin": "ㄋㄨㄥˋ ㄗㄤ",
+        "en": "to make dirty",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "插",
+        "term": "插花",
+        "zhuyin": "ㄔㄚ ㄏㄨㄚ",
+        "en": "flower arranging",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "插",
+        "term": "插翅難飛",
+        "zhuyin": "ㄔㄚ ㄔˋ ㄋㄢˊ ㄈㄟ",
+        "en": "idiom: impossible to escape",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "塵",
+        "term": "灰塵",
+        "zhuyin": "ㄏㄨㄟ ㄔㄣˊ",
+        "en": "dust",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "塵",
+        "term": "一塵不染",
+        "zhuyin": "ㄧ ㄔㄣˊ ㄅㄨˋ ㄖㄢˇ",
+        "en": "idiom: spotlessly clean",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "調",
+        "term": "調換",
+        "zhuyin": "ㄉㄧㄠˋ ㄏㄨㄢˋ",
+        "en": "to swap",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "調",
+        "term": "調和",
+        "zhuyin": "ㄊㄧㄠˊ ㄏㄜˊ",
+        "en": "to mix, to harmonize",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "調",
+        "term": "風調雨順",
+        "zhuyin": "ㄈㄥ ㄊㄧㄠˊ ㄩˇ ㄕㄨㄣˋ",
+        "en": "idiom: favorable weather for crops",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "拾",
+        "term": "收拾",
+        "zhuyin": "ㄕㄡ ㄕˊ",
+        "en": "to tidy up",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "拾",
+        "term": "路不拾遺",
+        "zhuyin": "ㄌㄨˋ ㄅㄨˋ ㄕˊ ㄧˊ",
+        "en": "idiom: a society so honest no one picks up lost items",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "叢",
+        "term": "草叢",
+        "zhuyin": "ㄘㄠˇ ㄘㄨㄥˊ",
+        "en": "bushes",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "叢",
+        "term": "雜草叢生",
+        "zhuyin": "ㄗㄚˊ ㄘㄠˇ ㄘㄨㄥˊ ㄕㄥ",
+        "en": "idiom: weeds growing wild",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "暢",
+        "term": "舒暢",
+        "zhuyin": "ㄕㄨ ㄔㄤˋ",
+        "en": "comfortable, relaxed",
+        "example": ""
+      },
+      {
+        "lesson": "第二課",
+        "char": "暢",
+        "term": "暢所欲言",
+        "zhuyin": "ㄔㄤˋ ㄙㄨㄛˇ ㄩˋ ㄧㄢˊ",
+        "en": "idiom: to speak freely without reserve",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "眺",
+        "term": "眺望",
+        "zhuyin": "ㄊㄧㄠˋ ㄨㄤˋ",
+        "en": "to gaze into the distance",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "眺",
+        "term": "遠眺",
+        "zhuyin": "ㄩㄢˇ ㄊㄧㄠˋ",
+        "en": "to look far into the distance",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "黎",
+        "term": "黎明",
+        "zhuyin": "ㄌㄧˊ ㄇㄧㄥˊ",
+        "en": "dawn",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "黎",
+        "term": "黎民",
+        "zhuyin": "ㄌㄧˊ ㄇㄧㄣˊ",
+        "en": "the common people",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "陡",
+        "term": "陡峻",
+        "zhuyin": "ㄉㄡˇ ㄐㄩㄣˋ",
+        "en": "steep",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "陡",
+        "term": "山高路陡",
+        "zhuyin": "ㄕㄢ ㄍㄠ ㄌㄨˋ ㄉㄡˇ",
+        "en": "idiom: high mountains, steep roads — a hard journey",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "峻",
+        "term": "陡峻",
+        "zhuyin": "ㄉㄡˇ ㄐㄩㄣˋ",
+        "en": "steep",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "峻",
+        "term": "崇山峻嶺",
+        "zhuyin": "ㄔㄨㄥˊ ㄕㄢ ㄐㄩㄣˋ ㄌㄧㄥˇ",
+        "en": "idiom: lofty, steep mountains",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "碩",
+        "term": "碩大",
+        "zhuyin": "ㄕㄨㄛˋ ㄉㄚˋ",
+        "en": "huge",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "碩",
+        "term": "碩果僅存",
+        "zhuyin": "ㄕㄨㄛˋ ㄍㄨㄛˇ ㄐㄧㄣˇ ㄘㄨㄣˊ",
+        "en": "idiom: the last of its kind remaining",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "覽",
+        "term": "閱覽",
+        "zhuyin": "ㄩㄝˋ ㄌㄢˇ",
+        "en": "to read, to peruse",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "覽",
+        "term": "一覽無遺",
+        "zhuyin": "ㄧ ㄌㄢˇ ㄨˊ ㄧˊ",
+        "en": "idiom: to take in everything at a glance",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "遺",
+        "term": "遺失",
+        "zhuyin": "ㄧˊ ㄕ",
+        "en": "to lose (something)",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "遺",
+        "term": "不遺餘力",
+        "zhuyin": "ㄅㄨˋ ㄧˊ ㄩˊ ㄌㄧˋ",
+        "en": "idiom: to spare no effort",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "焰",
+        "term": "火焰",
+        "zhuyin": "ㄏㄨㄛˇ ㄧㄢˋ",
+        "en": "flame",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "焰",
+        "term": "氣焰囂張",
+        "zhuyin": "ㄑㄧˋ ㄧㄢˋ ㄒㄧㄠ ㄓㄤ",
+        "en": "idiom: arrogant and overbearing",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "胸",
+        "term": "胸懷",
+        "zhuyin": "ㄒㄩㄥ ㄏㄨㄞˊ",
+        "en": "broad-mindedness",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "胸",
+        "term": "胸有成竹",
+        "zhuyin": "ㄒㄩㄥ ㄧㄡˇ ㄔㄥˊ ㄓㄨˊ",
+        "en": "idiom: to have a well-thought-out plan",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "拂",
+        "term": "吹拂",
+        "zhuyin": "ㄔㄨㄟ ㄈㄨˊ",
+        "en": "to blow gently",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "拂",
+        "term": "拂袖而去",
+        "zhuyin": "ㄈㄨˊ ㄒㄧㄡˋ ㄦˊ ㄑㄩˋ",
+        "en": "idiom: to storm off angrily",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "蜿",
+        "term": "蜿蜒",
+        "zhuyin": "ㄨㄢ ㄧㄢˊ",
+        "en": "winding",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "蜒",
+        "term": "蜿蜒",
+        "zhuyin": "ㄨㄢ ㄧㄢˊ",
+        "en": "winding",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "怨",
+        "term": "怨嘆",
+        "zhuyin": "ㄩㄢˋ ㄊㄢˋ",
+        "en": "to complain and sigh",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "怨",
+        "term": "怨天尤人",
+        "zhuyin": "ㄩㄢˋ ㄊㄧㄢ ㄧㄡˊ ㄖㄣˊ",
+        "en": "idiom: to blame everyone but oneself",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "艱",
+        "term": "艱險",
+        "zhuyin": "ㄐㄧㄢ ㄒㄧㄢˇ",
+        "en": "difficult and dangerous",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "艱",
+        "term": "舉步維艱",
+        "zhuyin": "ㄐㄩˇ ㄅㄨˋ ㄨㄟˊ ㄐㄧㄢ",
+        "en": "idiom: every step is difficult",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "燦",
+        "term": "燦爛",
+        "zhuyin": "ㄘㄢˋ ㄌㄢˋ",
+        "en": "brilliant, splendid",
+        "example": ""
+      },
+      {
+        "lesson": "第三課",
+        "char": "燦",
+        "term": "燦爛奪目",
+        "zhuyin": "ㄘㄢˋ ㄌㄢˋ ㄉㄨㄛˊ ㄇㄨˋ",
+        "en": "idiom: dazzlingly brilliant",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "農",
+        "term": "農村",
+        "zhuyin": "ㄋㄨㄥˊ ㄘㄨㄣ",
+        "en": "farming village",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "農",
+        "term": "農夫",
+        "zhuyin": "ㄋㄨㄥˊ ㄈㄨ",
+        "en": "farmer",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "氛",
+        "term": "氣氛",
+        "zhuyin": "ㄑㄧˋ ㄈㄣ",
+        "en": "atmosphere, mood",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "氛",
+        "term": "氛圍",
+        "zhuyin": "ㄈㄣ ㄨㄟˊ",
+        "en": "ambiance",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "慶",
+        "term": "節慶",
+        "zhuyin": "ㄐㄧㄝˊ ㄑㄧㄥˋ",
+        "en": "festival",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "慶",
+        "term": "普天同慶",
+        "zhuyin": "ㄆㄨˇ ㄊㄧㄢ ㄊㄨㄥˊ ㄑㄧㄥˋ",
+        "en": "idiom: the whole world celebrates together",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "蘿",
+        "term": "蘿蔔",
+        "zhuyin": "ㄌㄨㄛˊ ㄅㄨㄛˊ",
+        "en": "radish",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "蔔",
+        "term": "蘿蔔糕",
+        "zhuyin": "ㄌㄨㄛˊ ㄅㄨㄛˊ ㄍㄠ",
+        "en": "radish/turnip cake",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "漿",
+        "term": "米漿",
+        "zhuyin": "ㄇㄧˇ ㄐㄧㄤ",
+        "en": "rice milk/batter",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "漿",
+        "term": "豆漿",
+        "zhuyin": "ㄉㄡˋ ㄐㄧㄤ",
+        "en": "soy milk",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "蒸",
+        "term": "蒸煮",
+        "zhuyin": "ㄓㄥ ㄓㄨˇ",
+        "en": "to steam-cook",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "蒸",
+        "term": "蒸蒸日上",
+        "zhuyin": "ㄓㄥ ㄓㄥ ㄖˋ ㄕㄤˋ",
+        "en": "idiom: thriving and improving daily",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "祭",
+        "term": "祭祖",
+        "zhuyin": "ㄐㄧˋ ㄗㄨˇ",
+        "en": "to honor ancestors",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "祭",
+        "term": "祭典",
+        "zhuyin": "ㄐㄧˋ ㄉㄧㄢˇ",
+        "en": "ceremony, ritual",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "粿",
+        "term": "草仔粿",
+        "zhuyin": "ㄘㄠˇ ㄗㄞˇ ㄍㄨㄛˇ",
+        "en": "mugwort rice cake",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "粿",
+        "term": "碗粿",
+        "zhuyin": "ㄨㄢˇ ㄍㄨㄛˇ",
+        "en": "savory steamed rice pudding",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "碗",
+        "term": "飯碗",
+        "zhuyin": "ㄈㄢˋ ㄨㄢˇ",
+        "en": "rice bowl",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "碗",
+        "term": "瓷碗",
+        "zhuyin": "ㄘˊ ㄨㄢˇ",
+        "en": "porcelain bowl",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "菌",
+        "term": "殺菌",
+        "zhuyin": "ㄕㄚ ㄐㄩㄣˋ",
+        "en": "to kill germs",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "菌",
+        "term": "病菌",
+        "zhuyin": "ㄅㄧㄥˋ ㄐㄩㄣˋ",
+        "en": "germ, pathogen",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "端",
+        "term": "端午節",
+        "zhuyin": "ㄉㄨㄢ ㄨˇ ㄐㄧㄝˊ",
+        "en": "Dragon Boat Festival",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "端",
+        "term": "開端",
+        "zhuyin": "ㄎㄞ ㄉㄨㄢ",
+        "en": "beginning",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "漢",
+        "term": "米漢堡",
+        "zhuyin": "ㄇㄧˇ ㄏㄢˋ ㄅㄠˋ",
+        "en": "rice burger",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "漢",
+        "term": "好漢",
+        "zhuyin": "ㄏㄠˇ ㄏㄢˋ",
+        "en": "brave man",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "艾",
+        "term": "艾草",
+        "zhuyin": "ㄞˋ ㄘㄠˇ",
+        "en": "mugwort",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "艾",
+        "term": "方興未艾",
+        "zhuyin": "ㄈㄤ ㄒㄧㄥ ㄨㄟˋ ㄞˋ",
+        "en": "idiom: developing vigorously, not yet stopped",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "龜",
+        "term": "烏龜",
+        "zhuyin": "ㄨ ㄍㄨㄟ",
+        "en": "tortoise",
+        "example": ""
+      },
+      {
+        "lesson": "第四課",
+        "char": "龜",
+        "term": "紅龜粿",
+        "zhuyin": "ㄏㄨㄥˊ ㄍㄨㄟ ㄍㄨㄛˇ",
+        "en": "red tortoise rice cake",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "迫",
+        "term": "迫不及待",
+        "zhuyin": "ㄆㄛˋ ㄅㄨˊ ㄐㄧˊ ㄉㄞˋ",
+        "en": "idiom: too impatient to wait",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "迫",
+        "term": "強迫",
+        "zhuyin": "ㄑㄧㄤˇ ㄆㄛˋ",
+        "en": "to force",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "潤",
+        "term": "濕潤",
+        "zhuyin": "ㄕ ㄖㄨㄣˋ",
+        "en": "moist",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "潤",
+        "term": "珠圓玉潤",
+        "zhuyin": "ㄓㄨ ㄩㄢˊ ㄩˋ ㄖㄨㄣˋ",
+        "en": "idiom: smooth and lovely (voice/writing)",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "陀",
+        "term": "陀螺",
+        "zhuyin": "ㄊㄨㄛˊ ㄌㄨㄛˊ",
+        "en": "spinning top",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "螺",
+        "term": "陀螺",
+        "zhuyin": "ㄊㄨㄛˊ ㄌㄨㄛˊ",
+        "en": "spinning top",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "螺",
+        "term": "螺絲",
+        "zhuyin": "ㄌㄨㄛˊ ㄙ",
+        "en": "screw",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "製",
+        "term": "木製",
+        "zhuyin": "ㄇㄨˋ ㄓˋ",
+        "en": "made of wood",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "製",
+        "term": "如法炮製",
+        "zhuyin": "ㄖㄨˊ ㄈㄚˇ ㄆㄠˊ ㄓˋ",
+        "en": "idiom: to follow the same method as before",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "繩",
+        "term": "繩子",
+        "zhuyin": "ㄕㄥˊ ㄗ˙",
+        "en": "rope",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "繩",
+        "term": "繩之以法",
+        "zhuyin": "ㄕㄥˊ ㄓ ㄧˇ ㄈㄚˇ",
+        "en": "idiom: to bring to justice",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "圈",
+        "term": "項圈",
+        "zhuyin": "ㄒㄧㄤˋ ㄑㄩㄢ",
+        "en": "necklace/collar",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "圈",
+        "term": "可圈可點",
+        "zhuyin": "ㄎㄜˇ ㄑㄩㄢ ㄎㄜˇ ㄉㄧㄢˇ",
+        "en": "idiom: outstanding performance worth praise",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "繞",
+        "term": "圍繞",
+        "zhuyin": "ㄨㄟˊ ㄖㄠˋ",
+        "en": "to surround",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "繞",
+        "term": "餘音繞梁",
+        "zhuyin": "ㄩˊ ㄧㄣ ㄖㄠˋ ㄌㄧㄤˊ",
+        "en": "idiom: a beautiful, lingering melody",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "踢",
+        "term": "踢球",
+        "zhuyin": "ㄊㄧ ㄑㄧㄡˊ",
+        "en": "to kick a ball",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "踢",
+        "term": "踢到鐵板",
+        "zhuyin": "ㄊㄧ ㄉㄠˋ ㄊㄧㄝˇ ㄅㄢˇ",
+        "en": "idiom: to hit a snag, be rebuffed",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "笛",
+        "term": "風笛",
+        "zhuyin": "ㄈㄥ ㄉㄧˊ",
+        "en": "bagpipe",
+        "example": ""
+      },
+      {
+        "lesson": "第五課",
+        "char": "笛",
+        "term": "長笛",
+        "zhuyin": "ㄔㄤˊ ㄉㄧˊ",
+        "en": "flute",
+        "example": ""
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第一課",
+        "term": "禮尚往來",
+        "meaning": "別人對你好，你也要對別人好，互相回報。",
+        "example": "禮尚往來是建立友誼的最基本道理。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "逍遙法外",
+        "meaning": "做壞事的人沒有被抓到，還在外面自由自在。",
+        "example": "他以為自己犯下滔天大罪後還能逍遙法外，所以鋌而走險。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "緣木求魚",
+        "meaning": "用錯方法做事，根本不可能成功。",
+        "example": "你不多讀書寫作，要想成為作家，無異是緣木求魚。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "雪上加霜",
+        "meaning": "已經很不好了，又發生更糟的事。",
+        "example": "鄰居王叔叔前天掉了錢包，今天機車又故障了，真是雪上加霜。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "自慚形穢",
+        "meaning": "覺得自己比不上別人，感到不好意思。",
+        "example": "看見那些努力用功的同學，我不禁感到自慚形穢。"
+      },
+      {
+        "lesson": "第一課",
+        "term": "深謀遠慮",
+        "meaning": "計畫想得很周到、很長遠。",
+        "example": "這個計畫關係到公司未來，當然要深謀遠慮。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "束手無策",
+        "meaning": "遇到問題完全沒辦法解決。",
+        "example": "如果平常沒有做好防災準備，災難發生時很容易束手無策。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "潔身自好",
+        "meaning": "讓自己保持清白，不跟壞事沾上邊。",
+        "example": "她向來潔身自好，不會做出違背良心的事。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "不求甚解",
+        "meaning": "讀書只求大概了解，不深入鑽研。",
+        "example": "明天要討論這部小說，我不求甚解，先快速翻閱。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "好吃懶做",
+        "meaning": "只想吃，不想做事，很懶惰。",
+        "example": "一個人要是好吃懶做，即使家財萬貫，也會坐吃山空。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "儀態萬千",
+        "meaning": "形容女子姿態優美動人。",
+        "example": "那名模特兒儀態萬千，氣質高雅。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "心煩意亂",
+        "meaning": "心裡煩躁，思緒很亂。",
+        "example": "夜裡來來往往的車聲，吵得人心煩意亂。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "插翅難飛",
+        "meaning": "就算長了翅膀也飛不走，比喻逃不掉。",
+        "example": "警方已包圍歹徒藏身處，他插翅難飛。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "一塵不染",
+        "meaning": "非常乾淨，一點灰塵都沒有。",
+        "example": "姐姐的桌面總是清理得一塵不染。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "風調雨順",
+        "meaning": "氣候很好，雨水適量，農作物收成好。",
+        "example": "今年風調雨順，農作物的收成很好。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "路不拾遺",
+        "meaning": "在路上看到別人掉的東西不會拿走。形容社會風氣良好。",
+        "example": "這個小鎮治安良好，居民大多路不拾遺。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "雜草叢生",
+        "meaning": "野草長得到處都是，沒有人整理。",
+        "example": "巷尾那戶人家後院荒廢已久，處處雜草叢生。"
+      },
+      {
+        "lesson": "第二課",
+        "term": "暢所欲言",
+        "meaning": "想說什麼就痛快的說出來。",
+        "example": "在這次的聚會中，希望大家都能暢所欲言。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "山高路陡",
+        "meaning": "山很高、路很陡，形容路途很艱難。",
+        "example": "攀登珠穆朗瑪峰是許多人的夢想，走在這樣山高路陡的路途，每一步都要特別注意安全。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "崇山峻嶺",
+        "meaning": "高大陡峭的山嶺。",
+        "example": "臺灣有許多崇山峻嶺，總是吸引許多登山客到訪。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "碩果僅存",
+        "meaning": "比喻唯一還存在的人或物。",
+        "example": "像他那樣用手繪電影海報的畫家，真是碩果僅存。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "一覽無遺",
+        "meaning": "一眼就能看到全部，沒有遺漏。",
+        "example": "站在這座山丘俯瞰，市區的景物一覽無遺。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "不遺餘力",
+        "meaning": "用盡全部力氣，毫不保留。",
+        "example": "陳爺爺對於社會公益總是不遺餘力。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "氣焰囂張",
+        "meaning": "形容人很傲慢、很狂妄。",
+        "example": "你這番話讓一向氣焰囂張的他無話可說。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "胸有成竹",
+        "meaning": "事先有計畫，心裡很有把握。",
+        "example": "經過長期準備，他對於比賽早已胸有成竹。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "拂袖而去",
+        "meaning": "因為生氣或不滿，憤然離開。",
+        "example": "他對大會的決議很不滿，於是拂袖而去。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "怨天尤人",
+        "meaning": "遇到不如意的事，只會抱怨，不會反省自己。",
+        "example": "經過父母的勸解後，他不再怨天尤人。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "舉步維艱",
+        "meaning": "走路很困難，比喻處境困難，難以前進。",
+        "example": "強烈颱風過後滿目瘡痍，復原工作舉步維艱。"
+      },
+      {
+        "lesson": "第三課",
+        "term": "燦爛奪目",
+        "meaning": "形容光彩美麗、非常耀眼。",
+        "example": "各式各樣美麗的煙火，將天空點綴得燦爛奪目。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "普天同慶",
+        "meaning": "全天下的人一起慶祝。",
+        "example": "一場大雨結束了漫長的旱季，瞬時普天同慶。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "額手稱慶",
+        "meaning": "把手舉到額頭，表示很高興、慶賀。",
+        "example": "中華隊贏球的消息傳來，全國上下額手稱慶。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "蒸蒸日上",
+        "meaning": "一天比一天更興盛、進步。",
+        "example": "祝福他生意蒸蒸日上。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "方興未艾",
+        "meaning": "事情正在發展，還沒有停止。",
+        "example": "電子書是近來方興未艾的書籍形式。"
+      },
+      {
+        "lesson": "第四課",
+        "term": "期期艾艾",
+        "meaning": "形容說話結結巴巴的樣子。",
+        "example": "他只要一著急，說話就期期艾艾的。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "豐衣足食",
+        "meaning": "衣服、食物都很充足，生活富裕。",
+        "example": "由於前人的辛勤努力，我們今日才能有豐衣足食的生活。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "裹足不前",
+        "meaning": "因為顧慮太多而停下來，不敢前進。",
+        "example": "假如你擔心太多而裹足不前，很快就會被別人超越。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "迫不及待",
+        "meaning": "急著要做某件事，等不下去了。",
+        "example": "弟弟一看到生日禮物就迫不及待的拆開包裝。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "珠圓玉潤",
+        "meaning": "形容聲音或文字很流暢優美。",
+        "example": "這個女孩的嗓音珠圓玉潤，十分動聽。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "如法炮製",
+        "meaning": "照著之前的方法去做。",
+        "example": "姐姐看著烹飪節目，如法炮製做了一個草莓蛋糕。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "繩之以法",
+        "meaning": "用法律來制裁犯罪的人。",
+        "example": "對於作奸犯科的人必須繩之以法。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "可圈可點",
+        "meaning": "表現很好，值得稱讚、肯定。",
+        "example": "這位羽球好手不斷刷新紀錄，表現得可圈可點。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "餘音繞梁",
+        "meaning": "形容音樂或歌聲非常優美，讓人難忘。",
+        "example": "腦海中就會出現那餘音繞梁的美妙演奏。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "一氣呵成",
+        "meaning": "一口氣完成，比喻過程順暢不間斷。",
+        "example": "他的體操表演動作前後連貫，一氣呵成。"
+      },
+      {
+        "lesson": "第五課",
+        "term": "踢到鐵板",
+        "meaning": "比喻沒達到目的，反而碰壁、被拒絕。",
+        "example": "他送禮給調查此案的人員，不料踢到鐵板。"
+      }
+    ]
   },
   {
     "id": 5,
@@ -3389,7 +6773,1579 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": true
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第六課",
+        "char": "傅",
+        "term": "師傅",
+        "zhuyin": "ㄕ ㄈㄨˋ",
+        "en": "master craftsman; skilled worker",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "傅",
+        "term": "傅粉",
+        "zhuyin": "ㄈㄨˋ ㄈㄣˇ",
+        "en": "to apply powder (old word)",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "縫",
+        "term": "裁縫",
+        "zhuyin": "ㄘㄞˊ ㄈㄥˊ",
+        "en": "to sew; tailoring",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "縫",
+        "term": "縫隙",
+        "zhuyin": "ㄈㄥˋ ㄒㄧˋ",
+        "en": "a gap; a crack",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "惡",
+        "term": "惡人",
+        "zhuyin": "ㄜˋ ㄖㄣˊ",
+        "en": "a bad person",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "惡",
+        "term": "可惡",
+        "zhuyin": "ㄎㄜˇ ㄨˋ",
+        "en": "hateful; annoying",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "劇",
+        "term": "戲劇",
+        "zhuyin": "ㄒㄧˋ ㄐㄩˋ",
+        "en": "drama; theater",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "劇",
+        "term": "劇情",
+        "zhuyin": "ㄐㄩˋ ㄑㄧㄥˊ",
+        "en": "plot of a show",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "孝",
+        "term": "孝順",
+        "zhuyin": "ㄒㄧㄠˋ ㄕㄨㄣˋ",
+        "en": "to be filial / obedient to parents",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "孝",
+        "term": "孝心",
+        "zhuyin": "ㄒㄧㄠˋ ㄒㄧㄣ",
+        "en": "a filial heart",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "眾",
+        "term": "觀眾",
+        "zhuyin": "ㄍㄨㄢ ㄓㄨㄥˋ",
+        "en": "audience; viewers",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "眾",
+        "term": "眾人",
+        "zhuyin": "ㄓㄨㄥˋ ㄖㄣˊ",
+        "en": "everyone; the crowd",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "效",
+        "term": "效果",
+        "zhuyin": "ㄒㄧㄠˋ ㄍㄨㄛˇ",
+        "en": "effect; result",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "效",
+        "term": "效法",
+        "zhuyin": "ㄒㄧㄠˋ ㄈㄚˇ",
+        "en": "to follow the example of",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "嗓",
+        "term": "嗓子",
+        "zhuyin": "ㄙㄤˇ ㄗ˙",
+        "en": "voice; throat",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "嗓",
+        "term": "嗓音",
+        "zhuyin": "ㄙㄤˇ ㄧㄣ",
+        "en": "tone of voice",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "俠",
+        "term": "俠客",
+        "zhuyin": "ㄒㄧㄚˊ ㄎㄜˋ",
+        "en": "a chivalrous swordsman",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "俠",
+        "term": "俠氣",
+        "zhuyin": "ㄒㄧㄚˊ ㄑㄧˋ",
+        "en": "a heroic, righteous spirit",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "華",
+        "term": "中華",
+        "zhuyin": "ㄓㄨㄥ ㄏㄨㄚˊ",
+        "en": "Chinese (nation/culture)",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "華",
+        "term": "華麗",
+        "zhuyin": "ㄏㄨㄚˊ ㄌㄧˋ",
+        "en": "gorgeous; magnificent",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "恩",
+        "term": "恩情",
+        "zhuyin": "ㄣ ㄑㄧㄥˊ",
+        "en": "kindness; gratitude owed",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "恩",
+        "term": "感恩",
+        "zhuyin": "ㄍㄢˇ ㄣ",
+        "en": "to be thankful",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "牽",
+        "term": "牽手",
+        "zhuyin": "ㄑㄧㄢ ㄕㄡˇ",
+        "en": "to hold hands",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "牽",
+        "term": "牽動",
+        "zhuyin": "ㄑㄧㄢ ㄉㄨㄥˋ",
+        "en": "to affect; to stir",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "厚",
+        "term": "厚度",
+        "zhuyin": "ㄏㄡˋ ㄉㄨˋ",
+        "en": "thickness",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "厚",
+        "term": "深厚",
+        "zhuyin": "ㄕㄣ ㄏㄡˋ",
+        "en": "deep and strong (feelings)",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "引",
+        "term": "吸引",
+        "zhuyin": "ㄒㄧ ㄧㄣˇ",
+        "en": "to attract",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "引",
+        "term": "引發",
+        "zhuyin": "ㄧㄣˇ ㄈㄚ",
+        "en": "to trigger; to bring about",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "承",
+        "term": "傳承",
+        "zhuyin": "ㄔㄨㄢˊ ㄔㄥˊ",
+        "en": "to pass down; to inherit",
+        "example": ""
+      },
+      {
+        "lesson": "第六課",
+        "char": "承",
+        "term": "承認",
+        "zhuyin": "ㄔㄥˊ ㄖㄣˋ",
+        "en": "to admit; to acknowledge",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "泰",
+        "term": "泰國",
+        "zhuyin": "ㄊㄞˋ ㄍㄨㄛˊ",
+        "en": "Thailand",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "泰",
+        "term": "國泰民安",
+        "zhuyin": "ㄍㄨㄛˊ ㄊㄞˋ ㄇㄧㄣˊ ㄢ",
+        "en": "the nation is peaceful and the people content",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "莊",
+        "term": "莊嚴",
+        "zhuyin": "ㄓㄨㄤ ㄧㄢˊ",
+        "en": "solemn; dignified",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "莊",
+        "term": "村莊",
+        "zhuyin": "ㄘㄨㄣ ㄓㄨㄤ",
+        "en": "a village",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "搬",
+        "term": "搬家",
+        "zhuyin": "ㄅㄢ ㄐㄧㄚ",
+        "en": "to move house",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "搬",
+        "term": "搬運",
+        "zhuyin": "ㄅㄢ ㄩㄣˋ",
+        "en": "to transport; to carry",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "埃",
+        "term": "埃及",
+        "zhuyin": "ㄞ ㄐㄧˊ",
+        "en": "Egypt",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "埃",
+        "term": "塵埃",
+        "zhuyin": "ㄔㄣˊ ㄞ",
+        "en": "dust",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "漠",
+        "term": "沙漠",
+        "zhuyin": "ㄕㄚ ㄇㄛˋ",
+        "en": "desert",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "漠",
+        "term": "漠視",
+        "zhuyin": "ㄇㄛˋ ㄕˋ",
+        "en": "to ignore; to disregard",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "羅",
+        "term": "羅列",
+        "zhuyin": "ㄌㄨㄛˊ ㄌㄧㄝˋ",
+        "en": "to list out; to arrange in a row",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "羅",
+        "term": "門可羅雀",
+        "zhuyin": "ㄇㄣˊ ㄎㄜˇ ㄌㄨㄛˊ ㄑㄩㄝˋ",
+        "en": "(idiom, see below)",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "袍",
+        "term": "長袍",
+        "zhuyin": "ㄔㄤˊ ㄆㄠˊ",
+        "en": "a long robe",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "袍",
+        "term": "旗袍",
+        "zhuyin": "ㄑㄧˊ ㄆㄠˊ",
+        "en": "a qipao / cheongsam dress",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "駱",
+        "term": "駱駝",
+        "zhuyin": "ㄌㄨㄛˋ ㄊㄨㄛˊ",
+        "en": "camel",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "駝",
+        "term": "駱駝",
+        "zhuyin": "ㄌㄨㄛˋ ㄊㄨㄛˊ",
+        "en": "camel",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "駝",
+        "term": "駝背",
+        "zhuyin": "ㄊㄨㄛˊ ㄅㄟˋ",
+        "en": "hunchbacked",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "窪",
+        "term": "低窪",
+        "zhuyin": "ㄉㄧ ㄨㄚ",
+        "en": "low-lying (land)",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "窪",
+        "term": "窪地",
+        "zhuyin": "ㄨㄚ ㄉㄧˋ",
+        "en": "a low-lying area",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "堤",
+        "term": "堤防",
+        "zhuyin": "ㄊㄧˊ ㄈㄤˊ",
+        "en": "a dike; an embankment",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "堤",
+        "term": "河堤",
+        "zhuyin": "ㄏㄜˊ ㄊㄧˊ",
+        "en": "a riverbank levee",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "酒",
+        "term": "酒杯",
+        "zhuyin": "ㄐㄧㄡˇ ㄅㄟ",
+        "en": "a wine glass/cup",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "酒",
+        "term": "酒足飯飽",
+        "zhuyin": "ㄐㄧㄡˇ ㄗㄨˊ ㄈㄢˋ ㄅㄠˇ",
+        "en": "(idiom, see below)",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "鬱",
+        "term": "鬱金香",
+        "zhuyin": "ㄩˋ ㄐㄧㄣ ㄒㄧㄤ",
+        "en": "tulip",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "鬱",
+        "term": "鬱悶",
+        "zhuyin": "ㄩˋ ㄇㄣˋ",
+        "en": "gloomy; depressed",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "莫",
+        "term": "莫札特",
+        "zhuyin": "ㄇㄛˋ ㄗㄚˊ ㄊㄜˋ",
+        "en": "Mozart",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "莫",
+        "term": "莫名其妙",
+        "zhuyin": "ㄇㄛˋ ㄇㄧㄥˊ ㄑㄧˊ ㄇㄧㄠˋ",
+        "en": "baffling; inexplicable",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "札",
+        "term": "信札",
+        "zhuyin": "ㄒㄧㄣˋ ㄓㄚˊ",
+        "en": "a letter (formal)",
+        "example": ""
+      },
+      {
+        "lesson": "第七課",
+        "char": "札",
+        "term": "札記",
+        "zhuyin": "ㄓㄚˊ ㄐㄧˋ",
+        "en": "notes; journal entries",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "鴿",
+        "term": "鴿子",
+        "zhuyin": "ㄍㄜ",
+        "en": "pigeon; a bird people often raise",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "鴿",
+        "term": "白鴿",
+        "zhuyin": "ㄍㄜ",
+        "en": "white dove, a symbol of peace",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "鴿",
+        "term": "飛鴿傳書",
+        "zhuyin": "ㄍㄜ",
+        "en": "to send messages by carrier pigeon (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "餵",
+        "term": "餵食",
+        "zhuyin": "ㄨㄟˋ",
+        "en": "to feed someone or an animal",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "餵",
+        "term": "餵養",
+        "zhuyin": "ㄨㄟˋ",
+        "en": "to feed and care for an animal",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "湊",
+        "term": "湊近",
+        "zhuyin": "ㄘㄡˋ",
+        "en": "to move closer",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "湊",
+        "term": "湊熱鬧",
+        "zhuyin": "ㄘㄡˋ",
+        "en": "to join the fun / a crowd",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "湊",
+        "term": "東拼西湊",
+        "zhuyin": "ㄘㄡˋ",
+        "en": "to piece things together from here and there (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "陌",
+        "term": "陌生",
+        "zhuyin": "ㄇㄛˋ",
+        "en": "unfamiliar; not known",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "陌",
+        "term": "視同陌路",
+        "zhuyin": "ㄇㄛˋ",
+        "en": "to treat someone like a stranger (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "澎",
+        "term": "澎湖",
+        "zhuyin": "ㄆㄥˊ",
+        "en": "Penghu, islands west of Taiwan",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "澎",
+        "term": "洶湧澎湃",
+        "zhuyin": "ㄆㄥˊ",
+        "en": "surging powerfully, like big waves (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "判",
+        "term": "判斷",
+        "zhuyin": "ㄆㄢˋ",
+        "en": "to judge; to decide after thinking",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "判",
+        "term": "判若兩人",
+        "zhuyin": "ㄆㄢˋ",
+        "en": "to seem like a completely different person (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "靠",
+        "term": "靠近",
+        "zhuyin": "ㄎㄠˋ",
+        "en": "to get close to",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "靠",
+        "term": "無依無靠",
+        "zhuyin": "ㄎㄠˋ",
+        "en": "to have no one to depend on (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "索",
+        "term": "線索",
+        "zhuyin": "ㄙㄨㄛˇ",
+        "en": "clue; a hint that helps solve a problem",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "索",
+        "term": "不假思索",
+        "zhuyin": "ㄙㄨㄛˇ",
+        "en": "without thinking too much, immediately (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "返",
+        "term": "返回",
+        "zhuyin": "ㄈㄢˇ",
+        "en": "to return to where one came from",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "返",
+        "term": "流連忘返",
+        "zhuyin": "ㄈㄢˇ",
+        "en": "to enjoy something so much one forgets to leave (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "顛",
+        "term": "顛倒",
+        "zhuyin": "ㄉㄧㄢ",
+        "en": "upside down; reversed",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "顛",
+        "term": "神魂顛倒",
+        "zhuyin": "ㄉㄧㄢ",
+        "en": "to be so fascinated one cannot think clearly (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "磁",
+        "term": "磁鐵",
+        "zhuyin": "ㄘˊ",
+        "en": "magnet",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "磁",
+        "term": "磁場",
+        "zhuyin": "ㄘˊ",
+        "en": "magnetic field",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "證",
+        "term": "證明",
+        "zhuyin": "ㄓㄥˋ",
+        "en": "to prove; to show something is true",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "證",
+        "term": "鐵證如山",
+        "zhuyin": "ㄓㄥˋ",
+        "en": "solid evidence that cannot be denied (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "綁",
+        "term": "綁住",
+        "zhuyin": "ㄅㄤˇ",
+        "en": "to tie up; to hold in place",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "綁",
+        "term": "五花大綁",
+        "zhuyin": "ㄅㄤˇ",
+        "en": "to tie someone up tightly (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "辰",
+        "term": "時辰",
+        "zhuyin": "ㄔㄣˊ",
+        "en": "time period; a certain time",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "辰",
+        "term": "良辰美景",
+        "zhuyin": "ㄔㄣˊ",
+        "en": "a wonderful time with beautiful scenery (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "未",
+        "term": "未來",
+        "zhuyin": "ㄨㄟˋ",
+        "en": "future; the time that has not come yet",
+        "example": ""
+      },
+      {
+        "lesson": "第八課",
+        "char": "未",
+        "term": "未卜先知",
+        "zhuyin": "ㄨㄟˋ",
+        "en": "to know what will happen before it happens (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "昆",
+        "term": "昆蟲",
+        "zhuyin": "ㄎㄨㄣ",
+        "en": "insect; a small animal with six legs",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "昆",
+        "term": "昆弟之好",
+        "zhuyin": "ㄎㄨㄣ",
+        "en": "a close friendship like brothers (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "淳",
+        "term": "淳樸",
+        "zhuyin": "ㄔㄨㄣˊ",
+        "en": "simple, honest, and kind",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "淳",
+        "term": "民淳俗厚",
+        "zhuyin": "ㄔㄨㄣˊ",
+        "en": "people are honest and customs are kind (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "播",
+        "term": "廣播",
+        "zhuyin": "ㄅㄛˋ",
+        "en": "broadcast; radio program",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "播",
+        "term": "聲名遠播",
+        "zhuyin": "ㄅㄛˋ",
+        "en": "famous far and wide (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "協",
+        "term": "協助",
+        "zhuyin": "ㄒㄧㄝˊ",
+        "en": "to help; to assist",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "協",
+        "term": "同心協力",
+        "zhuyin": "ㄒㄧㄝˊ",
+        "en": "to work together with one heart (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "局",
+        "term": "局長",
+        "zhuyin": "ㄐㄩˊ",
+        "en": "director; head of an office",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "局",
+        "term": "顧全大局",
+        "zhuyin": "ㄐㄩˊ",
+        "en": "to think about the whole situation (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "授",
+        "term": "教授",
+        "zhuyin": "ㄕㄡˋ",
+        "en": "professor",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "授",
+        "term": "面授機宜",
+        "zhuyin": "ㄕㄡˋ",
+        "en": "to give face-to-face advice on what to do (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "爾",
+        "term": "偶爾",
+        "zhuyin": "ㄦˇ",
+        "en": "sometimes; once in a while",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "爾",
+        "term": "出爾反爾",
+        "zhuyin": "ㄦˇ",
+        "en": "to go back on one's word (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "省",
+        "term": "省份",
+        "zhuyin": "ㄕㄥˇ/ㄒㄧㄥˇ",
+        "en": "province",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "省",
+        "term": "發人深省",
+        "zhuyin": "ㄕㄥˇ/ㄒㄧㄥˇ",
+        "en": "to make people think deeply (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "攝",
+        "term": "攝影",
+        "zhuyin": "ㄕㄜˋ",
+        "en": "photography; filming",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "攝",
+        "term": "勾魂攝魄",
+        "zhuyin": "ㄕㄜˋ",
+        "en": "extremely charming; fascinating (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "逗",
+        "term": "逗弄",
+        "zhuyin": "ㄉㄡˋ",
+        "en": "to tease or play with",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "逗",
+        "term": "逗人喜愛",
+        "zhuyin": "ㄉㄡˋ",
+        "en": "lovable; makes people like it",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "憑",
+        "term": "憑著",
+        "zhuyin": "ㄆㄧㄥˊ",
+        "en": "by means of; depending on",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "憑",
+        "term": "各憑本事",
+        "zhuyin": "ㄆㄧㄥˊ",
+        "en": "each person uses their own skill (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "仗",
+        "term": "倚仗",
+        "zhuyin": "ㄓㄤˋ",
+        "en": "to depend on someone or something",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "仗",
+        "term": "仗義執言",
+        "zhuyin": "ㄓㄤˋ",
+        "en": "to speak up for what is right (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "陋",
+        "term": "簡陋",
+        "zhuyin": "ㄌㄡˋ",
+        "en": "simple and poorly equipped",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "陋",
+        "term": "因陋就簡",
+        "zhuyin": "ㄌㄡˋ",
+        "en": "to make do with simple conditions (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "獲",
+        "term": "獲得",
+        "zhuyin": "ㄏㄨㄛˋ",
+        "en": "to get; to receive",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "獲",
+        "term": "不勞而獲",
+        "zhuyin": "ㄏㄨㄛˋ",
+        "en": "to get something without working for it (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "獎",
+        "term": "獎品",
+        "zhuyin": "ㄐㄧㄤˇ",
+        "en": "prize",
+        "example": ""
+      },
+      {
+        "lesson": "第九課",
+        "char": "獎",
+        "term": "強迫中獎",
+        "zhuyin": "ㄐㄧㄤˇ",
+        "en": "forced to accept something unwillingly (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "皆",
+        "term": "皆知",
+        "zhuyin": "ㄐㄧㄝ",
+        "en": "everyone knows",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "皆",
+        "term": "比比皆是",
+        "zhuyin": "ㄐㄧㄝ",
+        "en": "found everywhere; very common (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "週",
+        "term": "週期",
+        "zhuyin": "ㄓㄡ",
+        "en": "cycle; a repeating pattern of time",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "週",
+        "term": "上週",
+        "zhuyin": "ㄓㄡ",
+        "en": "last week",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "宙",
+        "term": "宇宙",
+        "zhuyin": "ㄓㄡˋ",
+        "en": "the universe; all of outer space",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "宙",
+        "term": "宇宙觀",
+        "zhuyin": "ㄓㄡˋ",
+        "en": "one's view of the universe",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "汐",
+        "term": "潮汐",
+        "zhuyin": "ㄒㄧˋ",
+        "en": "tides; the rising/falling of the ocean",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "汐",
+        "term": "潮起潮落",
+        "zhuyin": "ㄒㄧˋ",
+        "en": "tides rise and fall, like ups and downs in life",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "漲",
+        "term": "漲潮",
+        "zhuyin": "ㄓㄤˋ/ㄓㄤˇ",
+        "en": "high tide",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "漲",
+        "term": "水漲船高",
+        "zhuyin": "ㄓㄤˋ/ㄓㄤˇ",
+        "en": "when water rises, the boat rises too (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "缺",
+        "term": "缺少",
+        "zhuyin": "ㄑㄩㄝ",
+        "en": "to lack; to be missing",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "缺",
+        "term": "抱殘守缺",
+        "zhuyin": "ㄑㄩㄝ",
+        "en": "to stubbornly cling to old, broken things (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "斷",
+        "term": "斷開",
+        "zhuyin": "ㄉㄨㄢˋ",
+        "en": "to break apart; to disconnect",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "斷",
+        "term": "一刀兩斷",
+        "zhuyin": "ㄉㄨㄢˋ",
+        "en": "to completely break off a relationship (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "繽",
+        "term": "繽紛",
+        "zhuyin": "ㄅㄧㄣ",
+        "en": "colorful; vibrant; full of variety",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "繽",
+        "term": "五彩繽紛",
+        "zhuyin": "ㄅㄧㄣ",
+        "en": "brilliantly varied and colorful (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鍵",
+        "term": "鍵盤",
+        "zhuyin": "ㄐㄧㄢˋ",
+        "en": "keyboard",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鍵",
+        "term": "關鍵時刻",
+        "zhuyin": "ㄐㄧㄢˋ",
+        "en": "a critical, turning-point moment (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "彈",
+        "term": "彈奏",
+        "zhuyin": "ㄊㄢˊ/ㄉㄢˋ",
+        "en": "to play a musical instrument",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "彈",
+        "term": "對牛彈琴",
+        "zhuyin": "ㄊㄢˊ/ㄉㄢˋ",
+        "en": "talking to someone who doesn't understand (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鋼",
+        "term": "鋼琴",
+        "zhuyin": "ㄍㄤ",
+        "en": "piano",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鋼",
+        "term": "土法煉鋼",
+        "zhuyin": "ㄍㄤ",
+        "en": "doing things the hard, old-fashioned way (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "閱",
+        "term": "閱讀",
+        "zhuyin": "ㄩㄝˋ",
+        "en": "to read; reading",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "閱",
+        "term": "博覽群書",
+        "zhuyin": "ㄩㄝˋ",
+        "en": "to have read extensively; a wide reader",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "傾",
+        "term": "傾聽",
+        "zhuyin": "ㄑㄧㄥ",
+        "en": "to listen attentively",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "傾",
+        "term": "傾盆大雨",
+        "zhuyin": "ㄑㄧㄥ",
+        "en": "pouring rain (idiom)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鑰",
+        "term": "鑰匙",
+        "zhuyin": "ㄧㄠˋ",
+        "en": "key (for a lock)",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "鑰",
+        "term": "一把鑰匙",
+        "zhuyin": "ㄧㄠˋ",
+        "en": "one key; also a metaphor for one solution",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "匙",
+        "term": "湯匙",
+        "zhuyin": "ㄔˊ/ㄕˊ",
+        "en": "spoon",
+        "example": ""
+      },
+      {
+        "lesson": "第十課",
+        "char": "匙",
+        "term": "金鑰匙",
+        "zhuyin": "ㄔˊ/ㄕˊ",
+        "en": "golden key; metaphor for the best solution",
+        "example": ""
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第六課",
+        "term": "一傅眾咻",
+        "meaning": "一個人在教，旁邊很多人在吵、在干擾，學習效果當然不好。",
+        "example": "老師在講臺上賣力講解，有些人卻在底下不停講話，這樣一傅眾咻，教學效果怎麼會好呢？"
+      },
+      {
+        "lesson": "第六課",
+        "term": "天衣無縫",
+        "meaning": "事情做得非常完美，一點破綻、一點缺點都看不出來。",
+        "example": "這兩塊木板在師傅的巧手下，黏合得天衣無縫。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "十惡不赦",
+        "meaning": "罪行重大到沒辦法被原諒，形容一個人壞到極點。",
+        "example": "那個十惡不赦的罪犯，近日終於被警方逮捕了。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "父慈子孝",
+        "meaning": "爸爸很慈愛，孩子很孝順，是一個和樂溫暖的家庭。",
+        "example": "這一家人父慈子孝，是模範家庭的最佳寫照。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "大庭廣眾",
+        "meaning": "人很多、很公開的場合，大家都看得到你。",
+        "example": "這個十歲的小朋友，在大庭廣眾之下表演，說唱俱佳的表現讓人讚賞不已。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "上行下效",
+        "meaning": "上面的人怎麼做，下面的人就跟著學、跟著做。",
+        "example": "自從老師開始晨讀，同學們上行下效，使這陣子的閱讀風氣大增。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "俠氣干雲",
+        "meaning": "形容一個人非常有正義感，勇敢幫助弱小、不怕強權。",
+        "example": "李伯伯的家裡，有一塊刻有「俠氣干雲」的匾額，以表揚他見義勇為、不畏強權的精神。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "樸實無華",
+        "meaning": "簡單實在，不浮華、不愛炫耀。",
+        "example": "他雖然是一位家財萬貫的董事長，衣著卻樸實無華。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "忘恩負義",
+        "meaning": "別人對你好，你卻忘記這份恩情，甚至傷害對方。",
+        "example": "他是個重情重義的人，絕對不會做出忘恩負義的事。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "順手牽羊",
+        "meaning": "趁機會順便把別人的東西拿走，意指偷竊。",
+        "example": "爺爺的腳踏車擺在門口才不到五分鐘，就被人順手牽羊騎走了。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "拋磚引玉",
+        "meaning": "先丟出一個不錯的小提議，目的是引出別人更好的意見。",
+        "example": "我的提議只是拋磚引玉，更周詳的辦法還請大家一起來深入討論。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "得天獨厚",
+        "meaning": "天生擁有別人沒有的優勢或好條件。",
+        "example": "他有一副得天獨厚的好嗓子，因此一出道便大受歡迎。"
+      },
+      {
+        "lesson": "第六課",
+        "term": "一脈相承",
+        "meaning": "從同一個來源、同一個系統一直傳承下來。",
+        "example": "他傳承了老師的學派，一脈相承而有所發揮。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "否極泰來",
+        "meaning": "事情壞到極點之後，慢慢就會轉好。",
+        "example": "面臨困境的時候千萬別氣餒，總有一天會否極泰來的。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "康莊大道",
+        "meaning": "寬廣平坦的大路；也比喻前途一片光明順利。",
+        "example": "這一條康莊大道，兩側遍植松木，風景宜人。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "搬弄是非",
+        "meaning": "故意在背後說別人的閒話，挑起爭端。",
+        "example": "他為人謙和厚道，絕不會到處說人閒話、搬弄是非。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "塵埃落定",
+        "meaning": "事情終於確定下來，不再變來變去。",
+        "example": "經過大家多次的討論，這次戶外活動的行程終於塵埃落定了。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "漠不關心",
+        "meaning": "完全不在乎，一點也不關心。",
+        "example": "看到有人跌倒受傷，我們怎能冷眼旁觀、漠不關心呢？"
+      },
+      {
+        "lesson": "第七課",
+        "term": "門可羅雀",
+        "meaning": "上門的客人非常少，門前冷冷清清。",
+        "example": "這幾年受景氣不佳的影響，很多商店都業績下滑，門可羅雀。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "黃袍加身",
+        "meaning": "被大家推舉、擁戴成為最高領導人（皇帝）。",
+        "example": "在這本小說中，男主角在國家動亂之際，被部下黃袍加身，趁機奪取了政權。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "群蟻潰堤",
+        "meaning": "小小的螞蟻洞也能讓堤防潰決，比喻小問題不處理會變成大災禍。",
+        "example": "這雖然是件小事，但群蟻潰堤，我們得先預防，以免釀成大禍。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "酒足飯飽",
+        "meaning": "吃飽喝足、心滿意足的樣子。",
+        "example": "大家在酒足飯飽之後，有的開懷閒聊，有的則早已呼呼大睡了。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "鬱鬱寡歡",
+        "meaning": "心情低落、悶悶不樂的樣子。",
+        "example": "由於籃球比賽的失利，使得他整天鬱鬱寡歡。"
+      },
+      {
+        "lesson": "第七課",
+        "term": "愛莫能助",
+        "meaning": "心裡很想幫忙，但實在沒有能力做到。",
+        "example": "我可以教你如何找資料，但若要幫你寫作業，那就愛莫能助了！"
+      },
+      {
+        "lesson": "第八課",
+        "term": "飛鴿傳書",
+        "meaning": "古代沒有郵差，就利用會飛的鴿子幫忙傳遞書信。",
+        "example": "古代飛鴿傳書，傳遞古人的思念；現在網路郵件，讓祝福能無遠弗屆。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "東拼西湊",
+        "meaning": "把各處零散的東西、資源拼湊在一起。",
+        "example": "他東拼西湊，好不容易才籌夠錢，為兒子繳了學費。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "視同陌路",
+        "meaning": "把原本認識的人當成完全不認識的陌生人對待。",
+        "example": "他之前不是你的鄰居嗎？怎麼現在見面視同陌路，好像陌生人一樣？"
+      },
+      {
+        "lesson": "第八課",
+        "term": "洶湧澎湃",
+        "meaning": "水浪又大又猛；也形容心情或氣勢非常激動、強烈。",
+        "example": "姐姐對繪畫的熱情是如此洶湧澎湃，任何人也無法勉強她放棄繪畫。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "判若兩人",
+        "meaning": "一個人前後的樣子差很多，好像變成了另一個人。",
+        "example": "經過一個暑假，減重成功的王同學，和過去的樣貌簡直判若兩人。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "無依無靠",
+        "meaning": "身邊沒有人可以依靠，孤單又需要幫助。",
+        "example": "他從小無依無靠，幸好得到許多善心人士的幫忙和照顧，才能順利長大。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "不假思索",
+        "meaning": "不用多想，立刻就能反應或回答。",
+        "example": "聽到泳池裡有人在呼救，救生員不假思索的就跳下去救人。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "流連忘返",
+        "meaning": "因為太喜歡某個地方或活動，捨不得離開。",
+        "example": "日月潭的風光秀麗，讓無數遊客流連忘返，讚嘆不已。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "神魂顛倒",
+        "meaning": "非常著迷或心神混亂，沒辦法好好思考。",
+        "example": "他迷上圍棋後，竟然每天茶不思飯不想的，簡直是神魂顛倒了。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "鐵證如山",
+        "meaning": "證據非常清楚確實，沒辦法被反駁或否認。",
+        "example": "一看到小狗正在偷吃肉排，他笑著對小狗說：如今鐵證如山，你還有什麼話好說？"
+      },
+      {
+        "lesson": "第八課",
+        "term": "五花大綁",
+        "meaning": "用繩子把人從頸部繞到背後再分綁兩臂，綁得很緊。",
+        "example": "蜘蛛精把唐僧五花大綁的吊起來，孫悟空察覺異樣，趕快去救他。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "良辰美景",
+        "meaning": "美好的時光配上美麗的景色。",
+        "example": "日落的良辰美景稍縱即逝，千萬別錯過了。"
+      },
+      {
+        "lesson": "第八課",
+        "term": "未卜先知",
+        "meaning": "不用占卜或猜測，就已經知道事情的結果。",
+        "example": "與其渴望具有未卜先知的能力，不如多方觀察、小心推論。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "昆弟之好",
+        "meaning": "形容兩個人感情很好，就像親兄弟一樣。",
+        "example": "雖然他們兩個不是親手足，但彼此間的感情深厚，有如昆弟之好。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "民淳俗厚",
+        "meaning": "當地人民純樸、風俗善良敦厚。",
+        "example": "花蓮民淳俗厚，具有濃厚的人情味，是許多人喜歡來觀光的地方。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "聲名遠播",
+        "meaning": "名聲和好的評價傳得很遠、很多人知道。",
+        "example": "他因榮獲諾貝爾文學獎而聲名遠播。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "同心協力",
+        "meaning": "大家一條心，一起努力完成一件事。",
+        "example": "這件工程在眾人同心協力之下，終於如期完工了。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "顧全大局",
+        "meaning": "為了整體的好處著想，而不只考慮自己。",
+        "example": "理事長為了顧全大局，決定讓賢，不再競選連任。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "面授機宜",
+        "meaning": "當面把重要的方法或訣竅教給別人，讓他能應變。",
+        "example": "教練召集球員們面授機宜，期望能夠反敗為勝。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "出爾反爾",
+        "meaning": "說話、做事前後不一致，反覆改變、不守信用。",
+        "example": "他剛剛才答應，卻馬上反悔，這樣出爾反爾，真是莫名其妙！"
+      },
+      {
+        "lesson": "第九課",
+        "term": "發人深省",
+        "meaning": "能讓人因此而認真、深刻地反思。",
+        "example": "這個故事的含義深遠，讀來發人深省。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "勾魂攝魄",
+        "meaning": "形容某個人或東西非常吸引人、令人著迷。",
+        "example": "這位明星眼波一轉，就讓在場影迷勾魂攝魄，無人不為之傾倒。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "各憑本事",
+        "meaning": "每個人都拿出自己最強的能力來競爭、表現。",
+        "example": "此次科學競賽中，每組參賽者各憑本事，使出全力，渴望獲得優勝。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "仗義執言",
+        "meaning": "看到不公平的事，勇敢說出公道話。",
+        "example": "他個性正直，看到不公平的事就會仗義執言。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "因陋就簡",
+        "meaning": "在條件不好、設備簡單的情況下，盡量將事情完成。",
+        "example": "由於我們剛搬家，一切尚未安頓好，飲食起居只好因陋就簡了。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "不勞而獲",
+        "meaning": "沒有付出努力，卻得到了好的結果。",
+        "example": "天下哪有不勞而獲的事，凡事都要靠自己努力爭取。"
+      },
+      {
+        "lesson": "第九課",
+        "term": "強迫中獎",
+        "meaning": "本來不想做某件事，卻被逼著一定要做。",
+        "example": "同樂會上，大家硬要我上臺表演，這不是強迫中獎嗎？"
+      },
+      {
+        "lesson": "第十課",
+        "term": "比比皆是",
+        "meaning": "到處都是，形容數量很多、非常普遍。",
+        "example": "這種樣式的產品比比皆是，你不必急著購買，貨比三家不吃虧呢！"
+      },
+      {
+        "lesson": "第十課",
+        "term": "水漲船高",
+        "meaning": "水位上升，船也跟著升高；比喻事物隨著環境或條件一起提升。",
+        "example": "自從捷運開通之後，這裡的地價也跟著水漲船高了。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "抱殘守缺",
+        "meaning": "死守著舊有、破舊的東西或想法，不肯改變。",
+        "example": "為了求新求變，老闆決定拋棄抱殘守缺的觀念，努力開創新機。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "一刀兩斷",
+        "meaning": "完全斷絕關係，不再有來往。",
+        "example": "他決定改過自新，與那些壞朋友一刀兩斷，不再相見。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "五彩繽紛",
+        "meaning": "顏色非常多、非常鮮豔美麗。",
+        "example": "天空中五彩繽紛的煙火，令人目不暇給。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "關鍵時刻",
+        "meaning": "決定事情成敗、走向的重要時刻。",
+        "example": "在這個關鍵時刻，要更加冷靜沉著的面對。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "對牛彈琴",
+        "meaning": "對不懂道理或沒興趣的人講道理，根本沒有用。",
+        "example": "我白白花了一下午的時間跟他談電影藝術，簡直是對牛彈琴。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "土法煉鋼",
+        "meaning": "用老舊、原始的方法做事，效率比較差。",
+        "example": "用土法煉鋼的方法做事，會造成人力和時間的浪費。"
+      },
+      {
+        "lesson": "第十課",
+        "term": "傾盆大雨",
+        "meaning": "雨下得又大又急，像把整盆水倒下來一樣。",
+        "example": "一陣突如其來的傾盆大雨，讓路人都成了落湯雞。"
+      }
+    ]
   },
   {
     "id": 6,
@@ -4063,6 +9019,602 @@ const CHINESE_WEEKS = [
         }
       ],
       "hasVideo": true
-    }
+    },
+    "vocabCards": [
+      {
+        "lesson": "第十一課",
+        "char": "裳",
+        "term": "衣裳 / 新裳",
+        "zhuyin": "ㄔㄤˊ",
+        "en": "clothes; garments / poetic word for new clothes",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "茁",
+        "term": "茁壯 / 茁芽",
+        "zhuyin": "ㄓㄨㄛˊ",
+        "en": "to grow strong and healthy / to sprout",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "湛",
+        "term": "湛藍 / 精湛",
+        "zhuyin": "ㄓㄢˋ",
+        "en": "deep vivid blue / exquisite, masterful skill",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "俯",
+        "term": "俯瞰 / 俯視",
+        "zhuyin": "ㄈㄨˇ",
+        "en": "to look down from above / to look down upon",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "跡",
+        "term": "足跡 / 痕跡",
+        "zhuyin": "ㄐㄧˋ",
+        "en": "footprint / a trace, a mark left behind",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "聳",
+        "term": "高聳 / 聳立",
+        "zhuyin": "ㄙㄨㄥˇ",
+        "en": "towering / to stand tall, to tower over",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "脈",
+        "term": "山脈 / 脈搏",
+        "zhuyin": "ㄇㄞˋ",
+        "en": "mountain range / pulse",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "含",
+        "term": "含笑 / 包含",
+        "zhuyin": "ㄏㄢˊ",
+        "en": "smiling gently / to include, to contain",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "嘹",
+        "term": "嘹亮 / 高嘹",
+        "zhuyin": "ㄌㄧㄠˊ",
+        "en": "loud and clear (sound) / high-pitched and clear",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "般",
+        "term": "一般 / 般配",
+        "zhuyin": "ㄅㄢ",
+        "en": "ordinary, common / well-matched",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "舍",
+        "term": "宿舍 / 農舍",
+        "zhuyin": "ㄕㄜˋ",
+        "en": "dormitory / farmhouse",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "穗",
+        "term": "稻穗 / 麥穗",
+        "zhuyin": "ㄙㄨㄟˋ",
+        "en": "an ear of rice / an ear of wheat",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "黝",
+        "term": "黝黑 / 烏黝",
+        "zhuyin": "ㄧㄡˇ",
+        "en": "dark-skinned, tanned / dark, blackish",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "膚",
+        "term": "皮膚 / 肌膚",
+        "zhuyin": "ㄈㄨ",
+        "en": "skin / skin (literary word)",
+        "example": ""
+      },
+      {
+        "lesson": "第十一課",
+        "char": "膛",
+        "term": "胸膛 / 爐膛",
+        "zhuyin": "ㄊㄤˊ",
+        "en": "chest / inside chamber of a stove",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "徒",
+        "term": "徒弟 / 徒手 / 學徒",
+        "zhuyin": "ㄊㄨˊ",
+        "en": "apprentice / bare-handed / apprentice",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "柴",
+        "term": "木柴 / 柴火 / 骨瘦如柴",
+        "zhuyin": "ㄔㄞˊ",
+        "en": "firewood / firewood / as thin as a stick of firewood",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "惠",
+        "term": "恩惠 / 惠顧 / 銘謝惠顧",
+        "zhuyin": "ㄏㄨㄟˋ",
+        "en": "kindness, favor / patronage / thank-you-for-your-patronage sign",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "施",
+        "term": "實施 / 施行 / 因材施教",
+        "zhuyin": "ㄕ",
+        "en": "to implement / to carry out / teach according to ability",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "幹",
+        "term": "枝幹 / 才幹 / 埋頭苦幹",
+        "zhuyin": "ㄍㄢˋ",
+        "en": "tree trunk and branches / competence / to work hard with head down",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "歪",
+        "term": "歪斜 / 東倒西歪",
+        "zhuyin": "ㄨㄞ",
+        "en": "crooked, slanted / falling over in all directions",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "講",
+        "term": "演講 / 講話 / 不講道理",
+        "zhuyin": "ㄐㄧㄤˇ",
+        "en": "to give a speech / to speak / unreasonable",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "輸",
+        "term": "輸入 / 輸血 / 十賭九輸",
+        "zhuyin": "ㄕㄨ",
+        "en": "to input / blood transfusion / gambling usually means losing",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "贏",
+        "term": "輸贏 / 贏家 / 不見輸贏",
+        "zhuyin": "ㄧㄥˊ",
+        "en": "win or lose / the winner / no clear winner yet",
+        "example": ""
+      },
+      {
+        "lesson": "第十二課",
+        "char": "否",
+        "term": "否則 / 否認 / 不置可否",
+        "zhuyin": "ㄈㄡˇ",
+        "en": "otherwise / to deny / to give no clear opinion",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "刺",
+        "term": "諷刺 / 刺耳 / 芒刺在背",
+        "zhuyin": "ㄘˋ",
+        "en": "to mock, sarcasm / ear-piercing / feeling uneasy as if pricked by thorns",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "稟",
+        "term": "稟賦 / 稟告",
+        "zhuyin": "ㄅㄧㄥˇ",
+        "en": "innate talent / to report respectfully",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "揶",
+        "term": "揶揄",
+        "zhuyin": "ㄧㄝˊ",
+        "en": "to mock, to tease",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "揄",
+        "term": "揶揄 / 妙喻取譬",
+        "zhuyin": "ㄩˊ",
+        "en": "to mock, to tease / a clever, vivid comparison",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "咀",
+        "term": "咀嚼 / 咀嚥 / 含英咀華",
+        "zhuyin": "ㄐㄩˇ",
+        "en": "to chew / to chew and swallow / to savor the finest parts of a text",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "嚼",
+        "term": "咀嚼 / 嚼蠟 / 咬文嚼字",
+        "zhuyin": "ㄐㄩㄝˊ",
+        "en": "to chew / tasteless as wax / to nitpick over wording",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "糙",
+        "term": "粗糙",
+        "zhuyin": "ㄘㄠ",
+        "en": "rough, coarse",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "襲",
+        "term": "突襲 / 來襲 / 寒氣襲人",
+        "zhuyin": "ㄒㄧˊ",
+        "en": "a surprise attack / to strike, to hit / piercing cold air",
+        "example": ""
+      },
+      {
+        "lesson": "第十三課",
+        "char": "餘",
+        "term": "多餘 / 不遺餘力 / 綽綽有餘",
+        "zhuyin": "ㄩˊ",
+        "en": "extra, surplus / sparing no effort / more than enough",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "剩",
+        "term": "剩下 / 剩菜 / 所剩無幾",
+        "zhuyin": "ㄕㄥˋ",
+        "en": "to be left over / leftover food / very little remaining",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "駁",
+        "term": "斑駁 / 辯駁 / 陸離斑駁",
+        "zhuyin": "ㄅㄛˊ",
+        "en": "mottled, patchy / to argue back / patchy and colorful",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "纍",
+        "term": "果實纍纍",
+        "zhuyin": "ㄌㄟˊ",
+        "en": "fruit hanging abundantly",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "迴",
+        "term": "迴盪 / 巡迴",
+        "zhuyin": "ㄏㄨㄟˊ",
+        "en": "to echo, to reverberate / to tour around",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "溢",
+        "term": "洋溢 / 滿溢 / 溢於言表",
+        "zhuyin": "ㄧˋ",
+        "en": "to be brimming with / overflowing / feelings clearly shown on one's face",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "逝",
+        "term": "飛逝 / 流逝 / 稍縱即逝",
+        "zhuyin": "ㄕˋ",
+        "en": "to fly by (time) / to pass by / fleeting, easily missed",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "啞",
+        "term": "沙啞 / 啞口無言",
+        "zhuyin": "ㄧㄚˇ",
+        "en": "hoarse (voice) / speechless, unable to respond",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "艘",
+        "term": "一艘船",
+        "zhuyin": "ㄙㄡ",
+        "en": "measure word for boats/ships",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "航",
+        "term": "航行 / 啟航",
+        "zhuyin": "ㄏㄤˊ",
+        "en": "to sail, to navigate / to set sail",
+        "example": ""
+      },
+      {
+        "lesson": "第十四課",
+        "char": "冠",
+        "term": "皇冠 / 奪冠 / 衣冠楚楚",
+        "zhuyin": "ㄍㄨㄢ",
+        "en": "crown / to win first place / neatly and smartly dressed",
+        "example": ""
+      }
+    ],
+    "idiomCards": [
+      {
+        "lesson": "第十一課",
+        "term": "衣裳楚楚",
+        "meaning": "形容穿得整整齊齊、乾乾淨淨，看起來很體面。",
+        "example": "他今天穿著新衣裳楚楚地出席畢業典禮。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "俯拾皆是",
+        "meaning": "形容東西非常多，只要彎下身就能撿到，到處都是。",
+        "example": "海邊的貝殼俯拾皆是，一下子就撿了一大袋。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "蛛絲馬跡",
+        "meaning": "比喻一點點小小的線索，能幫忙找出事情的真相。",
+        "example": "警察靠著現場的蛛絲馬跡，終於找到了小偷。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "危言聳聽",
+        "meaning": "故意說一些誇張、嚇人的話，讓大家緊張害怕。",
+        "example": "他喜歡危言聳聽，把小問題說得很可怕。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "來龍去脈",
+        "meaning": "事情從開始到結束的整個經過，完整的故事。",
+        "example": "老師把這件事的來龍去脈說清楚，大家才明白。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "含血噴人",
+        "meaning": "沒有證據卻亂講壞話冤枉別人。",
+        "example": "你不能含血噴人，說話要有證據才行。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "一般見識",
+        "meaning": "和某人計較、吵架，用同樣不好的方式對待對方。",
+        "example": "媽媽說不要跟弟弟一般見識，讓他一下就好。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "退避三舍",
+        "meaning": "主動讓開、不跟別人計較，避免發生衝突。",
+        "example": "遇到愛吵架的人，我選擇退避三舍，不跟他爭。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "切膚之痛",
+        "meaning": "形容親身經歷過的、非常深刻痛苦的感受。",
+        "example": "他因為生病住院，對健康的重要有切膚之痛。"
+      },
+      {
+        "lesson": "第十一課",
+        "term": "挺起胸膛",
+        "meaning": "抬起胸膛、充滿自信地站著。",
+        "example": "他挺起胸膛，自信地走上臺領獎。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "家徒四壁",
+        "meaning": "形容家裡非常窮，幾乎什麼東西都沒有。",
+        "example": "雖然他家徒四壁，但他仍然努力向上。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "不置可否",
+        "meaning": "不表示同意，也不表示反對，沒講出明確的意見。",
+        "example": "老師問他喜不喜歡這本書，他只是不置可否。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "以身作則",
+        "meaning": "自己先做出好的行為，當作別人的榜樣。",
+        "example": "班長總是以身作則，所以大家都願意聽他的話。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "骨瘦如柴",
+        "meaning": "形容人非常瘦，像木柴一樣瘦巴巴的。",
+        "example": "他生病很久，瘦得骨瘦如柴。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "火燒眉毛",
+        "meaning": "形容事情非常緊急，已經到了最後關頭。",
+        "example": "作業明天就要交了，現在真是火燒眉毛！"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "銘謝惠顧",
+        "meaning": "商店用來感謝客人來買東西、照顧生意的客氣話。",
+        "example": "抽獎沒中也沒關係，店家寫著銘謝惠顧。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "因材施教",
+        "meaning": "依照每個人不同的才能和性格，給予不同的教導方式。",
+        "example": "好老師懂得因材施教，讓每個學生都能進步。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "埋頭苦幹",
+        "meaning": "專心努力工作，不抬頭、不分心。",
+        "example": "他埋頭苦幹寫報告，連晚餐都忘了吃。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "東倒西歪",
+        "meaning": "形容東西倒得亂七八糟、歪歪斜斜的樣子。",
+        "example": "颱風過後，路邊的招牌東倒西歪。"
+      },
+      {
+        "lesson": "第十二課",
+        "term": "文情並茂",
+        "meaning": "文章寫得內容好、感情也豐富動人。",
+        "example": "這篇作文文情並茂，讓老師看了很感動。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "素不相識",
+        "meaning": "從來不認識、完全不熟悉的人。",
+        "example": "他幫助了一位素不相識的老太太過馬路。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "妙喻取譬",
+        "meaning": "用聰明又生動的比喻來說明事情，讓人容易懂。",
+        "example": "老師妙喻取譬，把難懂的概念講得很清楚。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "濃妝豔抹",
+        "meaning": "化很濃的妝，打扮得非常華麗。",
+        "example": "演員上臺前都會濃妝豔抹，準備表演。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "芒刺在背",
+        "meaning": "形容心裡非常不安，好像背上被刺刺到一樣。",
+        "example": "被老師盯著看，他覺得芒刺在背，渾身不自在。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "千真萬確",
+        "meaning": "事情完全是真的，一點都不假。",
+        "example": "這個消息千真萬確，是我親眼看到的。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "含英咀華",
+        "meaning": "仔細品味文章中最精采、最美的部分。",
+        "example": "讀好文章要含英咀華，慢慢體會其中的美。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "咬文嚼字",
+        "meaning": "過分計較字句、用詞，而忽略了文章真正的意思。",
+        "example": "他寫報告太咬文嚼字，反而讓重點變得不清楚。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "防範未然",
+        "meaning": "事情還沒發生之前，就先做好準備、避免問題出現。",
+        "example": "學校加裝監視器，是為了防範未然。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "寒氣襲人",
+        "meaning": "寒冷的空氣侵襲人身，形容天氣非常冷。",
+        "example": "冬天的山上寒氣襲人，要多穿衣服保暖。"
+      },
+      {
+        "lesson": "第十三課",
+        "term": "綽綽有餘",
+        "meaning": "形容時間、金錢或能力非常充足，用都用不完。",
+        "example": "這筆零用錢買這份禮物綽綽有餘。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "所剩無幾",
+        "meaning": "剩下的東西已經很少了。",
+        "example": "架上的麵包所剩無幾，要買要快。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "陸離斑駁",
+        "meaning": "形容顏色雜亂、斑斑點點，不均勻的樣子。",
+        "example": "老牆上的油漆已經陸離斑駁，看起來很有歷史感。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "峰迴路轉",
+        "meaning": "事情原本沒希望，卻突然出現轉機，有了新的解決方法。",
+        "example": "原本以為比賽輸定了，沒想到峰迴路轉，最後逆轉獲勝。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "怒髮衝冠",
+        "meaning": "非常生氣，氣得頭髮都豎起來了。",
+        "example": "他發現自己被騙，氣得怒髮衝冠。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "溢於言表",
+        "meaning": "內心的感情非常豐富，從表情、言語中自然流露出來。",
+        "example": "得獎那一刻，他的喜悅溢於言表。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "洞悉真相",
+        "meaning": "完全看清楚、了解事情真正的原因和經過。",
+        "example": "經過調查，警方終於洞悉真相，抓到了真正的犯人。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "神仙眷屬",
+        "meaning": "形容夫妻感情非常好，過得幸福美滿，像神仙一樣。",
+        "example": "他們結婚多年仍然很甜蜜，真像神仙眷屬。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "稍縱即逝",
+        "meaning": "機會或時間很容易在不注意時溜走，要好好把握。",
+        "example": "拍照的好時機稍縱即逝，要隨時準備好相機。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "啞口無言",
+        "meaning": "被問得說不出話來，無法回答或反駁。",
+        "example": "證據擺在眼前，他終於啞口無言，承認了錯誤。"
+      },
+      {
+        "lesson": "第十四課",
+        "term": "閉門造車",
+        "meaning": "只憑自己的想法做事，不管現實情況，結果常常不合用。",
+        "example": "他閉門造車設計的東西，根本不符合大家的需求。"
+      }
+    ]
   }
 ];

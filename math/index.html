@@ -63,6 +63,10 @@
   <main id="main"></main>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../shared/firebase-config.js"></script>
+<script src="../shared/cloudsync.js"></script>
 <script>
 // ---------- CURRICULUM DATA ----------
 const CURRICULUM = [
@@ -466,11 +470,8 @@ CURRICULUM.forEach((d,i)=>{ d.id = i+1; d.dayName = DAY_NAMES[d.day-1]; });
 
 // ---------- STORAGE ----------
 const STORE_KEY = "valerieSummerMathReview";
-function loadProgress(){
-  try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; }
-}
-function saveProgress(p){ localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
-let progress = loadProgress();
+function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
+let progress = {};
 
 // ---------- HELPERS ----------
 function norm(s){
@@ -504,7 +505,7 @@ function renderNav(){
   }
   const footer = document.createElement("div");
   footer.className = "nav-footer";
-  footer.textContent = "Progress is saved on this device only.";
+  footer.textContent = CloudSync.enabled ? "✓ Progress synced across devices" : "Progress is saved on this device only.";
   nav.appendChild(footer);
 }
 
@@ -524,10 +525,11 @@ function renderStats(){
 }
 
 // ---------- RENDER MAIN ----------
-let currentId = (function(){
+let currentId = 1;
+function pickStartId(){
   const firstUndone = CURRICULUM.find(d=>!(progress[d.id] && progress[d.id].completed));
   return firstUndone ? firstUndone.id : 1;
-})();
+}
 
 function render(){
   renderNav();
@@ -612,7 +614,7 @@ function goAdjacent(delta){
   if(newId>=1 && newId<=30){ currentId = newId; render(); }
 }
 
-render();
+initSyncedProgress(STORE_KEY).then(p => { progress = p; currentId = pickStartId(); render(); });
 </script>
 </body>
 </html>

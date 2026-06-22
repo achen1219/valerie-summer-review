@@ -49,6 +49,20 @@
   .progress-bar > div{height:100%;background:var(--green);}
   .placeholder{font-size:13px;color:#999;padding:20px;text-align:center;background:#f7f0e8;border-radius:8px;}
   .nav-footer{font-size:11px;color:#8a7a6c;padding:10px 6px;}
+  .card-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px;}
+  .card-toolbar label{font-size:13px;display:flex;align-items:center;gap:6px;cursor:pointer;}
+  .flashcard{border:1px solid #eee;border-radius:8px;margin:8px 0;overflow:hidden;}
+  .flashcard.reviewed{border-color:#bfe3bf;background:#f7fbf7;}
+  .fc-front{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;background:#fff;}
+  .fc-front:hover{background:#fdf8f3;}
+  .fc-term{font-size:16px;font-weight:700;}
+  .fc-char{font-size:12px;color:#b08a3e;font-weight:400;margin-left:6px;}
+  .fc-zhuyin{font-size:12px;color:#999;font-weight:400;margin-left:6px;}
+  .fc-toggle{font-size:12px;color:var(--red-dark);flex-shrink:0;}
+  .fc-back{padding:0 14px 12px;font-size:13px;color:#555;display:none;border-top:1px dashed #eee;padding-top:10px;}
+  .fc-example{margin-top:6px;color:#888;}
+  .fc-check{display:flex;align-items:center;gap:6px;font-size:12px;padding:8px 14px;background:#faf6f1;cursor:pointer;}
+  .fc-lesson{font-size:11px;color:#bbb;margin-right:8px;}
   @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:14px;}}
 </style>
 </head>
@@ -62,12 +76,15 @@
   <main id="main"></main>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="../shared/firebase-config.js"></script>
+<script src="../shared/cloudsync.js"></script>
 <script src="data.js"></script>
 <script>
 const STORE_KEY = "valerieSummerChineseReview";
-function loadProgress(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; } }
-function saveProgress(p){ localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
-let progress = loadProgress();
+let progress = {};
+function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
 
 let currentWeek = 1;
 let currentTab = "vocab"; // "vocab" or "idiom"
@@ -90,7 +107,7 @@ function renderNav(){
   });
   const footer = document.createElement("div");
   footer.className = "nav-footer";
-  footer.textContent = "進度只會儲存在這台裝置上。";
+  footer.textContent = CloudSync.enabled ? "✓ 進度已跨裝置同步" : "進度只會儲存在這台裝置上。";
   nav.appendChild(footer);
 }
 
@@ -130,6 +147,8 @@ function render(){
         : `<div class="placeholder">影片製作中，請稍後再來看看 🎬</div>`}
     </div>
 
+    <div class="card" id="cardsCard"></div>
+
     <div class="card" id="quizCard">
       <span class="section-label">測驗（${section.quiz.length} 題）</span>
       <div id="quizBody"></div>
@@ -138,6 +157,97 @@ function render(){
     </div>
   `;
   renderQuiz(section.quiz, rec);
+  renderCards();
+}
+
+let onlyUnreviewed = false;
+
+function cardsKey(week, tab){ return week + "_" + tab + "_cards"; }
+
+function getCardList(week){
+  return currentTab === "vocab" ? week.vocabCards : week.idiomCards;
+}
+
+function getReviewedArr(week, tab, len){
+  const key = cardsKey(week, tab);
+  const arr = progress[key] || [];
+  while(arr.length < len) arr.push(false);
+  return arr;
+}
+
+function renderCards(){
+  const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
+  const cards = getCardList(week);
+  const reviewed = getReviewedArr(week.id, currentTab, cards.length);
+  const doneCount = reviewed.filter(Boolean).length;
+  const pct = cards.length ? Math.round((doneCount/cards.length)*100) : 0;
+  const sectionName = currentTab === "vocab" ? "生字語詞" : "成語";
+
+  const container = document.getElementById("cardsCard");
+  container.innerHTML = `
+    <span class="section-label">${sectionName}字卡複習（${doneCount}/${cards.length}）</span>
+    <div class="progress-bar"><div style="width:${pct}%"></div></div>
+    <div class="card-toolbar" style="margin-top:12px;">
+      <label><input type="checkbox" id="onlyUnreviewedChk" ${onlyUnreviewed?"checked":""} onchange="toggleOnlyUnreviewed(this.checked)"> 只顯示未複習</label>
+      <button onclick="resetCards()" style="background:#fff;color:var(--red-dark);border:1px solid var(--red-dark);">重新開始這組字卡</button>
+    </div>
+    <div id="cardsList"></div>
+  `;
+  const list = document.getElementById("cardsList");
+  list.innerHTML = cards.map((c, i)=>{
+    if(onlyUnreviewed && reviewed[i]) return "";
+    const isVocab = currentTab === "vocab";
+    const term = isVocab ? c.term : c.term;
+    const zhuyin = isVocab ? c.zhuyin : "";
+    const charTag = isVocab && c.char ? `<span class="fc-char">（生字：${c.char}）</span>` : "";
+    const backText = isVocab ? c.en : c.meaning;
+    const example = c.example || "";
+    return `<div class="flashcard ${reviewed[i]?'reviewed':''}" id="fc${i}">
+      <div class="fc-front" onclick="toggleCardFront(${i})">
+        <span><span class="fc-lesson">${c.lesson||""}</span><span class="fc-term">${term}</span>${zhuyin?`<span class="fc-zhuyin">${zhuyin}</span>`:""}${charTag}</span>
+        <span class="fc-toggle" id="fcToggle${i}">👁 查看意思</span>
+      </div>
+      <div class="fc-back" id="fcBack${i}">
+        <div>${backText}</div>
+        ${example ? `<div class="fc-example">例句：${example}</div>` : ""}
+      </div>
+      <label class="fc-check">
+        <input type="checkbox" ${reviewed[i]?"checked":""} onchange="toggleReviewed(${i}, this.checked)"> ✓ 我複習過了
+      </label>
+    </div>`;
+  }).join("") || `<div class="placeholder">這組都複習完了，太棒了！🎉</div>`;
+}
+
+function toggleCardFront(i){
+  const back = document.getElementById("fcBack"+i);
+  const toggle = document.getElementById("fcToggle"+i);
+  const show = back.style.display !== "block";
+  back.style.display = show ? "block" : "none";
+  toggle.textContent = show ? "🙈 隱藏" : "👁 查看意思";
+}
+
+function toggleReviewed(i, checked){
+  const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
+  const cards = getCardList(week);
+  const key = cardsKey(week.id, currentTab);
+  const arr = getReviewedArr(week.id, currentTab, cards.length);
+  arr[i] = checked;
+  progress[key] = arr;
+  saveProgress(progress);
+  renderCards();
+}
+
+function toggleOnlyUnreviewed(checked){
+  onlyUnreviewed = checked;
+  renderCards();
+}
+
+function resetCards(){
+  const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
+  const key = cardsKey(week.id, currentTab);
+  delete progress[key];
+  saveProgress(progress);
+  renderCards();
 }
 
 function switchTab(tab){ currentTab = tab; render(); }
@@ -188,7 +298,7 @@ function submitQuiz(){
   render();
 }
 
-render();
+initSyncedProgress(STORE_KEY).then(p => { progress = p; render(); });
 </script>
 </body>
 </html>
