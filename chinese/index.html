@@ -63,6 +63,21 @@
   .fc-example{margin-top:6px;color:#888;}
   .fc-check{display:flex;align-items:center;gap:6px;font-size:12px;padding:8px 14px;background:#faf6f1;cursor:pointer;}
   .fc-lesson{font-size:11px;color:#bbb;margin-right:8px;}
+  .nav-divider{border-top:1px solid #e0cdb8;margin:10px 0;}
+  .zyzx-card{background:#fff;border:1px solid #eee;border-radius:10px;margin:10px 0;overflow:hidden;}
+  .zyzx-card.reviewed{border-color:#bfe3bf;background:#f7fbf7;}
+  .zyzx-head{display:flex;justify-content:space-between;align-items:center;padding:16px;cursor:pointer;}
+  .zyzx-head:hover{background:#fdf8f3;}
+  .zyzx-big{font-size:34px;font-weight:700;letter-spacing:4px;}
+  .zyzx-big .sep{color:#ddb877;margin:0 6px;font-weight:400;}
+  .zyzx-lesson-tag{font-size:11px;color:#bbb;display:block;margin-bottom:4px;}
+  .zyzx-body{display:none;padding:0 16px 16px;}
+  .reading-chip{background:#fff7e6;border:1px solid #f0d9a0;border-radius:8px;padding:10px 12px;margin:8px 0;font-size:14px;}
+  .reading-chip .zy{font-weight:700;color:#a9761b;margin-right:8px;font-size:15px;}
+  .xingjin-row{background:#fdf3ea;border:1px solid #f3e0c8;border-radius:8px;padding:10px 12px;margin:8px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .xingjin-row .ch{font-size:24px;font-weight:700;min-width:36px;}
+  .xingjin-row .zy{color:#a9761b;font-size:13px;font-weight:600;}
+  .xingjin-row .ex{font-size:13px;color:#666;}
   @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:14px;}}
 </style>
 </head>
@@ -81,11 +96,13 @@
 <script src="../shared/firebase-config.js"></script>
 <script src="../shared/cloudsync.js"></script>
 <script src="data.js"></script>
+<script src="zyzx-data.js"></script>
 <script>
 const STORE_KEY = "valerieSummerChineseReview";
 let progress = {};
 function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
 
+let viewMode = "week"; // "week" or "zyzx"
 let currentWeek = 1;
 let currentTab = "vocab"; // "vocab" or "idiom"
 
@@ -99,12 +116,20 @@ function renderNav(){
     const idiomDone = progress[progressKey(w.id,"idiom")]?.completed;
     const bothDone = vocabDone && idiomDone;
     const btn = document.createElement("button");
-    btn.className = "week-btn" + (bothDone ? " done" : "") + (w.id===currentWeek ? " active" : "");
+    btn.className = "week-btn" + (bothDone ? " done" : "") + (viewMode==='week' && w.id===currentWeek ? " active" : "");
     const badgeText = bothDone ? "✓" : (vocabDone||idiomDone ? "½" : "-");
     btn.innerHTML = `<span>${w.label}</span><span class="badge">${badgeText}</span>`;
-    btn.onclick = ()=>{ currentWeek = w.id; render(); };
+    btn.onclick = ()=>{ viewMode = "week"; currentWeek = w.id; render(); };
     nav.appendChild(btn);
   });
+  const divider = document.createElement("div");
+  divider.className = "nav-divider";
+  nav.appendChild(divider);
+  const zyzxBtn = document.createElement("button");
+  zyzxBtn.className = "week-btn" + (viewMode==='zyzx' ? " active" : "");
+  zyzxBtn.innerHTML = `<span>📖 字音字形總複習</span>`;
+  zyzxBtn.onclick = ()=>{ viewMode = "zyzx"; render(); };
+  nav.appendChild(zyzxBtn);
   const footer = document.createElement("div");
   footer.className = "nav-footer";
   footer.textContent = CloudSync.enabled ? "✓ 進度已跨裝置同步" : "進度只會儲存在這台裝置上。";
@@ -115,6 +140,7 @@ function norm(s){ return String(s); }
 
 function render(){
   renderNav();
+  if(viewMode === "zyzx"){ renderZyzxPage(); return; }
   const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
   const main = document.getElementById("main");
 
@@ -251,6 +277,140 @@ function resetCards(){
 }
 
 function switchTab(tab){ currentTab = tab; render(); }
+
+// ================== 字音字形總複習 ==================
+let zyzxTab = "duoyin"; // "duoyin" or "xingjin"
+let zyzxOnlyUnreviewed = false;
+
+function zyzxList(){ return zyzxTab === "duoyin" ? ZYZX_DUOYIN : ZYZX_XINGJIN; }
+function zyzxProgressKey(){ return "zyzx_" + zyzxTab + "_cards"; }
+function zyzxReviewedArr(){
+  const len = zyzxList().length;
+  const arr = progress[zyzxProgressKey()] || [];
+  while(arr.length < len) arr.push(false);
+  return arr;
+}
+
+function splitReading(r){
+  const idx = r.indexOf("／");
+  if(idx === -1) return { zy: "", rest: r };
+  return { zy: r.slice(0,idx), rest: r.slice(idx+1) };
+}
+function splitXingjinItem(it){
+  const ci = it.indexOf("：");
+  const charPart = ci === -1 ? it : it.slice(0,ci);
+  const rest = ci === -1 ? "" : it.slice(ci+1);
+  const si = rest.indexOf("／");
+  if(si === -1) return { ch: charPart, zy: rest, ex: "" };
+  return { ch: charPart, zy: rest.slice(0,si), ex: rest.slice(si+1) };
+}
+
+function renderZyxToolbar(doneCount, total, pct, title){
+  return `
+    <span class="section-label">${title}（${doneCount}/${total}）</span>
+    <div class="progress-bar"><div style="width:${pct}%"></div></div>
+    <div class="card-toolbar" style="margin-top:12px;">
+      <label><input type="checkbox" ${zyzxOnlyUnreviewed?"checked":""} onchange="toggleZyzxOnlyUnreviewed(this.checked)"> 只顯示未複習</label>
+      <button onclick="resetZyzxCards()" style="background:#fff;color:var(--red-dark);border:1px solid var(--red-dark);">重新開始這組複習</button>
+    </div>`;
+}
+
+function renderZyzxPage(){
+  const main = document.getElementById("main");
+  main.innerHTML = `
+    <div class="card">
+      <span class="section-label">整學年總複習</span>
+      <h2>字音字形總複習</h2>
+      <div class="tabs">
+        <button class="tab-btn ${zyzxTab==='duoyin'?'active':''}" onclick="switchZyzxTab('duoyin')">多音字（${ZYZX_DUOYIN.length}）</button>
+        <button class="tab-btn ${zyzxTab==='xingjin'?'active':''}" onclick="switchZyzxTab('xingjin')">形近字／易混淆字（${ZYZX_XINGJIN.length}）</button>
+      </div>
+      <p style="font-size:13px;color:#888;margin:0;">${zyzxTab==='duoyin' ? "點一下字，猜猜看它有幾種讀音，再翻開答案對照！" : "這些字長得很像，點開看看每個字怎麼唸、怎麼用！"}</p>
+    </div>
+    <div class="card" id="zyzxCardsCard"></div>
+  `;
+  renderZyzxCards();
+}
+
+function switchZyzxTab(tab){ zyzxTab = tab; renderZyzxPage(); }
+function toggleZyzxOnlyUnreviewed(checked){ zyzxOnlyUnreviewed = checked; renderZyzxCards(); }
+
+function resetZyzxCards(){
+  delete progress[zyzxProgressKey()];
+  saveProgress(progress);
+  renderZyzxCards();
+}
+
+function toggleZyzxReviewed(i, checked){
+  const arr = zyzxReviewedArr();
+  arr[i] = checked;
+  progress[zyzxProgressKey()] = arr;
+  saveProgress(progress);
+  renderZyzxCards();
+}
+
+function toggleZyzxFront(i){
+  const body = document.getElementById("zyBody"+i);
+  const toggle = document.getElementById("zyToggle"+i);
+  const show = body.style.display !== "block";
+  body.style.display = show ? "block" : "none";
+  toggle.textContent = show ? "🙈 隱藏" : "👁 查看答案";
+}
+
+function renderZyzxCards(){
+  const list = zyzxList();
+  const reviewed = zyzxReviewedArr();
+  const doneCount = reviewed.filter(Boolean).length;
+  const pct = list.length ? Math.round((doneCount/list.length)*100) : 0;
+  const title = zyzxTab === "duoyin" ? "多音字複習" : "形近字複習";
+
+  const container = document.getElementById("zyzxCardsCard");
+  container.innerHTML = renderZyxToolbar(doneCount, list.length, pct, title) + `<div id="zyzxList"></div>`;
+
+  const listEl = document.getElementById("zyzxList");
+  if(zyzxTab === "duoyin"){
+    listEl.innerHTML = list.map((d,i)=>{
+      if(zyzxOnlyUnreviewed && reviewed[i]) return "";
+      const chips = d.readings.map(r=>{
+        const {zy, rest} = splitReading(r);
+        return `<div class="reading-chip"><span class="zy">${zy}</span>${rest}</div>`;
+      }).join("");
+      return `<div class="zyzx-card ${reviewed[i]?'reviewed':''}" id="zy${i}">
+        <div class="zyzx-head" onclick="toggleZyzxFront(${i})">
+          <span><span class="zyzx-lesson-tag">${d.lesson}</span><span class="zyzx-big">${d.char}</span></span>
+          <span class="fc-toggle" id="zyToggle${i}">👁 查看答案（${d.readings.length} 種讀音）</span>
+        </div>
+        <div class="zyzx-body" id="zyBody${i}">
+          ${chips}
+          <label class="fc-check" style="margin-top:8px;border-radius:6px;">
+            <input type="checkbox" ${reviewed[i]?"checked":""} onchange="toggleZyzxReviewed(${i}, this.checked)"> ✓ 我複習過了
+          </label>
+        </div>
+      </div>`;
+    }).join("") || `<div class="placeholder">這組都複習完了，太棒了！🎉</div>`;
+  } else {
+    listEl.innerHTML = list.map((x,i)=>{
+      if(zyzxOnlyUnreviewed && reviewed[i]) return "";
+      const charsBig = x.items.map(it=>splitXingjinItem(it).ch).join(`<span class="sep">／</span>`);
+      const rows = x.items.map(it=>{
+        const {ch, zy, ex} = splitXingjinItem(it);
+        return `<div class="xingjin-row"><span class="ch">${ch}</span><span class="zy">${zy}</span><span class="ex">${ex}</span></div>`;
+      }).join("");
+      return `<div class="zyzx-card ${reviewed[i]?'reviewed':''}" id="zy${i}">
+        <div class="zyzx-head" onclick="toggleZyzxFront(${i})">
+          <span><span class="zyzx-lesson-tag">${x.lesson}</span><span class="zyzx-big">${charsBig}</span></span>
+          <span class="fc-toggle" id="zyToggle${i}">👁 查看答案</span>
+        </div>
+        <div class="zyzx-body" id="zyBody${i}">
+          ${rows}
+          <label class="fc-check" style="margin-top:8px;border-radius:6px;">
+            <input type="checkbox" ${reviewed[i]?"checked":""} onchange="toggleZyzxReviewed(${i}, this.checked)"> ✓ 我複習過了
+          </label>
+        </div>
+      </div>`;
+    }).join("") || `<div class="placeholder">這組都複習完了，太棒了！🎉</div>`;
+  }
+}
 
 function renderQuiz(quiz, rec){
   const body = document.getElementById("quizBody");
