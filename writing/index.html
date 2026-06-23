@@ -32,6 +32,12 @@
   .meta-row{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:12px;color:#888;}
   .save-status{color:var(--green);font-weight:600;}
   .nav-footer{font-size:11px;color:#5e7d75;padding:10px 6px;}
+  .feedback-actions{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;}
+  .feedback-actions button, .feedback-actions a{font-size:13px;padding:9px 14px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+  .btn-copy{background:var(--teal);color:#fff;border:none;}
+  .btn-link{background:#fff;color:var(--teal-dark);border:1px solid var(--teal-dark);}
+  textarea.feedback-area{min-height:160px;background:#fffaf0;}
+  .feedback-hint{font-size:12px;color:#888;margin:0 0 12px;}
   @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:14px;}}
 </style>
 </head>
@@ -52,11 +58,13 @@
 <script src="data.js"></script>
 <script>
 const STORE_KEY = "valerieSummerWritingReview";
+const GPT_URL = "https://chatgpt.com/g/g-6a361d20f96481918541376b510ce10a-summer-writing-tutor";
 let progress = {};
 function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
 
 let currentWeek = 1;
 let saveTimer = null;
+let feedbackSaveTimer = null;
 
 function renderNav(){
   const nav = document.getElementById("nav");
@@ -96,6 +104,7 @@ function render(){
   const main = document.getElementById("main");
   const rec = progress[w.week] || {};
   const text = rec.text || "";
+  const feedback = rec.feedback || "";
 
   main.innerHTML = `
     <div class="card">
@@ -108,6 +117,22 @@ function render(){
         <span class="save-status" id="saveStatus">${text ? "✓ Saved" : ""}</span>
       </div>
     </div>
+
+    <div class="card">
+      <span class="section-label">Get Feedback</span>
+      <h2>Writing Tutor</h2>
+      <p class="feedback-hint">1) Copy your writing &nbsp;2) Paste it into the Writing Tutor &nbsp;3) Copy its feedback back here.</p>
+      <div class="feedback-actions">
+        <button class="btn-copy" onclick="copyWriting()">📋 Copy My Writing</button>
+        <a class="btn-link" href="${GPT_URL}" target="_blank" rel="noopener">🤖 Open Writing Tutor ↗</a>
+      </div>
+      <textarea class="feedback-area" id="feedbackArea" placeholder="Paste the Writing Tutor's feedback here...">${feedback}</textarea>
+      <div class="meta-row">
+        <span></span>
+        <span class="save-status" id="feedbackSaveStatus">${feedback ? "✓ Saved" : ""}</span>
+      </div>
+    </div>
+
     <div class="card" style="display:flex;justify-content:space-between;">
       <button onclick="goAdjacent(-1)" ${w.week<=1?"disabled":""} style="background:#fff;color:var(--teal-dark);border:1px solid var(--teal-dark);border-radius:6px;padding:8px 16px;cursor:pointer;">&larr; Previous Week</button>
       <button onclick="goAdjacent(1)" ${w.week>=36?"disabled":""} style="background:var(--teal);color:#fff;border:none;border-radius:6px;padding:8px 16px;cursor:pointer;">Next Week &rarr;</button>
@@ -115,6 +140,36 @@ function render(){
   `;
   const area = document.getElementById("writingArea");
   area.addEventListener("input", onWritingInput);
+  const fbArea = document.getElementById("feedbackArea");
+  fbArea.addEventListener("input", onFeedbackInput);
+}
+
+function copyWriting(){
+  const area = document.getElementById("writingArea");
+  const btn = document.querySelector(".btn-copy");
+  const original = btn.textContent;
+  const flash = (label)=>{ btn.textContent = label; setTimeout(()=>{ btn.textContent = original; }, 1800); };
+  const fallbackSelect = ()=>{
+    area.focus();
+    area.select();
+    flash("📋 Selected — press Ctrl/Cmd+C");
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(area.value).then(()=>flash("✓ Copied!")).catch(fallbackSelect);
+  } else {
+    fallbackSelect();
+  }
+}
+
+function onFeedbackInput(e){
+  const feedback = e.target.value;
+  document.getElementById("feedbackSaveStatus").textContent = "Saving…";
+  clearTimeout(feedbackSaveTimer);
+  feedbackSaveTimer = setTimeout(()=>{
+    progress[currentWeek] = { ...(progress[currentWeek]||{}), feedback, feedbackDate: new Date().toISOString() };
+    saveProgress(progress);
+    document.getElementById("feedbackSaveStatus").textContent = "✓ Saved";
+  }, 500);
 }
 
 function onWritingInput(e){
@@ -123,7 +178,7 @@ function onWritingInput(e){
   document.getElementById("saveStatus").textContent = "Saving…";
   clearTimeout(saveTimer);
   saveTimer = setTimeout(()=>{
-    progress[currentWeek] = { text, date: new Date().toISOString() };
+    progress[currentWeek] = { ...(progress[currentWeek]||{}), text, date: new Date().toISOString() };
     saveProgress(progress);
     document.getElementById("saveStatus").textContent = "✓ Saved";
     renderNavOnly();
