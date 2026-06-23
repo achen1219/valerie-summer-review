@@ -144,21 +144,60 @@ function render(){
   fbArea.addEventListener("input", onFeedbackInput);
 }
 
+function buildCopyText(){
+  const w = WRITING_PROMPTS.find(p=>p.week===currentWeek);
+  const text = document.getElementById("writingArea").value;
+  return `Writing Prompt (Week ${w.week} – ${w.type}):\n${w.prompt}\n\nMy Writing:\n${text}`;
+}
+
 function copyWriting(){
-  const area = document.getElementById("writingArea");
   const btn = document.querySelector(".btn-copy");
   const original = btn.textContent;
-  const flash = (label)=>{ btn.textContent = label; setTimeout(()=>{ btn.textContent = original; }, 1800); };
-  const fallbackSelect = ()=>{
-    area.focus();
-    area.select();
-    flash("📋 Selected — press Ctrl/Cmd+C");
+  const flash = (label)=>{ btn.textContent = label; setTimeout(()=>{ btn.textContent = original; }, 2200); };
+  const combined = buildCopyText();
+
+  const legacyCopyFallback = ()=>{
+    // hidden textarea + execCommand('copy') works without the Permissions API
+    // in most real browsers (just not in this sandboxed preview).
+    const temp = document.createElement("textarea");
+    temp.value = combined;
+    temp.style.position = "fixed";
+    temp.style.top = "-9999px";
+    document.body.appendChild(temp);
+    temp.focus();
+    temp.select();
+    let ok = false;
+    try { ok = document.execCommand("copy"); } catch(e) { ok = false; }
+    document.body.removeChild(temp);
+    if(ok){
+      flash("✓ Copied (prompt + writing)!");
+    } else {
+      showCopyPreview(combined);
+      flash("📋 See box below — select & copy");
+    }
   };
+
   if(navigator.clipboard && navigator.clipboard.writeText){
-    navigator.clipboard.writeText(area.value).then(()=>flash("✓ Copied!")).catch(fallbackSelect);
+    navigator.clipboard.writeText(combined).then(()=>flash("✓ Copied (prompt + writing)!")).catch(legacyCopyFallback);
   } else {
-    fallbackSelect();
+    legacyCopyFallback();
   }
+}
+
+function showCopyPreview(text){
+  let box = document.getElementById("copyPreviewBox");
+  if(!box){
+    box = document.createElement("textarea");
+    box.id = "copyPreviewBox";
+    box.className = "feedback-area";
+    box.style.marginTop = "10px";
+    box.readOnly = true;
+    document.querySelector(".feedback-actions").insertAdjacentElement("afterend", box);
+  }
+  box.value = text;
+  box.style.display = "block";
+  box.focus();
+  box.select();
 }
 
 function onFeedbackInput(e){
