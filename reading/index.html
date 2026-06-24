@@ -55,6 +55,9 @@
   .table-row{display:flex;gap:10px;align-items:flex-start;margin:8px 0;}
   .table-row label{width:70px;flex-shrink:0;font-size:13px;font-weight:600;padding-top:8px;}
   .table-row .given{flex:1;font-size:13px;padding:10px;background:#f3eef9;border-radius:6px;color:#555;}
+  .compare3-row{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0;}
+  .compare-col{flex:1;min-width:160px;}
+  .compare-col label{display:block;font-size:13px;font-weight:600;margin-bottom:4px;}
   .feedback-actions{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;}
   .feedback-actions button, .feedback-actions a{font-size:13px;padding:9px 14px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
   .btn-copy{background:var(--purple);color:#fff;border:none;}
@@ -220,6 +223,18 @@ function render(){
         <div class="save-status" id="openStatus_${i}"></div>
       </div>`;
     }
+    if(q.type === "compare3"){
+      const vals = (rec.openTable && rec.openTable[i]) || {};
+      const cols = q.columns.map((colLabel,ri)=>{
+        const v = vals[ri] || "";
+        return `<div class="compare-col"><label>${colLabel}</label><textarea id="tbl_${i}_${ri}" style="min-height:90px">${v}</textarea></div>`;
+      }).join("");
+      return `<div class="prob">
+        <p class="qtext">${i+1}. ${q.q}</p>
+        <div class="compare3-row">${cols}</div>
+        <div class="save-status" id="openStatus_${i}"></div>
+      </div>`;
+    }
     return "";
   }).join("");
 
@@ -265,6 +280,12 @@ function render(){
         if(row.given) return;
         const el = document.getElementById(`tbl_${i}_${ri}`);
         el.addEventListener("input", ()=>saveOpenTable(i, q.rows.length));
+      });
+    }
+    if(q.type === "compare3"){
+      q.columns.forEach((col,ri)=>{
+        const el = document.getElementById(`tbl_${i}_${ri}`);
+        el.addEventListener("input", ()=>saveOpenTable(i, q.columns.length));
       });
     }
   });

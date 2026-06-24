@@ -437,4 +437,202 @@ Steve was crestfallen. But then he realized that this was a new research opportu
     },
   ]
 },
+{
+  id: 6,
+  label: "Unit 3 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "All about Malls",
+      asYouRead: "Underline different types of stores you may find in malls. Place a star by your favorite one.",
+      passage: `Malls are large, convenient areas with a variety of stores. People can purchase clothes, shoes, books, and computers all in the same place. Malls often have many interesting restaurants, too.
+
+Most malls have large department stores called anchor stores. These anchor stores are typically the main stores in a mall. Malls also have smaller stores that sell different types of products. For example, jewelry stores, video game stores, and gift shops are a few of the types of stores that can be found in malls.
+
+Malls have other places that sell items and services, too. One example is kiosks (KEE-ahsks). Kiosks are small stands that are placed around the mall. Kiosks sell many different things, including hats, stuffed animals, watches, and T-shirts. Many malls also have beauty salons, barbers, and eyeglasses stores. Plus, you can't forget the food court! Most malls have one area for fast-food options. Kiosks can sell food, such as cookies or hot dogs, too.`,
+      questions: [
+        {type:"mc", q:"What is the main idea?", options:["Anchor stores are large department stores.","Gift shops are smaller stores.","Kiosks are small stands.","Malls are convenient places where people can shop."], correct:3},
+        {type:"mc", q:"What are the main stores in many malls called?", options:["anchor stores","gift shops","kiosks","malls"], correct:0},
+        {type:"mc", q:"How does a kiosk compare to an anchor store?", options:["A kiosk is bigger.","A kiosk is smaller.","A kiosk is an anchor store.","A kiosk sells expensive items."], correct:1},
+        {type:"mc", q:"What could be described as convenient?", options:["a six-page menu","a line at the post office","a commercial on television","a drive-through window at a restaurant"], correct:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "The History of Malls",
+      asYouRead: "Place a star beside facts that explain why people built malls.",
+      passage: `There are many malls in the United States today, but this wasn't always true. Many years ago, most stores were in downtown areas in the main part of a city. But in the early 1950s, many people began to move out of cities. They moved to suburbs, which are smaller towns near cities. Those people wanted to have stores near them, and they did not want to take long trips into the city to go shopping. Many malls were built so that people could shop near their homes. The idea of a mall was to have many stores under one roof so that people would want to spend more time shopping. And because malls were covered, people could get their shopping done even if it was cold or raining. By the 1980s, malls were so popular that they became social gathering places for people.`,
+      questions: [
+        {type:"mc", q:"According to this text, why were malls built?", options:["so people could go to the movies","so people could move out of the cities","so people could go downtown to shop","so people could shop near their homes"], correct:3},
+        {type:"mc", q:"In which of the following words does the Latin root sub- have a similar meaning to suburb?", options:["subject","submarine","substance","subtle"], correct:1},
+        {type:"mc", q:"According to this text, how have malls changed since they were first built?", options:["Malls now have food courts.","Stores in malls are larger.","People use them as places to get together.","Construction materials have become stronger."], correct:2},
+        {type:"mc", q:"What does the phrase under one roof mean?", options:["a flat roof","more than one building","a roof made of one material","different things in one place"], correct:3},
+      ]
+    },
+    {
+      day: 3,
+      title: "Modern Malls",
+      asYouRead: "Circle key words that tell how malls are different today.",
+      passage: `Malls are still popular, but they may not be as busy as they once were. This is because people now have other ways to shop. People don't have to go to malls to find what they want because they can shop online.
+
+So, malls try to offer things that people cannot find online. Many malls offer entertainment or fun activities for people to do. For example, some malls have movie theaters and bowling alleys. Many malls have play areas for children, and some malls even have roller coasters! Other malls offer fitness centers and doctors' offices. Some malls were designed to be outdoor malls. This allows people to have more options for shopping, eating, and gathering.
+
+Malls have changed a great deal since they were first built in the 1950s. But they are still important parts of many people's lives. They can be good places to shop for almost anything and meet with friends.`,
+      questions: [
+        {type:"mc", q:"Which is one reason why malls have changed?", options:["People can meet with friends.","Malls have movie theaters.","People can find what they want online.","Malls have gotten busier."], correct:2},
+        {type:"mc", q:"Which of these means fun things to do?", options:["gathering","bowling","entertainment","fitness centers"], correct:2},
+        {type:"open", q:"What is one main idea of this text?", lines:2},
+        {type:"open", q:"Do you think malls have improved over time? Explain your opinion.", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "A World of Shopping",
+      asYouRead: "Circle three facts about the Mall of America. Underline three facts about the Dubai Mall.",
+      passage: `Some malls are much larger than other malls. A few malls are so big that they almost seem like cities. The largest mall in the world is in Dubai, which is a city in the United Arab Emirates. Another large mall is the Mall of America near St. Paul, Minnesota. About 32 large airplanes could fit inside! Both of these malls have many things for people to see and do.
+
+The Mall of America has many fun attractions for people. There is a flight simulator, a mirror maze, and a miniature golf course. This mall has a huge aquarium, too. And it even has a full-size theme park. You'll find a movie theater there, too. It has 14 screens.
+
+Of course, people can also shop at the Mall of America. There are more than 520 stores at the mall. They sell everything from clothes and jewelry to groceries. At one store, you can make your own stuffed bear! If you spent just 10 minutes at each store at the Mall of America, it would take you 86 hours to see each one. That's more than three days!
+
+The Dubai Mall has twice as many stores as the Mall of America. In total, it has over 1,200 stores. It also has a skating rink and a large movie theater. There is an aquarium, too!
+
+If you're hungry, the Dubai Mall has over 200 restaurants. Some are fast-food restaurants, and some are fancy restaurants. There are family restaurants at the mall, too. After you eat, you can shop for anything you might want.
+
+The Dubai Mall is so big that you cannot visit the whole mall in one day. So, there is a hotel connected to the mall. People who want to spend several days visiting the mall can stay at that hotel.
+
+There are countless options for shopping and entertainment at malls around the world. Some of the largest malls, including the Mall of America and the Dubai Mall, provide even more fun for everyone!`,
+      questions: [
+        {type:"mc", q:"Why did the author write this text?", options:["to give directions to the Mall of America","to tell about two of the world's largest malls","to tell readers how to be safe when shopping at the mall","to get readers to visit the aquarium at the Mall of America"], correct:1},
+        {type:"mc", q:"Which of these similes may be best used to describe both malls?", options:["bright as a button","busy as a bee","cold as ice","quiet as a mouse"], correct:1},
+        {type:"mc", q:"What can you do in a flight simulator?", options:["pretend to fly an airplane","build and fly paper airplanes","see replicas of famous airplanes","feel the wind against an airplane in flight"], correct:0},
+        {type:"mc", q:"Which pair of words correctly compares the structure of this text to “The History of Malls”?", options:["compare-contrast; problem-solution","chronological order; compare-contrast","cause-effect; chronological order","problem-solution; cause-effect"], correct:0},
+        {type:"compare3", q:"Compare and contrast the Mall of America to the Dubai Mall.", columns:["The Mall of America","The Dubai Mall","Both"]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread “A World of Shopping.” Then, respond to the prompt.",
+      prompt: "Imagine you are at one of these two malls for one day. Make a plan for your day. What would you do? Write about how you would spend your day.",
+    },
+  ]
+},
+{
+  id: 7,
+  label: "Unit 3 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Mystery Box",
+      asYouRead: "Place exclamation points (!) beside events that surprise you.",
+      passage: `Jazmine and her sister Elizabeth were going back-to-school shopping at the mall with their mom. They both wanted to be browsing the shelves of new video games at Game On, not looking for new clothes. After hitting two stores, they convinced their mom to let them have a 15-minute break. Their mom went to find a pretzel, and they went to find something more exciting to do.
+
+After walking toward the end of one side of the mall, Elizabeth pointed at a large, black box in the middle of the walking path.
+
+"What is that?" she asked. "I've never seen anything like that before."
+
+The box was about the size of a kiosk, and at the front, there was a door with a QR code on it. Jasmine scanned the QR code, and it took her to a website that simply read, Enter. The girls shrugged at each other and went inside the box.
+
+Inside, a huge white screen was mounted on the wall in front of the couch. The lights dimmed. The word welcome slowly appeared across the screen.`,
+      questions: [
+        {type:"mc", q:"Jazmine and Elizabeth are both _____.", options:["boring","curious","scared","friendly"], correct:1},
+        {type:"mc", q:"Why do Jazmine and Elizabeth leave their mom?", options:["They do not like to shop for clothes.","They want to find an adventure.","They are meeting friends.","They are heading toward the food court."], correct:0},
+        {type:"mc", q:"What might Jazmine most likely use to scan the QR code?", options:["a laptop","her cell phone","a digital camera","an instant camera"], correct:1},
+        {type:"mc", q:"What happens to the lights inside the room?", options:["They brighten.","They flicker.","They lower.","They go out."], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "A Strange Introduction",
+      asYouRead: "Circle words that describe how the girls feel.",
+      passage: `Jazmine and Elizabeth continued to watch the screen. Then, something began to happen. A deep, atmospheric hum was the only sound they could initially hear. The sounds became lighter, and the screen filled with images of bright stars and galaxies.
+
+They soon started to feel mesmerized and excited as the swirling galaxies began to race by faster and faster. The music was picking up speed, too. Soon, the screen was a blur of colorful light.
+
+"It's going at warp speed or something," Elizabeth said, in awe of the screen. Both girls stared at the rushing colors, starting to feel dizzy.
+
+The box began to shake. Jazmine and Elizbeth looked toward each other, unsure of what was happening or what to do.`,
+      questions: [
+        {type:"mc", q:"How do the girls' feelings change?", options:["first curious, then excited, then unsure","first excited, then unsure, then curious","first curious, then unsure, then excited","first unsure, then curious, then excited"], correct:0},
+        {type:"mc", q:"How do the galaxies change when the music changes?", options:["They move more quickly.","They vibrate and move.","They disappear from the screen.","They move in a square."], correct:0},
+        {type:"mc", q:"What might the atmospheric hum sound like?", options:["a crash like musical cymbals","a high-pitched squeal like a whale call","a car squealing to a halt","the rumbling of a jet engine"], correct:3},
+        {type:"mc", q:"What is a synonym for mesmerized?", options:["bewildered","entranced","indifferent","steady"], correct:1},
+      ]
+    },
+    {
+      day: 3,
+      title: "A Stranger End",
+      asYouRead: "Underline the part(s) of the text that explain when the girls' feelings change.",
+      passage: `The box continued shaking, and the music got even louder. It almost hurt Elizabeth's ears! Then, the galaxies on the screen stopped rushing by. Six of them appeared on screen. They began to flash in a pattern of rainbow colors, and the music slowed down to a ticking clock noise.
+
+"What's happening now?" Elizabeth asked.
+
+"Oh, maybe I can check the QR code," Jazmine said. She pulled up the webpage again and saw that a countdown had appeared, and it was counting down from 30 seconds. She showed Elizabeth the screen and smiled with relief.
+
+"I guess that means it's almost over," she said, happily. "I wanted an adventure, but I'm not sure how I felt about that."
+
+"Yeah, it was weird—but kind of cool too though, right?" Elizabeth asked.`,
+      questions: [
+        {type:"mc", q:"How does the music change?", options:["It gets softer and turns into a clock noise.","It gets louder and turns into a clock noise.","It gets louder and faster.","It gets lower-pitched."], correct:1},
+        {type:"mc", q:"Why does Jazmine go to the website again?", options:["She thinks it will explain things.","She thinks it will show cool images.","She thinks it will allow her to send a message.","She thinks it will let her report where they were."], correct:0},
+        {type:"open", q:"Why is Jazmine relieved when she sees a countdown?", lines:2},
+        {type:"open", q:"Why do you think the girls laugh?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "Quite a Trip",
+      asYouRead: "Underline words or phrases that tell about what the girls think or feel.",
+      passage: `Jazmine and Elizabeth were relieved to step outside the box. They immediately hurried toward the food court to find their mom, but they soon realized that the mall they were in was completely different. They didn't even see the food court!
+
+Jazmine decided they should go back to the box to investigate. Next to the box was an information panel with these words printed at the top: The Florence Mall. "Where is the Florence Mall?" Elizabeth asked.
+
+"No idea," Jazmine answered. "I think we should get back in the box."
+
+The girls sat on the couch and thought for a moment. Jazmine decided to go back to the website the QR code had taken her to. After she tapped the bottom right corner, a settings menu popped up.
+
+"Nice job!" Elizabeth said. Jazmine scrolled down and clicked on the word destination.
+
+A voice said, "Welcome to the Magic Mall Box. Please select a destination."
+
+Both girls gasped. They looked at Jazmine's phone and saw a list of malls. Jazmine selected the mall they came from. The box shook, and then it stopped.
+
+The girls stepped outside the box and realized they were at the right place. They ran to the food court and saw their mom just sitting down to eat a pretzel.
+
+"You're done already?" she asked. "I was thinking of getting a lemonade, but if you're ready, I can—"
+
+"Oh no, we just wanted to say..." Elizabeth said, trailing off.
+
+"Thanks for taking us to the mall!" Jazmine said. The girls waved at their mom and quickly ran back to the black box. They nodded at each other and Jazmine selected another destination from her screen.
+
+The girls visited the Dubai Mall and the Mall of America. They saw a mall in Alberta, Canada, and one mall in Doha, Qatar. They rode rollercoasters and saw a beautiful aquarium. When they were exhausted, they finally went back home.
+
+They found their mom at the food court, enjoying her lemonade and pretzel.
+
+"Did you find anything exciting?" their mom asked them.
+
+The girls smiled at each other and laughed. They could only hope that next year's back-to-school shopping trip would be this fun!`,
+      questions: [
+        {type:"mc", q:"How do the girls begin to know they are in a different mall?", options:["The box disappears.","The stores are different.","Their friends aren't there.","The food court is in a different place."], correct:3},
+        {type:"mc", q:"What is the best reason to explain why the girls return to the box so quickly?", options:["They feel safe there.","They want to hide.","They need time to plan their escape.","They do not feel like exploring a new place."], correct:0},
+        {type:"mc", q:"What is something a person might investigate?", options:["a family recipe","a home computer","a new walking trail","a well-planned travel route"], correct:2},
+        {type:"mc", q:"Why do the girls go to all those other malls?", options:["to be adventurous","to be creative","to be stubborn","to be troublemakers"], correct:0},
+        {type:"open-table", q:"Explain how the characters show each trait.", rows:[
+          {label:"clever"},
+          {label:"adventurous"},
+          {label:"hopeful"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread “Quite a Trip.” Then, respond to the prompt.",
+      prompt: "Write a story about a time when you found something strange at a mall. Use descriptive words and phrases and sensory details to tell your story.",
+    },
+  ]
+},
 ];
