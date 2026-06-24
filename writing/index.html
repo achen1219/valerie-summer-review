@@ -202,11 +202,8 @@ function copyRound1(){
 }
 
 function copyRound2(){
-  const w = WRITING_PROMPTS.find(p=>p.week===currentWeek);
-  const feedback = document.getElementById("feedbackArea").value;
   const revisedText = document.getElementById("revisedArea").value;
-  const combined = `Writing Prompt (Week ${w.week} – ${w.type}):\n${w.prompt}\n\nOriginal Feedback:\n${feedback}\n\nMy Revised Writing:\n${revisedText}`;
-  doCopy(combined, "#actions2 .btn-copy", "#actions2");
+  doCopy(revisedText, "#actions2 .btn-copy", "#actions2");
 }
 
 function doCopy(combined, btnSelector, actionsSelector){
