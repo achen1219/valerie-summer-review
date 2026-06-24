@@ -245,4 +245,196 @@ From "Healthy Breakfast Choices": There are many healthy choices for foods to ea
     },
   ]
 },
+{
+  id: 4,
+  label: "Unit 2 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Ocean Ecosystems",
+      asYouRead: "Underline one main idea. Number the details that support it.",
+      passage: `Oceans cover 71 percent of Earth's surface. Many different ecosystems are found in oceans. An ecosystem is made of living things, including plants and animals. It is also made of nonliving things. These include things such as weather, sunlight, water, and soil.
+
+There are many types of ocean ecosystems. Coral reefs are one example. They are made of dead and living coral. Living corals look like plants. They are actually tiny animals. The reefs provide food and shelter to many organisms. Another ecosystem is the open ocean. This is the top layer of an ocean that is away from the coast. It gets a lot of sunlight. Very large and very small animals live in the open ocean. A final example is the deep-sea layer of the ocean. At this level, there is no sunlight. Not many creatures can live in this bottom layer because it is very cold and dark.`,
+      questions: [
+        {type:"mc", q:"Which evidence supports the idea that an ecosystem has nonliving things?", options:["They have plants.","They have bugs.","They have animals.","They have weather."], correct:3},
+        {type:"mc", q:"What is an organism?", options:["a tiny plant","a large animal","any living thing","anything that swims"], correct:2},
+        {type:"mc", q:"Which statement about corals is true?", options:["They are tiny plants.","They are tiny animals.","They harm organisms.","They are only in fresh water."], correct:1},
+        {type:"mc", q:"Which word uses the same prefix as percent?", options:["perk","pert","perilous","perennial"], correct:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Ocean Chemistry",
+      asYouRead: "Number the reasons that support the idea that oceans are important.",
+      passage: `The chemistry of oceans is important. There are many things that make up oceans besides water. They are nutrients, salts, and gasses. These all support life in oceans. They are essential to many ocean cycles.
+
+The carbon cycle is one of the ocean's cycles. In it, the surface water absorbs carbon dioxide from the atmosphere. Plants in the water use this carbon dioxide to make food for themselves. And animals in oceans eat those plants. Eventually, the plants and animals die. They sink to the ocean floor. The carbon they had in their bodies goes with them. Places where this occurs are called carbon sinks. A carbon sink is anything that absorbs more carbon from the atmosphere than it releases. Carbon sinks are important on Earth. They keep some carbon out of the air, which stops it from making the planet warmer.`,
+      questions: [
+        {type:"mc", q:"Why is the ocean's chemistry important?", options:["It supports life.","It provides salt.","It uses sunlight.","It needs nutrients."], correct:0},
+        {type:"mc", q:"What is a carbon sink?", options:["A place that stores excess carbon.","A basin where people can get carbon.","An area in the atmosphere that releases carbon.","An area of Earth where animals take in carbon."], correct:0},
+        {type:"mc", q:"Which word uses the same root word as atmosphere?", options:["atomic","hemisphere","shepherd","spearhead"], correct:1},
+        {type:"mc", q:"How do carbon sinks help Earth?", options:["They store salt and minerals.","They keep land and water plants alive.","They help the planet maintain its temperature.","They provide nutrients to land and water animals."], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Ocean Physics",
+      asYouRead: "Circle the two ways oceans are always moving. Underline details that describe the movements.",
+      passage: `Currents and waves are two types of ocean movement. Currents happen at the surface. Surface currents bring warm water from the equator toward Earth's poles. These currents are caused by the wind blowing over the top of the water. Currents can also be in deeper water. Deeper currents are slower. These currents start at the poles. There, fresh water from ice and glaciers melt into ocean water. Cold, fresh water is denser than salt water, so it sinks. Once the water sinks, it slowly flows away from the poles into ocean basins. Eventually, this deep water rises. The circulation of currents continues.
+
+Waves are another form of ocean movement. Wind creates waves. Friction from the wind blows against the water's surface, creating waves. Some waves can be caused by storms or earthquakes. Waves created by earthquakes are called tsunamis.`,
+      questions: [
+        {type:"mc", q:"What is one main idea of the text?", options:["Currents are caused by wind.","Currents are one way oceans move.","Deep-water currents are slow-moving.","Fresh, cold water from the poles sinks."], correct:1},
+        {type:"mc", q:"What do both currents and waves have in common?", options:["They involve storms.","They are caused by wind.","They can cause natural disasters.","They only happen during certain times of the year."], correct:1},
+        {type:"open", q:"How do surface and deep-water currents work?", lines:3},
+        {type:"open", q:"How can the ocean be both helpful and harmful?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Ocean Life: Plankton",
+      asYouRead: "Put a star beside information that describes how algae blooms can be harmful.",
+      passage: `Oceans are home to 94 percent of all wildlife on Earth. Of the life in oceans, 90 percent is plankton. The term plankton refers to the thousands of small species that are carried by tides and currents. Most of them are microscopically small. There are two types of plankton. The first is phytoplankton. These are plants. The second is zooplankton. These are animals.
+
+Plankton are important to the health of the planet. Phytoplankton are one of the primary producers of oxygen. They produce over half of all the oxygen on Earth. They form the base of the largest food web in the world. Plankton are necessary for other animals to survive. For example, zooplankton, such as krill, feed on phytoplankton. Larger animals, such as blue whales, feed on krill.
+
+Too much plankton is a bad thing. This is especially true for phytoplankton, which makes up algae. An algal bloom can occur when a large number of algae are produced very quickly. There may be too many nutrients in the water for the phytoplankton. The excess nutrients often come from runoff of stormwater and wastewater. The nutrients could come from agricultural runoff as well, such as fertilizers. Or there may be too much warmth or sunlight hitting the water. Phytoplankton uses photosynthesis, just like plants on land. So, having too much sun and warmth can cause them to grow too quickly.
+
+Algal blooms can be harmful. Sometimes, they block too much sunlight for the water below. This causes the plants and algae below to produce less oxygen. So, there is less oxygen available for animals in the water. The lack of sunlight can also cause plants and algae below the bloom to die. Less plant life in the water means less food for much of the animal life. Animals can begin to die off due to a lack of food and oxygen. If this happens, then nothing in the water usually survives. An area like this, with a lack of life, is known as a dead zone.
+
+Some algae also produce deadly toxins. This act is a defense mechanism. Some algae use this when there are too many algae in an area. These toxins spread into the surrounding area. Animals in the water can get sick. People who consume this water can also get sick. To be safe, people should not go in the water when there is an algal bloom.`,
+      questions: [
+        {type:"mc", q:"Why is phytoplankton important?", options:["They feed most of the ocean's animals.","They use up excess nutrients in the oceans.","They produce a majority of Earth's oxygen.","They use photosynthesis to get rid of excess carbon dioxide."], correct:2},
+        {type:"mc", q:"Which is an example of zooplankton?", options:["algae","blue whales","krill","phytoplankton"], correct:2},
+        {type:"mc", q:"What is a defense mechanism?", options:["a way to fend off attackers","an instinct to attack oneself","a machine that protects living things","the ability to fight with great strength"], correct:0},
+        {type:"mc", q:"Which of the following words uses the Greek affix photo- similar to its meaning in photosynthesis?", options:["elephoto","photograph","photoreg","synthephoto"], correct:1},
+        {type:"open-table", q:"Write an effect for each cause.", rows:[
+          {label:"Cause 1", given:"A large number of algae are produced very quickly."},
+          {label:"Effect 1"},
+          {label:"Cause 2", given:"Algal blooms block too much sunlight."},
+          {label:"Effect 2"},
+          {label:"Cause 3", given:"Algae toxins can spread into surrounding waters."},
+          {label:"Effect 3"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread the text from this week. Then, respond to the prompt.",
+      prompt: "Explain how oceans are an important part of Earth. Use facts, definitions, details, quotations, or other examples from the texts to support your ideas.",
+    },
+  ]
+},
+{
+  id: 5,
+  label: "Unit 2 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "World Traveler",
+      asYouRead: "Place a star beside reasons that explain why being a fish is advantageous.",
+      passage: `Traveling around the world was Steve's favorite thing to do. He had seen it all: Europe, South America, even the icebergs in Antarctica. He could go nearly anywhere he wanted, whenever he wanted.
+
+Steve loved the freedom of being a sardine. Of course, he had never been anything else, so he wasn't sure how it measured up to being a shark. He sometimes wished he had their ferocious teeth and aloof attitude. But whenever he felt jealous, he returned to thoughts of his extraordinary travels. His small size and strong fins had allowed him to travel more than most other fish. He had seen plankton, whales, shipwrecks, and even some deep sea creatures. He wished he could go to some of the dead zones, but it was too hard to breathe there.
+
+Steve made many friends during his travels. Sometimes, he would go years without seeing his friends and then pop up out of nowhere for a visit. In fact, that's exactly what he was heading to Australia to do.`,
+      questions: [
+        {type:"mc", q:"Which statement is true about Steve?", options:["He is a shark.","He is a fish.","He is a whale.","He is a fisherman."], correct:1},
+        {type:"mc", q:"Why can't Steve go to dead zones?", options:["They don't have water.","They don't have plankton.","They don't have creatures.","They don't have much oxygen."], correct:3},
+        {type:"mc", q:"What is an antonym for extraordinary?", options:["adventurous","fascinating","normal","odd"], correct:2},
+        {type:"mc", q:"Which prepositional phrase explains when Steve traveled?", options:["out of nowhere","around the world","during his travels","whenever he wanted"], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "Greeting an Old Friend",
+      asYouRead: "Underline ways Steve and Tom are alike. Circle ways they are different.",
+      passage: `Once Steve began seeing green turtles floating through the water, he knew. Australia was close, and so was Tom, Steve's best friend! Tom was a laid-back Australian sardine who loved science. Tom didn't travel far, but he really knew his way around the Great Barrier Reef. It was Steve's favorite place to visit in Australia.
+
+Steve always knew where to find Tom because of his sedentary nature. He was usually hanging around the clownfish in a shallow part of the reef.
+
+"Steve!" Tom yelled as soon as he spotted him. "How was the journey?"
+"Beautiful as always," Steve said, shaking Tom's fin.
+"You're just in time," Tom said, swimming excitedly. "The clownfish are going to listen to my jokes and tell me if I'm sharp enough to hit the comedy scene yet." Steve laughed and happily settled into the audience to listen.`,
+      questions: [
+        {type:"mc", q:"How are Steve and Tom different?", options:["Steve stays in one place, but Tom does not.","Steve lives in Australia, but Tom does not.","Steve travels around a lot, but Tom does not.","Tom interacted with other bubbles, but Steve did not."], correct:2},
+        {type:"mc", q:"What is the meaning of sedentary?", options:["friendly","inactive","mindful","social"], correct:1},
+        {type:"mc", q:"How are Steve and Tom alike?", options:["They both like the Great Barrier Reef.","They both like being social.","They both live at the Great Barrier Reef.","They both travel a lot."], correct:0},
+        {type:"mc", q:"Which best describes Steve and Tom's relationship?", options:["brothers","new friends","enemies","great friends"], correct:3},
+      ]
+    },
+    {
+      day: 3,
+      title: "Trouble in Paradise",
+      asYouRead: "Underline facts about the Great Barrier Reef.",
+      passage: `As Steve listened to Tom speak from his coral stage, he looked around the ocean at the Great Barrier Reef. It had always been one of the world's largest underwater capitals. The hustle and bustle of big cities always astounded him.
+
+But then, Steve began to realize something—the corals had changed quite a lot. In his youth, they were stunning, and they contained all the colors you could imagine. But now, the corals on the reef seemed faded. A lot of them were white, and he could tell there weren't as many fish as there used to be.
+
+Steve was finding it hard to laugh at Tom's jokes. He saw a family of hermit crabs loading their supply of shells onto a sea turtle's back and zooming away. Everywhere he looked, he saw families of fish leaving the reef. Steve wasn't sure what was going on, but he was determined to find out.`,
+      questions: [
+        {type:"mc", q:"What makes Steve worry?", options:["the jokes that Tom tells aren't funny","the changes to the Great Barrier Reef","the city disappearing","he misses his family"], correct:1},
+        {type:"mc", q:"What does Steve intend to learn?", options:["how the Great Barrier Reef has changed and why","how coral reefs are related","how crabs use shells","how the reef compares with the other places he's visited"], correct:0},
+        {type:"open", q:"How have the corals changed?", lines:2},
+        {type:"open", q:"What do you think Steve will find out about the coral reef?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "Steve's Big Experiment",
+      asYouRead: "Place a star beside the steps to the experiment.",
+      passage: `"Tom, have you noticed any changes around here?" Steve asked later.
+
+"It's just not how it used to be, mate," Tom sighed. "It's been hotter every year. Some of us are finding it easier to breathe down south, where it's cooler."
+
+"I'll do some research and collect some data," Steve told Tom.
+
+Steve swam around to various parts of the reef to test the water temperatures. He measured the amount of bubbles in the water. He also tested the oxygen levels and took pictures.
+
+It took about a month for him to record all his data. Tom worked with him to summarize his conclusions.
+
+Overall Impressions:
+Higher water temperatures were found with fewer healthy coral.
+Fewer organisms were found in places with higher temperatures.
+Bubble count remained normal in places with higher temperatures.
+High temperatures and low oxygen were found with algal blooms.
+
+"This is super detailed," Tom said. "You should share this with my cousin. He works for the National Academy of Bubble Science."
+
+Steve pondered it for a moment and then decided it was a good idea. Something was happening to the Great Barrier Reef. Clearly, they needed to take protective measures before it was too late!
+
+A couple weeks after submitting his paper to the academy, Steve was called in for an appointment. They thanked him for his extensive research and said they were aware of the problem, but they hadn't come up with a solution yet.
+
+"Why not?" Steve asked in surprise.
+
+"Humans are part of the problem," the advisory board told him. "So far, we have not been successful in our communication efforts. We have translation experts, but it has been difficult."
+
+Steve was crestfallen. But then he realized that this was a new research opportunity right in front of him. He was great at communicating.
+
+"I think I may be able to help with that—if you're willing to recruit me," Steve said with a grin.`,
+      questions: [
+        {type:"mc", q:"What is Steve's goal?", options:["to collect data on water temperatures and oxygen levels","to find ocean water with suitable oxygen levels","to find new ways to bring more oxygen to the ocean","to add bubbles to the water around the Great Barrier Reef"], correct:0},
+        {type:"mc", q:"Why is it important that Steve shares the findings of the experiment?", options:["so that Steve can boast about his discovery","so that Tom knows what Steve discovered","so that other scientists can expand on Steve's work","so that Steve can explain a complicated idea clearly"], correct:2},
+        {type:"mc", q:"What is the meaning of recruit?", options:["hire someone","provide expertise","replace workers","write down"], correct:0},
+        {type:"mc", q:"How does Tom react to Steve's findings?", options:["He is anxious about them.","He is excited about them.","He is indifferent about them.","He is upset about them."], correct:1},
+        {type:"open-table", q:"Explain how Steve followed steps of the scientific process.", rows:[
+          {label:"Research Goal"},
+          {label:"Experimental Plan"},
+          {label:"Results"},
+          {label:"Sharing Data"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread “Steve's Big Experiment.” Then, respond to the prompt.",
+      prompt: "Write a story about an animal who discovers something unusual about their habitat. Use descriptive details and develop a clear sequence of events.",
+    },
+  ]
+},
 ];
