@@ -47,7 +47,11 @@ const CloudSync = (function () {
     pushTimers[key] = setTimeout(() => {
       const payload = {};
       payload[key] = { data: value, updatedAt: ts };
-      docRef().set(payload, { merge: true }).catch(e => console.warn("[CloudSync] push failed", e));
+      // mergeFields (not a bare merge:true) replaces this top-level field
+      // entirely instead of deep-merging into it — otherwise Firestore's
+      // recursive merge means deleted nested keys (e.g. a reset flashcard
+      // set) never actually disappear from the cloud copy.
+      docRef().set(payload, { mergeFields: [key] }).catch(e => console.warn("[CloudSync] push failed", e));
     }, 800); // debounce rapid writes (e.g. checking many flashcards quickly)
   }
 

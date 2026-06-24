@@ -567,7 +567,7 @@ function render(){
     <div class="card">
       <span class="section-label">Test (~10-15 min)</span>
       ${testHtml}
-      <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Submit Test"}</button>
+      <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Check Answers"}</button>
       <div id="scorebox">${rec.completed ? scoreBoxHtml(rec.score) : ""}</div>
     </div>
     <div class="card" style="display:flex;justify-content:space-between;">
@@ -575,12 +575,12 @@ function render(){
       <button class="secondary" onclick="goAdjacent(1)" ${day.id>=30?"disabled":""}>Next Day &rarr;</button>
     </div>
   `;
-  if(rec.completed){
+  if(rec.checked || rec.completed){
     day.test.forEach((t,i)=>{
       const el = document.getElementById(`r_${day.id}_${i}`);
       const given = rec.answers[i] || "";
       const ok = isCorrect(given, t.a);
-      el.innerHTML = ok ? `<span class="ok">✓ Correct</span>` : `<span class="bad">✗ Your answer: "${given}" — Correct: ${t.a[0]}</span>`;
+      el.innerHTML = ok ? `<span class="ok">✓ Correct</span>` : `<span class="bad">✗ Not quite — try again</span>`;
     });
   }
 }
@@ -603,8 +603,14 @@ function submitTest(dayId){
     if(isCorrect(val, t.a)) correctCount++;
     return val;
   });
-  const score = Math.round((correctCount/day.test.length)*100);
-  progress[dayId] = { completed:true, score, answers, date:new Date().toISOString() };
+  const allCorrect = correctCount === day.test.length;
+  progress[dayId] = {
+    completed: allCorrect,
+    score: allCorrect ? 100 : undefined,
+    answers,
+    checked: true,
+    date: new Date().toISOString()
+  };
   saveProgress(progress);
   render();
 }
