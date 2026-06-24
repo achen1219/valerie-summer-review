@@ -497,7 +497,7 @@ function renderNav(){
       const btn = document.createElement("button");
       const rec = progress[d.id];
       btn.className = "day-btn" + (rec && rec.completed ? " done" : "") + (d.id===currentId ? " active" : "");
-      btn.innerHTML = `<span>${d.dayName} · D${d.id}</span><span class="badge">${rec && rec.completed ? rec.score+"%" : "-"}</span>`;
+      btn.innerHTML = `<span>${d.dayName} · D${d.id}</span><span class="badge">${rec && rec.completed ? initialScoreOf(rec)+"%" : "-"}</span>`;
       btn.onclick = ()=>{ currentId = d.id; render(); };
       block.appendChild(btn);
     });
@@ -510,10 +510,17 @@ function renderNav(){
 }
 
 // ---------- RENDER STATS ----------
+function initialScoreOf(r){
+  // older completed records (saved before resubmission tracking existed)
+  // only have r.score — fall back to that.
+  return typeof r.initialScore === "number" ? r.initialScore : r.score;
+}
+
 function renderStats(){
   const recs = Object.values(progress).filter(r=>r.completed);
   document.getElementById("statDone").textContent = recs.length + "/30";
-  const avg = recs.length ? Math.round(recs.reduce((s,r)=>s+r.score,0)/recs.length) : null;
+  const scored = recs.map(initialScoreOf).filter(s=>typeof s === "number");
+  const avg = scored.length ? Math.round(scored.reduce((s,v)=>s+v,0)/scored.length) : null;
   document.getElementById("statAvg").textContent = avg===null ? "--" : avg+"%";
   // streak: consecutive completed days counting back from the highest completed id
   let streak = 0;
@@ -568,8 +575,9 @@ function render(){
       <span class="section-label">Test (~10-15 min)</span>
       ${testHtml}
       <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Check Answers"}</button>
-      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec.score) : ""}</div>
+      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec) : ""}</div>
     </div>
+    ${reviewSectionHtml(day, rec)}
     <div class="card" style="display:flex;justify-content:space-between;">
       <button class="secondary" onclick="goAdjacent(-1)" ${day.id<=1?"disabled":""}>&larr; Previous Day</button>
       <button class="secondary" onclick="goAdjacent(1)" ${day.id>=30?"disabled":""}>Next Day &rarr;</button>
@@ -585,9 +593,30 @@ function render(){
   }
 }
 
-function scoreBoxHtml(score){
-  return `<div class="scorebox">Score: <b>${score}%</b>
-    <div class="progress-bar"><div style="width:${score}%"></div></div></div>`;
+function scoreBoxHtml(rec){
+  const initial = initialScoreOf(rec);
+  const sameAsFinal = initial === rec.score;
+  return `<div class="scorebox">Score: <b>${rec.score}%</b>
+    <div class="progress-bar"><div style="width:${rec.score}%"></div></div>
+    ${sameAsFinal ? "" : `<div style="margin-top:8px;font-size:13px;color:#555;">First attempt: <b>${initial}%</b> — corrected ${rec.wrongOnFirstTry ? rec.wrongOnFirstTry.length : ""} question(s) on resubmission.</div>`}
+  </div>`;
+}
+
+function reviewSectionHtml(day, rec){
+  if(!rec.completed || !rec.wrongOnFirstTry || rec.wrongOnFirstTry.length === 0) return "";
+  const items = rec.wrongOnFirstTry.map(i=>`
+    <div class="prob">
+      <p><b>Q${i+1}.</b> ${day.test[i].q}</p>
+      <div style="font-size:13px;color:#555;">
+        Your first answer: <span class="bad">"${(rec.initialAnswers && rec.initialAnswers[i]) || "(blank)"}"</span> — incorrect<br>
+        Corrected to: <span class="ok">"${rec.answers[i]}"</span> on resubmission
+      </div>
+    </div>`).join("");
+  return `
+    <div class="card">
+      <span class="section-label">Review: Corrected After Resubmission</span>
+      ${items}
+    </div>`;
 }
 
 function toggleReveal(btn){
@@ -597,6 +626,7 @@ function toggleReveal(btn){
 
 function submitTest(dayId){
   const day = CURRICULUM.find(d=>d.id===dayId);
+  const existing = progress[dayId] || {};
   let correctCount = 0;
   const answers = day.test.map((t,i)=>{
     const val = document.getElementById(`t_${dayId}_${i}`).value;
@@ -604,13 +634,27 @@ function submitTest(dayId){
     return val;
   });
   const allCorrect = correctCount === day.test.length;
-  progress[dayId] = {
-    completed: allCorrect,
-    score: allCorrect ? 100 : undefined,
-    answers,
-    checked: true,
-    date: new Date().toISOString()
-  };
+  const now = new Date().toISOString();
+
+  const rec = { ...existing, answers, checked: true, completed: allCorrect, date: now };
+
+  if(!existing.checked){
+    // first time checking this day's test — record the initial attempt
+    // permanently, before any resubmission can change it.
+    rec.initialAnswers = answers.slice();
+    rec.initialScore = Math.round((correctCount/day.test.length)*100);
+    rec.wrongOnFirstTry = day.test.map((t,i)=>i).filter(i=>!isCorrect(answers[i], day.test[i].a));
+    rec.firstCheckedDate = now;
+  }
+
+  if(allCorrect){
+    rec.score = 100;
+    rec.completedDate = now;
+  } else {
+    delete rec.score;
+  }
+
+  progress[dayId] = rec;
   saveProgress(progress);
   render();
 }
