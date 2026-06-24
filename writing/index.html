@@ -63,8 +63,6 @@ let progress = {};
 function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
 
 let currentWeek = 1;
-let saveTimer = null;
-let feedbackSaveTimer = null;
 
 function renderNav(){
   const nav = document.getElementById("nav");
@@ -105,6 +103,8 @@ function render(){
   const rec = progress[w.week] || {};
   const text = rec.text || "";
   const feedback = rec.feedback || "";
+  const revisedText = rec.revisedText || "";
+  const revisedFeedback = rec.revisedFeedback || "";
 
   main.innerHTML = `
     <div class="card">
@@ -122,8 +122,8 @@ function render(){
       <span class="section-label">Get Feedback</span>
       <h2>Writing Tutor</h2>
       <p class="feedback-hint">1) Copy your writing &nbsp;2) Paste it into the Writing Tutor &nbsp;3) Copy its feedback back here.</p>
-      <div class="feedback-actions">
-        <button class="btn-copy" onclick="copyWriting()">📋 Copy My Writing</button>
+      <div class="feedback-actions" id="actions1">
+        <button class="btn-copy" onclick="copyRound1()">📋 Copy My Writing</button>
         <a class="btn-link" href="${GPT_URL}" target="_blank" rel="noopener">🤖 Open Writing Tutor ↗</a>
       </div>
       <textarea class="feedback-area" id="feedbackArea" placeholder="Paste the Writing Tutor's feedback here...">${feedback}</textarea>
@@ -133,28 +133,86 @@ function render(){
       </div>
     </div>
 
+    <div class="card">
+      <span class="section-label">Revise</span>
+      <h2>Revised Writing</h2>
+      <p class="feedback-hint">After reading the feedback, rewrite or improve your paragraph here.</p>
+      <textarea id="revisedArea" placeholder="Write your revised version here...">${revisedText}</textarea>
+      <div class="meta-row">
+        <span id="revisedWordCount">${wordCount(revisedText)} words</span>
+        <span class="save-status" id="revisedSaveStatus">${revisedText ? "✓ Saved" : ""}</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="section-label">Get Updated Feedback</span>
+      <h2>Writing Tutor — Round 2</h2>
+      <p class="feedback-hint">1) Copy your revised writing &nbsp;2) Paste it into the Writing Tutor &nbsp;3) Copy its updated feedback back here.</p>
+      <div class="feedback-actions" id="actions2">
+        <button class="btn-copy" onclick="copyRound2()">📋 Copy My Revised Writing</button>
+        <a class="btn-link" href="${GPT_URL}" target="_blank" rel="noopener">🤖 Open Writing Tutor ↗</a>
+      </div>
+      <textarea class="feedback-area" id="revisedFeedbackArea" placeholder="Paste the Writing Tutor's updated feedback here...">${revisedFeedback}</textarea>
+      <div class="meta-row">
+        <span></span>
+        <span class="save-status" id="revisedFeedbackSaveStatus">${revisedFeedback ? "✓ Saved" : ""}</span>
+      </div>
+    </div>
+
     <div class="card" style="display:flex;justify-content:space-between;">
       <button onclick="goAdjacent(-1)" ${w.week<=1?"disabled":""} style="background:#fff;color:var(--teal-dark);border:1px solid var(--teal-dark);border-radius:6px;padding:8px 16px;cursor:pointer;">&larr; Previous Week</button>
       <button onclick="goAdjacent(1)" ${w.week>=36?"disabled":""} style="background:var(--teal);color:#fff;border:none;border-radius:6px;padding:8px 16px;cursor:pointer;">Next Week &rarr;</button>
     </div>
   `;
-  const area = document.getElementById("writingArea");
-  area.addEventListener("input", onWritingInput);
-  const fbArea = document.getElementById("feedbackArea");
-  fbArea.addEventListener("input", onFeedbackInput);
+  document.getElementById("writingArea").addEventListener("input", makeFieldSaver({
+    field:"text", statusId:"saveStatus", wordCountId:"wordCount", refreshNav:true
+  }));
+  document.getElementById("feedbackArea").addEventListener("input", makeFieldSaver({
+    field:"feedback", statusId:"feedbackSaveStatus"
+  }));
+  document.getElementById("revisedArea").addEventListener("input", makeFieldSaver({
+    field:"revisedText", statusId:"revisedSaveStatus", wordCountId:"revisedWordCount"
+  }));
+  document.getElementById("revisedFeedbackArea").addEventListener("input", makeFieldSaver({
+    field:"revisedFeedback", statusId:"revisedFeedbackSaveStatus"
+  }));
 }
 
-function buildCopyText(){
+const fieldSaveTimers = {};
+function makeFieldSaver({field, statusId, wordCountId, refreshNav}){
+  return function(e){
+    const val = e.target.value;
+    if(wordCountId) document.getElementById(wordCountId).textContent = wordCount(val) + " words";
+    document.getElementById(statusId).textContent = "Saving…";
+    clearTimeout(fieldSaveTimers[field]);
+    fieldSaveTimers[field] = setTimeout(()=>{
+      progress[currentWeek] = { ...(progress[currentWeek]||{}), [field]: val, [field+"Date"]: new Date().toISOString() };
+      saveProgress(progress);
+      document.getElementById(statusId).textContent = "✓ Saved";
+      if(refreshNav) renderNavOnly();
+    }, 500);
+  };
+}
+
+function copyRound1(){
   const w = WRITING_PROMPTS.find(p=>p.week===currentWeek);
   const text = document.getElementById("writingArea").value;
-  return `Writing Prompt (Week ${w.week} – ${w.type}):\n${w.prompt}\n\nMy Writing:\n${text}`;
+  const combined = `Writing Prompt (Week ${w.week} – ${w.type}):\n${w.prompt}\n\nMy Writing:\n${text}`;
+  doCopy(combined, ".btn-copy", "#actions1");
 }
 
-function copyWriting(){
-  const btn = document.querySelector(".btn-copy");
+function copyRound2(){
+  const w = WRITING_PROMPTS.find(p=>p.week===currentWeek);
+  const feedback = document.getElementById("feedbackArea").value;
+  const revisedText = document.getElementById("revisedArea").value;
+  const combined = `Writing Prompt (Week ${w.week} – ${w.type}):\n${w.prompt}\n\nOriginal Feedback:\n${feedback}\n\nMy Revised Writing:\n${revisedText}`;
+  doCopy(combined, "#actions2 .btn-copy", "#actions2");
+}
+
+function doCopy(combined, btnSelector, actionsSelector){
+  const btn = document.querySelector(btnSelector);
   const original = btn.textContent;
   const flash = (label)=>{ btn.textContent = label; setTimeout(()=>{ btn.textContent = original; }, 2200); };
-  const combined = buildCopyText();
 
   const legacyCopyFallback = ()=>{
     // hidden textarea + execCommand('copy') works without the Permissions API
@@ -170,58 +228,36 @@ function copyWriting(){
     try { ok = document.execCommand("copy"); } catch(e) { ok = false; }
     document.body.removeChild(temp);
     if(ok){
-      flash("✓ Copied (prompt + writing)!");
+      flash("✓ Copied!");
     } else {
-      showCopyPreview(combined);
+      showCopyPreview(combined, actionsSelector);
       flash("📋 See box below — select & copy");
     }
   };
 
   if(navigator.clipboard && navigator.clipboard.writeText){
-    navigator.clipboard.writeText(combined).then(()=>flash("✓ Copied (prompt + writing)!")).catch(legacyCopyFallback);
+    navigator.clipboard.writeText(combined).then(()=>flash("✓ Copied!")).catch(legacyCopyFallback);
   } else {
     legacyCopyFallback();
   }
 }
 
-function showCopyPreview(text){
-  let box = document.getElementById("copyPreviewBox");
+function showCopyPreview(text, actionsSelector){
+  const actions = document.querySelector(actionsSelector);
+  const boxId = actionsSelector.replace(/[^a-zA-Z0-9]/g,"") + "PreviewBox";
+  let box = document.getElementById(boxId);
   if(!box){
     box = document.createElement("textarea");
-    box.id = "copyPreviewBox";
+    box.id = boxId;
     box.className = "feedback-area";
     box.style.marginTop = "10px";
     box.readOnly = true;
-    document.querySelector(".feedback-actions").insertAdjacentElement("afterend", box);
+    actions.insertAdjacentElement("afterend", box);
   }
   box.value = text;
   box.style.display = "block";
   box.focus();
   box.select();
-}
-
-function onFeedbackInput(e){
-  const feedback = e.target.value;
-  document.getElementById("feedbackSaveStatus").textContent = "Saving…";
-  clearTimeout(feedbackSaveTimer);
-  feedbackSaveTimer = setTimeout(()=>{
-    progress[currentWeek] = { ...(progress[currentWeek]||{}), feedback, feedbackDate: new Date().toISOString() };
-    saveProgress(progress);
-    document.getElementById("feedbackSaveStatus").textContent = "✓ Saved";
-  }, 500);
-}
-
-function onWritingInput(e){
-  const text = e.target.value;
-  document.getElementById("wordCount").textContent = wordCount(text) + " words";
-  document.getElementById("saveStatus").textContent = "Saving…";
-  clearTimeout(saveTimer);
-  saveTimer = setTimeout(()=>{
-    progress[currentWeek] = { ...(progress[currentWeek]||{}), text, date: new Date().toISOString() };
-    saveProgress(progress);
-    document.getElementById("saveStatus").textContent = "✓ Saved";
-    renderNavOnly();
-  }, 500);
 }
 
 function renderNavOnly(){
