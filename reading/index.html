@@ -97,7 +97,13 @@ function getRec(weekId, day){ return progress[recKey(weekId, day)] || {}; }
 
 function dayMastered(rec, day){
   const mcQs = day.questions ? day.questions.filter(q=>q.type==="mc") : [];
-  if(mcQs.length === 0) return !!rec.checked; // writing/no-MC days: just "started" isn't "done"; handled separately
+  if(mcQs.length === 0){
+    // no auto-graded questions on this page (all open/open-table/compare3) —
+    // count it done once she's actually typed something, not just visited.
+    const hasOpen = rec.openAnswers && Object.values(rec.openAnswers).some(v=>v && v.trim());
+    const hasTable = rec.openTable && Object.values(rec.openTable).some(cols=>Object.values(cols).some(v=>v && v.trim()));
+    return !!(hasOpen || hasTable);
+  }
   return !!rec.completed;
 }
 

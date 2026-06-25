@@ -439,6 +439,90 @@ Steve was crestfallen. But then he realized that this was a new research opportu
 },
 {
   id: 6,
+  label: "Unit 2 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Phytoplankton Journal",
+      asYouRead: null,
+      passage: `June 11
+
+Things have been exciting around here lately! It's the beginning of summer, and that means something really awesome has been happening for the last few weeks—it's upwelling time! Water from deep in the ocean has been rising up to the surface and bringing a bunch of nutrients with it. My family and I LOVE nutrients. They are almost all we talk about. Honestly, without nutrients, I wouldn't be here writing this.
+
+With all these nutrients hanging around, and knowing that summer is bringing extra sunlight, we have the perfect setup to form a bloom! I'm so excited because this will be my first time participating in a bloom. My parents have told me what to expect, but I'm still a little nervous. With all the new phytoplankton, what if I get separated from my parents and can't find them? I think I will end up being okay, though.
+
+The coolest part of being part of the bloom is that we can be seen from SPACE! How neat is that? I think I'm going to try to wave at an astronaut. Maybe they'll see me and tell all their friends about it. That would be so cool. Anyway, it's time for me to get some rest in case tomorrow is the big bloom day!
+
+—Al`,
+      questions: [
+        {type:"mc", q:"What summer event is causing good bloom conditions?", options:["colder water","new phytoplankton","less sunlight","upwelling"], correct:3},
+        {type:"mc", q:"How are the journal writer's emotions reflected in the entry?", options:["They use language to express gratitude.","The entry is written with formal language.","Many sentences end with exclamation points.","They describe the sequence of events in great detail."], correct:2},
+        {type:"mc", q:"What are nutrients?", options:["flavors added to foods","grasses that grow in the ocean","the white and yellow parts of plants","things needed for growth and health"], correct:3},
+        {type:"mc", q:"What is an antonym for separated?", options:["apart","broken","mixed up","united"], correct:3},
+        {type:"open", q:"Would you say the journal writer is more excited or nervous? Explain.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Which Text Supports This Fact?",
+      asYouRead: null,
+      passage: `Close-Reading Texts — reread "Phytoplankton Journal" on page 41, plus these excerpts:
+
+From "Ocean Life: Plankton": An algal bloom can occur when a large number of algae are produced very quickly. There may be too many nutrients in the water for the phytoplankton. The excess nutrients often come from runoff of stormwater and wastewater. The nutrients could come from agricultural runoff as well, such as fertilizers. Or there may be too much warmth or sunlight hitting the water. Phytoplankton uses photosynthesis, just like plants on land. So, having too much sun and warmth can cause them to grow too quickly.
+
+From "World Traveler": But whenever he felt jealous, he returned to thoughts of his extraordinary travels. His small size and strong fins had allowed him to travel more than most other fish. He had seen plankton, whales, shipwrecks, and even some deep sea creatures. He wished he could go to some of the dead zones, but it was too hard to breathe there.
+
+Directions: For each fact below, check (or write) which text — "Ocean Life: Plankton," "World Traveler," and/or "Phytoplankton Journal" — has information that supports it.`,
+      questions: [
+        {type:"open-table", q:"Which text(s) support each fact?", rows:[
+          {label:"Fact 1", given:"Phytoplankton need sunlight to grow."},
+          {label:"Text(s)"},
+          {label:"Fact 2", given:"Plankton live in the ocean."},
+          {label:"Text(s)"},
+          {label:"Fact 3", given:"Phytoplankton need nutrients to create an algal bloom."},
+          {label:"Text(s)"},
+          {label:"Fact 4", given:"Algal blooms can be seen from space."},
+          {label:"Text(s)"},
+          {label:"Fact 5", given:"Dead zones have little oxygen."},
+          {label:"Text(s)"},
+        ]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing Characters",
+      asYouRead: null,
+      passage: `Close-Reading Texts — compare each character's thoughts or emotions in response to the events that take place. Explain how you know.
+
+From "Steve's Big Experiment": "This is super detailed," Tom said, clapping a fin on Steve's back. "You should share this with my cousin. He works for the National Academy of Bubble Science." Steve pondered it for a moment and then decided it was a good idea. Something was happening to the Great Barrier Reef. Clearly, they needed to take protective measures before it was too late!
+
+From "Phytoplankton Journal": Things have been exciting around here lately! It's the beginning of summer, and that means something really awesome has been happening for the last few weeks—it's upwelling time! Water from deep in the ocean has been rising up to the surface and bringing a bunch of nutrients with it. My family and I LOVE nutrients. They are almost all we talk about. Honestly, without nutrients, I wouldn't be here writing this.`,
+      questions: [
+        {type:"open-table", q:"Compare each character's response to events, and explain the evidence.", rows:[
+          {label:"Steve"},
+          {label:"Tom"},
+          {label:"Phytoplankton"},
+        ]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread the texts about oceans. Then, respond to the prompt.",
+      prompt: "Explain why you agree or disagree that people should be mindful of ocean pollution. Introduce the topic, state an opinion, and support your opinion with ideas and facts that support your ideas.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Use what you learned this week.",
+      prompt: "Write the phytoplankton's next journal entry. Describe what happens during the bloom. Use descriptive words and phrases and sensory details to explain the events.",
+    },
+  ]
+},
+{
+  id: 7,
   label: "Unit 3 · Week 1",
   days: [
     {
@@ -520,7 +604,7 @@ There are countless options for shopping and entertainment at malls around the w
   ]
 },
 {
-  id: 7,
+  id: 8,
   label: "Unit 3 · Week 2",
   days: [
     {
@@ -632,6 +716,94 @@ The girls smiled at each other and laughed. They could only hope that next year'
       title: "Write About It",
       instructions: "Reread “Quite a Trip.” Then, respond to the prompt.",
       prompt: "Write a story about a time when you found something strange at a mall. Use descriptive words and phrases and sensory details to tell your story.",
+    },
+  ]
+},
+{
+  id: 9,
+  label: "Unit 3 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Malls Around the World",
+      asYouRead: null,
+      passage: `Mall of America
+Location: Bloomington, Minnesota
+Facts: opened in 1992 • largest mall in the United States • has over 520 stores • houses an indoor theme park that includes roller coasters and a miniature golf course • has been used as a filming location for numerous movies and TV shows
+
+Iran Mall
+Location: Tehran, Iran
+Facts: largest shopping mall in the world in terms of area • houses over 700 shops • contains a hotel, a multiplex cinema, an ice rink, and a bowling alley
+
+Dubai Mall
+Location: Dubai, United Arab Emirates
+Facts: second-largest mall in the world by land area after the Iran Mall • the most visited building on Earth in 2011 with 54 million visitors • houses the Dubai Aquarium, the world's largest indoor aquarium
+
+Albrook Mall
+Location: Panama City, Panama
+Facts: largest mall in Latin America • 25th largest mall in the world • has around 700 stores
+
+Morocco Mall
+Location: Casablanca, Morocco
+Facts: largest mall in Africa • home to a large aquarium called Aquadream with more than 40 different species of fish • The aquarium is a cylinder with an open center. Visitors are able to take an elevator ride through the center that allows for a 360-degree view of the fish.`,
+      questions: [
+        {type:"mc", q:"How are the sections of the text related?", options:["They describe malls around the world.","They tell how malls around the world are safe.","They explain how many people visit malls around the world each year.","They describe how malls around the world were built."], correct:0},
+        {type:"mc", q:"How does the map support the information in the text?", options:["It shows the location of each mall.","It shows how far away the malls are from each other.","It shows where the malls are on each of the seven continents.","It shows how people can travel to get to the malls around the world."], correct:0},
+        {type:"mc", q:"What can you infer about the Dubai Mall?", options:["It took longer to build than any other mall.","People come from all over the world to see it.","It is located in an area far away from a big city.","People have to pay to park in the mall parking lot."], correct:1},
+        {type:"mc", q:"What is unique about the aquarium in the Morocco Mall?", options:["It is free.","It has more species of fish than any other aquarium.","It allows visitors to feed the fish.","It is shaped like a soup can."], correct:3},
+        {type:"open", q:"Which mall seems the most interesting to you? Explain why.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Supporting the Main Ideas",
+      asYouRead: null,
+      passage: `Close-Reading Texts — reread "Malls Around the World" on page 59, plus these excerpts:
+
+From "A World of Shopping": If you're hungry, the Dubai Mall has over 200 restaurants. Some are fast-food restaurants, and some are fancy restaurants. There are family restaurants at the mall, too. After you eat, you can shop for anything you might want.
+
+From "Quite a Trip": It was a whirlwind of an afternoon. The girls visited the Dubai Mall and the Mall of America. They even went outside of the United States and saw a mall in Alberta, Canada, and one mall in Doha, Qatar. They rode rollercoasters and saw a beautiful aquarium. When they were exhausted, they finally went back home.
+
+Directions: Integrate information from all three texts to list details that support each main idea below.`,
+      questions: [
+        {type:"open-table", q:"List details from the texts that support each main idea.", rows:[
+          {label:"Main Idea 1", given:"Malls are not just for shopping anymore."},
+          {label:"Supporting Details"},
+          {label:"Main Idea 2", given:"There is a little something for everyone at malls."},
+          {label:"Supporting Details"},
+        ]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Before and After Malls",
+      asYouRead: null,
+      passage: `Close-Reading Texts — compare and contrast shopping before and after malls were built.
+
+From "History of Malls": There are many malls in the United States today, but this wasn't always true. Many years ago, most stores were in downtown areas in the main part of a city. But in the early 1950s, many people began to move out of cities. They moved to suburbs, which are smaller towns near cities. Those people wanted to have stores near them, and they did not want to take long trips into the city to go shopping.
+
+From "Malls": Most malls have large department stores called anchor stores. These anchor stores are typically the main stores in a mall. Malls also have smaller stores that usually sell different types of products. For example, jewelry stores, video game stores, and gift shops are just a few of the types of stores that can be found in malls. Malls have other places that sell items and services, too. One example is kiosks (KEE-ahsks). Kiosks are small stands that are often placed in the middle of a mall.`,
+      questions: [
+        {type:"compare3", q:"Compare and contrast shopping before and after malls were built.", columns:["Before Malls Were Built","After Malls Were Built","Both"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts from this unit. Then, respond to the prompt.",
+      prompt: "Choose a mall you would like to visit. Write a letter to convince your family that they should take a trip to this mall. Provide logically ordered reasons that are supported by facts and details.",
+    },
+    {
+      day: 5,
+      title: "Make a Fact Sheet",
+      asYouRead: null,
+      passage: `Directions: Use what you learned about malls. Learn about a mall near you (ask a family member, or look one up). Make a fact sheet about it.`,
+      questions: [
+        {type:"open", q:"Name of the mall", lines:1},
+        {type:"open", q:"Location", lines:1},
+        {type:"open", q:"Facts (list a few interesting things about it)", lines:4},
+      ]
     },
   ]
 },
