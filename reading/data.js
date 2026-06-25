@@ -807,4 +807,272 @@ From "Malls": Most malls have large department stores called anchor stores. Thes
     },
   ]
 },
+{
+  id: 10,
+  label: "Unit 4 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Pizza Is Popular!",
+      asYouRead: "Underline and number the reasons the author gives for why people like pizza.",
+      passage: `Is pizza one of your favorite foods? If it is, you're not alone. Every year, about three billion pizzas are sold in the United States. And data shows that children like pizza more than any other type of food. For lunch or dinner, children would rather eat pizza than anything else.
+
+There are many reasons why people love pizza so much. One reason is that pizza is easy to eat. It doesn't require a knife or fork; you can simply eat it with your hands. There are also many options for types of pizza. The base ingredients are a crust, sauce, and toppings, and the sky's the limit when it comes to what you can have on it! Some people are happy to enjoy a plain cheese pizza, while other people love adding as many veggies as possible on top. There is also a popular debate: does pineapple belong on pizza? Finally, pizza is also inexpensive. You can have a very tasty meal without spending a lot of money!`,
+      questions: [
+        {type:"mc", q:"According to the author, what is one reason people love pizza?", options:["Pizza is easy to eat.","Pizza is healthy.","Pizza is small.","Pizza is spicy."], correct:0},
+        {type:"mc", q:"Some people may describe pizza as scrumptious. What does scrumptious mean?", options:["inexpensive","popular","round","tasty"], correct:3},
+        {type:"mc", q:"What is one main idea of the text?", options:["Pizza is inexpensive.","Pizza is loved by children.","Pizza is popular for many reasons.","Pizza can be eaten without a knife or fork."], correct:2},
+        {type:"mc", q:"Which simile best describes the topic of this text?", options:["as long as a snake","as tasty as pie","wet like the rain","as dry as the desert"], correct:1},
+      ]
+    },
+    {
+      day: 2,
+      title: "The History of Pizza",
+      asYouRead: "Circle the names of different groups of people who are part of the history of pizza making.",
+      passage: `Pizza has been around for longer than you might think. People in ancient Egypt and Greece used to eat flat bread covered with olive oil and other toppings. In Italy, people in the past baked bread under hot stones. Then, they topped the bread with spices and other ingredients.
+
+The pizza people eat today was created in 1889. It was made by Raffaele Esposito in Naples, Italy. He made a pizza to honor a visiting king and queen.
+
+It took a while for pizza to become popular in the United States. Some Italians moved to the United States in the late 1800s. They brought pizza with them. But most people did not know about it. Pizza became popular in the United States after World War II. American soldiers ate pizza in Italy. When they came home from the war, they wanted pizza at home. More and more people started eating pizza!`,
+      questions: [
+        {type:"mc", q:"Which event happened first?", options:["Pizza came to the United States.","Early Italians baked bread under hot stones.","Pizza became popular all over the United States.","Raffaele Esposito made pizza for a king and queen."], correct:1},
+        {type:"mc", q:"Which phrase describes when pizza became popular in the U.S.?", options:["after World War II","during the 1800s","for a long time","under hot stones"], correct:0},
+        {type:"mc", q:"What does ancient mean?", options:["tropical","present-day","very nervous","long, long ago"], correct:3},
+        {type:"mc", q:"Which idea is supported in this text and in “Pizza Is Popular!”?", options:["People enjoy eating pizza.","Pizza is the food of royalty.","People don't put different toppings on pizza.","Pizza is more popular in Italy than in the United States."], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "How to Make Pizza",
+      asYouRead: "Circle words that indicate time-order events.",
+      passage: `A chef will follow several steps while making pizza. First, the chef will begin by mixing the ingredients for pizza dough, such as flour, yeast, and water. After the dough is mixed, the chef lets the dough rise. Then, it is rolled flat. Most pizzas are circular, but some pizzas look like squares or rectangles. Then, the chef spreads some sauce on the dough. There are several different kinds of sauce options, such as tomato sauce, garlic sauce, or barbecue sauce. Next, the chef adds the toppings and the cheese. When the ingredients have been put together, the chef puts the pizza into a special pan. Then, the chef uses a tool called a paddle to put the pizza into an oven. When the pizza is cooked through, the chef pulls it out, and they set it on a counter. They use a pizza cutter to make slices in the pizza, and the pizza is now ready for people to enjoy!`,
+      questions: [
+        {type:"mc", q:"What does a chef do right after adding the toppings and cheese?", options:["adds more toppings","put the pizza into a special pizza pan","mixes ingredients for the pizza dough","spreads some tomato sauce on the dough"], correct:1},
+        {type:"mc", q:"Which of the following is not listed as an ingredient of pizza?", options:["baking soda","flour","water","yeast"], correct:0},
+        {type:"open", q:"Which tools do chefs use to make pizza?", lines:2},
+        {type:"open", q:"Which toppings do you like on your pizza?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "We Love Pizza!",
+      asYouRead: "Underline or circle ingredients found on different pizzas around the world.",
+      passage: `Pizza is very popular all around the world. People from many different countries love to eat it. And in each country, the pizza is slightly different.
+
+In Japan, for instance, there are two main styles of pizza. One kind looks like the pizza you can get in the United States, but it often has seafood on it. The other kind of Japanese pizza looks more like a pancake. The ingredients in that pizza are mixed up into the batter. Then, the batter is cooked like a pancake. Finally, the pizza is cut into slices and served hot and fresh.
+
+Many people in India also eat pizza. Pizza crust in India is often served on a type of bread called naan (NAHN). It is a thin, chewy dough that is often brushed with butter and garlic. In India, you can get pizza with pepperoni on it. You can also get pizza topped with tandoori chicken. This is a special type of grilled chicken. Or you can get your pizza with tofu on it, too. Some Indians also add chili flakes and ketchup to their pizza.
+
+Australians also love pizza. If you go to Australia, you can get a pizza with pepperoni. But you can also get a pizza with lamb or eggs on it. Just like in the United States, you can get a pizza with ham and pineapple. Pineapple is the most popular pizza topping in Australia. Some Australians also like cut-up pumpkin on their pizza. Other Australians like shrimp on their pizza.
+
+Around the world, the options are limitless for what people can put on their pizzas. If you can imagine a pizza, you can probably create it! What toppings do you like on your pizza? Chances are, someone else in the world also likes that type of pizza!`,
+      questions: [
+        {type:"mc", q:"What is one main idea of this text?", options:["Pizza is a popular food choice in the United States.","People of different countries make pizza differently.","Pizza is an unhealthy food choice around the world.","People in different parts of the world do not eat pizza."], correct:1},
+        {type:"mc", q:"What is true about pizza in both India and Australia?", options:["You can get pizza with lamb.","You can get pizza with pumpkin.","You can get pizza with pepperoni.","You can get pizza with tandoori chicken."], correct:2},
+        {type:"mc", q:"The author writes, “If you can imagine a pizza, you can probably create it!” Why did the author most likely end this statement with an exclamation point?", options:["to show anxiety","to show excitement","to show confusion","to show thankfulness"], correct:1},
+        {type:"mc", q:"Which pair of words correctly compares the structure of this text to “How to Make Pizza”?", options:["cause-effect; problem-solution","problem-solution; cause-effect","compare-contrast; chronological order","chronological order; compare-contrast"], correct:3},
+        {type:"open-table", q:"List unique ingredients found on pizza from each country.", rows:[
+          {label:"Japan"},
+          {label:"India"},
+          {label:"Australia"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread “We Love Pizza!” Then, respond to the prompt.",
+      prompt: "Which pizza from the text would you be most interested in eating? State your opinion and support your idea using reasons, facts, and details.",
+    },
+  ]
+},
+{
+  id: 11,
+  label: "Unit 4 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "When I Grow Up",
+      asYouRead: "Number the ideas Kevin shares about his future jobs.",
+      passage: `At school, Kevin's teacher handed out papers. Kevin slid down in his chair. Writing was one of his least favorite parts of school. But when he turned his paper over and saw the prompt on the front, he got excited.
+
+The prompt read: What do you want to do when you grow up?
+
+He put his pencil to the paper, and the words came to him easily:
+
+When I grow up, I mostly want to be a chef, and I would like to be chef who makes delicious pizzas. My family and I have always loved pizza, and there are so many kinds to make. Sometimes, I also think it would be cool to be an astronaut because I love space. Another thing I would like to be is an actor. I love going to see movies with my dad, and sometimes I even like to do my own impressions.`,
+      questions: [
+        {type:"mc", q:"What reason does Kevin give for wanting to be an actor?", options:["He wants to be famous.","He likes to read lines.","He wants his dad to be proud of him.","He enjoys movies and acting like the actors."], correct:3},
+        {type:"mc", q:"How does Kevin feel about pizza?", options:["He wants to make anything but pizza.","He loves the variety pizza can have.","He does not like it.","He thinks it's just okay."], correct:1},
+        {type:"mc", q:"What are impressions?", options:["people's personalities","made-up stories","imitating someone else","feelings people have"], correct:2},
+        {type:"mc", q:"Why is there a comma after the phrase, When I grow up,?", options:["It tells the reader that someone is speaking.","It tells the reader that the sentence is complete.","It separates an introductory clause from the sentence.","It gives the reader time to breathe when reading a long sentence."], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "A Family Tradition",
+      asYouRead: "Circle the item that piques Kevin's interest. Underline details about the item.",
+      passage: `The next morning, Kevin told his dad about the journal prompt from school.
+
+"I'm going to let you in on a little family secret," he said, walking over to one of the kitchen cabinets. He grabbed a large binder and set it down on the counter.
+
+"What is that?" Kevin asked, staring at the massive binder.
+
+"It's our trusty family recipe book," his dad said. "You know how we make pizzas for our family dinner every month? All the recipes we use come from this."
+
+"But you never look at the book," Kevin said, confused. His dad laughed and explained that he'd been using them for so long that he'd memorized them.
+
+Kevin looked through the recipe book while he finished eating his breakfast. He noticed that some recipes were half-finished and some recipes were so tattered that they were barely readable. Then, he saw a pizza recipe that really caught his eye.
+
+"Dad, I think I have an idea for the next family pizza," Kevin said.
+
+"We'll make whichever pizza you've picked!" his dad exclaimed.`,
+      questions: [
+        {type:"mc", q:"Where does this part of the story take place?", options:["at Kevin's house in the den","in Kevin's classroom","at a pizza restaurant","in Kevin's kitchen"], correct:3},
+        {type:"mc", q:"What is wrong with some of the family recipes?", options:["They aren't exactly complete.","They list the wrong ingredients.","They haven't been tried in many years.","They are removed from the recipe book."], correct:0},
+        {type:"mc", q:"What is an antonym for massive?", options:["bulky","immense","thorough","tiny"], correct:3},
+        {type:"mc", q:"What do Kevin and his dad have in common?", options:["They both enjoy pizza.","They both enjoy coffee.","They both enjoy journals.","They both enjoy writing recipes."], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "Kevin's Pizzeria",
+      asYouRead: "Place a star beside the challenge Kevin gives himself.",
+      passage: `Kevin wanted to get some practice making pizza before he had to make it for his whole family. So, he decided to keep trying different recipes. First, he had to figure out how to make a pizza dough. It took him several attempts and a lot of help from his dad, but Kevin finally got it. He also added a secret ingredient to the dough, which was a few shakes of Italian seasoning.
+
+After Kevin's mom and dad raved about his practice pizza, he decided to make a plan. He wanted to make every pizza recipe in the book. He even wanted to make the ones that had missing parts.
+
+The kitchen became a pizza parlor over the next week. His dad started to call the kitchen "Kevin's Pizzeria." Kevin's mom customized a sign for it. She printed the words and hung it up across the kitchen door. Kevin loved it!`,
+      questions: [
+        {type:"mc", q:"What does Kevin challenge himself to do?", options:["turn his kitchen into a pizza parlor","improve the recipes","make every pizza recipe in the family recipe book","write down more recipes in the family recipe book"], correct:2},
+        {type:"mc", q:"What is something that may be customized?", options:["a blender","a coffee mug","a pack of lined paper","a puppy"], correct:1},
+        {type:"open", q:"How does Kevin's whole family get involved in his pizza-making?", lines:2},
+        {type:"open", q:"What character traits does Kevin reveal through his actions?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "Cooking Competition",
+      asYouRead: "Place a C beside one or more causes. Place an E beside the effect(s) of the cause(s).",
+      passage: `Kevin continued to work on his pizza-making skills. When it came time for the family pizza night, he knocked it out of the park! After that night, he kept making pizzas. He was having so much fun with the family recipe book. For dessert one night, he made sweet cinnamon knots out of leftover pizza dough. Then, he made a breakfast pizza with ham, spinach, and a fried egg on top!
+
+"Kevin, this is amazing," his dad said, finishing up a slice. "Have you ever thought about entering a cooking competition?"
+
+"I've thought about opening a pizza restaurant," Kevin told his parents. "But I guess entering a competition seems like a better first step."
+
+Kevin and his parents found a kids-only cooking competition. Everyone had to make a "comfort food" dish. Kevin was excited to enter, but he also felt nervous.
+
+Kevin decided to focus on his pizza recipe instead of worrying. It was one of the recipes that was half-finished, so Kevin had to fill in the gaps. He made some mistakes each time he practiced, but he felt it turned out great each time.
+
+The morning of the competition, Kevin headed to the center with his dad. Every child who was entering had to have an adult with them. The adult could help with tasks, such as chopping vegetables, but they couldn't participate in the actual cooking.
+
+Kevin and his dad set to work making the pizza. His dad chopped basil for him, and Kevin pulled the sauce and dough together. Measuring out the ingredients for the sauce was the most complicated part. It involved using a variety of fresh garlic, basil, and crushed tomatoes. He also had to use extra virgin olive oil, some salt and pepper, and oregano. He put everything into a bowl and mixed it well.
+
+His pizza came out of the oven with a crisp crust. And it was perfectly gooey and cheesy. At tasting time, the judges praised him for taking a simple recipe and making it well. Some judges even said it was the best dish they had eaten all night!
+
+"It would be perfect in my eyes," said the last judge, "but I think the sauce has a bit too much garlic."
+
+Kevin smiled and made a mental note to update the recipe book when he got home. He was proud of how well he had done, and he was happy to be one step closer to his dreams!`,
+      questions: [
+        {type:"mc", q:"What is one challenge in preparing for the cooking competition?", options:["Kevin's recipe is too simple.","Kevin keeps making some mistakes.","Chefs cannot make whatever they like.","Adults assist in the kitchen with their kids."], correct:1},
+        {type:"mc", q:"Why might Kevin's recipe receive such high praise?", options:["He uses quality ingredients.","The judges are big fans of pizza.","The recipe uses just a few ingredients.","He uses a sauce that does not need to be cooked."], correct:0},
+        {type:"mc", q:"What is Kevin's craft?", options:["cooking","painting","sculpting","writing"], correct:0},
+        {type:"mc", q:"What is an antonym for complicated?", options:["confusing","difficult","messy","simple"], correct:3},
+        {type:"open-table", q:"List three events that support the lesson or theme. Lesson/Theme: Overcoming challenges can lead to satisfying outcomes.", rows:[
+          {label:"1."},
+          {label:"2."},
+          {label:"3."},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread “Cooking Competition.” Then, respond to the prompt.",
+      prompt: "Pretend you are a judge at the cooking competition. Write to explain criteria you would be looking for to choose a winning dish. Then, describe a favorite food of yours that meets these criteria.",
+    },
+  ]
+},
+{
+  id: 12,
+  label: "Unit 4 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Kevin's Pizzeria Review",
+      asYouRead: null,
+      passage: `DAILY TIMES — Kevin's Pizzeria Review
+
+Kevin's Pizzeria is the newest restaurant in town. It's also the tastiest restaurant in town. The menu options allowed me to customize my pizza as much as I wanted. Even the picky eaters in my family were able to find something they liked.
+
+The star of the show at Kevin's is the stone oven style pizza. These pizzas are baked in large stone ovens. The base of each pizza is a thick, crisp dough that will make your mouth water. It's handcrafted and made fresh each morning. Apparently, the dough recipe is a family favorite. It was passed down from Kevin's great grandmother. Layered on the crust is a fresh sauce made of perfectly roasted tomatoes. And on top of the sauce is a layer of fresh mozzarella cheese. You can add various toppings of your choice.
+
+For my meal, I sampled three separate options in stone oven style: classic cheese, pepperoni, and veggie special. Each pizza was delightful. Each one had the perfect amount of toasted cheese, sauce, and toppings. It made for an incredible pizza experience.
+
+Kevin makes sure that only the best ingredients are used in his pizzas. That's why most of the vegetables are grown in his own garden. For the cheese, he works with a local dairy farm. Because they are local, he is able to get it delivered fresh three times a week.
+
+The pizzeria is also dedicated to reducing food waste. Any food left over at the end of the night is given out for free to anyone that needs or wants it.
+
+I highly recommend trying Kevin's Pizzeria if you're on the lookout for new and exciting versions of a classic dish. Your taste buds will not be disappointed!`,
+      questions: [
+        {type:"mc", q:"What does the author mean when they write that the dough is handcrafted?", options:["made with many hands","made carefully by hand","made to look like a craft project","made following a special recipe"], correct:1},
+        {type:"mc", q:"Where do most of the ingredients come from?", options:["the store","the garden","a dairy farm","a farmer's market"], correct:1},
+        {type:"mc", q:"What does on the lookout mean?", options:["to see things clearly","to keep a careful eye on","to search for something","to look from a tall height"], correct:2},
+        {type:"mc", q:"How does the author feel about the food at Kevin's Pizzeria?", options:["It is just okay.","It is not worth your time.","It is definitely worth trying.","It is good, but could be better."], correct:2},
+        {type:"open", q:"Explain how the author's descriptions of the food helped you answer Question 4.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Design Your Own Pizza",
+      asYouRead: null,
+      passage: `Close-Reading Texts — reread the pizzeria review on page 77, plus these excerpts:
+
+From "We Love Pizza!": Australians also love pizza. If you go to Australia, you can get a pizza with pepperoni. But you can also get a pizza with lamb or eggs on it. Just like in the United States, you can get a pizza with ham and pineapple. Pineapple is the most popular pizza topping in Australia. Some Australians also like cut-up pumpkin on their pizza. Other Australians like shrimp on their pizza.
+
+From "Cooking Competition": Measuring out the ingredients for the sauce was the most complicated part. It involved using a variety of fresh garlic, basil, and crushed tomatoes. He also had to use extra virgin olive oil, some salt and pepper, and oregano. He put everything into a bowl and mixed it well.
+
+Directions: Write your own pizza recipe. Include your favorite ingredients.`,
+      questions: [
+        {type:"open-table", q:"Design your own pizza.", rows:[
+          {label:"Name of Pizza"},
+          {label:"Crust"},
+          {label:"Sauce"},
+          {label:"Toppings"},
+        ]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Chefs vs. Kevin",
+      asYouRead: null,
+      passage: `Close-Reading Texts — compare how chefs in general compare to Kevin when making pizza.
+
+From "How to Make Pizza": First, the chef will begin by mixing the ingredients for pizza dough, such as flour, yeast, and water. After the dough is mixed, the chef lets the dough rise. Then, it is rolled flat. Most pizzas are circular, but some pizzas look like squares or rectangles. Then, the chef spreads some sauce on the dough. There are several different kinds of sauce options, such as tomato sauce, garlic sauce, or barbecue sauce. Next, the chef adds the toppings and the cheese.
+
+From "Kevin's Pizzeria Review": The base of each pizza is a thick, crisp dough that will make your mouth water. It's handcrafted and made fresh each morning. Apparently, the dough recipe is a family favorite. It was passed down from Kevin's great grandmother. Layered on the crust is a fresh sauce made of perfectly roasted tomatoes. And on top of the sauce is a layer of fresh mozzarella cheese. You can add various toppings of your choice.`,
+      questions: [
+        {type:"compare3", q:"Compare the dough.", columns:["Chefs","Kevin"]},
+        {type:"compare3", q:"Compare the sauce.", columns:["Chefs","Kevin"]},
+        {type:"compare3", q:"Compare the toppings.", columns:["Chefs","Kevin"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts from this unit. Then, respond to the prompt.",
+      prompt: "Making pizza seems pretty simple. But anything can go wrong at any moment! Write a story about having a challenging experience making pizza. Use dialogue and descriptive language in your story.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about a favorite food at a restaurant you visit, or your favorite meal.",
+      prompt: "Write a review of the food. Introduce the topic clearly, state an opinion, and support your opinion with reasons. Link your opinion and reasons using words, phrases, and clauses.",
+    },
+  ]
+},
 ];
