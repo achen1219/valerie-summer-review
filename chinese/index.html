@@ -78,6 +78,17 @@
   .xingjin-row .ch{font-size:24px;font-weight:700;min-width:36px;}
   .xingjin-row .zy{color:#a9761b;font-size:13px;font-weight:600;}
   .xingjin-row .ex{font-size:13px;color:#666;}
+  .lock-screen{text-align:center;padding:40px 20px;}
+  .lock-screen .icon{font-size:48px;}
+  .lock-input-row{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap;}
+  .lock-input-row input{font-size:16px;padding:8px 12px;border:1px solid #ccc;border-radius:6px;width:140px;text-align:center;}
+  .lock-error{color:#c0392b;font-size:13px;margin-top:8px;}
+  .test-section-title{font-size:16px;font-weight:700;color:var(--red-dark);margin:0 0 6px;}
+  .test-meta{font-size:12px;color:#888;margin-bottom:12px;}
+  .fillblank-row{margin:6px 0;}
+  .fillblank-row input[type=text]{padding:6px 10px;border:1px solid #ccc;border-radius:6px;width:160px;font-size:14px;}
+  .relock-row{text-align:right;margin-top:-6px;margin-bottom:10px;}
+  .relock-row button{background:#fff;color:var(--red-dark);border:1px solid var(--red-dark);font-size:12px;padding:5px 10px;}
   @media (max-width:760px){.layout{flex-direction:column;}nav{width:100%;}main{padding:14px;}}
 </style>
 </head>
@@ -97,6 +108,7 @@
 <script src="../shared/cloudsync.js"></script>
 <script src="data.js"></script>
 <script src="zyzx-data.js"></script>
+<script src="comprehensive-tests-data.js"></script>
 <script>
 const STORE_KEY = "valerieSummerChineseReview";
 let progress = {};
@@ -144,6 +156,8 @@ function render(){
   const week = CHINESE_WEEKS.find(w=>w.id===currentWeek);
   const main = document.getElementById("main");
 
+  if(currentTab === "test"){ renderTestPage(week, main); return; }
+
   const section = week[currentTab]; // {quiz, hasVideo}
   const sectionName = currentTab === "vocab" ? "生字語詞" : "成語";
   const pptFile = currentTab === "vocab" ? "vocab.pdf" : "idiom.pdf";
@@ -159,6 +173,7 @@ function render(){
       <div class="tabs">
         <button class="tab-btn ${currentTab==='vocab'?'active':''}" onclick="switchTab('vocab')">生字語詞</button>
         <button class="tab-btn ${currentTab==='idiom'?'active':''}" onclick="switchTab('idiom')">成語</button>
+        <button class="tab-btn ${currentTab==='test'?'active':''}" onclick="switchTab('test')">📝 綜合測驗</button>
       </div>
       <div class="resource-row">
         <a href="${assetBase}${pptFile}" target="_blank">📑 開啟簡報 PDF</a>
@@ -455,6 +470,259 @@ function submitQuiz(){
   const score = Math.round((correctCount/quiz.length)*100);
   progress[progressKey(week.id,currentTab)] = { completed:true, score, answers, date:new Date().toISOString() };
   saveProgress(progress);
+  render();
+}
+
+// ================== 綜合測驗（家長解鎖才能作答） ==================
+const TEST_PASSWORD_HASH = "d6e5a20b30f87216b2c758f5e7a23c437dbc3dfa1ccb177c474de152bb0ef731";
+
+async function sha256Hex(text){
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest("SHA-256", enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+
+function testKey(weekId){ return weekId + "_compTest"; }
+function getTestRec(weekId){ return progress[testKey(weekId)] || {}; }
+function saveTestRec(weekId, patch){
+  const key = testKey(weekId);
+  progress[key] = { ...(progress[key]||{}), ...patch, date:new Date().toISOString() };
+  saveProgress(progress);
+}
+
+function normFill(s){
+  return String(s||"").trim().replace(/[、,，.\s]/g, "");
+}
+
+async function attemptUnlock(weekId){
+  const input = document.getElementById("unlockPw").value;
+  const errEl = document.getElementById("unlockErr");
+  const hash = await sha256Hex(input);
+  if(hash === TEST_PASSWORD_HASH){
+    saveTestRec(weekId, { unlocked: true });
+    render();
+  } else {
+    errEl.textContent = "密碼不對，請再試一次。";
+    document.getElementById("unlockPw").value = "";
+  }
+}
+
+function relockTest(weekId){
+  saveTestRec(weekId, { unlocked: false });
+  render();
+}
+
+function renderTestPage(week, main){
+  const data = COMPREHENSIVE_TESTS[week.id];
+  const rec = getTestRec(week.id);
+
+  if(!data){
+    main.innerHTML = `<div class="card"><span class="section-label">綜合測驗</span><div class="placeholder">這一週還沒有綜合測驗。</div></div>`;
+    return;
+  }
+
+  if(!rec.unlocked){
+    main.innerHTML = `
+      <div class="card lock-screen">
+        <div class="icon">🔒</div>
+        <h2>此測驗尚未開放</h2>
+        <p style="color:#888;font-size:13px;">這份綜合測驗需要家長輸入密碼解鎖，才能讓孩子作答。</p>
+        <div class="lock-input-row">
+          <input type="password" id="unlockPw" placeholder="輸入密碼" onkeydown="if(event.key==='Enter') attemptUnlock(${week.id})">
+          <button onclick="attemptUnlock(${week.id})">🔓 解鎖測驗</button>
+        </div>
+        <div class="lock-error" id="unlockErr"></div>
+      </div>
+    `;
+    return;
+  }
+
+  const mcRec = rec.mc || {};
+  const fillRec = rec.fillBlank || {};
+  const idiomRec = rec.idiomMc || {};
+  const sentenceVals = rec.sentence || {};
+
+  main.innerHTML = `
+    <div class="relock-row"><button onclick="relockTest(${week.id})">🔒 重新鎖定測驗</button></div>
+
+    <div class="card">
+      <span class="section-label">${data.title}</span>
+      <p class="test-section-title">一、選擇題</p>
+      <p class="test-meta">共 ${data.mc.length} 題</p>
+      <div id="testMcBody"></div>
+      <button id="testMcBtn" onclick="checkTestSection(${week.id},'mc')" ${mcRec.completed?"disabled":""}>${mcRec.completed?"全部正確 ✓":"檢查答案"}</button>
+      <div id="testMcScore">${mcRec.completed ? testScoreBoxHtml(mcRec) : ""}</div>
+    </div>
+
+    <div class="card">
+      <p class="test-section-title">二、語詞填空</p>
+      <p class="test-meta">語詞庫：${data.fillBlank.bank.join("、")}</p>
+      <div id="testFillBody"></div>
+      <button id="testFillBtn" onclick="checkTestSection(${week.id},'fillBlank')" ${fillRec.completed?"disabled":""}>${fillRec.completed?"全部正確 ✓":"檢查答案"}</button>
+      <div id="testFillScore">${fillRec.completed ? testScoreBoxHtml(fillRec) : ""}</div>
+    </div>
+
+    <div class="card">
+      <p class="test-section-title">三、造句練習</p>
+      <p class="test-meta">這部分由家長親自批改，不會自動評分。</p>
+      <div id="testSentenceBody"></div>
+    </div>
+
+    <div class="card">
+      <p class="test-section-title">四、成語測驗</p>
+      <p class="test-meta">共 ${data.idiomMc.length} 題（選擇題）</p>
+      <div id="testIdiomBody"></div>
+      <button id="testIdiomBtn" onclick="checkTestSection(${week.id},'idiomMc')" ${idiomRec.completed?"disabled":""}>${idiomRec.completed?"全部正確 ✓":"檢查答案"}</button>
+      <div id="testIdiomScore">${idiomRec.completed ? testScoreBoxHtml(idiomRec) : ""}</div>
+    </div>
+  `;
+
+  renderTestMc(data, mcRec);
+  renderTestFillBlank(data, fillRec);
+  renderTestSentences(week.id, data, sentenceVals);
+  renderTestIdiomMc(data, idiomRec);
+}
+
+function testScoreBoxHtml(sectionRec){
+  const initial = typeof sectionRec.initialScore === "number" ? sectionRec.initialScore : sectionRec.score;
+  const sameAsFinal = initial === sectionRec.score;
+  return `<div class="scorebox">分數：<b>${sectionRec.score}%</b>
+    <div class="progress-bar"><div style="width:${sectionRec.score}%"></div></div>
+    ${sameAsFinal ? "" : `<div style="margin-top:8px;font-size:13px;color:#555;">第一次作答：<b>${initial}%</b></div>`}
+  </div>`;
+}
+
+function renderTestMc(data, rec){
+  const body = document.getElementById("testMcBody");
+  body.innerHTML = data.mc.map((item,i)=>{
+    const chosen = rec.answers ? rec.answers[i] : undefined;
+    const optsHtml = item.options.map((opt,j)=>{
+      const checked = chosen === j ? "checked" : "";
+      return `<label class="opt-row">
+        <input type="radio" name="testmc${i}" value="${j}" ${checked} ${rec.completed?"disabled":""}>
+        <span>${opt}</span>
+      </label>`;
+    }).join("");
+    return `<div class="prob">
+      <p>${i+1}. ${item.q}</p>
+      ${optsHtml}
+      <div class="test-result" id="testmcResult${i}"></div>
+    </div>`;
+  }).join("");
+  if(rec.checked || rec.completed){
+    data.mc.forEach((item,i)=>{
+      const el = document.getElementById(`testmcResult${i}`);
+      const ok = rec.answers[i] === item.correct;
+      el.innerHTML = ok ? `<span class="ok">✓ 正確</span>` : `<span class="bad">✗ 不對，再試一次</span>`;
+    });
+  }
+}
+
+function renderTestFillBlank(data, rec){
+  const body = document.getElementById("testFillBody");
+  body.innerHTML = data.fillBlank.items.map((item,i)=>{
+    const val = rec.answers ? (rec.answers[i]||"") : "";
+    return `<div class="fillblank-row">
+      <span>${i+1}. ${item.q}</span>
+      <input type="text" id="testfill${i}" value="${val}" ${rec.completed?"disabled":""}>
+      <span id="testfillResult${i}"></span>
+    </div>`;
+  }).join("");
+  if(rec.checked || rec.completed){
+    data.fillBlank.items.forEach((item,i)=>{
+      const el = document.getElementById(`testfillResult${i}`);
+      const given = (rec.answers && rec.answers[i]) || "";
+      const ok = normFill(given) === normFill(item.answer);
+      el.innerHTML = ok ? ` <span class="ok">✓</span>` : ` <span class="bad">✗ 不對，再試一次</span>`;
+    });
+  }
+}
+
+function renderTestIdiomMc(data, rec){
+  const body = document.getElementById("testIdiomBody");
+  body.innerHTML = data.idiomMc.map((item,i)=>{
+    const chosen = rec.answers ? rec.answers[i] : undefined;
+    const optsHtml = item.options.map((opt,j)=>{
+      const checked = chosen === j ? "checked" : "";
+      return `<label class="opt-row">
+        <input type="radio" name="testidiom${i}" value="${j}" ${checked} ${rec.completed?"disabled":""}>
+        <span>${opt}</span>
+      </label>`;
+    }).join("");
+    return `<div class="prob">
+      <p>${i+1}. ${item.q}</p>
+      ${optsHtml}
+      <div class="test-result" id="testidiomResult${i}"></div>
+    </div>`;
+  }).join("");
+  if(rec.checked || rec.completed){
+    data.idiomMc.forEach((item,i)=>{
+      const el = document.getElementById(`testidiomResult${i}`);
+      const ok = rec.answers[i] === item.correct;
+      el.innerHTML = ok ? `<span class="ok">✓ 正確</span>` : `<span class="bad">✗ 不對，再試一次</span>`;
+    });
+  }
+}
+
+let testSentenceTimers = {};
+function renderTestSentences(weekId, data, sentenceVals){
+  const body = document.getElementById("testSentenceBody");
+  body.innerHTML = data.sentence.map((item,i)=>{
+    const val = sentenceVals[i] || "";
+    return `<div class="prob">
+      <p>${i+1}. 請用「${item.term}」造一句完整的句子。</p>
+      <p style="font-weight:400;color:#888;font-size:12px;">提示：${item.hint}</p>
+      <textarea id="testSentence${i}" placeholder="我的句子...">${val}</textarea>
+      <div class="save-status" id="testSentenceStatus${i}"></div>
+    </div>`;
+  }).join("");
+  data.sentence.forEach((item,i)=>{
+    document.getElementById(`testSentence${i}`).addEventListener("input", (e)=>{
+      document.getElementById(`testSentenceStatus${i}`).textContent = "儲存中…";
+      clearTimeout(testSentenceTimers[i]);
+      testSentenceTimers[i] = setTimeout(()=>{
+        const rec = getTestRec(weekId);
+        const sentence = { ...(rec.sentence||{}), [i]: e.target.value };
+        saveTestRec(weekId, { sentence });
+        document.getElementById(`testSentenceStatus${i}`).textContent = "✓ 已儲存";
+      }, 500);
+    });
+  });
+}
+
+function checkTestSection(weekId, sectionKey){
+  const data = COMPREHENSIVE_TESTS[weekId];
+  const items = sectionKey === "fillBlank" ? data.fillBlank.items : data[sectionKey];
+  const existing = getTestRec(weekId)[sectionKey] || {};
+  let correctCount = 0;
+  const answers = items.map((item,i)=>{
+    if(sectionKey === "fillBlank"){
+      const val = document.getElementById(`testfill${i}`).value;
+      if(normFill(val) === normFill(item.answer)) correctCount++;
+      return val;
+    } else {
+      const checked = document.querySelector(`input[name="test${sectionKey==='mc'?'mc':'idiom'}${i}"]:checked`);
+      const val = checked ? parseInt(checked.value) : -1;
+      if(val === item.correct) correctCount++;
+      return val;
+    }
+  });
+  const allCorrect = correctCount === items.length;
+  const now = new Date().toISOString();
+  const newSectionRec = { ...existing, answers, checked:true, completed:allCorrect, date:now };
+
+  if(!existing.checked){
+    newSectionRec.initialAnswers = answers.slice();
+    newSectionRec.initialScore = Math.round((correctCount/items.length)*100);
+  }
+  if(allCorrect){
+    newSectionRec.score = 100;
+  } else {
+    delete newSectionRec.score;
+  }
+
+  const rec = getTestRec(weekId);
+  saveTestRec(weekId, { [sectionKey]: newSectionRec });
   render();
 }
 
