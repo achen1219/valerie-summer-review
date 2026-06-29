@@ -1075,4 +1075,278 @@ From "Kevin's Pizzeria Review": The base of each pizza is a thick, crisp dough t
     },
   ]
 },
+{
+  id: 13,
+  label: "Unit 5 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "The Kalahari Desert: A Special Place",
+      asYouRead: null,
+      passage: `The Kalahari Desert is a vast desert in southern Africa. It covers parts of Botswana, Namibia, and South Africa. It is not like most deserts. While other deserts are mostly sand dunes with little life, the Kalahari has grasses, bushes, and trees that support many animals.
+
+The Kalahari is considered a desert because it has very little rainfall, but it is not as dry as deserts like the Sahara. Some parts of the Kalahari get just enough rain each year to support plant life. This makes the Kalahari a unique kind of desert, sometimes called a "semi-desert."
+
+Many unique animals make their home in the Kalahari Desert. Lions, gemsboks, and meerkats are just a few examples. These animals have adapted special ways to survive in this harsh, dry environment. They have found ways to stay cool during the hot days and get enough water even when it does not rain very often.
+
+The Kalahari Desert is a special place because it shows how life can thrive even in tough conditions. Scientists continue to study the plants and animals there to learn more about how living things adapt to their environments.`,
+      questions: [
+        {type:"mc", q:"What makes the Kalahari Desert different from most other deserts?", options:["It has more sand dunes than other deserts.","It has grasses, bushes, and trees that support life.","It never gets any rain at all.","It is located in Asia."], correct:1},
+        {type:"mc", q:"What is another name for the kind of desert the Kalahari is?", options:["rainforest","semi-desert","tundra","oasis"], correct:1},
+        {type:"mc", q:"Why do scientists study the plants and animals of the Kalahari?", options:["To find new places to build cities","To learn how living things adapt to their environments","To plan vacations there","To grow more crops in the desert"], correct:1},
+        {type:"mc", q:"Which animals are mentioned as living in the Kalahari Desert?", options:["polar bears, penguins, and seals","lions, gemsboks, and meerkats","elephants, giraffes, and zebras only","wolves, foxes, and rabbits"], correct:1},
+      ]
+    },
+    {
+      day: 2,
+      title: "The Climate in the Kalahari Desert",
+      asYouRead: null,
+      passage: `The climate of the Kalahari Desert is hot during the day and cold at night. Daytime temperatures can soar above 100 degrees Fahrenheit, but once the sun sets, temperatures can drop dramatically, sometimes close to freezing. This big swing in temperature is common in many deserts because there is little moisture in the air to hold in heat.
+
+Rainfall in the Kalahari is unpredictable. Some areas receive a small amount of rain each year, mostly during the summer months. Other areas may go a long time without any rain at all. The plants and animals that live there have adapted to survive long dry spells.
+
+Despite the harsh climate, the Kalahari supports a surprising amount of life. Grasses and shrubs grow in places where rain collects, and these plants provide food for many animals. Some animals get the water they need from the plants they eat, rather than drinking water directly.
+
+The unpredictable climate makes survival a challenge, but the plants and animals of the Kalahari have found remarkable ways to adapt over time.`,
+      questions: [
+        {type:"mc", q:"What happens to temperatures at night in the Kalahari Desert?", options:["They stay the same as during the day.","They rise even higher than during the day.","They can drop dramatically, sometimes close to freezing.","They become extremely humid."], correct:2},
+        {type:"mc", q:"Why do desert temperatures swing so much between day and night?", options:["There is little moisture in the air to hold in heat.","The sun is closer to the desert at night.","Deserts have more clouds than other places.","The wind blows colder air in from the ocean."], correct:0},
+        {type:"mc", q:"How do some animals get the water they need?", options:["By digging deep wells","By drinking from rivers","From the plants they eat","By traveling to other countries"], correct:2},
+        {type:"mc", q:"What is the author's main purpose in this passage?", options:["To explain how the Kalahari's climate affects its plants and animals","To compare the Kalahari to the Sahara Desert","To describe a vacation to the Kalahari Desert","To argue that deserts should be protected"], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "Kalahari Plants and Animals",
+      asYouRead: null,
+      passage: `The plants and animals of the Kalahari Desert have developed amazing adaptations to survive the harsh climate. Many plants have long roots that reach deep underground to find water. Some plants, like certain melons, store water inside themselves so they can survive long periods without rain.
+
+Animals have adapted in their own ways. Many Kalahari animals are most active during the cooler parts of the day, like early morning or evening, resting in shade during the hottest hours. Some animals, like the meerkat, live in underground burrows that stay cooler than the surface.
+
+Many animals have also adapted to get water without drinking it directly. They eat juicy plants, roots, or insects that contain water. This adaptation is critical, since water sources can be rare and far apart in the desert.
+
+Together, these adaptations allow a surprising variety of life to flourish in one of the harshest environments on Earth.`,
+      questions: [
+        {type:"mc", q:"How do some desert plants survive long periods without rain?", options:["They grow very quickly after each rainfall.","They store water inside themselves.","They change color to reflect sunlight.","They grow only during winter."], correct:1},
+        {type:"mc", q:"Why do many Kalahari animals stay in burrows or shade during the hottest hours?", options:["To find more food","To avoid other animals","To stay cool","To sleep through the entire year"], correct:2},
+        {type:"open", q:"Based on the passage, explain how animals in the Kalahari can survive without drinking water directly very often.", lines:3},
+        {type:"open", q:"Would you like to visit the Kalahari Desert? Why or why not?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Marvelous Meerkats",
+      asYouRead: null,
+      passage: `Meerkats are small mammals that live in the Kalahari Desert in groups called mobs. They are well adapted to survive the harsh desert environment in several remarkable ways.
+
+One of the meerkat's most noticeable adaptations is the dark circles of fur around its eyes. These dark patches act like sunglasses, reducing the glare from the bright desert sun and helping meerkats see predators from far away. Meerkats also have special patches of skin on their bellies that are thin and dark, allowing them to absorb sunlight and warm up quickly on cool desert mornings.
+
+Meerkats have long, sharp claws that are perfect for digging. They use these claws to dig burrows underground, where the temperature stays much cooler than on the surface. These burrows have multiple entrances and tunnels, giving meerkats quick escape routes if a predator approaches. The claws are also useful for digging up insects, roots, and small animals to eat.
+
+Living in a mob also helps meerkats survive. While most of the group searches for food, one or more meerkats stand guard, watching the sky and horizon for predators like eagles and jackals. If a sentry spots danger, it lets out a warning call, and the whole mob quickly rushes to the safety of their burrows.`,
+      questions: [
+        {type:"mc", q:"What is the purpose of the dark circles of fur around a meerkat's eyes?", options:["To help them look fierce to predators","To reduce sun glare and help them spot predators","To attract mates","To keep insects out of their eyes"], correct:1},
+        {type:"mc", q:"How do meerkats warm up quickly on cool desert mornings?", options:["By huddling together in large piles","Through thin, dark belly skin that absorbs sunlight","By running in circles","By digging deeper burrows"], correct:1},
+        {type:"mc", q:"What is one use of a meerkat's sharp claws?", options:["Climbing trees","Digging burrows and finding food","Swimming across rivers","Building nests above ground"], correct:1},
+        {type:"mc", q:"What happens when a sentry meerkat spots danger?", options:["It hides alone in the nearest hole.","It lets out a warning call so the mob can take cover.","It attacks the predator.","It ignores it unless the danger gets close."], correct:1},
+        {type:"open-table", q:"List three details from the passage that support this main idea: Meerkats are well adapted to live in the Kalahari Desert.", rows:[
+          {label:"Detail 1"},
+          {label:"Detail 2"},
+          {label:"Detail 3"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about what you learned about meerkats this week.",
+      prompt: "Pretend you are a meerkat living in the Kalahari Desert. What is your day like? Use descriptive language to tell about your day, including where you sleep, what you eat, and how you stay safe from predators.",
+    },
+  ]
+},
+{
+  id: 14,
+  label: "Unit 5 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "When I Grow Up",
+      asYouRead: null,
+      passage: `Miles was a young meerkat pup. He was small, with soft fur and bright, curious eyes. Every day, Miles watched the older meerkats in his mob and wondered what it would be like to grow up.
+
+He watched the sentries standing tall on their back legs, scanning the sky for eagles and the ground for jackals. "When I grow up," Miles thought, "I want to be a sentry. I want to keep my whole mob safe."
+
+He watched the diggers, using their long claws to dig new tunnels and entrances to the burrow. "When I grow up," Miles thought, "I want to dig the biggest, safest burrow in the whole desert."
+
+He watched the foragers heading out each morning to search for insects, roots, and eggs. "When I grow up," Miles thought, "I want to find the best food for my family."
+
+Miles's mother nuzzled him gently. "You can do all of these things," she said. "Every meerkat in the mob learns to be a sentry, a digger, and a forager. That is how we survive together."
+
+Miles smiled. He could not wait to grow up and help his mob in every way he could.`,
+      questions: [
+        {type:"mc", q:"What does Miles want to be when he watches the sentries?", options:["A digger","A forager","A sentry","A leader"], correct:2},
+        {type:"mc", q:"What do the diggers in the mob do?", options:["Search for food","Watch for predators","Dig tunnels and entrances to the burrow","Take care of the pups"], correct:2},
+        {type:"mc", q:"What does Miles's mother tell him?", options:["Only some meerkats get to learn every job.","Every meerkat learns to be a sentry, a digger, and a forager.","Meerkats work alone, not together.","He should choose only one job."], correct:1},
+        {type:"mc", q:"What is the theme of this story?", options:["It is important to compete with others.","Working together helps everyone survive.","Only the strongest meerkats survive.","Growing up is the hardest part of life."], correct:1},
+      ]
+    },
+    {
+      day: 2,
+      title: "Miles and Mort",
+      asYouRead: null,
+      passage: `As Miles grew older, he became close friends with another meerkat pup named Mort. The two pups spent their days playing, wrestling, and exploring near the edge of the burrow.
+
+One afternoon, Miles wandered a little too far from the group while chasing a beetle. He did not notice a snake slithering through the grass nearby. Mort, who was standing watch like he had seen the sentries do, spotted the snake first.
+
+"Miles, look out!" Mort shouted, and he dashed toward his friend. Mort's warning gave Miles just enough time to scurry back toward the burrow. The snake gave chase, but the meerkats reached their tunnel and ducked safely inside before it could catch them.
+
+After they were safely underground, Miles caught his breath and thanked Mort. "You saved my life," Miles said.
+
+Mort shrugged. "That's what friends do," he said. "We watch out for each other, just like the whole mob does."
+
+From that day on, Miles and Mort always stayed close to one another, whether they were playing or exploring.`,
+      questions: [
+        {type:"mc", q:"What was Miles doing when he wandered away from the group?", options:["Digging a new tunnel","Chasing a beetle","Looking for water","Searching for his mother"], correct:1},
+        {type:"mc", q:"Who noticed the snake first?", options:["Miles","Mort","Miles's mother","A sentry meerkat"], correct:1},
+        {type:"mc", q:"What does Mort's statement \"That's what friends do\" suggest about meerkats?", options:["Meerkats compete with each other for food.","Meerkats look out for and protect each other.","Meerkats live alone most of the time.","Meerkats are usually afraid of snakes."], correct:1},
+        {type:"mc", q:"What is most likely to happen the next time Miles and Mort explore together?", options:["They will avoid each other.","They will stay close and watch out for each other.","They will stop playing outside.","They will ask an adult to always join them."], correct:1},
+      ]
+    },
+    {
+      day: 3,
+      title: "A Lovely Meerkat Morning",
+      asYouRead: null,
+      passage: `The sun rose slowly over the Kalahari Desert, painting the sky in shades of orange and pink. Miles poked his head out of the burrow entrance, sniffing the cool morning air. It was his favorite time of day.
+
+One by one, the other meerkats in the mob emerged from the burrow, stretching and yawning in the early light. A sentry took its place on a termite mound, standing tall to scan for danger while the rest of the mob began their morning routine.
+
+Miles and Mort joined a group of foragers heading out to search for breakfast. They dug through the sandy soil, uncovering beetles and grubs. Miles found a particularly large beetle and shared it with Mort, just as they always shared with each other.
+
+As the morning went on, the desert grew warmer, and the meerkats took turns resting in the shade and continuing their search for food. It was, Miles thought, a truly lovely meerkat morning.`,
+      questions: [
+        {type:"mc", q:"What is the setting of this passage?", options:["A forest at night","The Kalahari Desert in the early morning","A zoo enclosure","A riverbank at sunset"], correct:1},
+        {type:"mc", q:"What does the sentry do at the start of the mob's morning routine?", options:["Searches for food","Digs a new burrow","Stands on a termite mound to scan for danger","Plays with the pups"], correct:2},
+        {type:"open", q:"List the predators or dangers mentioned or implied that the meerkats must watch for in this passage and others this week.", lines:3},
+        {type:"open", q:"Based on this week's stories, do you think Miles will stick by Mort as they grow older? Use evidence from the stories to support your answer.", lines:4},
+      ]
+    },
+    {
+      day: 4,
+      title: "Hidden Danger",
+      asYouRead: null,
+      passage: `The meerkat mob had dug several escape holes close to the grass line, just in case danger ever came too near. These extra holes meant the meerkats would never be too far from safety, no matter where they were foraging.
+
+One morning, Miles was digging near the edge of the burrow when he found a clutch of eggs hidden in the sand. Excited, he called Mort over to see his discovery. As the two pups examined the eggs, neither noticed the long shadow sliding closer through the grass.
+
+It was a snake, drawn by the scent of the eggs. When a sentry spotted it and barked the alarm, the entire mob joined in, barking loudly and standing together to look as large and threatening as possible.
+
+Startled by the noisy, unified mob, the snake slithered away into the grass, choosing not to risk a fight against so many meerkats at once.
+
+Miles and Mort, safe thanks to their mob's quick thinking and the escape holes they had dug earlier, breathed a sigh of relief.`,
+      questions: [
+        {type:"mc", q:"What did Miles find while digging near the burrow?", options:["A buried beetle","A clutch of eggs","A new tunnel entrance","A sleeping snake"], correct:1},
+        {type:"mc", q:"What did the mob do when the sentry spotted the snake?", options:["They ran away individually.","They barked loudly and stood together to look threatening.","They ignored it and kept foraging.","They dug a new burrow immediately."], correct:1},
+        {type:"mc", q:"Why did the snake slithered away?", options:["It found better food elsewhere.","It was startled by the noisy, unified mob.","A sentry attacked it.","It got tired of waiting."], correct:1},
+        {type:"mc", q:"What is the effect of the meerkats having dug escape holes close to the grass line?", options:["They could never be too far from safety.","They could store more food underground.","They could see predators more easily.","They could grow more grass for shade."], correct:0},
+        {type:"open-table", q:"Write an effect for each cause.", rows:[
+          {label:"Cause 1", given:"The meerkats had dug a few escape holes close to the grass line."},
+          {label:"Effect 1"},
+          {label:"Cause 2", given:"Miles found some eggs."},
+          {label:"Effect 2"},
+          {label:"Cause 3", given:"All the meerkats barked at the snake."},
+          {label:"Effect 3"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the story \"Hidden Danger\" from this week.",
+      prompt: "Rewrite the story from the point of view of the snake. Use a variety of transitional words, phrases, and clauses to manage the sequence of events.",
+    },
+  ]
+},
+{
+  id: 15,
+  label: "Unit 5 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Meerkat Zoo Panel",
+      asYouRead: null,
+      passage: `MEERKAT
+(Suricata suricatta)
+
+Size: 10 inches long, plus a 7-9 inch tail
+Weight: 1.5 to 2.2 pounds
+Diet: Insects, small reptiles, eggs, roots, and bulbs
+Habitat: Desert and grassland regions of southern Africa, including the Kalahari Desert
+Lifespan: 8 to 12 years in the wild
+Predators: Eagles, jackals, and snakes
+Fun fact: Meerkats live in groups called mobs and take turns standing guard while others forage for food.`,
+      questions: [
+        {type:"mc", q:"According to the zoo panel, how long can a meerkat's tail be?", options:["1-2 inches","3-5 inches","7-9 inches","10-12 inches"], correct:2},
+        {type:"mc", q:"What is part of a meerkat's diet?", options:["Only plants","Insects, small reptiles, eggs, roots, and bulbs","Large mammals","Fish"], correct:1},
+        {type:"mc", q:"How long can a meerkat live in the wild?", options:["1 to 3 years","4 to 7 years","8 to 12 years","20 to 25 years"], correct:2},
+        {type:"mc", q:"What is the fun fact on this zoo panel about?", options:["How meerkats dig burrows","How meerkats live in mobs and take turns standing guard","How meerkats find water","How meerkats raise their young"], correct:1},
+        {type:"open", q:"What do you find most interesting about meerkats? Explain your answer.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Ways Meerkats Are Adapted to Live in the Desert",
+      asYouRead: "Close-Reading Task: Reread the passages from this week and unit. As you read, think about the physical traits and behaviors that help meerkats survive in the desert.",
+      passage: `Close-Reading Texts — reread "Marvelous Meerkats," "When I Grow Up," "Hidden Danger," and the Meerkat Zoo Panel.
+
+Directions: Sort the ways meerkats are adapted to live in the desert into two categories: Physical Traits (things about their bodies) and Behaviors (things they do).`,
+      questions: [
+        {type:"compare3", q:"List the physical traits and behaviors that help meerkats survive in the desert.", columns:["Physical Traits","Behaviors"]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing Desert Animals",
+      asYouRead: "Close-Reading Task: Reread passages from this unit about lions, gemsboks, and meerkats. As you read, think about how each animal is adapted to live in the desert, and what they have in common.",
+      passage: `Close-Reading Texts — reread passages from this unit that mention lions, gemsboks, and meerkats living in the Kalahari Desert.
+
+Directions: Describe how each animal is adapted to desert life, then identify what the three animals have in common.`,
+      questions: [
+        {type:"compare3", q:"Describe each animal's adaptations to desert life.", columns:["Lion","Gemsbok","Meerkat"]},
+        {type:"open", q:"What do these three animals have in common?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "Plan a Documentary",
+      asYouRead: null,
+      passage: `Directions: Imagine you are making a documentary about meerkats. Plan four scenes for your documentary. For each scene, describe what video footage you would show and what the narrator would say.`,
+      questions: [
+        {type:"compare3", q:"Scene 1", columns:["Video","Narration"]},
+        {type:"compare3", q:"Scene 2", columns:["Video","Narration"]},
+        {type:"compare3", q:"Scene 3", columns:["Video","Narration"]},
+        {type:"compare3", q:"Scene 4", columns:["Video","Narration"]},
+      ]
+    },
+    {
+      day: 5,
+      title: "Design a Zoo Panel",
+      asYouRead: null,
+      passage: `Directions: Find out about another animal that lives in the Kalahari Desert (other than the meerkat). Research the animal, then write a zoo panel for it, just like the Meerkat Zoo Panel from Day 1.`,
+      questions: [
+        {type:"open-table", q:"Write a zoo panel for an animal that lives in the Kalahari Desert.", rows:[
+          {label:"Animal Name"},
+          {label:"Size"},
+          {label:"Weight"},
+          {label:"Diet"},
+          {label:"Habitat"},
+          {label:"Lifespan"},
+          {label:"Predators"},
+          {label:"Fun Fact"},
+        ]},
+      ]
+    },
+  ]
+},
 ];
