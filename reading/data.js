@@ -1349,4 +1349,259 @@ Directions: Describe how each animal is adapted to desert life, then identify wh
     },
   ]
 },
+{
+  id: 16,
+  label: "Unit 6 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Habitable Planets",
+      asYouRead: "Circle words that indicate comparisons. Underline what is being compared.",
+      passage: `Earth can support a variety of life because of where it is in the solar system. Earth doesn't get too much or too little of the sun's heat. This spot in the solar system is known as the habitable zone. So, plants, animals, and people can all thrive on the planet.
+
+There are seven other planets in the solar system. But only two others lie in the habitable zone. They are Venus and Mars. Yet these planets lack some of the life-supporting factors that Earth has. For example, the atmosphere on Mars is too thin to allow for liquid water to stay on the surface of the planet. The atmosphere on Venus is too thick and does not have enough oxygen.`,
+      questions: [
+        {type:"mc", q:"What is the main idea of this text?", options:["Earth is one of eight planets.","Earth is in the right spot in the solar system to support life.","The atmosphere on Mars is too thin.","Three planets are in the habitable zone with Earth."], correct:1},
+        {type:"mc", q:"Why can Venus and Mars not support life?", options:["They are too hot.","They are not in the habitable zone.","Their atmospheres are not suitable.","They are too far away from the sun."], correct:2},
+        {type:"mc", q:"How is yet used in the text?", options:["as an adverb to describe time","as a conjunction to show contrast","as a noun to show something is unclear","as an adjective to describe the habitable zone"], correct:1},
+        {type:"mc", q:"What is another word for habitable?", options:["liquid","greatest","centered","livable"], correct:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Earth and Its Cosmic Address",
+      asYouRead: "Underline new or interesting words related to space.",
+      passage: `Earth has a precise location in the universe. It is somewhat similar to how you have an address at your home. Some scientists refer to Earth's location as its cosmic address. This address tells people where Earth is located.
+
+Earth orbits a star in a solar system. This solar system sits inside the Milky Way Galaxy. A galaxy is a very large group of stars, planets, and other matter. Outside the Milky Way is a group of about 30 other galaxies. Together, these galaxies make up a local group. And even more galaxies are outside this group. Combined, they make up a local supercluster. A supercluster is another word for a massive group of galaxies. And outside of that are even more superclusters. All these groups of stars and planets exist in the universe.
+
+To get a planet's cosmic address, you would start with the name of the planet, the solar system, and the galaxy. Then, you would add the name of the local group and the local supercluster. You would end with the universe!`,
+      questions: [
+        {type:"mc", q:"How are planets in distant galaxies related to Earth?", options:["They are inside the universe.","They have the same address.","They are in the same solar system.","They are within the Milky Way Galaxy."], correct:0},
+        {type:"mc", q:"What is meant by cosmic?", options:["far away","in the universe","at an address","linear"], correct:1},
+        {type:"mc", q:"About how many galaxies make up a local group with the Milky Way?", options:["three","thirteen","thirty","three hundred"], correct:2},
+        {type:"mc", q:"What is the name of Earth's galaxy?", options:["Local Group","Local Supercluster","Milky Way","Universe"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Gravity",
+      asYouRead: "Write clarifying questions you have about the text in the margin.",
+      passage: `The same force that causes a ball to fall to the ground is what causes Earth to continue orbiting the sun. This force is gravity. It is dependent on how much mass an object has. The mass of an object is a measurement of how much weight it has. Objects with more mass have more gravity, and objects with less mass have less gravity.
+
+Sometimes, objects in space have too much mass. These objects can form black holes. A black hole is a point in space where gravity is so great that not even light can escape. Some black holes are bigger than others. Large black holes are at the center of every galaxy. They are supermassive black holes. The supermassive black hole at the center of the Milky Way is known as Sagittarius A. The mass of this black hole is equal to about four million suns!`,
+      questions: [
+        {type:"mc", q:"How is mass related to gravity?", options:["Objects with greater mass have less gravity.","Objects with greater mass have greater gravity.","Objects with less mass have greater gravity.","Mass is not related to gravity."], correct:1},
+        {type:"mc", q:"Which force keeps Earth in orbit?", options:["black hole","light","mass","gravity"], correct:3},
+        {type:"open", q:"How does a black hole form?", lines:3},
+        {type:"open", q:"Do you think scientists will discover more black holes? Explain your thinking.", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "A Brief History of Space Telescopes",
+      asYouRead: "Circle facts about Hubble. Underline facts about the James Webb Space Telescope.",
+      passage: `Telescopes have come a long way through time. Galileo Galilei was the first person to use a telescope to look at objects in space. He looked at Jupiter's moons. Science has improved a lot since Galilei's time. We even have telescopes set up in outer space! These are known as space telescopes.
+
+Space telescopes are set up in special ways. They are placed far away from any source of light on Earth. This way, they do not have to deal with light from large cities or countries. Astronomers call this light noise. Space telescopes are great because they deal with less noise. This way, the images that they can show are more clear and defined.
+
+The Hubble Space Telescope (HST) was the fourth space telescope to be put into space. It was the first one that looked at objects in outer space through the visible spectrum. This is a fancy way of saying that it sees things the same way people on Earth see things. The Hubble led to a lot of discoveries.
+
+An even more powerful space telescope was launched. It is the James Webb Space Telescope (JWST). The National Aeronautics and Space Administration (NASA) launched this telescope on December 25, 2021. One of the main differences between the JWST and Hubble is the size of their mirrors. The mirror on a telescope is also called an eye. The mirror on the JWST is almost three times wider than Hubble's. This bigger mirror allows the JWST to see objects that are fainter and farther away.
+
+There are more differences between the two telescopes that make the JWST stronger. The JWST sees light in the infrared range. This is light that is outside the visible spectrum. Anything that gives off heat can be seen in the infrared range. But the Hubble primarily sees things that are in the visible range of light. So, JWST can see things that the Hubble cannot. One example is the atmosphere of a planet. This can be seen in the infrared range. Another difference is that the Hubble has problems seeing through space dust. But space dust is mostly seen in the visible spectrum. Since the JWST uses infrared, it can see what is beyond the dust.
+
+Space telescopes have improved a lot in the past few decades. There are exciting things to see in space in the future!`,
+      questions: [
+        {type:"mc", q:"How many space telescopes came before Hubble?", options:["one","two","three","four"], correct:2},
+        {type:"mc", q:"Why are space telescopes beneficial?", options:["They have fewer mirrors.","They do not send information back quickly.","Light does not interfere with them.","They deal with more noise."], correct:2},
+        {type:"mc", q:"What is a limitation of Hubble?", options:["It does not take clear images.","It cannot see through space dust.","It sees objects in infrared light.","It cannot travel as far as others."], correct:1},
+        {type:"mc", q:"What does an astronomer do?", options:["make space telescopes","study zodiac signs","travel to space","study space"], correct:3},
+        {type:"compare3", q:"Compare Hubble to the James Webb Space Telescope.", columns:["Hubble","James Webb","Both"]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"A Brief History of Space Telescopes\" and the other texts from this week.",
+      prompt: "What lies in space beyond Earth? Write a topic sentence. Develop the topic with facts, definitions, and concrete details, from one or more texts.",
+    },
+  ]
+},
+{
+  id: 17,
+  label: "Unit 6 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Star Stuff",
+      asYouRead: "Circle words that describe people's feelings.",
+      passage: `Normally, Naomi would be excited to start a new school year. But she had moved to a new town a few weeks before, and she was feeling anxious. "Whenever you feel nervous, take a deep breath," her dad told her. "Then think about how—"
+
+"You and I are made out of the same stuff stars are made of," Naomi said, finishing her father's favorite phrase. They both loved Carl Sagan, and her father often told her how his work was informative and inspirational.
+
+Naomi hoped she would be able to tell the class what she had done over the summer. For the past few months, Naomi had been going to space camp. She had learned about stars, planets, astronauts, and space technology. She even got to go on a ride that simulated what it felt like to be in space!
+
+Naomi hoped that the rest of the class would be as interested in space as she was.`,
+      questions: [
+        {type:"mc", q:"What was Carl Sagan most likely interested in?", options:["camps","family events","school","space"], correct:3},
+        {type:"mc", q:"Why does Naomi's dad begin to say an inspirational quote?", options:["She is excited to learn about space.","She is nervous about starting school.","She is excited about her summer camp.","She is nervous about the space simulator."], correct:1},
+        {type:"mc", q:"How does Naomi feel about space camp?", options:["She loves it.","She hates it.","She finds it boring.","She thinks it is okay."], correct:0},
+        {type:"mc", q:"What is the meaning of simulated?", options:["acted like","forbid","raced around","tried"], correct:0},
+      ]
+    },
+    {
+      day: 2,
+      title: "Ms. Findelton",
+      asYouRead: "Make notes in the margins about connections you can make to Naomi's first day at school.",
+      passage: `Ms. Findelton went to the front of the room and greeted everyone. "Hello! Welcome! My name is Ms. Findelton. I'd like us to go around the room and introduce ourselves. I'll start by telling you a little bit about myself. I've been teaching for five years, I have two cats, and my favorite subject is science. I'd like everyone to start thinking of their favorite subject in school."
+
+Naomi grinned at her. The entire class began to mumble amongst themselves. Ms. Findelton broke the chatter with a question.
+
+"Okay, let's see…whose favorite subject is science?"
+
+Naomi's hand shot up immediately. Ms. Findelton chuckled.
+
+"Um, Hi, I'm Naomi," Naomi said shyly. "I just moved here. I love learning about the stuff around us. That includes Earth, space, plants, and oceans."`,
+      questions: [
+        {type:"mc", q:"What is the class likely mumbling about?", options:["going to recess","their favorite subjects","the classroom decorations","the lunch menu"], correct:1},
+        {type:"mc", q:"What does this sentence from the text tell readers about Naomi? Naomi's hand shot up immediately.", options:["She is excited to share.","She is nervous.","She is not sure what to share.","She does not want to be called on."], correct:0},
+        {type:"mc", q:"Which of the following is the best description of chatter?", options:["smiling","talking","whispering","yelling"], correct:1},
+        {type:"mc", q:"Why does Naomi like science?", options:["She likes using scientific equipment.","She likes experiments.","She likes learning about the world.","She likes to work with lab partners."], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Let's Talk Science",
+      asYouRead: "Write comments or questions you have about the events in the text.",
+      passage: `"Would you like to share anything fun you did over the summer?" Ms. Findelton asked Naomi. Naomi smiled and nodded.
+
+"I went to space camp over the summer," she said. A few of her classmates said Wow! or Ooh! out loud. "I got to eat some freeze-dried ice cream just like astronauts eat in space, and I even got to see the shuttles at the space center."
+
+Ms. Findelton went around the room so every student could introduce themselves. Naomi was relieved to hear that there were a few other students who also loved space, and she couldn't wait to talk with them at recess.
+
+"Space is actually our first science topic this year. I want you to write everything you know about space on a sheet of notebook paper."
+
+Naomi began writing frantically in her notebook. After a few minutes, Ms. Findelton gave new directions. They were going to watch a short video about the universe. Naomi quickly flipped to a new page in her notebook.`,
+      questions: [
+        {type:"mc", q:"What is another way to say frantically?", options:["with care","with caution","with disinterest","with enthusiasm"], correct:3},
+        {type:"mc", q:"Who does Naomi hope to talk with at recess?", options:["her classmates who don't know much about space","her classmates from camp","students in a different class","her classmates who also love space"], correct:3},
+        {type:"open", q:"How do you know Naomi is excited about school?", lines:3},
+        {type:"open", q:"Does space camp sound exciting to you? Why or why not?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "A Strange Trip to Europa",
+      asYouRead: "Underline events that seem unrealistic. Write comments or questions you have about the events in the text.",
+      passage: `"This is the surface of Jupiter's icy moon, Europa. The ice on the surface is around 10 to 15 miles or 15 to 25 kilometers thick," the narrator of the video said. Naomi struggled to keep up with the narrator as she took notes furiously. She was starting to feel tired and it didn't help that Ms. Findelton dimmed the lights.
+
+Maybe I can close my eyes for just one moment, Naomi thought to herself.
+
+When she opened her eyes again, the classroom had faded. It seemed like she was alone on an ice-covered moon! She saw a large, spinning ball of gas hanging in the blackness of the sky. She had learned a lot about the planets, and it seemed like she was looking at Jupiter. Am I on Europa?
+
+"Jupiter is held in orbit by the sun's gravity," a faraway voice echoed.
+
+Naomi spun around, trying to figure out where the voice was coming from. Then, she started to feel vibrations coming from the ground beneath her. The ice beneath her feet was beginning to splinter and form cracks. An earthquake! Naomi thought to herself, her heart pounding. She turned to run, but her shoes seemed like they were glued to the ice.
+
+"This part is very important, so please pay attention," another voice echoed.
+
+Naomi looked down at her feet. They were now off the ground—she was floating! Large chunks of ice were floating up around her. When Naomi looked back up into the sky, she saw she was being pulled toward a large black hole.
+
+A sharp plink noise woke Naomi up from her dream. She blinked and realized she had fallen asleep. Her pencil had fallen to the floor, and she leaned over in her chair to grab it.
+
+Whew! That was just a dream, Naomi thought to herself, shuddering as she recalled the ice. Then, she looked down at her page of notes. It was only half-filled, and the video was nearly over!
+
+When the video ended, Ms. Findelton turned on the lights and asked everyone to get into groups to share what they had learned. A student sitting a few chairs away from Naomi startled himself awake. Naomi grinned and headed over to him, sure that they would have plenty of things to talk about.`,
+      questions: [
+        {type:"mc", q:"What is Europa?", options:["a planet in our solar system","one of Jupiter's moons","one of Mars' moons","a made up planet"], correct:1},
+        {type:"mc", q:"How does Naomi feel about the vibration underground?", options:["excited","annoyed","frightened","indifferent"], correct:2},
+        {type:"mc", q:"What is a synonym for shuddering?", options:["breaking","floating","dancing","quivering"], correct:3},
+        {type:"mc", q:"Why is Naomi concerned when she wakes up?", options:["She misses information in the video.","She worries her teacher would be angry.","She is sure her classmates will laugh at her.","She worries that she will not get to sleep that night."], correct:0},
+        {type:"open-table", q:"Describe different parts of Naomi's dream-space adventure.", rows:[
+          {label:"Europa"},
+          {label:"Jupiter"},
+          {label:"earthquake"},
+          {label:"gravity"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"A Strange Trip to Europa.\"",
+      prompt: "Imagine that you have the chance to go to space for a day. Write a story about your day and the things you see. Orient the reader by introducing the setting, a situation or problem, and a narrator and/or characters. Organize the events to unfold naturally.",
+    },
+  ]
+},
+{
+  id: 18,
+  label: "Unit 6 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Naomi's Adventure Comic",
+      asYouRead: null,
+      passageImage: "assets/week18/naomis-adventure-comic.png",
+      passage: `Naomi is preparing for her first trip into space. In just half an hour, her team will be on their way to Europa. They will be the first humans to explore the icy moon of Jupiter! The comic above shows her liftoff and journey to leave Earth.`,
+      questions: [
+        {type:"mc", q:"Why is Naomi's space mission important?", options:["It's the first mission beyond Mars.","It's the first mission where people explore space.","It's the first time people will encounter aliens.","It's the first time people will go to Jupiter's moon."], correct:3},
+        {type:"mc", q:"Why do you think they are going to be gone for seven years?", options:["They think that seven is a lucky number.","It takes a long time to go anywhere in space.","They will go around Europa seven times.","All missions to space take exactly seven years."], correct:1},
+        {type:"mc", q:"How does Naomi feel about leaving Earth?", options:["scared and annoyed","sad but excited","confused and sad","nervous but disappointed"], correct:1},
+        {type:"mc", q:"What is another word for an expedition?", options:["journey","travel bags","travel group","vehicle"], correct:0},
+        {type:"open", q:"What do you envision Naomi and her crew will do on their way to Europa? What do you think they will do when they arrive?", lines:4},
+      ]
+    },
+    {
+      day: 2,
+      title: "Interjections in the Texts",
+      asYouRead: "Closely read these texts. Then, reread the comic from Day 1. Write an interjection from each passage. Explain why the author used it.",
+      passage: `Close-Reading Texts
+
+From "Let's Talk Science": "I went to space camp over the summer," she said. A few of her classmates said Wow! or Ooh! out loud. "I got to eat some freeze-dried ice cream just like astronauts eat in space, and I even got to see the shuttles at the space center."
+
+From "A Strange Trip to Europa": Whew! That was just a dream, Naomi thought to herself, shuddering as she recalled the ice. Then she looked down at her page of notes. It was only half-filled, and the video was nearly over!
+
+Directions: For each text (including "Naomi's Adventure Comic" from Day 1), write the interjection used and explain its purpose or meaning.`,
+      questions: [
+        {type:"compare3", q:"Let's Talk Science", columns:["Interjection","Purpose or Meaning"]},
+        {type:"compare3", q:"A Strange Trip to Europa", columns:["Interjection","Purpose or Meaning"]},
+        {type:"compare3", q:"Naomi's Adventure Comic", columns:["Interjection","Purpose or Meaning"]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Naomi's Feelings",
+      asYouRead: "Closely read these texts. Then, reread the comic from Day 1. Record Naomi's feelings. Describe her actions or story events that reveal her feelings.",
+      passage: `Close-Reading Texts
+
+From "Star Stuff": Normally, Naomi would be excited to start a new school year. But she had moved to a new town a few weeks before, and she was feeling anxious. "Whenever you feel nervous, take a deep breath," her dad told her. "Then think about how—" "You and I are made out of the same stuff stars are made of," Naomi said, finishing her father's favorite phrase.
+
+From "Let's Talk Science": Naomi was relieved to hear that there were a few other students who also loved space, and she couldn't wait to talk with them at recess. "Space is actually our first science topic this year. I want you to write everything you know—or think you know—about space on a sheet of notebook paper." Naomi began writing frantically in her notebook.
+
+Directions: For each text (including "Naomi's Adventure Comic" from Day 1), record Naomi's feelings and describe the actions or events that reveal them.`,
+      questions: [
+        {type:"compare3", q:"Star Stuff", columns:["Naomi's Feelings","Story Support"]},
+        {type:"compare3", q:"Let's Talk Science", columns:["Naomi's Feelings","Story Support"]},
+        {type:"compare3", q:"Naomi's Adventure Comic", columns:["Naomi's Feelings","Story Support"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread the texts in this unit.",
+      prompt: "Explain why you would or would not want to be an astronaut when you grow up. Link your opinion and reasons using words, phrases, and clauses.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Galactic Travel Tours has a special on a space flight.",
+      prompt: "Make a comic in which you join a flight. Describe where you go and what you see and do. Use speech bubbles to show dialogue.",
+    },
+  ]
+},
 ];
