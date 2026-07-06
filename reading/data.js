@@ -1604,4 +1604,282 @@ Directions: For each text (including "Naomi's Adventure Comic" from Day 1), reco
     },
   ]
 },
+{
+  id: 19,
+  label: "Unit 7 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Auckland, New Zealand",
+      asYouRead: "Circle things you would like to do if you visited Auckland.",
+      passage: `Imagine a place where you can swim, take a boat or ferry ride, and visit a park all in the same city. If you visit Auckland, New Zealand, you can do all these things! Auckland is the biggest city in New Zealand. Auckland is sometimes called "the city of sails." That is because it is famous for its sailing and yacht races.
+
+Auckland is also home to Sky Tower. Sky Tower is the tallest building in the Southern Hemisphere. People can go to the top of Sky Tower and see for miles around. More fun things to do around the city include going on dolphin or whale-watching tours, visiting the zoo, or following the many bike paths. Plus, there are countless stores and restaurants. So no matter what you like to do, you can find something fun to do in Auckland!`,
+      questions: [
+        {type:"mc", q:"Why is Auckland sometimes called 'the city of sails'?", options:["It is home to Sky Tower.","It is the largest city in New Zealand.","It is famous for sailing and yacht racing.","You can go dolphin and whale watching."], correct:2},
+        {type:"mc", q:"What is a yacht?", options:["food","a boat","an animal","a shoe"], correct:1},
+        {type:"mc", q:"How can you tell the author wants the reader to be excited about Auckland?", options:["They use exclamations.","They describe important sites.","They explain why Auckland is famous.","They describe their favorite thing to do."], correct:0},
+        {type:"mc", q:"What is the main idea of this text?", options:["Auckland is on New Zealand's North Island.","Everyone should avoid Auckland, New Zealand.","There are fun things to do in Auckland, New Zealand.","The tallest building in the Southern Hemisphere is in Auckland."], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "A National Sport",
+      asYouRead: "Underline facts you learn about rugby.",
+      passage: `Can you guess which sport this is from the following clues? This sport is played in over 100 countries. It is played with fifteen players on each team. The object of the game is to carry the ball over the opponents' goal line. Have you guessed the sport yet? It's rugby!
+
+Rugby is extremely popular in many countries of the world. It is the national sport of New Zealand, South Africa, Wales, and other countries. Rugby is getting more popular, and it was even included in the 2016 Olympics.
+
+Rugby is like American football in some ways. For example, in both rugby and American football, the ball has an oval shape. Players try to carry it down the field. But there are some key differences between the two sports. In each sport, there are different rules for how the ball can be moved.`,
+      questions: [
+        {type:"mc", q:"What is one main idea of this text?", options:["Rugby is played with 15 players on each team.","Rugby is played in over 100 countries.","Rugby is popular in many countries.","Rugby has a ball with an oval shape."], correct:2},
+        {type:"mc", q:"Which prepositional phrase explains where rugby is played?", options:["in over 100 countries","down field","over the opponents' goal line","with fifteen players"], correct:0},
+        {type:"mc", q:"What are opponents?", options:["players on the other team","players on the same team","the national sport of New Zealand","popular countries around the world"], correct:0},
+        {type:"mc", q:"Which word reflects how the author describes rugby?", options:["limited","safe","popular","varied"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "The Māori",
+      asYouRead: "Circle words that describe the Māori.",
+      passage: `The Māori (MAU-ree) are Indigenous (in-DIH-juh-nuhs) people of New Zealand. That means they were the first people to live there. The Māori are Polynesian like the Indigenous peoples of Hawai'i. Nobody knows when Māori people first came to New Zealand. But it is known how they got there. They came to New Zealand in canoes. They came from other parts of the Pacific. The Māori were very skilled sailors.
+
+Today, about 14 percent of New Zealand's people are Māori. The Māori people have their own culture. They have their own language, customs, and legends. They have a strong sense of community, too. Māori songs and art are famous. Their tattoos are famous as well.`,
+      questions: [
+        {type:"mc", q:"According to the text, what are the Māori skilled at doing?", options:["amusement parks","cooking","fishing","sailing"], correct:3},
+        {type:"mc", q:"The word percent means for each one hundred. Which word has a Latin root with a similar meaning?", options:["center","century","perfect","person"], correct:1},
+        {type:"open", q:"What is still uncertain about the Māori?", lines:2},
+        {type:"open", q:"What image would you add to this text to give readers more information?", lines:2},
+      ]
+    },
+    {
+      day: 4,
+      title: "Kia Ora! Welcome to New Zealand",
+      asYouRead: "Underline information that is new or interesting.",
+      passage: `Kia ora (kee OR-uh)! This is something you may hear if you visit the island country of New Zealand. Kia ora means hello in the Māori language. Māori is one language spoken in New Zealand. English is also spoken there. There is a lot more to learn about New Zealand!
+
+First, New Zealand's geography is unique. The country is located in the Pacific Ocean. New Zealand has two main islands: North Island and South Island. Together, they are about the size of the U.S. state of Colorado. The capital of New Zealand is Wellington. Wellington is on the North Island. So is Auckland, which is the country's largest city. But most of New Zealand is not made up of very large cities. Instead, there are many smaller cities and towns.
+
+New Zealand is in the Southern Hemisphere, so the seasons there are different from the seasons in the Northern Hemisphere. For example, when it is winter in the United States, it is summer in New Zealand. The North Island is usually a little warmer than the South Island.
+
+Although New Zealand is not a large country, there are many things for people to see and do there. On the South Island, there are beautiful mountains where people can ski and snowboard. There are several beaches, forests, and lakes to visit. On the North Island, people can see volcanoes and hot springs. They can visit New Zealand's two largest cities, too.
+
+Lots of animals thrive in New Zealand. Many types of fish, whales, and dolphins live in the surrounding waters. Different types of birds live across the land. The most famous bird is the kiwi. It is a flightless bird about the size of a chicken. New Zealanders are sometimes even called Kiwis.
+
+A few sports are popular in New Zealand. The national sport of New Zealand is rugby. It is the most popular sport in the country. Rugby is similar in some ways to American football. Other popular sports in New Zealand include sailing and cricket. Cricket is similar in some ways to American baseball. Many people throughout the country play or watch these sports.
+
+Whether you visit the North or South Island of New Zealand, there is plenty for you to see and do. With many places to visit, sports to see, and weather to enjoy, New Zealand has countless options!`,
+      questions: [
+        {type:"mc", q:"What are New Zealanders sometimes called?", options:["Crickets","Islanders","Kia Ora","Kiwis"], correct:3},
+        {type:"mc", q:"What is one main idea of this text?", options:["Kia ora means hello in Māori.","Cricket is a game a little like baseball.","The capital of New Zealand is Wellington.","New Zealand is an island country in the Pacific Ocean."], correct:3},
+        {type:"mc", q:"What is the main idea of the fifth paragraph?", options:["Auckland is the largest city in New Zealand.","People in New Zealand play cricket and rugby.","New Zealand is home to many types of animals.","A kiwi is a flightless bird about the size of a chicken."], correct:2},
+        {type:"mc", q:"What do you learn about in this text and in 'The Māori'?", options:["The Māori are sailors.","The Māori children go to school.","The Māori have their own language.","The Māori came to New Zealand in canoes."], correct:0},
+        {type:"open-table", q:"List details about each topic as it relates to New Zealand.", rows:[
+          {label:"South Island"},
+          {label:"North Island"},
+          {label:"Animals"},
+          {label:"Sports"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Kia Ora! Welcome to New Zealand\" and the other texts from this week.",
+      prompt: "How does life in New Zealand compare to where you live? Write a paragraph about the similarities and differences between life in New Zealand and your home.",
+    },
+  ]
+},
+{
+  id: 20,
+  label: "Unit 7 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Preparing for the Festival",
+      asYouRead: "Circle reasons for the welcoming event. Underline things that take place.",
+      passage: `It was an exciting week for Kaia and her family. They were volunteering for the annual summer festival at their local community center in Auckland. Kaia's family was Māori, and they often volunteered for this event. It was a weekend filled with special introductions, music, dancing, and feasts. During this time, people in her community met with tourists from around the world, talked about their cultures, and had a good time.
+
+This year, the event was extra special for Kaia. Her family would be bringing a guest: Kaia's pen pal, Jacob. Jacob lived in Montreal, Canada, and he had always wanted to visit New Zealand. Kaia couldn't wait for him to arrive in a couple of days!
+
+Her family would go to the community center later to put up decorations, but for right now, she was helping her mom with some cooking. Kaia spent her day running around the kitchen, chopping vegetables, and preparing ingredients. She hoped Jacob would enjoy the meals they were making!`,
+      questions: [
+        {type:"mc", q:"Why does Kaia's family help with the annual summer festival?", options:["to meet new people and share their culture","to greet guests as official New Zealand greeters","to offer entertainment for visiting government officials","to show Jacob's family why New Zealand was so popular"], correct:0},
+        {type:"mc", q:"What is another word for annual?", options:["daily","weekly","monthly","yearly"], correct:3},
+        {type:"mc", q:"How does Kaia spend her time in this story?", options:["cleaning","cooking","setting up banners","stocking supplies"], correct:1},
+        {type:"mc", q:"Which phrase best describes where Jacob lives?", options:["He is from Montreal.","He is from Auckland.","He is from New Zealand.","He is from Seattle."], correct:0},
+      ]
+    },
+    {
+      day: 2,
+      title: "Arriving in Auckland",
+      asYouRead: "Write questions or comments you have about the events and characters in the margins.",
+      passage: `A few days later, Jacob arrived! Kaia was nervous to meet him, but within five minutes of meeting, they were joking and laughing. Kaia showed Jacob around her neighborhood, and he loved the fried whitebait fish they had for dinner.
+
+The next day, Kaia brought Jacob to the community center. They walked up behind one of her elders, and she tapped his shoulder.
+
+"Hey Koa, this is Jacob," Kaia said. "He's my pen pal from Montreal."
+
+Koa turned and smiled. "Glad to meet you, Jacob," he said. "Have you been enjoying Auckland so far?"
+
+"It's been great," Jacob said. "Everything is so new to me!"
+
+Koa smiled at Jacob, "I'm sure you'll love the festival. We'll be having music, introductions from other tribes, and, of course, food!"`,
+      questions: [
+        {type:"mc", q:"How is Jacob feeling about being in Auckland?", options:["He feels excited to be learning new things.","He is scared to be there.","He is nervous to try new food.","He feels unsure about meeting Kaia."], correct:0},
+        {type:"mc", q:"What words best describe Koa?", options:["timid but welcoming","friendly but harsh","formal and nice","welcoming and friendly"], correct:3},
+        {type:"mc", q:"What prefix can be added to arranging to create a new word?", options:["in–","dis–","re–","un–"], correct:2},
+        {type:"mc", q:"Which word is not a compound word?", options:["handshake","whitebait","neighborhood","welcoming"], correct:3},
+      ]
+    },
+    {
+      day: 3,
+      title: "Learning about Legends",
+      asYouRead: "Write questions or comments you have about the events and characters in the margins.",
+      passage: `The first day of the festival had arrived. Kaia and Jacob were handing out programs when Jacob overheard a conversation between two friends.
+
+"No, no, no, earth mother and sky father were pushed apart by all their children except for the god of wind and storms," one of the friends said.
+
+"Oh, that's right! And then the god of wind and storms raged war against his siblings," the other friend said. "He went on to beat them all, except for one brother—the god of people."
+
+"I think they were talking about a Māori legend," Jacob said to Kaia. "In school, we learned about some First Nations legends, but I had not heard any Māori legends before. Can you tell me about any others?"
+
+"Hmm…well, my favorite legend is of the whale rider. It's a long story, but basically, this guy rode a whale from one island to another!"`,
+      questions: [
+        {type:"mc", q:"What are the two friends talking about?", options:["a type of Māori artwork","a Māori legend","a Māori tradition","a Māori symbol"], correct:1},
+        {type:"mc", q:"Why are the words except and then italicized in the text?", options:["to show they are part of the dialogue","to show they are vocabulary words","to give them more emphasis","to give them a special accent"], correct:2},
+        {type:"open", q:"What is Kaia's favorite legend about?", lines:2},
+        {type:"open", q:"How do you think stories and legends contribute to a culture?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Having Fun at the Festival",
+      asYouRead: "Underline details about Kaia's culture. Put a star next to details about Jacob's culture.",
+      passage: `Kaia and Jacob went inside and found their seats. Koa went to the stage and began speaking into a microphone.
+
+"Kia ora! Welcome to the first day of our annual festival!" Koa said to a thunderous round of applause from the crowd. "I'll keep this short and sweet since I know everyone can smell the seafood our volunteers are grilling outside."
+
+Kaia nudged Jacob and whispered to him, "I seriously cannot wait."
+
+"I always love this time of year," Koa said. "I've talked to so many wonderful people from around the world, even some as far away as Canada."
+
+Jacob's mouth fell open in surprise as Koa smiled at him from the stage. "I'd just like to say thanks to all of you for being here," Koa continued, "and I hope you have a wonderful time over the next few days. I know that there's so much we can all learn from each other."
+
+When Koa finished speaking, they headed straight for the seafood buffet outside. Jacob filled his paper plate to the brim with a variety of fried fish, mussels, and some lobster. Kaia led Jacob to a table where one of her friends was sitting.
+
+"Hey Manu!" Kaia said. "This is Jacob, my pen pal from Canada."
+
+Manu's eyes went wide. Jacob almost thought he had started choking on the bit of fish he was eating, but then Manu launched into a bunch of questions.
+
+"Canada, no way, are you serious?" Manu asked. "I have always wanted to go to Canada. Do you speak any French? Maybe we could practice together if you do. Is it true that it's winter over there right now? And do you like poutine? Oh man, I have always wanted to try poutine."
+
+Kaia laughed and whispered to Jacob, "Manu gets a little excited sometimes, but that's why I love him."
+
+Jacob realized that for all the things he wanted to know and learn about New Zealand, Manu and Kaia wanted to learn the same thing about Canada. After answering Manu's questions, Jacob asked Manu and Kaia more about Māori culture, particularly the legends. By the end of the first day of the festival, he had no idea how he would be able to sleep after all the excitement. He couldn't wait to do it all again tomorrow!`,
+      questions: [
+        {type:"mc", q:"What is the main point of Koa's speech?", options:["He hopes everyone tries all the food.","He hopes everyone will learn from one another.","He hopes people will be nice to one another.","He hopes people will ask him questions."], correct:1},
+        {type:"mc", q:"How does Jacob feel about Manu's questions?", options:["He feels nervous his answers will not be interesting.","He feels annoyed by the long list of questions.","He feels happy to share things about Canada.","He wonders why Manu wants to know so much."], correct:2},
+        {type:"mc", q:"What is an antonym for thunderous?", options:["audible","loud","quiet","shocking"], correct:2},
+        {type:"mc", q:"What can you infer about how the three friends feel about their day?", options:["They are glad it is the last day of the festival.","They have fun at the festival but do not like the food.","They are tired and overwhelmed.","They enjoy learning about each other's cultures."], correct:3},
+        {type:"open-table", q:"Summarize four events that happen in the story in the order they occur.", rows:[
+          {label:"Event 1"},
+          {label:"Event 2"},
+          {label:"Event 3"},
+          {label:"Event 4"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Having Fun at the Festival.\"",
+      prompt: "Imagine that you have a pen pal. Write a letter to your pen pal, telling them about what life is like where you live. Use descriptive words and phrases and sensory details to tell them about your home and life.",
+    },
+  ]
+},
+{
+  id: 21,
+  label: "Unit 7 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Kaia's Blog",
+      asYouRead: null,
+      passage: `KAIA'S BLOG
+
+Hello faithful readers,
+
+Growing up as an Indigenous person in New Zealand meant that I always participated in traditions. My family really strived to stay connected to Māori culture. I used to think that everyone knew about Māori practices. But after volunteering for the annual summer festival in Auckland, I realized there is so much information I can share with people.
+
+That's why I'm here to give a brief overview of my culture! My plan is to make this into a series. I want to focus on a specific theme each week. For today, I really want to dive into artistic traditions. This will include carving, weaving, and physical performances.
+
+First, we'll talk about visual arts. Many Māori patterns in art are inspired by nature. You might see art that features spider webs or fish scales. Or maybe you'll see the delicate curled leaves of a fern tree. These patterns can be found in wood carvings. They can also be found in pounamu stone and bone carvings.
+
+Māori performing arts are called kapa haka. These performances include dancing. These also include chanting and singing. There are many kinds of performances. One type of performance is the haka. The haka is a ceremonial dance performed in a group. It's done this way to signify the unity of the tribe. It also shows strength and pride of the tribe. Another performance is waitata-a-ringa. Performers sing while moving their hands quickly when they perform. They do this to represent water, wind, and heat. An important part of kapa haka is the facial expressions made by the performers. These expressions are called pukana. They help bring attention to things and show passion.
+
+The arts are an important part of Māori culture. They are meaningful and fun for people to participate in. They are also fun to watch and look at.
+
+I hope you've enjoyed reading about my culture and that you learned something new. What topics should I focus on next week? Food, language, or legends? Let me know in the comments what you are interested in learning about!
+
+—Kaia
+
+(Note: The original workbook page includes photos of Māori art patterns referenced in Question 2.)`,
+      questions: [
+        {type:"mc", q:"How are performing arts different from visual arts?", options:["They share a rich culture.","They are done on canvases.","They include sound and movement.","They have stunning designs and patterns."], correct:2},
+        {type:"mc", q:"How does the image affect the text?", options:["It gives the reader little information.","It shows the reader how to make each piece of art.","It shows Kaia's enthusiasm for her culture.","It shows examples of described patterns."], correct:3},
+        {type:"mc", q:"What do you do when you dive into something?", options:["give it away","show it to others","start it with enthusiasm","believe it is true"], correct:2},
+        {type:"mc", q:"What is the meaning of Indigenous?", options:["difficult","native to","regular","similar to"], correct:1},
+        {type:"open", q:"What cultural or traditional artwork have you seen or learned about? Describe it.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Summarizing the Texts",
+      asYouRead: "Closely read these texts. Then, summarize each of the texts.",
+      passage: `Close-Reading Texts
+
+From "The Māori": The Māori (MAU-ree) are Indigenous people of New Zealand. That means they were the first people to live there. The Māori are Polynesian like the Indigenous peoples of Hawai'i. Nobody knows when Māori people first came to New Zealand. But it is known how they got there. They came to New Zealand in canoes. They came from other parts of the Pacific. The Māori were very skilled sailors.
+
+From "Kaia's Blog": One type of performance is the haka. The haka is a ceremonial dance performed in a group. It's done this way to signify the unity of the tribe. It also shows strength and pride of the tribe. Another performance is waitata-a-ringa. Performers sing while moving their hands quickly when they perform. They do this to represent water, wind, and heat. An important part of kapa haka is the facial expressions made by the performers. These expressions are called pukana. They help bring attention to things. They can also be used to show passion.
+
+Directions: Write a summary for each text.`,
+      questions: [
+        {type:"open", q:"Write a summary of \"The Māori.\"", lines:4},
+        {type:"open", q:"Write a summary of \"Kaia's Blog.\"", lines:4},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing Two Texts",
+      asYouRead: "Closely read these texts. Then, compare them by thinking about genre, language, structure, and purpose.",
+      passage: `Close-Reading Texts
+
+From "Preparing for the Festival": It was an exciting week for Kaia and her family. They were helping volunteer for the annual summer festival at their local community center in Auckland. Kaia's family was Māori, and they often volunteered for this event. It was a weekend filled with special introductions, music, dancing, and feasts. During this time, people in her community met with tourists from around the world, talked about their cultures, and had a good time.
+
+From "Auckland, New Zealand": Auckland is the biggest city in New Zealand. Auckland is sometimes called "the city of sails." That is because it is famous for its sailing and yacht races. Auckland is also home to Sky Tower. Sky Tower is the tallest building in the Southern Hemisphere. People can go to the top of Sky Tower and see for miles around. More fun things to do around the city include going on dolphin or whale-watching tours, visiting the zoo, or following the many bike paths. Plus, there are countless stores and restaurants.
+
+Directions: Compare the two texts. Think about things such as genre, language, structure, and purpose.`,
+      questions: [
+        {type:"compare3", q:"Compare the two texts.", columns:["Preparing for the Festival","Both","Auckland, New Zealand"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread the texts from this unit.",
+      prompt: "Explain what you find to be the most interesting aspect of the Māori culture. Introduce the topic clearly, state an opinion, and provide logically ordered reasons that are supported by facts and details.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about a family or cultural tradition you participate in or know about.",
+      prompt: "Write a blog post about a family or cultural tradition. Be sure to describe it vividly so your readers can picture it clearly.",
+    },
+  ]
+},
 ];
