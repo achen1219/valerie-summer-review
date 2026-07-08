@@ -1882,4 +1882,282 @@ Directions: Compare the two texts. Think about things such as genre, language, s
     },
   ]
 },
+{
+  id: 22,
+  label: "Unit 8 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Judo: A Martial Art",
+      asYouRead: "Underline facts that explain why size does not necessarily factor into winning a judo match.",
+      passage: `Judo is one of the many types of martial arts. It is a sport that does not use weapons. Instead, judo uses holds and body movements. In that way, it is a little like karate. Judo was started in 1882 by Dr. Jigoro Kano. He studied martial arts in Japan and developed judo from them. People do not have to be big and strong to learn judo because it is about timing. It is also about movement and skill. Judo experts can win competitions even when their opponents are bigger. They know that timing and skill are more important than size. Anyone can learn judo. There are classes for people of all ages and all ability levels. It is even an Olympic sport.`,
+      questions: [
+        {type:"mc", q:"Which reason supports that judo is a little like karate?", options:["Judo started in Japan.","People cannot take classes to learn judo.","Judo uses holds and body movements.","Timing is more important than size in judo."], correct:2},
+        {type:"mc", q:"Which phrase supports that an expert is someone who is good at doing something?", options:["to be big and strong","of all ages and abilities","more important than size","even when their opponents are bigger"], correct:3},
+        {type:"mc", q:"Which is the root word in competitions?", options:["compete","competitive","competitor","petition"], correct:0},
+        {type:"mc", q:"Which subordinating conjunction explains why anyone can learn judo?", options:["even little children","instead of weapons","because it is about timing","even when their opponents are bigger"], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "Fencing: An Olympic Sport",
+      asYouRead: "Underline key words related to fencing.",
+      passage: `Fencing is a sport in which people use a special kind of sword and wear protective clothes. Fencing started in France, so most of the words used in fencing are French. Fencing is an Olympic sport. The object of a fencing match is to touch your opponent with your weapon as many times as possible. Whoever gets the most touches is the winner. There are several fencing moves that fencers have to learn. For example, fencers learn how to try to touch their opponents and how to defend themselves against an opponent's touch. They learn how to move around, both backward and forward. Have you ever seen a movie that had a sword fight? The actors who used the swords probably learned to fence!`,
+      questions: [
+        {type:"mc", q:"How is fencing related to sword fighting?", options:["Both fencing and sword fighting are Olympic sports.","Actors who sword-fight likely learned fencing.","Fencing started in France, but sword fighting started in Rome.","Fencing takes a lot of practice, but sword fighting can be learned quickly."], correct:1},
+        {type:"mc", q:"What do fencers have to learn?", options:["how to speak French","how to wear special clothing","how to get to matches","how to touch their opponent"], correct:3},
+        {type:"mc", q:"Which example of figurative language may be used to describe fencing?", options:["to \"be on the fence\" as to when to attack","to \"go out on a limb\" when joining a fencing match","to \"be on cloud nine\" when winning a fencing match","to look to \"the other side of the fence\" for a better fencing sword"], correct:2},
+        {type:"mc", q:"What is the best meaning of the word object in the text?", options:["a thing","the focus","the goal","to protest"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Rowing: A Team Sport",
+      asYouRead: "Place a star beside information that explains how to row.",
+      passage: `If you like to be out on the water, you might enjoy the sport of rowing. Rowing is popular wherever there are large bodies of water, such as lakes, rivers and oceans. It is one of the oldest Olympic sports. In rowing, teams of people race one another in special boats. To move their boats, rowers sit facing backward on special seats in their boat. They use paddles called oars that are designed for rowing and are attached to the boat. Rowers have to have a lot of strength and work together as a team to pull their oars. Each person on the team has to row in the right direction at exactly the right time. Otherwise, the boat will not move forward smoothly. Rowing can be good exercise for people because it makes arm and back muscles strong. Rowing also helps people strengthen their leg muscles. Rowing can be a fun and fast workout!`,
+      questions: [
+        {type:"mc", q:"Where is rowing done?", options:["on a field","in a gymnasium","in a stadium","on waterways"], correct:3},
+        {type:"mc", q:"What special paddles do rowers use?", options:["boats","seats","oars","rows"], correct:2},
+        {type:"open", q:"Why do rowers have to work together as a team?", lines:2},
+        {type:"open", q:"Compare rowing to another water sport.", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "The Summer Olympic Games",
+      asYouRead: "Circle time-order words that indicate a sequence of events.",
+      passage: `Every four years, a special sporting event occurs in the world. Athletes from all over the world gather together. They compete against each other in their sports and try to win medals. This special event is the Summer Olympic Games. It is also called the Olympiad. Many sports are a part of the Olympics. Athletes row, fence, and ride horses. They swim, run, and play soccer. Judo and boxing are also part of the Summer Olympics. So are baseball and gymnastics.
+
+The Olympics have a long history and have been held in many places. Nearly 3,000 years ago in Ancient Greece, people got together every four years. They raced and boxed. They competed to see who could throw a spear the farthest. They competed in other events, too. But after many years, the Greeks stopped having the games. For a long time, there were no games.
+
+In 1896, the modern Olympics began. The first modern Olympic Games were held in Athens. Athens is the capital of Greece. Since 1900, the games have been held every four years. The one exception is 2020 due to the COVID-19 pandemic. And the games have only been cancelled three times: in 1916, 1940, and 1944. In those years, the games could not be held because of World War I and World War II.
+
+Many locations around the world have hosted the Olympics. Each year, the games are held in a different city. Cities that want to host the Olympics have to apply to host the games. They apply to a special group of people. This group is the International Olympic Committee. The group decides which city will get the games. Some of the cities include Paris, Los Angeles, Rome, and Rio de Janeiro. Most recently, the Olympics were held in Tokyo.
+
+People around the world look forward to the Summer Olympics. Wherever they are held, millions of people watch them!`,
+      questions: [
+        {type:"mc", q:"Which event happens first?", options:["The Olympic Games are held.","Cities apply to the International Olympic Committee.","Cities decide that they want to host the Olympic Games.","The committee decides where the Olympic Games will be."], correct:2},
+        {type:"mc", q:"What is true of modern-day Olympics?", options:["The Games are held every six years.","The Games are always held in Greece.","The Games are held all over the world.","The Games do not include games from the first Olympics."], correct:2},
+        {type:"mc", q:"How is this text different from the texts in the first three days of this week?", options:["This text compares different Olympic Games.","This text gives opinions about the Olympic Games.","This text explains how athletes prepare for the Games.","This text lists many Olympic Games instead of just one."], correct:3},
+        {type:"mc", q:"Why were the first modern Olympic Games most likely held in Athens?", options:["The first Olympics were held by the Greeks.","Athens offered more site-seeing options for visitors.","People can easily travel to Athens compared to other cities.","Athens had more space to hold several competitions at one time."], correct:0},
+        {type:"open-table", q:"List events related to the Olympics in chronological order.", rows:[
+          {label:"Event 1", given:"The first Olympics were held in Greece nearly 3,000 years ago."},
+          {label:"Event 2"},
+          {label:"Event 3"},
+          {label:"Event 4"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"The Summer Olympic Games.\"",
+      prompt: "Write a story as if you were a spectator at either the ancient or modern Olympics. Develop your story with descriptive details and a clear sequence of events.",
+    },
+  ]
+},
+{
+  id: 23,
+  label: "Unit 8 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Saturday Swimming",
+      asYouRead: "Place a plus sign (+) beside positive ideas related to the pool. Place a minus sign (–) beside negative ideas.",
+      passage: `Sammy and her family went to the community pool every Saturday during the summer. It was something she looked forward to all week. She loved being outside and talking to her friends. But most importantly, she loved being in the water. She enjoyed any activity that took place in water. Whether it was floating, racing her friends, or jumping into the deep end, she always had a good time. She loved how refreshing the water felt and how it made her feel weightless. To her, being in the water was the most peaceful place.
+
+Sammy only had one gripe with swimming, and it was that she never felt like she was great at it. She knew how to keep herself afloat, and she could kind of do a sidestroke, but that was about it. Plus, she never won any of the races against her friends, and she always felt that her form was awkward.`,
+      questions: [
+        {type:"mc", q:"Why is the setting important to the story?", options:["The pool is open all year long.","Saturday is the only day the pool is open.","The pool is the only place Sammy is happy.","The pool is a place to get fresh air while swimming."], correct:2},
+        {type:"mc", q:"What is a synonym for gripe?", options:["complaint","fear","image","spectacle"], correct:0},
+        {type:"mc", q:"What disappoints Sammy?", options:["She cannot swim in the rain.","She is not a strong swimmer.","Her friends don't want to race her.","Her muscles cramp when she swims too hard."], correct:1},
+        {type:"mc", q:"What is a good metaphor for Sammy?", options:["Sammy is a fish.","Sammy is a pool.","Sammy is a snail.","Sammy is a waterfall."], correct:0},
+      ]
+    },
+    {
+      day: 2,
+      title: "Sunday Swim Class",
+      asYouRead: "Circle words that show how the characters are feeling.",
+      passage: `Sammy's family decided to skip the pool one Saturday, and they went on Sunday instead. When they arrived, they found some chairs and put down their towels. Sammy was about to head into the water when she realized that the shallow section of the pool was closed off to the public.
+
+"Hey Mom, what do you think they're doing?" Sammy asked.
+
+"Oh, I think it's for a class that teaches people how to properly swim," her mom said. "It looks like they are practicing specific strokes."
+
+Sammy gasped in excitement. "I definitely want to do that!" she exclaimed.
+
+"Alright, we can get some details and ask about signing up," her mom said.
+
+Sammy was already imagining herself as an amazing swimmer, winning races left and right. Before they left the pool that day, Sammy was signed up for next Sunday's class.`,
+      questions: [
+        {type:"mc", q:"How is the setting of this story different from \"Saturday Swimming\"?", options:["On Sunday, the pool is closed to guests.","On Sunday, the pool is open fewer hours.","On Sunday, the pool has more lifeguards.","On Sunday, the pool offers swimming classes."], correct:3},
+        {type:"mc", q:"What is a synonym for intrigued?", options:["baffled","interested","open","snug"], correct:1},
+        {type:"mc", q:"What does Sammy look forward to next weekend?", options:["diving","swim classes","picnicking at the pool","swimming with friends"], correct:1},
+        {type:"mc", q:"What is Sammy's main goal?", options:["to learn to dive","to swim with her friends","to win swimming races","to swim longer at the pool"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Sammy's First Swim Class",
+      asYouRead: "Write a ∞ wherever you make connections to the text.",
+      passage: `Sammy was feeling nervous about her first swimming class. She felt excited, too, but she was worried about being the only mediocre swimmer there.
+
+"No one is going to be that great at first," her father reassured her. "The lessons are supposed to make you better. And we will be there cheering you on from the sidelines. It will be like any other day at the pool!" This was enough to calm some of Sammy's anxiety. Plus, her excitement had kicked in at this point.
+
+At the pool, Sammy walked over toward the instructor. She almost asked her parents to come with her but decided against it at the last minute.
+
+"Hello everyone!" the instructor greeted everyone. "We still have about five minutes until class starts, but I'll be right here if you have any questions."
+
+Sammy smiled at the instructor and walked to the shallow end of the pool, preparing for the lesson.`,
+      questions: [
+        {type:"mc", q:"Why doesn't Sammy ask her parents to come with her?", options:["She wants to be brave.","She doesn't like her parents.","Her parents would yell at her.","Her parents embarrass her."], correct:0},
+        {type:"mc", q:"What does mediocre mean?", options:["friendly","just okay","marvelous","terrible"], correct:1},
+        {type:"open", q:"Why is Sammy both nervous and excited?", lines:3},
+        {type:"open", q:"What is something you wish you were better at? Why?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Great Form!",
+      asYouRead: "Number the steps to performing a side stroke in swimming.",
+      passage: `"Alright swimmers, let's get started," the instructor said. "For our first exercise, let's have everyone exit the pool!"
+
+Sammy glanced at the other kids, who looked just as confused as she was. Once everyone was poolside, she continued, "Today's focus is the side stroke. We'll start with the leg movements. Everyone lie down on your left side."
+
+Sammy was feeling unsure of herself, but she followed directions.
+
+"Now, extend your left arm above your head, and rest your head on the upper part of your arm. And face your palm down on the ground."
+
+"Perfect!" the instructor said. "Now, place your right hand across your chest and onto the floor in front of you for balance."
+
+"Okay, now bend your knees to a 90-degree angle," she said. "Then, pull your knees toward your chest, and kick your legs in the opposite direction. Your top leg should kick out to the front as your bottom leg kicks back. As you straighten both legs, bring them back together to the starting position."
+
+Sammy held her breath and tried really hard to follow the instructions. Sammy heard the instructor yell, "Great form, Sammy!"
+
+Sammy felt proud of herself as the class continued to practice the leg movements on both sides. Then, they practiced the corresponding arm movements. Finally, they practiced working their arms and legs simultaneously.
+
+"Nice work, everybody," the instructor said. "Now, let's add some water."
+
+The class attempted the same techniques in the pool. Eventually, they even held some races. Sammy surprised herself by coming in first during one of the races.
+
+"Your daughter is a natural," the instructor said to Sammy's parents. "She's like a fish!"
+
+"That's incredible!" Sammy's mom cheered.
+
+Later that night, the family discussed Sammy's new passion over dinner.
+
+"So, Sammy, do you want to continue swim lessons? You could also compete in official swim meets," her mom said.
+
+"Yes, that sounds amazing!" Sammy said. "Olympics, here I come!"
+
+"Go for the gold!" her mom and dad yelled.`,
+      questions: [
+        {type:"mc", q:"How do Sammy's parents react to the idea of the Olympics?", options:["They both think it's not a good idea.","Her mom is excited, but her dad is doubtful.","They both encourage Sammy to have that dream.","Her mom is cautious, but her dad is enthusiastic."], correct:2},
+        {type:"mc", q:"How does Sammy's mood change?", options:["At first she is afraid, then she becomes terrified.","At first she is nervous, then she becomes uncertain.","At first she is unsure, then she becomes confident.","At first she is excited, then she becomes less confident."], correct:2},
+        {type:"mc", q:"What is another word for corresponding?", options:["communicating","matching","personalizing","rationalizing"], correct:1},
+        {type:"mc", q:"Who must perform movements simultaneously?", options:["dancers","painters","sculptors","writers"], correct:0},
+        {type:"open-table", q:"Summarize the steps to perform the side stroke.", rows:[
+          {label:"Step 1"},
+          {label:"Step 2"},
+          {label:"Step 3"},
+          {label:"Step 4"},
+          {label:"Step 5"},
+          {label:"Step 6"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Great Form!\"",
+      prompt: "Think about something you can teach someone else to do. Write clear steps for another person to follow to successfully do this thing. Link ideas using words, phrases, and clauses.",
+    },
+  ]
+},
+{
+  id: 24,
+  label: "Unit 8 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "An Interview with Sammy",
+      asYouRead: null,
+      passage: `Interviewer: How old were you when you first started swimming?
+
+Sammy: I first started to take it seriously as a sport when I was around 11 years old. That's when I joined the local swim team. That same year, I went to my first swim meet. I placed second in my main event and third in my second event. My main event is the 100-meter freestyle and my second event is the 100-meter backstroke.
+
+Interviewer: Did you always have the Olympics in mind as your goal?
+
+Sammy: Not always. My parents really emphasized that I do swimming for fun. My first swim instructor said I should consider it in the future. I tried to follow the idea of taking everything one step at a time. I realized that competing was good motivation to practice and get better. Then, I started winning first place more in high school. That's when the idea of going to the Olympics seemed more achievable.
+
+Interviewer: Who helped you achieve this goal? Did you have any family members or friends who supported or encouraged you?
+
+Sammy: Definitely! My parents were always so supportive. They would wake up early to bring me to my practices and meets, and they made sure that I had a healthy breakfast and was ready to take on the day. My siblings and friends were also very supportive. They often came to watch me compete. I'm incredibly grateful for their support over the years.
+
+Interviewer: Tell me about the first time you qualified for the Olympics. How did it feel?
+
+Sammy: I was ecstatic, of course! It didn't feel real until a day or two later. That's when it sunk in that my years of hard work had paid off. Even now, after attending three different Olympics, I still get overjoyed when I find out I've qualified again. It's really one of the best feelings I've ever experienced.
+
+Interviewer: What is one piece of advice you'd like to give young athletes who are dreaming of one day going to the Olympics themselves?
+
+Sammy: It takes determination. Sometimes, it seems like all you're doing is practicing. But the opportunity of competing in the Olympics makes it worth it. If it's something you love to do, then you should go for it!
+
+Interviewer: Thank you for taking the time for this interview, Sammy. I really appreciate it and I know your fans will love to read your responses!`,
+      questions: [
+        {type:"mc", q:"How is the language Sammy uses in the interview different from that in the story \"Great Form!\"?", options:["She speaks more formally during the interview.","She speaks more informally during the interview.","She speaks more cautiously during the interview.","She speaks more solemnly during the interview."], correct:0},
+        {type:"mc", q:"To whom does Sammy give credit for her support?", options:["her teachers","her swim coach","friends and family","her Olympics coach"], correct:2},
+        {type:"mc", q:"Which of the following has the closest meaning to ecstatic?", options:["happy","pleased","satisfied","thrilled"], correct:3},
+        {type:"mc", q:"What is a lesson from the interview?", options:["Listen to others when setting goals.","Setting unrealistic goals will motivate you to work harder.","With hard work and determination, you can achieve anything.","Rely on family and friends to get you through the tough times."], correct:2},
+        {type:"open", q:"Describe a goal you have and how you might achieve it.", lines:4},
+      ]
+    },
+    {
+      day: 2,
+      title: "Point of View: Two Texts",
+      asYouRead: "Closely read these texts. Complete the graphic organizer comparing point of view.",
+      passage: `Close-Reading Texts
+
+From "Great Form!": "Your daughter is a natural," the instructor said to Sammy's parents after class. "She's like a fish!" "That's incredible!" Sammy's mom cheered. Later that night, the family discussed Sammy's new passion over dinner. "So, Sammy, do you want to continue swim lessons? You could also compete in official swim meets," her mom said. "Yes, that sounds amazing!" Sammy said. "Olympics, here I come!"
+
+From "An Interview with Sammy": Interviewer: Did you always have the Olympics in mind as your goal? Sammy: Not always. My parents really emphasized that I do swimming for fun. My first swim instructor said I should consider it in the future. I tried to follow the idea of taking everything one step at a time. I realized that competing was good motivation to practice and get better. Then, I started winning first place more in high school. That's when the idea of going to the Olympics seemed more achievable.
+
+Directions: For each text, identify the point of view (first, second, or third person), explain how you know, and describe the events.`,
+      questions: [
+        {type:"compare3", q:"\"Great Form!\"", columns:["Point of View","I Know This Because","Description of Events"]},
+        {type:"compare3", q:"\"An Interview with Sammy\"", columns:["Point of View","I Know This Because","Description of Events"]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing Fencing and Rowing",
+      asYouRead: "Closely read these texts. Compare fencing and rowing.",
+      passage: `Close-Reading Texts
+
+From "Fencing: An Olympic Sport": The object of a fencing match is to touch your opponent with your weapon as many times as possible. Whoever gets the most touches is the winner. There are several fencing moves that fencers have to learn. For example, fencers learn how to try to touch their opponents and how to defend themselves against an opponent's touch. They learn how to move around, both backward and forward.
+
+From "Rowing: A Team Sport": To move their boats, rowers sit facing backward on special seats in their boats. They use paddles called oars that are designed for rowing and are attached to the boat. The oars push the boat through the water. Rowers have to work together as a team. Each person on the team has to row in the right direction at exactly the right time. Otherwise, the boat will not move forward.
+
+Directions: Compare fencing and rowing.`,
+      questions: [
+        {type:"compare3", q:"Compare fencing and rowing.", columns:["Fencing","Both","Rowing"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts from this unit.",
+      prompt: "Imagine that you are Sammy from the story. You just went to your first swimming lesson. Write a diary entry about your experience. Use descriptive words and phrases and sensory details to tell about your experience.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about a famous athlete you admire.",
+      prompt: "Write an interview between yourself and a famous athlete. As the interviewer, you ask the questions. The person you interview will answer them. Write your interview as a script, similar to the interview on Day 1.",
+    },
+  ]
+},
 ];
