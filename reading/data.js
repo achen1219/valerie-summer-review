@@ -2438,4 +2438,226 @@ From "Zaharah and the Tornado": Soon, some cars drove up the street to help. The
     },
   ]
 },
+{
+  id: 28,
+  label: "Unit 10 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "What Are Martial Arts?",
+      asYouRead: "Circle reasons people learn martial arts.",
+      passage: `Martial arts include many sports and skills that are used for fighting. Many people learn martial arts for self-defense. People also use martial arts for exercise. Doing martial arts is a full body workout. Martial arts can keep your body strong. Some people use meditation while they are doing martial arts. This is because many martial art forms require a person to stay calm while doing movements. They need to keep their attention focused during a fight. Staying focused can make it harder for their opponent to win in a fight or surprise attack. Many forms of martial arts were created in Asia. Some countries where martial arts were created include Japan, China, and Korea.`,
+      questions: [
+        {type:"mc", q:"What is one purpose of martial arts?", options:["to learn skills to use when fighting","to learn to meditate during stressful times","to learn movements to help surprise attacks","to learn when to predict an enemy will attack"], correct:0},
+        {type:"mc", q:"Where did many forms of martial arts originate?", options:["countries in Africa","countries in Asia","countries in North America","countries in South America"], correct:1},
+        {type:"mc", q:"How does meditation help a martial artist?", options:["They learn to think freely.","They learn to stay silent and still.","They learn to stay calm and focus.","They learn to predict surprise attacks."], correct:2},
+        {type:"mc", q:"What is another word for general?", options:["intense","intricate","typical","unusual"], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "Types of Martial Arts",
+      asYouRead: "Underline details that describe each form of martial arts.",
+      passage: `Some of the most well-known martial arts are karate, kung fu, tae kwon do, and jujitsu. Each of these types are unique in the way they are practiced.
+
+Jujitsu is from Japan, and it is a close combat form of martial art. In close combat, the martial artist may use small weapons. Or, they may use special techniques, such as throws and holds. Throws are movements that get an opponent to the ground. Holds are ways to grab or grip an opponent.
+
+Karate is also a close combat form of martial art. In karate, striking is mostly used. Striking includes punching, kicking, knee strikes, and elbow strikes.
+
+Tae kwon do originated in Korea. It also uses punching and kicking, but tae kwon do focuses on kicking more than karate does.
+
+Kung fu is a general word that refers to Chinese martial arts. There are many types of kung fu, such as Shaolin and tai chi.`,
+      questions: [
+        {type:"mc", q:"How do forms of martial arts differ?", options:["the way they are taught","the way the movements are used","where they are practiced","the time needed to learn them"], correct:1},
+        {type:"mc", q:"How are jujitsu and karate alike?", options:["They originated in Korea.","They are both a close combat sport.","They both rely on punching and kicking.","They are both general types of martial arts."], correct:1},
+        {type:"mc", q:"What is an antonym for opponent?", options:["ally","argument","contradiction","rival"], correct:0},
+        {type:"mc", q:"What are the three main movements in martial arts?", options:["punching, kicking, and striking","gripping, grabbing, and tripping","holding, throwing, and striking","spinning, throwing, and trapping"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Famous Martial Artists",
+      asYouRead: "Circle the names of famous martial artists. Place a star beside the ones you have heard of.",
+      passage: `Many people practice martial arts, and there are many famous martial artists. Here are just a few of them. One of the most well-known martial artists is Bruce Lee. He is often considered the most influential martial artist of all time. He created his own form of martial arts called Jeet Kune Do. Translated, this means "way of the intercepting fist." Bruce Lee was also a famous actor. He showed off his martial arts moves in several famous movies. Another famous martial artist is Jackie Chan. He is also an actor. Like Bruce Lee, he helped make martial arts popular in movies and TV shows. Finally, Chuck Norris is another famous martial artist and actor. He also created his own discipline of martial arts called Chun Kuk Do.`,
+      questions: [
+        {type:"mc", q:"What do some famous martial artists have in common?", options:["They are from Asia.","They are also actors.","They have their own forms.","They have dedicated teachers."], correct:1},
+        {type:"mc", q:"What is a discipline?", options:["design","movement","specialty","weapon"], correct:2},
+        {type:"open", q:"What two forms of martial arts are listed in the text?", lines:2},
+        {type:"open", q:"Why do you think the famous martial artists you read about also happen to be actors?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "A Brief History of Martial Arts",
+      asYouRead: "Underline the main idea of each paragraph. Number details that support each main idea.",
+      passage: `It's difficult to figure out when or how martial arts began. The earliest proof comes from paintings. These paintings come from Ancient Egypt. They show people doing martial arts. The oldest paintings are from 3400 BCE. That's more than 5,000 years ago! The term martial arts is often linked to Asia. Proof of ancient martial arts has been found in some Asian countries. This includes China, Japan, and India. But Europe, Africa, and the Middle East also have proof of ancient martial arts.
+
+In China, martial arts have taken many forms over time. Martial arts were first used as a way for people to hunt for food. People also used martial arts to train soldiers. The earliest proof of martial arts in China comes from roughly 500 BCE. Ancient documents described an early form of hand-to-hand combat. They also described techniques for using force. These were labeled as either "soft" or "hard" movements. One of the most popular modern forms of martial arts comes from China. It is a type of kung fu called Shaolin. There is record of the Shaolin form being used in combat around 600 CE. Martial arts have been an important part of Chinese culture throughout time.
+
+There are different types of martial arts in Japan. In this country, martial arts started with the samurai. Samurai were important members of the military. They had special privileges and were the only members of society that were allowed to use weapons. Because martial arts started with samurai, early Japanese martial arts focused on using weapons in their practices. Over time, many different styles developed. This includes some styles that don't use weapons. Jujitsu is one of these styles. Today, Japanese martial arts tend to fall into two categories. The first category refers to martial art styles that were created before 1868. These styles are traditional. Their primary use was for war. The second category refers to styles that were created after 1868. These styles are modern. They are often used for self-improvement. Some people may use them for self-defense.
+
+Modern-day martial arts have come a long way from the styles of the past. Next time you practice a move in martial arts class, think about how people have been doing these movements for thousands of years!`,
+      questions: [
+        {type:"mc", q:"What evidence supports the fact that martial arts have been around for centuries?", options:["weapons and techniques","fingerprints and testimony","paintings and documents","records and recordings"], correct:2},
+        {type:"mc", q:"How were martial arts used early on in China?", options:["to hunt for food and for combat","to train for war and for entertainment","to fight with enemies and for personal strength","to trick enemies and for learning how to focus"], correct:0},
+        {type:"mc", q:"How are Japanese martial arts related to samurai?", options:["They initially used weapons.","They focused on self-defense.","They focused on self-improvement.","They were only taught to nobility."], correct:0},
+        {type:"mc", q:"What is an antonym for traditional?", options:["classy","complicated","modern","outdated"], correct:2},
+        {type:"compare3", q:"Compare martial arts from China and Japan.", columns:["Martial Arts from China","Martial Arts from Japan","Martial Arts from Both Countries"]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"A Brief History of Martial Arts\" and the other texts from this week. Then, respond to the prompt.",
+      prompt: "Compare and contrast two forms of martial arts. Use information and examples from the texts to support your ideas.",
+    },
+  ]
+},
+{
+  id: 29,
+  label: "Unit 10 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Matt's Birthday Present",
+      asYouRead: "Make notes in the margins of connections you can make to the text.",
+      passage: `Matt loved watching martial arts movies. He had always been interested in learning a martial art. It looked like fun, and he wanted to be able to do the things he saw in movies. So when his parents asked him what he wanted for his birthday, Matt immediately knew his answer. He wanted to learn karate!
+
+Matt's mom and dad promised to arrange for him to take lessons. They looked at a few karate studios before they found the right one. They wanted to be sure that the lessons would be safe for Matt. They also wanted to find a lesson schedule that would work for them. Finally, they found what they wanted. Matt was beyond excited. He couldn't wait to start doing what he saw in movies!`,
+      questions: [
+        {type:"mc", q:"Why does Matt want karate lessons?", options:["His friends take karate lessons.","His parents take karate lessons.","His teacher suggests he take lessons.","He wants to do what he sees in movies."], correct:3},
+        {type:"mc", q:"What is karate?", options:["a kind of game","a kind of home","a kind of movie","a kind of martial art"], correct:3},
+        {type:"mc", q:"How do Matt's parents feel about him taking karate lessons?", options:["They can't decide.","They like the idea.","They argue about it.","They think karate is too dangerous."], correct:1},
+        {type:"mc", q:"What does the phrase work for them mean in this text?", options:["start a job","work hard","be agreeable","have employees"], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "Matt's First Karate Lesson",
+      asYouRead: "Circle words or phrases that describe how characters are feeling.",
+      passage: `Matt was excited to start karate lessons. His parents had gotten him a gi (gee), a white uniform that he would wear when he was practicing. On the first day of his lessons, Matt proudly put his uniform on and joined the other students in his class. Walter, their sensei (sen-SEY), began the class.
+
+But to Matt's dismay, Walter didn't start by teaching the class what Matt had seen in movies. Instead, Walter taught the class how to properly stretch their bodies. Then, he taught them some basic movement exercises. He also taught the class some breathing exercises. He told everyone, "Karate isn't about kicking people or hitting them, and it's not about breaking boards. It's about a person's mind and body working together. It's about self-control."
+
+Matt wasn't sure he liked the sound of that. He didn't know what Walter meant, and he wanted to know when they would get to learn some spinning jump moves. But after all, this was only the first lesson. He was sure he had a lot more to learn.`,
+      questions: [
+        {type:"mc", q:"Which simile best describes a gi?", options:["soft as a feather","as tough as nails","as white as snow","as busy as a bee"], correct:2},
+        {type:"mc", q:"What is another word for dismay?", options:["caring","disappointment","excitement","helpfulness"], correct:1},
+        {type:"mc", q:"What confuses Matt?", options:["how to wear a gi","how to address his sensei","how to follow the movements","how the mind and body work together"], correct:3},
+        {type:"mc", q:"Which of the following words uses the prefix uni- similar to how it is used in uniform?", options:["unicorn","uninstall","union","uninvited"], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "Matt Learns Karate",
+      asYouRead: "Make notes in the margins of connections you can make to the text.",
+      passage: `Matt found out that karate lessons were very different from what he was used to seeing in movies. The students hadn't done any jumps, kicks, or hits. Instead, they practiced movements. They did their breathing exercises.
+
+Walter told the class that once they had learned the basic karate techniques, they would be able to practice them with one another. At first, Matt was annoyed that he wouldn't be able to practice kicking someone across the room. But he found that even the basic movements they were learning could be difficult. It was seeming like karate was harder than it looked in movies.
+
+Every lesson, Matt learned something new. He worked very hard and was exhausted by the end of his lessons. He always slept very well after a tough lesson.`,
+      questions: [
+        {type:"mc", q:"How would Matt describe his karate lessons?", options:["boring","challenging","confusing","easy"], correct:1},
+        {type:"mc", q:"What is another word for basic?", options:["advanced","colorful","complex","simple"], correct:3},
+        {type:"open", q:"Compare Matt's ideas about karate before taking lessons to his understanding after taking lessons.", lines:4},
+        {type:"open", q:"Explain why you would or would not stick with something even though it fell short of your expectations.", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Matt's Real Lesson",
+      asYouRead: "Make notes in the margins of connections you can make to the characters or events in text.",
+      passage: `Matt continued taking his karate lessons. So far, he was no closer to being able to do the things he saw people doing in martial-arts movies. But when he realized that karate just isn't like the movies, he came to enjoy it. Karate made him feel strong and gave him energy, and it also made him feel calm. He found himself looking forward to going to his lessons after school. He kept working hard, and one day, Walter told Matt that he was ready for his first test.
+
+Two weeks before the testing date, Walter gave Matt an application for Matt to take home and fill out. Matt brought it back to the next class. And for the next two weeks, Matt practiced at home every night, while also practicing extra hard at his lessons. He wanted to be sure that he was ready for the test.
+
+On the day of Matt's test, he joined a group of other students who were also ready to take the test. The test began with some exercises. The students had to show that they could do all the movements that Walter had taught them. Then, they had to take a written test. Walter had also taught them some history and concepts of karate, and they had to show that they knew those things, too.
+
+Matt thought he did best at the physical test. Written tests were not really his strong point. When he finished his written test, he handed it in to Walter. He joined the rest of the students and anxiously waited for the results.
+
+After everyone had finished testing, Walter congratulated them on their strong efforts, and then he called up each student to speak to them individually. When it was Matt's turn, Walter told him that he had passed! Matt was over the moon, and he felt happy that all his hard work had paid off. Walter also told Matt that he would receive his first belt, which would be white with a black stripe on it, at the next class.
+
+As Matt went home from karate that night, he thought back on his experiences so far. Karate had turned out to be very different from what he thought it would be, but for that, he was grateful. Most importantly, he had discovered that he liked it very much!`,
+      questions: [
+        {type:"mc", q:"What does Matt think about karate at first?", options:["It will not be fun.","It will be extremely easy.","It will be just like the movies.","It will be very different from the movies."], correct:2},
+        {type:"mc", q:"How do Walter and Matt feel about Matt passing his test?", options:["pleased","jealous","surprised","frightened"], correct:0},
+        {type:"mc", q:"What do you predict Matt will do next?", options:["He will get a new gi.","He will change karate instructors.","He will continue taking karate classes.","He will stop taking karate classes."], correct:2},
+        {type:"mc", q:"What lesson does Matt learn?", options:["Give up when things get too tough.","Put your own needs first, then think of others.","Quit when you aren't happy doing something.","Give new things a try, and you can learn something new."], correct:3},
+        {type:"open-table", q:"Write three important events in the order in which they occur in the text.", rows:[
+          {label:"Event 1", given:"Matt starts karate lessons to learn to do the things he sees people do in martial-arts movies."},
+          {label:"Event 2"},
+          {label:"Event 3"},
+          {label:"Event 4"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Matt's First Karate Lesson\" and \"Matt's Real Lesson.\" Then, respond to the prompt.",
+      prompt: "Write a story about a time you and a friend take karate lessons together. Use descriptive words and phrases and sensory details to tell your story.",
+    },
+  ]
+},
+{
+  id: 30,
+  label: "Unit 10 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Karate Class Advertisement",
+      asYouRead: null,
+      passage: `Karate Class Advertisement — Radio Script
+
+Adult's voice: Have you ever wanted to learn how to fight or learn self-defense? Or maybe you'd like a fun place to spend time with friends after school?
+
+Two kids' voices together: We love it here!
+
+Adult's voice: Take it from them, and look no further than Matt's Martial Arts House! We have a variety of martial arts classes. There's something for everyone! We offer Tae kwon do, karate, jujitsu, and more. Call us and ask if we offer what you're looking for! We employ 10 professional martial arts instructors, which allows us to offer a wide range of classes. We have before-school programs, after-school programs, and weekend-only classes. Stop by to take your first class free, and start your martial arts journey today!`,
+      questions: [
+        {type:"mc", q:"What is the ad advertising?", options:["jujitsu classes","after-school classes","martial arts classes","Tae kwon do classes"], correct:2},
+        {type:"mc", q:"How do the kids' voices affect the ad?", options:["They are meant to distract the listener.","They are meant to make the listener excited.","They are meant to prove the classes are real.","They are meant to make the announcer laugh."], correct:1},
+        {type:"mc", q:"What is the purpose of the ad?", options:["to inform people of a new business","to instruct people of different forms of martial arts","to convince people that learning martial arts is important","to persuade people to take classes at Matt's Martial Arts House"], correct:3},
+        {type:"mc", q:"Why does the ad refer to the classes as a martial arts journey?", options:["One class is not enough to master martial arts.","Instructors travel from all over the world to give classes.","People who take the classes walk a mile or more to warm up.","The classes go on field trips to watch martial arts competitions."], correct:0},
+        {type:"open", q:"Explain why the ad does or does not motivate you to want to sign up for martial arts classes at Matt's Martial Arts House.", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Closely read the texts below. Then, respond to the prompt.",
+      prompt: "Write to explain which martial art you would like to try and why. Use details from 'Types of Martial Arts' and 'A Brief History of Martial Arts' to support your choice.",
+    },
+    {
+      day: 3,
+      title: "Comparing Martial Arts Practitioners",
+      asYouRead: "Closely read these texts. Compare the people who practice martial arts.",
+      passage: `Close-Reading Texts
+
+From "Matt Learns Karate": Matt found out that real karate lessons were very different from the types of things he was used to seeing in movies. The students hadn't done any jumps, kicks, or hits. Instead, they practiced movements. They did their breathing exercises. Walter told the class that once they had learned the basic karate techniques, they would be able to practice them with one another. At first, Matt was annoyed that he wouldn't be able to practice kicking someone across the room. But he found that even the basic movements they were learning could be difficult.
+
+From "A Brief History of Martial Arts": There are different types of martial arts in Japan. In this country, martial arts started with the samurai. Samurai were important members of the military. They had special privileges. And they were the only members of society that were allowed to use weapons. Because martial arts started with samurai, early Japanese martial arts focused on using weapons in their practices. Over time, many different styles developed. This includes some styles that don't use weapons.`,
+      questions: [
+        {type:"compare3", q:"Compare the people who practice martial arts.", columns:["Matt","Samurai","Both"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts in this unit. Then, respond to the prompt.",
+      prompt: "Matt's sensei explained that martial arts are 'about mind and body working together.' What does this mean? Explain this idea, then describe how it could be used in another activity. Use precise language and vocabulary to develop your ideas.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "You play a sport that you are very excited about.",
+      prompt: "Write a radio ad to persuade others to sign up. Use dialogue similar to the radio ad from Day 1. Include a persuasive technique such as repetition, a celebrity endorsement, or an appeal to others' emotions.",
+    },
+  ]
+},
 ];
