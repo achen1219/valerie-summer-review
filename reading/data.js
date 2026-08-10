@@ -2660,4 +2660,261 @@ From "A Brief History of Martial Arts": There are different types of martial art
     },
   ]
 },
+{
+  id: 31,
+  label: "Unit 11 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "Busy Sleeping",
+      asYouRead: "Place a star beside new or interesting facts. Underline facts you knew before reading.",
+      passage: `When you go to sleep at night, you probably think that you are not doing anything. Your body stays on your bed, your eyes are closed, and you don't talk to people. But there is a lot of activity happening inside your body while you are asleep! Scientists have used special, sophisticated machines to study what happens when people go to sleep. They have found that people's brains are very busy when they sleep. Every night, a person's brain goes through a sleep cycle multiple times. There are several stages of sleep in one of these cycles. Brain activity level is a little different in each stage. The last stage of the cycle is called rapid eye movement, or REM, sleep. During REM, a person's eyes move even though they are asleep. That is how this stage got its name. Most people's dreams occur during REM sleep.`,
+      questions: [
+        {type:"mc", q:"What is true about a person's brain while they are sleeping?", options:["It is very busy.","It is also asleep.","It is able to rest.","It is unable to work."], correct:0},
+        {type:"mc", q:"What happens to people during REM sleep?", options:["They are awake.","They feel sick.","They talk a lot.","They dream."], correct:3},
+        {type:"mc", q:"What does sophisticated mean?", options:["complex","fast","slow","unique"], correct:0},
+        {type:"mc", q:"What is meant by a sleep cycle?", options:["riding a bicycle while sleeping","rolling around in bed while sleeping","stages of sleep that repeat over and over","steps people go through before going to bed"], correct:2},
+      ]
+    },
+    {
+      day: 2,
+      title: "The Importance of Dreams",
+      asYouRead: "Underline reasons scientists think people dream.",
+      passage: `Do you ever remember your dreams? Even though you may not remember what you dream, research has shown that you probably dream every night. Scientists are not entirely sure why people have dreams. Some scientists believe it is the brain's way of processing things. People learn a lot and experience a lot of things during the day. So, some scientists think that dreaming might be the way a person's brain makes sense of what happens to them. Other scientists say that dreams are the way people's brains solve problems. For example, if someone is upset about something, dreams may be a way for their brain to help them feel better.
+
+Scientists may not agree on why people dream. But they do agree that dreaming is very important. People need to dream so that their brains are ready for the next day.`,
+      questions: [
+        {type:"mc", q:"Based on the text, what can you infer about dreams?", options:["People must dream to survive.","People use dreams to make up stories.","People write about dreams in personal journals.","People have studied dreams for a long time."], correct:0},
+        {type:"mc", q:"What do we process similar to how we process information?", options:["paper","people","potatoes","problems"], correct:3},
+        {type:"mc", q:"What is one main idea of the text?", options:["Falling asleep quickly helps people dream better.","People who sleep in a bed have good dreams.","People need at least eight hours of sleep.","Dreaming is important for our brains."], correct:3},
+        {type:"mc", q:"Which word uses the prefix dis- similar to its meaning in disagree?", options:["discuss","disco","dishonest","distance"], correct:2},
+      ]
+    },
+    {
+      day: 3,
+      title: "Sleep for Body, Mind, and Spirit",
+      asYouRead: "Underline reasons sleep is important to the body, mind, and spirit.",
+      passage: `Sleep is a very important part of staying healthy. When people are asleep, their brains use that time to take care of themselves. Some scientists think that people's brains sort things out when they sleep and that they also replace the chemicals they need. And while people are sleeping, their bodies stay busy by using that time to heal themselves. During sleep, people's bodies use that time to build up their immune systems, which is the system used to fight off germs. Younger people's bodies also use sleep time to build up muscles, bones, and tissues so that they can grow. Sleep also helps people think clearly and stay in better moods. That helps them cope better if they have a busy day.`,
+      questions: [
+        {type:"mc", q:"Why might people sleep more when they are sick or injured?", options:["to catch up on lost sleep","so they may continue growing","to gain energy for the day's events","so their bodies may heal and fight off germs"], correct:3},
+        {type:"mc", q:"If you cope with a busy day, what happens?", options:["You fear a lot of work.","You avoid a lot of work.","You manage a lot of work.","You desire a lot of work."], correct:2},
+        {type:"open", q:"How is sleep good for your body?", lines:3},
+        {type:"open", q:"Explain why you agree or disagree that 'sleep helps people think clearly and stay in better moods.'", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Sweet Dreams",
+      asYouRead: "Place a star beside suggestions for falling asleep you follow now. Place an exclamation point beside suggestions you do not follow but might try.",
+      passage: `A good night's sleep is very important for a person's health. People's brains and bodies use that time to do all kinds of things that they cannot do as well when they're awake. People of different ages need different amounts of sleep. Many experts say that children between the ages of 6 and 12 need about 9–12 hours of sleep per night. It is recommended that teenagers get 8–10 hours of sleep. And adults should sleep at least 7 hours per night.
+
+Sometimes, it's not easy to get the sleep that you need. You might have a hard time falling asleep because you have a lot of energy or excitement and don't feel tired. Maybe you're worried about something, and you can't seem to slow your thoughts down. When these things happen, it's hard to get sleepy. So, here are some things to keep in mind to make it easier for you to get the sleep you need:
+
+• Keep your body in a routine by going to bed at the same time every night.
+• Do something calming right before bedtime, such as taking a warm bath or reading.
+• Limit sodas, iced tea, and other foods and drinks that contain caffeine, which can keep you awake.
+• Turn off your TV when it is time to sleep. Better yet, don't have a TV in your room.
+• Don't watch scary TV shows or movies close to bedtime because these can make it hard to fall asleep.
+• Exercise during the day because it will help you sleep better at night. But don't exercise just before going to bed because it could keep you awake.
+• Don't do homework, play games, or talk on the phone in bed. If you use your bed just for sleeping, you'll train your body to associate your bed with sleep.
+
+If you follow these handy tips, you will develop some healthy sleeping habits. These will make it easier for you to be more relaxed before bedtime so you can fall asleep and stay asleep.`,
+      questions: [
+        {type:"mc", q:"Why might the author have used a bulleted list?", options:["to use less space on the page","to organize events in chronological order","to list details according to their importance","to focus the reader's attention on key details"], correct:3},
+        {type:"mc", q:"Which of the following is one main idea of this text?", options:["Use your bed just for sleeping.","You might have a lot of energy.","Try to go to bed at the same time every night.","A good night's sleep is very important for your health."], correct:3},
+        {type:"mc", q:"What can you infer about caffeine?", options:["It is hard to find.","It can keep you awake.","It can make you sleepy.","It is good for your health."], correct:1},
+        {type:"mc", q:"Which idea from 'Sleep for Body, Mind, and Spirit' is also shared in 'Sweet Dreams'?", options:["Sleep helps you think clearly.","Your entire body needs sleep.","Sleep is a very important part of staying healthy.","The brain replaces the chemicals it needs when you sleep."], correct:2},
+        {type:"open-table", q:"List three details from the text that support the main idea: 'You can do several things to help yourself fall asleep at night.'", rows:[
+          {label:"Detail 1"},
+          {label:"Detail 2"},
+          {label:"Detail 3"},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Sweet Dreams\" and the earlier texts from this week. Then, respond to the prompt.",
+      prompt: "A friend does not get enough sleep. They are cranky and lack energy during the day. Write a letter to explain to your friend why they should get more sleep and how to sleep better. Support your reasons with facts and details from at least one text.",
+    },
+  ]
+},
+{
+  id: 32,
+  label: "Unit 11 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Isaac the House Cat",
+      asYouRead: "Underline Isaac's problem. Place stars beside what he does to try to solve the problem.",
+      passage: `Isaac was a house cat. His favorite activities included chasing his toy mice, sunbathing, and getting into boxes. He especially enjoyed sitting in high places. But most of all, his favorite activity was sleeping. He couldn't get enough of it. Or at least, he used to. Isaac was having some serious sleep issues lately, and they were causing him to feel grumpy and tired. He wasn't his energetic self anymore. He hadn't been for a few weeks, ever since his owners had moved into a new house.
+
+Isaac had tried everything to get a good night's sleep. He spent hours laying in the sun every day, but all it did was make his fur feel warm. At the old house, laying in the sun would put him right to sleep. Then, he thought climbing the tower and laying in the soft basket at the top would do the trick. But nothing he tried seemed to work, and Isaac let out a howl of frustration.`,
+      questions: [
+        {type:"mc", q:"What is Isaac's problem?", options:["He cannot find a place to sunbathe.","He has very itchy skin.","He does not like the tower.","He is having trouble sleeping."], correct:3},
+        {type:"mc", q:"What is another word for an issue?", options:["agreement","concern","solution","topic"], correct:1},
+        {type:"mc", q:"How does Isaac try to solve his issue?", options:["He tries to take longer naps.","He watches the birds outside.","He runs around and plays.","He spends time in the sunspot."], correct:3},
+        {type:"mc", q:"What is a synonym for a solution?", options:["answer","discussion","problem","question"], correct:0},
+      ]
+    },
+    {
+      day: 2,
+      title: "Isaac Visits the Doctor",
+      asYouRead: "Circle words that are new or interesting.",
+      passage: `Hallie was super annoyed that her cat, Isaac, was constantly waking her up at night. It seemed like Isaac wasn't able to get the restful sleep that he needed.
+
+"I can't keep doing this," Hallie told her mom one morning after she nearly fell asleep over her plate of waffles. "Does Isaac need to go to the doctor?"
+
+Her mom shrugged and looked over at Isaac. Hallie's mom grabbed one of Isaac's toy mice from the tile floor and threw it across the room. But Isaac didn't react to it at all, and he just sat there, blinking slowly at her.
+
+"I guess he does seem lethargic," her mom said.
+
+So after school that day, Hallie and her mom took Isaac to their local vet. Hallie explained the sleeping issues that Isaac seemed to be having and how it seemed like he was depressed and didn't want to play at all like he used to. She hoped the vet would understand and have some answers for her.`,
+      questions: [
+        {type:"mc", q:"Why does Hallie think something is wrong with Isaac?", options:["Isaac is waking her up at night.","Isaac is not eating his food.","He keeps running around.","He keeps getting into boxes."], correct:0},
+        {type:"mc", q:"Why does Hallie take Isaac to see the doctor?", options:["to be nosy","to help him feel better","to make him uncomfortable","to challenge his claim of not sleeping"], correct:1},
+        {type:"mc", q:"Which words best describe how Hallie feels about Isaac's situation?", options:["relaxed and unconcerned","angry and confused","excited and hopeful","frustrated and worried"], correct:3},
+        {type:"mc", q:"What is the meaning of the word lethargic?", options:["sleepy or lazy","full of energy","playful","strange or unusual"], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "Isaac's Sleep Habits",
+      asYouRead: "Circle the likely causes of Isaac's issue.",
+      passage: `Luckily, the veterinarian seemed to understand the problem and how to help. "Cats are most active at dusk and at dawn," the vet said, examining Isaac. "But I find it odd that he is not sleeping at all during the night."
+
+As the vet examined Isaac, his eyes looked as wide as saucers. The vet gently lifted his paws and poked his twitching tail.
+
+"Have you made any changes lately to his regular routine?" the vet asked them.
+
+Hallie's mom gasped softly, and Hallie looked up at her in surprise.
+
+"Of course! We recently moved into a new house," Hallie's mom said. The vet nodded and talked about how cats could be sensitive to stress, which can result in sleep issues. She gave them some tips, including buying new food, more playtime, and setting up more scratching and hiding areas.
+
+It was Hallie's turn to be stressed, but she was hopeful the vet's tips would help Isaac adjust to the new house.`,
+      questions: [
+        {type:"mc", q:"What is likely the cause of Isaac's sleeping issues?", options:["He is stressed from moving.","The weather has been cold.","He is nervous about the vet.","He does not have anywhere comfy to sleep."], correct:0},
+        {type:"mc", q:"What is the phrase 'his eyes looked as wide as saucers' an example of?", options:["alliteration","hyperbole","onomatopoeia","simile"], correct:3},
+        {type:"open", q:"How does Hallie feel at the end of the text? Why does she feel that way?", lines:3},
+        {type:"open", q:"Why do you think a hiding place might help Isaac?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Time to Sleep",
+      asYouRead: "Underline important events in the story.",
+      passage: `Isaac dashed out of his carrier when Hallie set him down in the living room, ran to the middle cubby in the tower, and curled up, hoping he wouldn't have to go to the vet ever again. The vet was honestly the worst!
+
+Hallie came over to the tower with Isaac's food bowl. Isaac's stomach growled, but when he smelled the food that Hallie set down, he recoiled from it.
+
+Isaac let out a long meow. Frankly, he was tired of everything new! He didn't like the new smells or the new rooms in the new house, and now there was new food. When he finally fell asleep, he had a terrible nightmare that he was being chased by an evil toy mouse. He was terrified when he woke up, so he ran to Hallie's room. He dove under the covers with her and stayed there until morning.
+
+The next day, Isaac was feeling a little bit better. He didn't want to be near the new food again, but Hallie was trying so hard to get him to eat it. He felt obligated to give it a try. He was surprised to find that he liked the salmon.
+
+Then, Isaac took a nice nap. When he woke up, Hallie was sitting next to him on the couch and had gathered a bunch of his toy mice. "Here Isaac," she called to him, walking away and waving the mouse. Isaac had to follow her, of course—he could tell she was trying to play with him. And then Hallie tossed it into a room Isaac had not explored yet. He was hesitant to go inside the room, and he did so cautiously.
+
+For the rest of the afternoon, Hallie and Isaac played with the toy mice. A few hours later, he had seen every room in the new house, and it wasn't as bad as he thought. Plus, he forgot how exhilarating it was to chase toy mice.
+
+After they played, Hallie created a new scratch post by cutting up a bunch of cardboard boxes and tying them together. He tried scratching the new post and found it extremely soothing. Plus, when Isaac was done scratching, he realized Hallie had also created a soft hiding place for him. She coaxed him into a cardboard box filled with blankets that made him feel like he was floating on a cloud. He burrowed deep inside them so he couldn't see any afternoon light and fell asleep.
+
+At dinner time, Isaac wolfed down his salmon and then settled into Hallie's lap for an evening cuddle. The best thing about the day was that even though Isaac had taken several naps, he was still very tired at bedtime and was fast asleep in no time!`,
+      questions: [
+        {type:"mc", q:"What does the phrase 'he recoiled from it' tell readers about Isaac's feelings toward the new food?", options:["He is too full to eat any more food.","He is confused and does not think it is for him.","He is hungry and excited to try something new.","He is not interested in trying it."], correct:3},
+        {type:"mc", q:"What is the result of trying the tips from the vet?", options:["Isaac is tired and does not want to play.","Isaac is able to sleep better at night.","Isaac is able to jump higher.","Isaac is hungry but eats less food."], correct:1},
+        {type:"mc", q:"If something is soothing, what does that mean?", options:["It has a calming effect.","It makes a loud noise.","It vibrates quickly.","It exerts a strong force."], correct:0},
+        {type:"mc", q:"Which word is a synonym for exhilarating?", options:["frustrating","confusing","exhausting","exciting"], correct:3},
+        {type:"open-table", q:"Record four important events in the order in which they occurred.", rows:[
+          {label:"Event 1"},
+          {label:"Event 2"},
+          {label:"Event 3"},
+          {label:"Event 4"},
+          {label:"Event 5", given:"Isaac is able to fall asleep and stay asleep through the night."},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Time to Sleep.\" Then, respond to the prompt.",
+      prompt: "Describe a dream you have had recently. Explain how it made you feel when you woke up.",
+    },
+  ]
+},
+{
+  id: 33,
+  label: "Unit 11 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "A Limerick on Sleep",
+      asYouRead: null,
+      passage: `There once was a boy who liked sleeping.
+In his dreams, he liked to go leaping.
+At night, his dog would come snuggle,
+But this made sleeping a struggle.
+No worries, he had some tea steeping!`,
+      questions: [
+        {type:"mc", q:"What does the boy like to do?", options:["eat","drink tea","play with his dog","sleep"], correct:3},
+        {type:"mc", q:"What are the boy's dreams about?", options:["eating","drinking tea","leaping","playing with his dog"], correct:2},
+        {type:"mc", q:"How does the boy's dog affect him?", options:["It interrupts his slumber.","It shows up in his dreams.","It provides warmth on cold nights.","It jumps on him at night."], correct:0},
+        {type:"mc", q:"What is another word for steeping?", options:["breaking","cooling","soaking","warming"], correct:2},
+        {type:"open", q:"What do you do when you have trouble sleeping? Does this help you fall asleep?", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Facts about Sleep",
+      asYouRead: "Closely read these texts. List four facts you learn about sleep.",
+      passage: `Close-Reading Texts
+
+From "Busy Sleeping": When you go to sleep at night, you probably think that you are not doing anything. Your body stays on your bed, your eyes are closed, and you don't talk to people. But there is a lot of activity happening inside your body while you are asleep! Scientists have used special, sophisticated machines to study what happens when people go to sleep. They have found that people's brains are very busy when they sleep. Every night, a person's brain goes through a sleep cycle multiple times.
+
+From "Isaac's Sleep Habits": "Of course! We recently moved into a new house," Hallie's mom said. The vet nodded and talked about how cats could be sensitive to stress, which can result in sleep issues. She gave them some tips, including buying new food, more playtime, and setting up more scratching and hiding areas.`,
+      questions: [
+        {type:"open-table", q:"List four facts you learn about sleep from these texts.", rows:[
+          {label:"Fact 1"},
+          {label:"Fact 2"},
+          {label:"Fact 3"},
+          {label:"Fact 4"},
+        ]},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing Text Structures",
+      asYouRead: "Closely read these texts. Identify and compare and contrast the structure of each text.",
+      passage: `Close-Reading Texts
+
+From "Sweet Dreams": Here are some things you can do to make it easier for you to get the sleep you need:
+• Keep your body in a routine by going to bed at the same time every night.
+• Do something calming right before bedtime, such as taking a warm bath or reading.
+• Limit sodas, iced tea, and other foods and drinks that contain caffeine.
+• Exercise during the day—it will help you sleep better at night. But don't exercise just before going to bed.
+
+From "Isaac the House Cat": Isaac was having some serious sleep issues lately, and they were causing him to feel grumpy and tired. He wasn't his energetic self anymore. He hadn't been for a few weeks, ever since his owners had moved into a new house. Isaac had tried everything to get a good night's sleep. He spent hours laying in the sun every day, but all it did was make his fur feel warm. At the old house, laying in the sun would put him right to sleep. Then, he thought climbing the tower and laying in the soft basket at the top would do the trick.
+
+Text structure choices: cause-effect, compare-contrast, chronological order, problem-solution`,
+      questions: [
+        {type:"compare3", q:"\"Sweet Dreams\" — identify the text structure and explain how you know.", columns:["Text Structure","How You Know"]},
+        {type:"compare3", q:"\"Isaac the House Cat\" — identify the text structure and explain how you know.", columns:["Text Structure","How You Know"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts from this unit. Then, respond to the prompt.",
+      prompt: "Some people keep a 'sleep diary' to monitor their sleep and find patterns in their behavior. Complete a sleep diary for several nights. Write what you did before going to sleep and rate your sleep the next morning (1=terrible, 2=not too good, 3=okay, 4=pretty good, 5=fantastic!).",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Think about the texts from this unit. Then, respond to the prompt.",
+      prompt: "Write a poem about sleeping. Make sure your poem has a rhyme pattern. If you want, learn about limericks and write a limerick. Illustrate your poem.",
+    },
+  ]
+},
 ];
