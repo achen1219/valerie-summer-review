@@ -2160,4 +2160,282 @@ Directions: Compare fencing and rowing.`,
     },
   ]
 },
+{
+  id: 25,
+  label: "Unit 9 · Week 1",
+  days: [
+    {
+      day: 1,
+      title: "The Importance of Nurses",
+      asYouRead: "Circle one main idea of the text. Underline the details that support this main idea.",
+      passage: `Nurses are very important healthcare professionals. Nurses have a variety of tasks to perform at their jobs. They treat patients, teach people how to stay healthy, and create plans for patient care. Many nurses go to college or specialized schools to learn nursing. Then, they choose what kind of nursing they want to do. Today, they have many choices. Some places they work include hospitals, doctors' offices, clinics, and schools. Other nurses are considered to be visiting nurses. This means they go to the homes of people who cannot get to a doctor's office. Nursing is a career that takes a lot of skill, practice, and specialized learning, but it is also very rewarding.`,
+      questions: [
+        {type:"mc", q:"Which of the following is not listed as a reason why nurses need to know many things?", options:["They treat patients.","They build hospitals.","They create plans for patient care.","They teach people how to stay healthy."], correct:1},
+        {type:"mc", q:"What does the author mean by nursing 'is also very rewarding'?", options:["Nursing is challenging.","Nurses feel pleased about their jobs.","Nurses get rewards.","Nurses can be reimbursed for the cost of college."], correct:1},
+        {type:"mc", q:"What is another word for choices?", options:["options","rules","tasks","thoughts"], correct:0},
+        {type:"mc", q:"What does the conjunction but in the last sentence tell you?", options:["Doctors rely on the nurses they work with.","Some types of nursing are more satisfying than others.","Some people may not find nursing rewarding.","Nursing is worth the time needed to learn it."], correct:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "The History of Nursing",
+      asYouRead: "Place a star beside facts that describe nursing long ago. Place an exclamation point beside facts that describe nursing today.",
+      passage: `The role of nurses has changed over time. Modern-day nurses are well-educated professionals who have many skills. They can be women or men. But things were not always this way. Many years ago, nurses were not skilled. They simply fed patients, helped them keep clean, and kept them warm. Nurses sometimes helped doctors, but they were not treated with respect. And only women could be nurses.
+
+Florence Nightingale helped change nursing forever. Nightingale was an English nurse. She lived during the 1800s. In 1853, the Crimean War began. During this war, England went to war with Turkey. Nightingale took a team of nurses to Turkey. She and her team helped the British soldiers. She insisted that nurses should be respected. She wanted nurses to get an education. After the war, she set up a school just for nurses. She made an important impact on the career of nursing.`,
+      questions: [
+        {type:"mc", q:"What is the main difference between nursing long ago and nursing today?", options:["Nurses are respected.","Nurses are not educated.","Nurses work with doctors.","Only women can be nurses."], correct:0},
+        {type:"mc", q:"What is the meaning of the word skilled?", options:["helpful and caring","smart and carefree","trained and practiced","important and reliable"], correct:2},
+        {type:"mc", q:"Which prepositional phrase describes when Florence Nightingale lived?", options:["to Turkey","with respect","after the war","during the 1800s"], correct:3},
+        {type:"mc", q:"What does the word insisted tell you about Florence Nightingale?", options:["She was afraid.","She was caring.","She was helpful.","She was determined."], correct:3},
+      ]
+    },
+    {
+      day: 3,
+      title: "The Red Cross",
+      asYouRead: "Underline information that is new to you. Put a star beside information you already knew.",
+      passage: `Sometimes, large storms or earthquakes strike. Volcanoes might erupt. Or there might be floods or other natural disasters. When those things happen, many people get hurt or need help. Who helps in times of danger and disaster?
+
+The Red Cross is an organization that exists to help people when disaster strikes. The Red Cross is a volunteer group that sends people into an area to help. Those volunteers treat people who need healthcare. Volunteers also provide food, clothes, water, and shelter. Sometimes, rescue dogs join the Red Cross volunteers.
+
+Many countries around the world have Red Cross groups. When there is a disaster in another country, Red Cross groups can work with each other. They can send volunteers and other types of aid, such as food and water.`,
+      questions: [
+        {type:"mc", q:"What is true about the Red Cross?", options:["It is only in the United States.","There are many Red Cross groups around the world.","People who work for the Red Cross must work alone.","People who work for the Red Cross must rescue people."], correct:1},
+        {type:"mc", q:"The Red Cross is a volunteer group. What does this mean?", options:["People hope disasters will strike.","People travel the world to help others.","People give their time without pay.","People work together to get the job done."], correct:2},
+        {type:"open", q:"When are times the Red Cross may be called upon to help?", lines:3},
+        {type:"open", q:"How might the Red Cross help you at some point?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Clara Barton",
+      asYouRead: "Identify at least one cause-and-effect relationship. Circle the cause. Underline the effect.",
+      passage: `Whenever there is a disaster, there are people who may need help. The Red Cross is there to help them. The Red Cross is a group of volunteers who go to places where disasters have occurred. The group provides food, water, shelter, and medicine. The Red Cross has been responsible for saving many people's lives.
+
+The American Red Cross was started in 1881 by Clara Barton. Barton was born on December 25, 1821. She knew she was good at being a nurse and helping people from the time she was a child. When she was 11 years old, her brother David became very ill, and Barton nursed him back to health. Later, she became a teacher and started her own school. But then the Civil War came, and everything changed for Barton. She saw that the soldiers needed blankets, clothes, food, and other supplies. So she and some other people gave them what they needed. Then, she led a team of nurses who helped the soldiers. Barton worked very hard and became very famous for everything that she did to help the soldiers.
+
+Barton worked so hard that she became ill. Her doctors advised her to take a long trip and rest. So, Barton went to Europe. But she did not rest. Instead, she learned about the Red Cross. Some countries had groups of volunteers that assisted people who needed help. Barton wanted to have the same kind of organization in the United States. So, when she came back to America, she worked with other people and created the American Red Cross. For 23 years, she was its president.
+
+Barton did many other things in her life, too. For example, she worked very hard to give women the right to vote. She also worked hard to create a system to find missing people. Clara Barton died in 1912, but the work she did changed the United States and has saved millions of lives.`,
+      questions: [
+        {type:"mc", q:"What is true about the American Red Cross?", options:["It was started in 1821.","It was founded by Clara Barton.","It was around during the American Civil War.","It was the first Red Cross organization in the world."], correct:1},
+        {type:"mc", q:"Which detail supports the idea that Barton was good at nursing?", options:["She started her own school.","She fought in the American Civil War.","She helped her brother survive a terrible illness.","She worked with people in Europe to learn about the Red Cross."], correct:2},
+        {type:"mc", q:"What happened as a result of Barton's trip to Europe?", options:["She learned how to be a nurse.","She won an award for her bravery.","She helped soldiers in battles there.","She started the American Red Cross."], correct:3},
+        {type:"mc", q:"Which of the following is an example of a shelter?", options:["a pizza","a rainstorm","a sweater","a tent"], correct:3},
+        {type:"open-table", q:"Write an effect for each cause from the text.", rows:[
+          {label:"Barton saw that soldiers needed blankets, clothes, food, and more."},
+          {label:"Barton worked hard to help Civil War soldiers."},
+          {label:"Barton's doctors advised she take a trip when she fell ill."},
+        ]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"The History of Nursing\" and \"Clara Barton.\" Then, respond to the prompt.",
+      prompt: "Explain how nursing has changed over the years. Use information and examples from both texts to support your ideas.",
+    },
+  ]
+},
+{
+  id: 26,
+  label: "Unit 9 · Week 2",
+  days: [
+    {
+      day: 1,
+      title: "Emily and the Earthquake",
+      asYouRead: "Circle the problem in the story. Underline the solution.",
+      passage: `Emily and her dad were inside their house when an earthquake began. They dropped to the floor, darted under the kitchen table, and held on until it was over. Finally, the shaking stopped. When Emily looked around, she noticed they were surrounded by concrete and wood pieces from their collapsed house. Luckily, the table had been sturdy enough to protect them both.
+
+"Is anyone in there?" a person's voice bellowed.
+
+"Yes!" Emily's dad yelled. "There are two of us and we're under a table."
+
+"Are you hurt?" the person asked.
+
+"We're fine, we just can't seem to find a way out," Emily's dad said. The person told them to hold on for a few moments. She could hear the people above starting to use some tools and move things around. When the rescuers pulled her and her dad out of the remnants of the house, Emily thanked them. She was so grateful for the paramedics and other volunteers in her community.`,
+      questions: [
+        {type:"mc", q:"Why does Emily duck under a table?", options:["to tidy up","for protection","to hide from her sister","to pretend to be in a fort"], correct:1},
+        {type:"mc", q:"What is the result of the earthquake?", options:["The house mostly collapses.","Some neighbors left in a hurry.","Emily's pet runs away.","The neighborhood is destroyed."], correct:0},
+        {type:"mc", q:"Which word is closest in meaning to bellow?", options:["announce","say","shout","utter"], correct:2},
+        {type:"mc", q:"Which word uses the Greek root para- similar to the word paramedic?", options:["parallel","paralegal","paranoid","parant"], correct:1},
+      ]
+    },
+    {
+      day: 2,
+      title: "Zaharah and the Tornado",
+      asYouRead: "Circle ways the Red Cross provided assistance.",
+      passage: `Zaharah's family had hunkered down in their basement after hearing a tornado warning. The concrete walls of the basement kept them safe during the emergency. Once the wind had been quiet for more than 10 minutes, her parents went upstairs to check whether it was safe to come out. Her parents came back down to give the all clear. Everyone went outside to see what had happened. They were in shock as they looked at their neighborhood. They saw that house after house had been damaged! Luckily, no one was hurt, but Zaharah thought that the destruction was heartbreaking.
+
+Soon, some cars drove up the street to help. The people inside were from the Red Cross. They brought some food, water, first aid, and other supplies with them. They provided a shelter location to everyone who needed it. Over the next few months, they even helped fix and rebuild the homes.
+
+Zaharah's family and her neighborhood had been through a terrible ordeal, but they would be okay.`,
+      questions: [
+        {type:"mc", q:"What is the result of the tornado?", options:["Trees are overturned.","Many people are injured.","Cars are tossed about.","Homes are damaged."], correct:3},
+        {type:"mc", q:"How does the Red Cross assist?", options:["They round up lost pets.","They help clean up debris.","They give supplies and support to families in need.","They call family and friends of those in need."], correct:2},
+        {type:"mc", q:"What is an antonym for ordeal?", options:["celebration","enthusiasm","instruction","suffering"], correct:0},
+        {type:"mc", q:"When is a time you might hunker down?", options:["during a blizzard","during a sporting event","during a hospital stay","during a family get-together"], correct:0},
+      ]
+    },
+    {
+      day: 3,
+      title: "Kenyon and the Fire",
+      asYouRead: "Underline problems that made an impact on Kenyon's family.",
+      passage: `One night, Kenyon awoke to the smell of smoke and his eyes burning. Fire, he realized, another wildfire this summer! In a flash, he jumped out of bed and found his parents. They had their essentials already packed in a duffel bag. They rushed out of the house and drove away in their car as fast as they could safely go.
+
+Kenyon and his parents weren't sure where to go at first. The fire seemed like it had spread so quickly that an evacuation center hadn't been set up yet.
+
+"Let's just keep heading out of the mountains," Kenyon's father said.
+
+They were starting to run low on gas, and firetrucks whizzed by them on the road. As they drove past an intersection, they noticed a sign in the ground. It had a Red Cross symbol with the words EMERGENCY SHELTER. They followed the sign to the shelter, which was set up in an elementary school gym. They were greeted, given food, water, information about the fire, and cots to rest on.
+
+Kenyon and his family were relieved. They were grateful to have somewhere safe they could rest, eat, and figure out what to do next.`,
+      questions: [
+        {type:"mc", q:"How does the Red Cross help Kenyon's family?", options:["They take them to safety.","They provide medical care.","They provide shelter.","They give them fire-proof blankets."], correct:2},
+        {type:"mc", q:"What is the meaning of in a flash?", options:["brightly","hurriedly","slowly","thoughtfully"], correct:1},
+        {type:"open", q:"Besides the fire, what problem does Kenyon's family face?", lines:3},
+        {type:"open", q:"Why is having an evacuation plan important?", lines:3},
+      ]
+    },
+    {
+      day: 4,
+      title: "Survival Training and Leadership Camp",
+      asYouRead: "Circle activities the campers will participate in.",
+      passage: `"Alright, everyone, get in a single file line please," said a camp instructor. Emily was toward the back of the line. She heard someone say to her, "Hi! I'm Zaharah, what's your name?"
+
+Emily turned around, smiled at her, and replied, "Hi, my name is Emily."
+
+Zaharah continued speaking. "So, what are you most excited for at camp?"
+
+Emily thought for a moment and then replied, "I'm excited to build a first-aid kit and try the blindfolded line activity. It's this exercise where everyone gets in a line, is blindfolded, and follows whoever is in front of them."
+
+A boy nearby appeared to have heard Emily's response.
+
+"Oh, that sounds like interesting team building!" he said. "I just thought we were learning survival skills."
+
+"I think we're doing a mix of activities," Emily said. "What's your name?"
+
+"I'm Kenyon," he said. "So, what made you guys want to come to camp?"
+
+Each of them shared their experience in an emergency. Together, they had experienced an earthquake, a tornado, and a wildfire.
+
+The three campers handed their papers to the leader and grabbed their identification badges. They promised to meet up the next day.
+
+The next day, all the campers met in the grass outside the cabins. Kenyon, Emily, and Zaharah found themselves lined up next to one another, and they waved. A camp leader with a megaphone walked in front of the lines of children.
+
+"Good morning, young campers! My name is Andy! Are we ready to have fun?"
+
+"Yes!" one camper said from the back of the line.
+
+Andy squinted his eyes and put his hand up to his ear as if he couldn't hear.
+
+"I know it's early, but let's try that again," he said. "Are we ready to have fun?!"
+
+"Yes!" the campers yelled ecstatically and in unison.
+
+"That's great!" He paused and looked around until he had everyone's attention. "The next activity is eating breakfast, which you'll surely do well at, too! Then, we will make first aid kits, play a survival game, and then it's team building time!"
+
+Kenyon, Emily, and Zaharah shared looks of anticipation of the week ahead.`,
+      questions: [
+        {type:"mc", q:"What is different about the blindfold activity?", options:["It requires special equipment.","It does not teach survival skills.","It will take place in the afternoon.","It is meant to make campers uncomfortable."], correct:1},
+        {type:"mc", q:"What causes the three campers to bond?", options:["They all come from the same town.","They all enjoy challenging situations.","They all have the same number of siblings.","They all experience different but terrifying natural disasters."], correct:3},
+        {type:"mc", q:"Why does the author end the instructor's statements with exclamation points?", options:["to wake up the campers","so everyone can hear them","because they are excited about camp","to show the campers they mean business"], correct:2},
+        {type:"mc", q:"Which word uses the prefix mega- in a similar manner as megaphone?", options:["Megan","megastar","omega","trimegal"], correct:1},
+        {type:"compare3", q:"Compare the characters from the texts this week — Disaster Experience", columns:["Emily","Zaharah","Kenyon"]},
+        {type:"compare3", q:"Compare the characters from the texts this week — Response to Camp", columns:["Emily","Zaharah","Kenyon"]},
+      ]
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread \"Survival Training and Leadership Camp.\" Then, respond to the prompt.",
+      prompt: "Write a story about a camp you attend where you meet new people. Use dialogue, description, and pacing to tell about the experience.",
+    },
+  ]
+},
+{
+  id: 27,
+  label: "Unit 9 · Week 3",
+  days: [
+    {
+      day: 1,
+      title: "Be Prepared for a Disaster",
+      asYouRead: null,
+      passage: `Disasters can strike at any time. Research disasters that are common or possible in your area. To be prepared, create an emergency kit. Suggested items include but are not limited to:
+• battery-powered radio and flashlight
+• extra batteries
+• first-aid kit
+• food and water for at least three days
+• hand sanitizer
+• toilet paper and paper towels
+• change of clothes
+• necessary medications
+• important documents
+• pet supplies
+
+Evacuation Plan
+• In an emergency, timing is important. So, practice how long it takes you to gather your emergency supplies and leave your home.
+• Designate a place for your family members to meet if you get separated.
+• Have an out-of-state family member or friend as a contact to check in with.
+
+Tips for When You Are Staying Home
+• Tell someone that you are staying home.
+• Use a battery-operated radio to listen for news and updates.
+• Stay away from windows, glass doors, and large furniture that is not bolted in place.
+• Be prepared for unexpected changes and last-minute evacuation orders.
+
+Remember: Emergencies can be scary, but being prepared and staying calm will help you get through them.`,
+      questions: [
+        {type:"mc", q:"What does the infographic describe?", options:["where to go in case of an emergency","how to pack when you need to evacuate","how to be prepared in case of a natural disaster","why to trust officials when they tell you to evacuate"], correct:2},
+        {type:"mc", q:"Why should you alert people if you are staying home?", options:["so they can't let others know where you are","so they know where to go in case they are evacuated","so they know your pets are being taken care of","so they can check in with you after the natural disaster"], correct:3},
+        {type:"mc", q:"What is the meaning of designate?", options:["assign","find","replace","tell"], correct:0},
+        {type:"mc", q:"Which idiom means unexpected?", options:["a fish out of water","adding insult to injury","out of the blue","the last straw"], correct:2},
+        {type:"open", q:"What additional items might you pack in your emergency kit?", lines:3},
+      ]
+    },
+    {
+      day: 2,
+      title: "Natural Disasters Word Web",
+      asYouRead: "Closely read these texts. Then, list words that are closely related to natural disasters. Choose two words. Explain to a partner how they relate to natural disasters.",
+      passage: `Close-Reading Texts
+
+From "The Red Cross": Sometimes, large storms or earthquakes strike. Volcanoes might erupt. Or there might be floods or other natural disasters. When those things happen, many people get hurt or need help. Who helps in times of danger and disaster? The Red Cross is an organization that exists to help people when disaster strikes.
+
+From "Zaharah and the Tornado": Zaharah's family had hunkered down in their basement after hearing a tornado warning. The concrete walls of the basement kept them safe during the emergency. Once the wind had been quiet for more than 10 minutes, her parents went upstairs to check whether it was safe to come out. Her parents came back down to give the all clear. Everyone went outside to see what had happened. They were in shock as they looked at their neighborhood. They saw that house after house had been damaged!`,
+      questions: [
+        {type:"open", q:"List words from these texts that are closely related to natural disasters.", lines:4},
+        {type:"open", q:"Choose two words. Explain how each relates to natural disasters.", lines:4},
+      ]
+    },
+    {
+      day: 3,
+      title: "Comparing How the Red Cross Helps",
+      asYouRead: "Closely read these texts. Then, compare details about how the Red Cross helps those in need.",
+      passage: `Close-Reading Texts
+
+From "The Red Cross": The Red Cross is an organization that exists to help people when disaster strikes. The Red Cross is a volunteer group that sends people into an area to help. Those volunteers treat people who need healthcare. Volunteers also provide food, clothes, water, and shelter. Sometimes, rescue dogs join the Red Cross volunteers.
+
+From "Zaharah and the Tornado": Soon, some cars drove up the street to help. The people inside were from the Red Cross. They brought some food, water, first aid, and other supplies with them. They provided a shelter location to everyone who needed it. Over the next few months, they even helped fix and rebuild the homes.`,
+      questions: [
+        {type:"compare3", q:"Compare how the Red Cross helps those in need.", columns:["The Red Cross","In Both Texts","Zaharah and the Tornado"]},
+      ]
+    },
+    {
+      day: 4,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Reread the texts about nurses, the Red Cross, and natural disasters. Then, respond to the prompt.",
+      prompt: "Write a thank you letter in which you thank a nurse or Red Cross volunteer for the work they do to help others in natural disasters.",
+    },
+    {
+      day: 5,
+      type: "writing",
+      title: "Write About It",
+      instructions: "Make an infographic about nursing or the Red Cross. Use information from the texts to help you.",
+      prompt: "Create an infographic about nursing or the Red Cross using facts and details from the texts to inform your reader.",
+    },
+  ]
+},
 ];
