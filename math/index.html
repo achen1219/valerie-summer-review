@@ -13,7 +13,6 @@
   body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);}
   header{background:var(--blue-dark);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
   header h1{margin:0;font-size:20px;}
-  header a.back{color:#fff;text-decoration:none;font-size:13px;background:rgba(255,255,255,.15);padding:5px 10px;border-radius:6px;}
   .stats{display:flex;gap:18px;font-size:14px;}
   .stats b{font-size:18px;display:block;}
   .layout{display:flex;min-height:calc(100vh - 64px);}
@@ -51,9 +50,8 @@
 <body>
 <header>
   <h1>📐 Valerie's Summer Math Review</h1>
-  <a class="back" href="../index.html">← All Subjects</a>
   <div class="stats">
-    <div><b id="statDone">0/30</b>days done</div>
+    <div><b id="statDone">0/40</b>days done</div>
     <div><b id="statAvg">--</b>avg score</div>
     <div><b id="statStreak">0</b>day streak</div>
   </div>
@@ -63,10 +61,6 @@
   <main id="main"></main>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-<script src="../shared/firebase-config.js"></script>
-<script src="../shared/cloudsync.js"></script>
 <script>
 // ---------- CURRICULUM DATA ----------
 const CURRICULUM = [
@@ -462,6 +456,140 @@ const CURRICULUM = [
   {q:"f(x) = 3x + 1. Find f(8).",a:["25"]},
   {q:"Two angles of a triangle are 40° and 75°. Find the third.",a:["65"]},
   {q:"Legs 7 and 24: find the hypotenuse.",a:["25"]}]},
+
+// ── WEEK 7: ALGEBRA EXTENSION ──────────────────────────────────────────────
+
+{week:7,day:1,title:"Linear Inequalities",
+ concept:"Solve inequalities like equations — but <b>flip the inequality sign</b> when multiplying or dividing by a negative number. Express answers as x &gt; __, x &lt; __, etc.",
+ practice:[
+  {q:"Solve: 2x + 3 &gt; 11",a:["x>4","x &gt; 4"]},
+  {q:"Solve: −3x ≤ 9  (watch the sign flip!)",a:["x>=-3","x≥-3","x >= -3"]},
+  {q:"Solve: 5x − 7 &lt; 13",a:["x<4","x &lt; 4"]}],
+ test:[
+  {q:"Solve: 4x − 5 &gt; 11. What is the boundary value of x?",a:["4"]},
+  {q:"Solve: −2x + 6 ≥ 12. Is x ≤ −3 or x ≥ −3?",a:["x<=-3","x≤-3","x <= -3"]},
+  {q:"Solve: 3(x + 2) &lt; 18. What is the boundary value of x?",a:["4"]},
+  {q:"Solve: −5x &gt; 20. What is the boundary value of x?",a:["-4"]},
+  {q:"Solve: 2x + 1 ≤ 9. What is the boundary value of x?",a:["4"]}]},
+
+{week:7,day:2,title:"Systems of Equations — Substitution",
+ concept:"Solve one equation for a variable, substitute that expression into the other equation, then solve.",
+ practice:[
+  {q:"y = 2x + 1, 3x + y = 16. Find x.",a:["3"]},
+  {q:"x + y = 10, y = 2x − 2. Find y.",a:["6"]},
+  {q:"x = 3y, 2x − y = 15. Find y.",a:["3"]}],
+ test:[
+  {q:"y = x + 2, 2x + y = 14. Find x.",a:["4"]},
+  {q:"x = 2y, x + 3y = 20. Find y.",a:["4"]},
+  {q:"y = 3x − 1, x + y = 11. Find x.",a:["3"]},
+  {q:"y = 2x + 3, x + y = 12. Find y.",a:["9"]},
+  {q:"2y = x, x + y = 9. Find x.",a:["6"]}]},
+
+{week:7,day:3,title:"Systems of Equations — Elimination",
+ concept:"Add or subtract the equations to cancel out one variable, then solve for the other.",
+ practice:[
+  {q:"x + y = 8, x − y = 2. Find x.",a:["5"]},
+  {q:"2x + y = 11, x − y = 1. Find x.",a:["4"]},
+  {q:"3x + 2y = 12, x + 2y = 8. Find x.",a:["2"]}],
+ test:[
+  {q:"x + y = 10, x − y = 4. Find x.",a:["7"]},
+  {q:"2x + y = 9, x + y = 5. Find x.",a:["4"]},
+  {q:"3x + y = 14, x + y = 6. Find y.",a:["2"]},
+  {q:"x + 2y = 13, x + y = 8. Find x.",a:["3"]},
+  {q:"4x + y = 19, 2x + y = 11. Find x.",a:["4"]}]},
+
+{week:7,day:4,title:"Exponent Rules",
+ concept:"a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup> &nbsp;|&nbsp; a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup> &nbsp;|&nbsp; (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup> &nbsp;|&nbsp; a<sup>0</sup> = 1",
+ practice:[
+  {q:"Simplify x³ × x⁴. Give the exponent.",a:["7"]},
+  {q:"Simplify (2³)². Give the value.",a:["64"]},
+  {q:"Simplify 5⁰ × 3². Give the value.",a:["9"]}],
+ test:[
+  {q:"x⁵ × x³ = x to what power?",a:["8"]},
+  {q:"y⁶ ÷ y² = y to what power?",a:["4"]},
+  {q:"(x²)⁵ = x to what power?",a:["10"]},
+  {q:"What is 7⁰?",a:["1"]},
+  {q:"2³ × 2⁴ = ? (give the numeric value)",a:["128"]}]},
+
+{week:7,day:5,title:"Polynomials — Adding, Subtracting &amp; Multiplying",
+ concept:"Add/subtract polynomials by combining like terms. Multiply using the distributive property. (a+b)(c+d) = ac+ad+bc+bd.",
+ practice:[
+  {q:"Add: (3x² + 2x − 1) + (x² − 5x + 4). Give the coefficient of x.",a:["-3"]},
+  {q:"Subtract: (5x + 3) − (2x − 7). Give the constant term.",a:["10"]},
+  {q:"Multiply: 3x(2x + 5). Give the coefficient of x².",a:["6"]}],
+ test:[
+  {q:"What is the degree of 4x³ − 2x + 7?",a:["3"]},
+  {q:"Simplify (6x − 4) − (2x + 1). Give the constant term.",a:["-5"]},
+  {q:"Multiply 4x(x + 3). Give the coefficient of x².",a:["4"]},
+  {q:"Expand (x + 3)(x + 2). Give the coefficient of x.",a:["5"]},
+  {q:"Expand (x + 4)(x − 3). Give the constant term.",a:["-12"]}]},
+
+// ── WEEK 8: GEOMETRY EXTENSION ─────────────────────────────────────────────
+
+{week:8,day:1,title:"Perimeter &amp; Area of Basic Shapes",
+ concept:"Rectangle: A = lw, P = 2(l+w). Triangle: A = ½bh. Parallelogram: A = bh.",
+ practice:[
+  {q:"Rectangle: length 8, width 5. Find area.",a:["40"]},
+  {q:"Triangle: base 10, height 6. Find area.",a:["30"]},
+  {q:"Rectangle: length 12, width 7. Find perimeter.",a:["38"]}],
+ test:[
+  {q:"Parallelogram: base 9, height 4. Find area.",a:["36"]},
+  {q:"Triangle: base 14, height 5. Find area.",a:["35"]},
+  {q:"Rectangle: length 15, width 6. Find area.",a:["90"]},
+  {q:"Triangle with sides 5, 12, 13. Find perimeter.",a:["30"]},
+  {q:"Rectangle with perimeter 34, one side 9. Find the other side.",a:["8"]}]},
+
+{week:8,day:2,title:"Area of Circles &amp; Composite Figures",
+ concept:"Circle: A = πr², C = 2πr. Use π ≈ 3.14. For composite figures, add or subtract component areas.",
+ practice:[
+  {q:"Circle with radius 5. Find area. (use π = 3.14)",a:["78.5"]},
+  {q:"Circle with radius 7. Find circumference.",a:["43.96"]},
+  {q:"Semicircle with radius 6. Find area.",a:["56.52"]}],
+ test:[
+  {q:"Circle with radius 4. Find area.",a:["50.24"]},
+  {q:"Circle with diameter 10. Find circumference.",a:["31.4"]},
+  {q:"Circle with radius 3. Find area.",a:["28.26"]},
+  {q:"10×10 square minus a circle of radius 3: find the remaining area.",a:["71.74"]},
+  {q:"Circle with diameter 14. Find area.",a:["153.86"]}]},
+
+{week:8,day:3,title:"Volume of 3D Shapes",
+ concept:"Rectangular prism: V = lwh. Cylinder: V = πr²h (π ≈ 3.14). Cube: V = s³.",
+ practice:[
+  {q:"Rectangular prism: 4 × 3 × 5. Find volume.",a:["60"]},
+  {q:"Cylinder: radius 3, height 10. Find volume.",a:["282.6"]},
+  {q:"Cube with side 6. Find volume.",a:["216"]}],
+ test:[
+  {q:"Rectangular prism: 7 × 4 × 3. Find volume.",a:["84"]},
+  {q:"Cylinder: radius 5, height 8. Find volume.",a:["628"]},
+  {q:"Rectangular prism: volume 120, length 5, width 4. Find height.",a:["6"]},
+  {q:"Cylinder: radius 2, height 7. Find volume.",a:["87.92"]},
+  {q:"Cube with volume 125. Find the side length.",a:["5"]}]},
+
+{week:8,day:4,title:"Coordinate Geometry — Distance &amp; Midpoint",
+ concept:"Distance = √((x₂−x₁)² + (y₂−y₁)²). Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2).",
+ practice:[
+  {q:"Distance between (0,0) and (3,4).",a:["5"]},
+  {q:"Midpoint of (2,4) and (8,10). Give as x,y",a:["5,7"]},
+  {q:"Distance between (1,1) and (4,5).",a:["5"]}],
+ test:[
+  {q:"Distance between (0,0) and (5,12).",a:["13"]},
+  {q:"Midpoint of (0,0) and (6,8). Give the x-coordinate.",a:["3"]},
+  {q:"Distance between (1,2) and (4,6).",a:["5"]},
+  {q:"Midpoint of two points is (4,5); one point is (2,3). Find the other point's x-coordinate.",a:["6"]},
+  {q:"Distance between (−1,0) and (2,4).",a:["5"]}]},
+
+{week:8,day:5,title:"Mixed Algebra &amp; Geometry Review",
+ concept:"Today combines algebra (systems, exponents) and geometry (area, volume, coordinate geometry).",
+ practice:[
+  {q:"Rectangle: length 3x, width x, perimeter 32. Find x.",a:["4"]},
+  {q:"A circle has area 314 (π≈3.14). Find the radius.",a:["10"]},
+  {q:"Solve by substitution: y = 2x, x + y = 12. Find x.",a:["4"]}],
+ test:[
+  {q:"x² × x³ = x to what power?",a:["5"]},
+  {q:"Rectangle with length (2x+1), width 3, area 39. Find x.",a:["6"]},
+  {q:"Circle with radius 6: find area.",a:["113.04"]},
+  {q:"Distance from (0,0) to (8,6).",a:["10"]},
+  {q:"Solve by substitution: y = x + 3, x + y = 11. Find x.",a:["4"]}]},
 ];
 
 // assign sequential ids and day-of-week labels (Mon-Fri)
@@ -470,8 +598,11 @@ CURRICULUM.forEach((d,i)=>{ d.id = i+1; d.dayName = DAY_NAMES[d.day-1]; });
 
 // ---------- STORAGE ----------
 const STORE_KEY = "valerieSummerMathReview";
-function saveProgress(p){ progress = p; saveSyncedProgress(STORE_KEY, p); }
-let progress = {};
+function loadProgress(){
+  try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveProgress(p){ localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+let progress = loadProgress();
 
 // ---------- HELPERS ----------
 function norm(s){
@@ -486,7 +617,8 @@ function isCorrect(given, accepted){
 function renderNav(){
   const nav = document.getElementById("nav");
   nav.innerHTML = "";
-  for(let w=1; w<=6; w++){
+  const maxWeek = Math.max(...CURRICULUM.map(d=>d.week));
+  for(let w=1; w<=maxWeek; w++){
     const block = document.createElement("div");
     block.className = "week-block";
     const title = document.createElement("div");
@@ -497,7 +629,7 @@ function renderNav(){
       const btn = document.createElement("button");
       const rec = progress[d.id];
       btn.className = "day-btn" + (rec && rec.completed ? " done" : "") + (d.id===currentId ? " active" : "");
-      btn.innerHTML = `<span>${d.dayName} · D${d.id}</span><span class="badge">${rec && rec.completed ? initialScoreOf(rec)+"%" : "-"}</span>`;
+      btn.innerHTML = `<span>${d.dayName} · D${d.id}</span><span class="badge">${rec && rec.completed ? rec.score+"%" : "-"}</span>`;
       btn.onclick = ()=>{ currentId = d.id; render(); };
       block.appendChild(btn);
     });
@@ -505,22 +637,15 @@ function renderNav(){
   }
   const footer = document.createElement("div");
   footer.className = "nav-footer";
-  footer.textContent = CloudSync.enabled ? "✓ Progress synced across devices" : "Progress is saved on this device only.";
+  footer.textContent = "Progress is saved on this device only.";
   nav.appendChild(footer);
 }
 
 // ---------- RENDER STATS ----------
-function initialScoreOf(r){
-  // older completed records (saved before resubmission tracking existed)
-  // only have r.score — fall back to that.
-  return typeof r.initialScore === "number" ? r.initialScore : r.score;
-}
-
 function renderStats(){
   const recs = Object.values(progress).filter(r=>r.completed);
-  document.getElementById("statDone").textContent = recs.length + "/30";
-  const scored = recs.map(initialScoreOf).filter(s=>typeof s === "number");
-  const avg = scored.length ? Math.round(scored.reduce((s,v)=>s+v,0)/scored.length) : null;
+  document.getElementById("statDone").textContent = recs.length + "/" + CURRICULUM.length;
+  const avg = recs.length ? Math.round(recs.reduce((s,r)=>s+r.score,0)/recs.length) : null;
   document.getElementById("statAvg").textContent = avg===null ? "--" : avg+"%";
   // streak: consecutive completed days counting back from the highest completed id
   let streak = 0;
@@ -532,11 +657,10 @@ function renderStats(){
 }
 
 // ---------- RENDER MAIN ----------
-let currentId = 1;
-function pickStartId(){
+let currentId = (function(){
   const firstUndone = CURRICULUM.find(d=>!(progress[d.id] && progress[d.id].completed));
   return firstUndone ? firstUndone.id : 1;
-}
+})();
 
 function render(){
   renderNav();
@@ -563,7 +687,7 @@ function render(){
 
   main.innerHTML = `
     <div class="card">
-      <span class="section-label">Week ${day.week} · ${day.dayName} · Day ${day.id} of 30</span>
+      <span class="section-label">Week ${day.week} · ${day.dayName} · Day ${day.id} of ${CURRICULUM.length}</span>
       <h2>${day.title}</h2>
       <div class="intro">${day.concept}</div>
     </div>
@@ -574,49 +698,27 @@ function render(){
     <div class="card">
       <span class="section-label">Test (~10-15 min)</span>
       ${testHtml}
-      <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Check Answers"}</button>
-      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec) : ""}</div>
+      <button id="submitBtn" onclick="submitTest(${day.id})" ${rec.completed?"disabled":""}>${rec.completed?"Test Submitted":"Submit Test"}</button>
+      <div id="scorebox">${rec.completed ? scoreBoxHtml(rec.score) : ""}</div>
     </div>
-    ${reviewSectionHtml(day, rec)}
     <div class="card" style="display:flex;justify-content:space-between;">
       <button class="secondary" onclick="goAdjacent(-1)" ${day.id<=1?"disabled":""}>&larr; Previous Day</button>
-      <button class="secondary" onclick="goAdjacent(1)" ${day.id>=30?"disabled":""}>Next Day &rarr;</button>
+      <button class="secondary" onclick="goAdjacent(1)" ${day.id>=CURRICULUM.length?"disabled":""}>Next Day &rarr;</button>
     </div>
   `;
-  if(rec.checked || rec.completed){
+  if(rec.completed){
     day.test.forEach((t,i)=>{
       const el = document.getElementById(`r_${day.id}_${i}`);
       const given = rec.answers[i] || "";
       const ok = isCorrect(given, t.a);
-      el.innerHTML = ok ? `<span class="ok">✓ Correct</span>` : `<span class="bad">✗ Not quite — try again</span>`;
+      el.innerHTML = ok ? `<span class="ok">✓ Correct</span>` : `<span class="bad">✗ Your answer: "${given}" — Correct: ${t.a[0]}</span>`;
     });
   }
 }
 
-function scoreBoxHtml(rec){
-  const initial = initialScoreOf(rec);
-  const sameAsFinal = initial === rec.score;
-  return `<div class="scorebox">Score: <b>${rec.score}%</b>
-    <div class="progress-bar"><div style="width:${rec.score}%"></div></div>
-    ${sameAsFinal ? "" : `<div style="margin-top:8px;font-size:13px;color:#555;">First attempt: <b>${initial}%</b> — corrected ${rec.wrongOnFirstTry ? rec.wrongOnFirstTry.length : ""} question(s) on resubmission.</div>`}
-  </div>`;
-}
-
-function reviewSectionHtml(day, rec){
-  if(!rec.completed || !rec.wrongOnFirstTry || rec.wrongOnFirstTry.length === 0) return "";
-  const items = rec.wrongOnFirstTry.map(i=>`
-    <div class="prob">
-      <p><b>Q${i+1}.</b> ${day.test[i].q}</p>
-      <div style="font-size:13px;color:#555;">
-        Your first answer: <span class="bad">"${(rec.initialAnswers && rec.initialAnswers[i]) || "(blank)"}"</span> — incorrect<br>
-        Corrected to: <span class="ok">"${rec.answers[i]}"</span> on resubmission
-      </div>
-    </div>`).join("");
-  return `
-    <div class="card">
-      <span class="section-label">Review: Corrected After Resubmission</span>
-      ${items}
-    </div>`;
+function scoreBoxHtml(score){
+  return `<div class="scorebox">Score: <b>${score}%</b>
+    <div class="progress-bar"><div style="width:${score}%"></div></div></div>`;
 }
 
 function toggleReveal(btn){
@@ -626,35 +728,14 @@ function toggleReveal(btn){
 
 function submitTest(dayId){
   const day = CURRICULUM.find(d=>d.id===dayId);
-  const existing = progress[dayId] || {};
   let correctCount = 0;
   const answers = day.test.map((t,i)=>{
     const val = document.getElementById(`t_${dayId}_${i}`).value;
     if(isCorrect(val, t.a)) correctCount++;
     return val;
   });
-  const allCorrect = correctCount === day.test.length;
-  const now = new Date().toISOString();
-
-  const rec = { ...existing, answers, checked: true, completed: allCorrect, date: now };
-
-  if(!existing.checked){
-    // first time checking this day's test — record the initial attempt
-    // permanently, before any resubmission can change it.
-    rec.initialAnswers = answers.slice();
-    rec.initialScore = Math.round((correctCount/day.test.length)*100);
-    rec.wrongOnFirstTry = day.test.map((t,i)=>i).filter(i=>!isCorrect(answers[i], day.test[i].a));
-    rec.firstCheckedDate = now;
-  }
-
-  if(allCorrect){
-    rec.score = 100;
-    rec.completedDate = now;
-  } else {
-    delete rec.score;
-  }
-
-  progress[dayId] = rec;
+  const score = Math.round((correctCount/day.test.length)*100);
+  progress[dayId] = { completed:true, score, answers, date:new Date().toISOString() };
   saveProgress(progress);
   render();
 }
@@ -664,7 +745,7 @@ function goAdjacent(delta){
   if(newId>=1 && newId<=30){ currentId = newId; render(); }
 }
 
-initSyncedProgress(STORE_KEY).then(p => { progress = p; currentId = pickStartId(); render(); });
+render();
 </script>
 </body>
 </html>
